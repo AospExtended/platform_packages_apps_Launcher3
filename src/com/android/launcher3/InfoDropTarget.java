@@ -97,7 +97,7 @@ public class InfoDropTarget extends UninstallDropTarget {
         // Only show the App Info drop target if developer settings are enabled.
         ContentResolver resolver = LauncherAppState.getInstance().getContext().getContentResolver();
         boolean developmentSettingsEnabled = Settings.Global.getInt(resolver,
-                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) == 1;
+                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) == 1;
         return developmentSettingsEnabled
                 && (info instanceof AppInfo || info instanceof ShortcutInfo
                 || info instanceof PendingAddItemInfo || info instanceof LauncherAppWidgetInfo)
