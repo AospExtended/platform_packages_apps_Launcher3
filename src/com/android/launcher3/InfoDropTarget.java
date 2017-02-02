@@ -103,7 +103,7 @@ public class InfoDropTarget extends UninstallDropTarget {
     public static boolean supportsDrop(Context context, ItemInfo info) {
         // Only show the App Info drop target if developer settings are enabled.
         boolean developmentSettingsEnabled = Settings.Global.getInt(context.getContentResolver(),
-                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 0) == 1;
+                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) == 1;
         if (!developmentSettingsEnabled) {
             return false;
         }
