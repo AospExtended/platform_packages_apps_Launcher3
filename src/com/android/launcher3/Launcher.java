@@ -539,7 +539,10 @@ public class Launcher extends BaseActivity
         }
 
         if (newSystemUiFlags != oldSystemUiFlags) {
-            getWindow().getDecorView().setSystemUiVisibility(newSystemUiFlags);
+            final int systemUiFlags = newSystemUiFlags;
+            runOnUiThread(() -> {
+                getWindow().getDecorView().setSystemUiVisibility(systemUiFlags);
+            });
         }
     }
 
