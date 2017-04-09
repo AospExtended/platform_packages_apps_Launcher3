@@ -25,4 +25,20 @@
   <string name="hidden_app">App nascoste</string>
   <string name="hide_selected">Nascondi app selezionate</string>
   <string name="more">Altro</string>
+
+  <!-- Icon pack -->
+  <string name="default_iconpack_title">Predefinito</string>
+  <string name="icons_pack_name">Pacchetto icone</string>
+  <string name="edit_drop_target_label">Modifica</string>
+  <string name="edit_app">Modifica</string>
+  <string name="reset_icon">Resetta</string>
+  <string name="customize">Personalizza</string>
+  <string name="visual">Visuale</string>
+  <string name="all_icons">Tutte le icone</string>
+  <string name="similar_icons">Icone simili</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Etichetta</string>
+  <string name="loading">Caricamento, attendere prego</string>
+  <string name="icon_chooser">Scelta icona</string>
+  <string name="icon_search">Cerca icone</string>
 </resources>
