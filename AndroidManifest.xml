@@ -90,7 +90,9 @@
         <activity
             android:name="com.android.launcher3.SettingsActivity"
             android:label="@string/settings_button_text"
-            android:autoRemoveFromRecents="true">
+            android:autoRemoveFromRecents="true"
+            android:theme="@style/Settings"
+            android:parentActivityName="com.android.launcher3.Launcher" >
             <intent-filter>
                 <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
                 <category android:name="android.intent.category.DEFAULT" />
