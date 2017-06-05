@@ -378,7 +378,12 @@ public class Workspace extends PagedView
             @Override
             public boolean onFling(MotionEvent e1, MotionEvent e2,
                     float velocityX, float velocityY) {
-                if (e1.getY() - e2.getY() > SWIPE_THRESHOLD) {
+                if (e1.getY() < e2.getY()) {
+                    final StatusBarManager mStatusBar =
+                            (StatusBarManager) mContext.getSystemService(
+                            Context.STATUS_BAR_SERVICE);
+                    mStatusBar.expandNotificationsPanel();
+                } else if (e1.getY() > e2.getY()) {
                     mLauncher.showAppsView(true, false, false);
                 } else if (e1.getY() - e2.getY() < SWIPE_THRESHOLD) {
                     statusBar.expandNotificationsPanel();
