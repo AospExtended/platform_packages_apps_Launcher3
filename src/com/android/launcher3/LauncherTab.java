@@ -32,9 +32,7 @@ public class LauncherTab {
 
     public LauncherTab(Launcher launcher) {
         mLauncher = launcher;
-        mLauncherClient = new LauncherClient(launcher, new LauncherClientCallbacks(), true);
-
-        mWorkspace = launcher.getWorkspace();
+        mLauncherClient = new LauncherClient(launcher, new LauncherClientCallbacksAdapter(launcher.getWorkspace()), true);
 
         launcher.setLauncherOverlay(new LauncherOverlays());
     }
@@ -61,13 +59,6 @@ public class LauncherTab {
 
         @Override
         public void setOverlayCallbacks(LauncherOverlayCallbacks callbacks) {
-        }
-    }
-
-    private class LauncherClientCallbacks extends LauncherClientCallbacksAdapter {
-        @Override
-        public void onOverlayScrollChanged(float progress) {
-            mWorkspace.onOverlayScrollChanged(progress);
         }
     }
 }
