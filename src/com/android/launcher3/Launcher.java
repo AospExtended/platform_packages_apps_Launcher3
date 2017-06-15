@@ -1077,7 +1077,7 @@ public class Launcher extends Activity
             mModel.refreshShortcutsIfRequired();
         }
 
-        if (shouldShowDiscoveryBounce()) {
+        if (FeatureFlags.LAUNCHER3_ALL_APPS_PULL_UP && shouldShowDiscoveryBounce()) {
             mAllAppsController.showDiscoveryBounce();
         }
         mIsResumeFromActionScreenOff = false;
