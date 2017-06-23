@@ -4546,6 +4546,11 @@ public class Launcher extends Activity
                     run();
                 }
             }
+            if ("pref_iconPackPackage".equals(key)) {
+                mModel.clearIconCache();
+                mModel.resetLoadedState(true, true);
+                mOnResumeNeedsLoad = true;
+            }
         }
 
         @Override
