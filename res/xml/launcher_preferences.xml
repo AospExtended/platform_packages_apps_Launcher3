@@ -32,7 +32,7 @@
 
     <SwitchPreference
             android:key="pref_showPredictiveApps"
-            android:title="@string/show_predictive_apps_title"
+            android:title="@string/title_app_suggestions"
             android:defaultValue="true"
             android:persistent="true"
     />
