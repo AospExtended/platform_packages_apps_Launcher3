@@ -662,10 +662,9 @@ public class Workspace extends PagedView
                     firstPage, false);
         }
 
-        boolean visible = Utilities.isShowSearchBar(mLauncher);
         CellLayout.LayoutParams lp = new CellLayout.LayoutParams(0, 0, firstPage.getCountX(), 1);
         lp.canReorder = false;
-        if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, visible)) {
+        if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, true)) {
             Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
         }
     }
@@ -4398,22 +4397,5 @@ public class Workspace extends PagedView
 
     public static final boolean isQsbContainerPage(int pageNo) {
         return pageNo == 0;
-    }
-
-    public void updateQsbVisibility() {
-        if (!FeatureFlags.QSB_ON_FIRST_SCREEN) {
-            return;
-        }
-        boolean visible = Utilities.isShowSearchBar(mLauncher);
-        View qsb = findViewById(getEmbeddedQsbId());
-        if (qsb != null) {
-            qsb.setVisibility(visible ? View.VISIBLE : View.GONE);
-            CellLayout firstPage = mWorkspaceScreens.get(FIRST_SCREEN_ID);
-            if (!visible) {
-                firstPage.markCellsAsUnoccupiedForView(qsb);
-            } else {
-                firstPage.markCellsAsOccupiedForView(qsb);
-            }
-        }
     }
 }
