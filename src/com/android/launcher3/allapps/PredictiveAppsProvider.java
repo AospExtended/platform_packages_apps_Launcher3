@@ -32,6 +32,7 @@ public class PredictiveAppsProvider {
     }
 
     public void updateComponentCount(ComponentName component) {
+        if (component == null) return;
         String key = buildComponentString(component);
         long current = sharedPreferences.getLong(key, 0);
 
@@ -93,7 +94,7 @@ public class PredictiveAppsProvider {
     private String buildStringFromAppList(List<PredictedApp> apps) {
         String string = "";
         for (PredictedApp app : apps) {
-            string += buildComponentString(app.component) + " ";
+            if (app.component != null) string += buildComponentString(app.component) + " ";
         }
 
         try {
