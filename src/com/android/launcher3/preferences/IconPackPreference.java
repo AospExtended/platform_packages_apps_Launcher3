@@ -71,7 +71,7 @@ public class IconPackPreference extends Preference {
 
     private void setNone() {
         setIcon(getContext().getResources().getDrawable(R.mipmap.ic_launcher_home));
-        setSummary("None");
+        setSummary(getContext().getResources().getString(R.string.default_iconpack_title));
     }
 
     @Override
