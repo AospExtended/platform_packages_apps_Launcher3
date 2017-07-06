@@ -19,5 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">حزمة الرموز</string>
+  <string name="icon_pack_summary">اختر مجموعة أيقونات</string>
   <string name="default_iconpack_title">الرموز الإفتراضية</string>
 </resources>

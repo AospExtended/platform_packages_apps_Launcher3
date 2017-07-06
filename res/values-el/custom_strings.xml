@@ -19,5 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">Πακέτο εικονιδίων</string>
+  <string name="icon_pack_summary">Επιλέξτε ένα πακέτο εικονιδίων</string>
   <string name="default_iconpack_title">Προεπιλεγμένα εικονίδια</string>
 </resources>
