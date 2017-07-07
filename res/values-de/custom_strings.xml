@@ -20,5 +20,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">Icon-Pack</string>
   <string name="icon_pack_summary">Wähle ein Icon-Pack</string>
-  <string name="default_iconpack_title">Standardsymbole</string>
+  <string name="default_iconpack_title">Standard-Icons</string>
 </resources>
