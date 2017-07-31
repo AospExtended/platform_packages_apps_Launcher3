@@ -19,5 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">图标包</string>
+  <string name="icon_pack_summary">选择一个图标包</string>
   <string name="default_iconpack_title">默认图标</string>
 </resources>
