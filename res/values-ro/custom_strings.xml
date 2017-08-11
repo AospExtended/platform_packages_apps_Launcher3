@@ -19,4 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">Pachet de pictograme</string>
+  <string name="icon_pack_summary">Selectaţi un set de pictograme</string>
+  <string name="default_iconpack_title">Pictograme implicite</string>
 </resources>
