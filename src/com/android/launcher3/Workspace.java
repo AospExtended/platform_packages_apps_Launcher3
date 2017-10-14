@@ -374,6 +374,10 @@ public class Workspace extends PagedView
         final PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
         final StatusBarManager statusBar = (StatusBarManager) context.getSystemService(
                 Context.STATUS_BAR_SERVICE);
+        context.enforceCallingOrSelfPermission(
+                    android.Manifest.permission.DEVICE_POWER, null);
+        context.enforceCallingOrSelfPermission(
+                    android.Manifest.permission.EXPAND_STATUS_BAR, null);
         mGestureListener =
                 new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
