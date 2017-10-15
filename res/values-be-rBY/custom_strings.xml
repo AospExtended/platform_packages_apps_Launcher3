@@ -19,4 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">Набор значкоў</string>
+  <string name="icon_pack_summary">Выберыце набор значкоў</string>
+  <string name="default_iconpack_title">Значкі па змаўчанні</string>
 </resources>

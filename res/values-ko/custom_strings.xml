@@ -19,5 +19,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="icon_pack">아이콘 팩</string>
+  <string name="icon_pack_summary">아이콘 팩 선택</string>
   <string name="default_iconpack_title">기본 아이콘</string>
 </resources>
