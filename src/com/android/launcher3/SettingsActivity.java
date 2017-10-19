@@ -17,7 +17,9 @@
 package com.android.launcher3;
 
 import android.app.Activity;
+import com.android.launcher3.MultiSelectRecyclerViewActivity;
 import android.content.ContentResolver;
+import android.content.Intent;
 import android.database.ContentObserver;
 import android.os.Bundle;
 import android.os.Handler;
@@ -39,6 +41,7 @@ public class SettingsActivity extends Activity {
     private static final String ICON_BADGING_PREFERENCE_KEY = "pref_icon_badging";
     // TODO: use Settings.Secure.NOTIFICATION_BADGING
     private static final String NOTIFICATION_BADGING = "notification_badging";
+    private static final String HIDDEN_APPS = "hidden_app";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -108,6 +111,12 @@ public class SettingsActivity extends Activity {
                     return true;
                 }
             });
+            Preference hiddenApp = findPreference(Utilities.KEY_HIDDEN_APPS);
+            hiddenApp.setOnPreferenceClickListener(
+                preference -> {
+                    startActivity(new Intent(getActivity(), MultiSelectRecyclerViewActivity.class));
+                    return false;
+                });
         }
 
         @Override

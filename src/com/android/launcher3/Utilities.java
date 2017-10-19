@@ -130,8 +130,8 @@ public final class Utilities {
     public static final String LEGACY_ICON_PREFERENCE_KEY = "pref_legacyIcons";
     public static final String ICON_SHAPE_PREFERENCE_KEY = "pref_iconShape";
     public static final String ICON_SHADOW_PREFERENCE_KEY = "pref_iconShadow";
-    static final String KEY_HIDDEN_APPS = "hidden-app";
-    static final String KEY_HIDDEN_APPS_SET = "hidden-app-set";
+    static final String KEY_HIDDEN_APPS = "hidden_app";
+    static final String KEY_HIDDEN_APPS_SET = "hidden_app_set";
 
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
