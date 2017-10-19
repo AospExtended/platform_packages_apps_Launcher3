@@ -75,4 +75,12 @@
     <string name="show_search_bar_location_title">Search bar placement</string>
     <string name="search_bar_location_bottom">Below hotseat</string>
     <string name="search_bar_location_top">Above hotseat</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Hide apps</string>
+    <string name="hide_app_sum">Hide apps from the app drawer</string>
+    <string name="hide_app_selected">&#160;selected</string>
+    <string name="hidden_app">All apps</string>
+    <string name="hide_selected">Hide selected app(s)</string>
+    <string name="more">More</string>
 </resources>
