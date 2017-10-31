@@ -626,7 +626,8 @@ public class Workspace extends PagedView
      * @param qsb an existing qsb to recycle or null.
      */
     public void bindAndInitFirstWorkspaceScreen(View qsb) {
-        if (!FeatureFlags.QSB_ON_FIRST_SCREEN) {
+        boolean visible = Utilities.isTopSearchBar(mLauncher);
+        if (!visible) {
             return;
         }
         // Add the first page
@@ -668,7 +669,6 @@ public class Workspace extends PagedView
                     firstPage, false);
         }
 
-        boolean visible = Utilities.isShowSearchBar(mLauncher);
         CellLayout.LayoutParams lp = new CellLayout.LayoutParams(0, 0, firstPage.getCountX(), 1);
         lp.canReorder = false;
         if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, visible)) {
@@ -685,7 +685,8 @@ public class Workspace extends PagedView
         // Note that it relies on the strict ordering of measuring the workspace before the QSB
         // at the dragLayer level.
         // Only measure the QSB when the view is enabled
-        if (FeatureFlags.QSB_ON_FIRST_SCREEN && getChildCount() > 0) {
+        boolean visible = Utilities.isTopSearchBar(mLauncher);
+        if (visible && getChildCount() > 0) {
             CellLayout firstPage = (CellLayout) getChildAt(0);
             int cellHeight = firstPage.getCellHeight();
 
@@ -1055,11 +1056,12 @@ public class Workspace extends PagedView
         int currentPage = getNextPage();
         ArrayList<Long> removeScreens = new ArrayList<Long>();
         int total = mWorkspaceScreens.size();
+        boolean visible = Utilities.isTopSearchBar(mLauncher);
         for (int i = 0; i < total; i++) {
             long id = mWorkspaceScreens.keyAt(i);
             CellLayout cl = mWorkspaceScreens.valueAt(i);
             // FIRST_SCREEN_ID can never be removed.
-            if ((!FeatureFlags.QSB_ON_FIRST_SCREEN || id > FIRST_SCREEN_ID)
+            if ((!visible || id > FIRST_SCREEN_ID)
                     && cl.getShortcutsAndWidgets().getChildCount() == 0) {
                 removeScreens.add(id);
             }
@@ -1157,7 +1159,7 @@ public class Workspace extends PagedView
 
         final CellLayout layout;
         if (container == LauncherSettings.Favorites.CONTAINER_HOTSEAT) {
-            layout = mLauncher.getHotseat().getLayout();
+            layout = mLauncher.getHotseat().getCellLayout();
             child.setOnKeyListener(new HotseatIconKeyEventListener());
 
             // Hide folder title in the hotseat
@@ -2151,7 +2153,8 @@ public class Workspace extends PagedView
             page.setContentDescription(getPageDescription(pageNo));
 
             // No custom action for the first page.
-            if (!FeatureFlags.QSB_ON_FIRST_SCREEN || pageNo > 0) {
+            boolean visible = Utilities.isTopSearchBar(mLauncher);
+            if (!visible || pageNo > 0) {
                 if (mPagesAccessibilityDelegate == null) {
                     mPagesAccessibilityDelegate = new OverviewScreenAccessibilityDelegate(this);
                 }
@@ -2246,7 +2249,7 @@ public class Workspace extends PagedView
                 @Override
                 protected void enableAccessibleDrag(boolean enable) {
                     super.enableAccessibleDrag(enable);
-                    setEnableForLayout(mLauncher.getHotseat().getLayout(),enable);
+                    setEnableForLayout(mLauncher.getHotseat().getCellLayout(),enable);
 
                     // We need to allow our individual children to become click handlers in this
                     // case, so temporarily unset the click handlers.
@@ -2966,7 +2969,7 @@ public class Workspace extends PagedView
        mTempXY[0] = (int) xy[0];
        mTempXY[1] = (int) xy[1];
        mLauncher.getDragLayer().getDescendantCoordRelativeToSelf(this, mTempXY, true);
-       mLauncher.getDragLayer().mapCoordInSelfToDescendant(hotseat.getLayout(), mTempXY);
+       mLauncher.getDragLayer().mapCoordInSelfToDescendant(hotseat.getCellLayout(), mTempXY);
 
        xy[0] = mTempXY[0];
        xy[1] = mTempXY[1];
@@ -3091,7 +3094,7 @@ public class Workspace extends PagedView
         // Test to see if we are over the hotseat first
         if (mLauncher.getHotseat() != null && !isDragWidget(d)) {
             if (isPointInSelfOverHotseat(d.x, d.y)) {
-                layout = mLauncher.getHotseat().getLayout();
+                layout = mLauncher.getHotseat().getCellLayout();
             }
         }
 
@@ -3812,7 +3815,7 @@ public class Workspace extends PagedView
             layouts.add(((CellLayout) getChildAt(screen)));
         }
         if (mLauncher.getHotseat() != null) {
-            layouts.add(mLauncher.getHotseat().getLayout());
+            layouts.add(mLauncher.getHotseat().getCellLayout());
         }
         return layouts;
     }
@@ -3829,7 +3832,7 @@ public class Workspace extends PagedView
             childrenLayouts.add(((CellLayout) getChildAt(screen)).getShortcutsAndWidgets());
         }
         if (mLauncher.getHotseat() != null) {
-            childrenLayouts.add(mLauncher.getHotseat().getLayout().getShortcutsAndWidgets());
+            childrenLayouts.add(mLauncher.getHotseat().getCellLayout().getShortcutsAndWidgets());
         }
         return childrenLayouts;
     }
@@ -4305,8 +4308,7 @@ public class Workspace extends PagedView
     }
 
     public void updateQsbVisibility() {
-        boolean visible = Utilities.isShowSearchBar(mLauncher);
-        FeatureFlags.QSB_ON_FIRST_SCREEN = visible;
+        boolean visible = Utilities.isTopSearchBar(mLauncher);
         View qsb = findViewById(getEmbeddedQsbId());
         if (qsb != null) {
             qsb.setVisibility(visible ? View.VISIBLE : View.GONE);
