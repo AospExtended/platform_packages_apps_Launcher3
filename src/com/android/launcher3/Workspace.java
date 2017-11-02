@@ -244,9 +244,6 @@ public class Workspace extends PagedView
     public static final int QSB_ALPHA_INDEX_PAGE_SCROLL = 2;
     public static final int QSB_ALPHA_INDEX_OVERLAY_SCROLL = 3;
 
-
-    MultiStateAlphaController mQsbAlphaController;
-
     @ViewDebug.ExportedProperty(category = "launcher")
     private State mState = State.NORMAL;
     private boolean mIsSwitchingState = false;
@@ -322,7 +319,6 @@ public class Workspace extends PagedView
     // Total over scrollX in the overlay direction.
     private float mOverlayTranslation;
     private int mFirstPageScrollX;
-    private boolean mIgnoreQsbScroll;
 
     // Handles workspace state transitions
     private WorkspaceStateTransitionAnimation mStateTransitionAnimation;
@@ -576,7 +572,6 @@ public class Workspace extends PagedView
     public void initParentViews(View parent) {
         super.initParentViews(parent);
         mPageIndicator.setAccessibilityDelegate(new OverviewAccessibilityDelegate());
-        mQsbAlphaController = new MultiStateAlphaController(mLauncher.getQsbContainer(), 4);
     }
 
     private int getDefaultPage() {
@@ -616,20 +611,11 @@ public class Workspace extends PagedView
         return mTouchState != TOUCH_STATE_REST;
     }
 
-    private int getEmbeddedQsbId() {
-        return mLauncher.getDeviceProfile().isVerticalBarLayout()
-                ? R.id.qsb_container : R.id.workspace_blocked_row;
-    }
-
     /**
      * Initializes and binds the first page
      * @param qsb an existing qsb to recycle or null.
      */
-    public void bindAndInitFirstWorkspaceScreen(View qsb) {
-        boolean visible = Utilities.isTopSearchBar(mLauncher);
-        if (!visible) {
-            return;
-        }
+    public void bindAndInitFirstWorkspaceScreen() {
         // Add the first page
         CellLayout firstPage = insertNewWorkspaceScreen(Workspace.FIRST_SCREEN_ID, 0);
         if (FeatureFlags.PULLDOWN_SEARCH) {
@@ -659,19 +645,12 @@ public class Workspace extends PagedView
                 }
             });
         }
-        // Always add a QSB on the first screen.
-        if (qsb == null) {
-            // In transposed layout, we add the QSB in the Grid. As workspace does not touch the
-            // edges, we do not need a full width QSB.
-            qsb = mLauncher.getLayoutInflater().inflate(
-                    mLauncher.getDeviceProfile().isVerticalBarLayout()
-                            ? R.layout.qsb_container : R.layout.qsb_blocker_view,
-                    firstPage, false);
-        }
 
         CellLayout.LayoutParams lp = new CellLayout.LayoutParams(0, 0, firstPage.getCountX(), 1);
         lp.canReorder = false;
-        if (!firstPage.addViewToCellLayout(qsb, 0, getEmbeddedQsbId(), lp, visible)) {
+        View topContainer = mLauncher.getTopContainer();
+        ((ViewGroup) topContainer.getParent()).removeView(topContainer);
+        if (!firstPage.addViewToCellLayout(topContainer, 0, R.id.top_container, lp, true)) {
             Log.e(TAG, "Failed to add to item at (0, 0) to CellLayout");
         }
     }
@@ -679,24 +658,6 @@ public class Workspace extends PagedView
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
-        // Update the QSB to match the cell height. This is treating the QSB essentially as a child
-        // of workspace despite that it's not a true child.
-        // Note that it relies on the strict ordering of measuring the workspace before the QSB
-        // at the dragLayer level.
-        // Only measure the QSB when the view is enabled
-        boolean visible = Utilities.isTopSearchBar(mLauncher);
-        if (visible && getChildCount() > 0) {
-            CellLayout firstPage = (CellLayout) getChildAt(0);
-            int cellHeight = firstPage.getCellHeight();
-
-            View qsbContainer = mLauncher.getQsbContainer();
-            ViewGroup.LayoutParams lp = qsbContainer.getLayoutParams();
-            if (cellHeight > 0 && lp.height != cellHeight) {
-                lp.height = cellHeight;
-                qsbContainer.setLayoutParams(lp);
-            }
-        }
     }
 
     public void removeAllWorkspaceScreens() {
@@ -711,19 +672,13 @@ public class Workspace extends PagedView
             removeCustomContentPage();
         }
 
-        // Recycle the QSB widget
-        View qsb = findViewById(getEmbeddedQsbId());
-        if (qsb != null) {
-            ((ViewGroup) qsb.getParent()).removeView(qsb);
-        }
-
         // Remove the pages and clear the screen models
         removeAllViews();
         mScreenOrder.clear();
         mWorkspaceScreens.clear();
 
         // Ensure that the first page is always present
-        bindAndInitFirstWorkspaceScreen(qsb);
+        bindAndInitFirstWorkspaceScreen();
 
         // Re-enable the layout transitions
         enableLayoutTransitions();
@@ -1056,7 +1011,7 @@ public class Workspace extends PagedView
         int currentPage = getNextPage();
         ArrayList<Long> removeScreens = new ArrayList<Long>();
         int total = mWorkspaceScreens.size();
-        boolean visible = Utilities.isTopSearchBar(mLauncher);
+        boolean visible = Utilities.isTopSpaceReserved(mLauncher);
         for (int i = 0; i < total; i++) {
             long id = mWorkspaceScreens.keyAt(i);
             CellLayout cl = mWorkspaceScreens.valueAt(i);
@@ -1451,10 +1406,6 @@ public class Workspace extends PagedView
     }
 
     private void onWorkspaceOverallScrollChanged() {
-        if (!mIgnoreQsbScroll) {
-            mLauncher.getQsbContainer().setTranslationX(
-                    mOverlayTranslation + mFirstPageScrollX - getScrollX());
-        }
     }
 
     @Override
@@ -1535,8 +1486,6 @@ public class Workspace extends PagedView
         setWorkspaceTranslationAndAlpha(Direction.X, transX, alpha);
         setHotseatTranslationAndAlpha(Direction.X, transX, alpha);
         onWorkspaceOverallScrollChanged();
-
-        mQsbAlphaController.setAlphaAtIndex(alpha, QSB_ALPHA_INDEX_OVERLAY_SCROLL);
     }
 
     /**
@@ -1547,8 +1496,7 @@ public class Workspace extends PagedView
     public void setWorkspaceYTranslationAndAlpha(float translation, float alpha) {
         setWorkspaceTranslationAndAlpha(Direction.Y, translation, alpha);
 
-        mLauncher.getQsbContainer().setTranslationY(translation);
-        mQsbAlphaController.setAlphaAtIndex(alpha, QSB_ALPHA_INDEX_Y_TRANSLATION);
+        mLauncher.getTopContainer().setTranslationY(translation);
     }
 
     /**
@@ -1744,10 +1692,6 @@ public class Workspace extends PagedView
                     float scrollProgress = getScrollProgress(screenCenter, child, i);
                     float alpha = 1 - Math.abs(scrollProgress);
                     child.getShortcutsAndWidgets().setAlpha(alpha);
-
-                    if (isQsbContainerPage(i)) {
-                        mQsbAlphaController.setAlphaAtIndex(alpha, QSB_ALPHA_INDEX_PAGE_SCROLL);
-                    }
                 }
             }
         }
@@ -1853,7 +1797,6 @@ public class Workspace extends PagedView
                 @Override
                 public void startTransition(LayoutTransition transition, ViewGroup container,
                                             View view, int transitionType) {
-                    mIgnoreQsbScroll = true;
                 }
 
                 @Override
@@ -1861,7 +1804,6 @@ public class Workspace extends PagedView
                                           View view, int transitionType) {
                     // Wait until all transitions are complete.
                     if (!transition.isRunning()) {
-                        mIgnoreQsbScroll = false;
                         transition.removeTransitionListener(this);
                         mFirstPageScrollX = getScrollForPage(0);
                         onWorkspaceOverallScrollChanged();
@@ -2153,7 +2095,7 @@ public class Workspace extends PagedView
             page.setContentDescription(getPageDescription(pageNo));
 
             // No custom action for the first page.
-            boolean visible = Utilities.isTopSearchBar(mLauncher);
+            boolean visible = Utilities.isTopSpaceReserved(mLauncher);
             if (!visible || pageNo > 0) {
                 if (mPagesAccessibilityDelegate == null) {
                     mPagesAccessibilityDelegate = new OverviewScreenAccessibilityDelegate(this);
@@ -4281,10 +4223,6 @@ public class Workspace extends PagedView
         void prepareStateChange(State toState, AnimatorSet targetAnim);
     }
 
-    public static final boolean isQsbContainerPage(int pageNo) {
-        return pageNo == 0;
-    }
-
     private class StateTransitionListener extends AnimatorListenerAdapter
             implements AnimatorUpdateListener {
         @Override
@@ -4307,17 +4245,12 @@ public class Workspace extends PagedView
         }
     }
 
-    public void updateQsbVisibility() {
-        boolean visible = Utilities.isTopSearchBar(mLauncher);
-        View qsb = findViewById(getEmbeddedQsbId());
-        if (qsb != null) {
-            qsb.setVisibility(visible ? View.VISIBLE : View.GONE);
-            CellLayout firstPage = mWorkspaceScreens.get(FIRST_SCREEN_ID);
-            if (!visible) {
-                firstPage.markCellsAsUnoccupiedForView(qsb);
-            } else {
-                firstPage.markCellsAsOccupiedForView(qsb);
-            }
+    public void updateTopWidgetVisibility(boolean visible) {
+        CellLayout firstPage = mWorkspaceScreens.get(FIRST_SCREEN_ID);
+        if (!visible) {
+            firstPage.markCellsAsUnoccupiedForView(mLauncher.getTopContainer());
+        } else {
+            firstPage.markCellsAsOccupiedForView(mLauncher.getTopContainer());
         }
     }
 }
