@@ -139,12 +139,19 @@ public final class Utilities {
     public static final String SHOW_EVENTS_PERIOD_PREFERENCE_KEY = "pref_showEventsPeriod";
     public static final String SHOW_TODAY_PREFERENCE_KEY = "pref_showToday";
     public static final String SHOW_SEARCH_BAR_LOCATION_PREFERENCE_KEY = "pref_searchBarLocation";
+    public static final String SHOW_PREDICTIVE_APPS = "pref_showPredictiveApps";
+    public static final String PREDICTIVE_APPS_KEY = "predictive_apps";
+    public static final String TOP_PREDICTIVE_APPS_KEY = "top_predictive_apps";
     static final String KEY_HIDDEN_APPS = "hidden_app";
     static final String KEY_HIDDEN_APPS_SET = "hidden_app_set";
     public static final String SHOW_EVENTS_PREFERENCE_KEY = "pref_showEvents";
 
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
+    }
+
+    public static boolean isPredictiveAppsEnabled(Context context) {
+        return getPrefs(context).getBoolean(SHOW_PREDICTIVE_APPS, false);
     }
 
     public static boolean isAllowRotationPrefEnabled(Context context) {

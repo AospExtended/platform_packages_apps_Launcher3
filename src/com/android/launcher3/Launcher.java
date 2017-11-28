@@ -332,7 +332,6 @@ public class Launcher extends BaseActivity
     public ViewGroupFocusHelper mFocusHandler;
     private boolean mRotationEnabled = false;
 
-    private final String KEY_ENABLE_PREDICTIVE_APPS = "pref_showPredictiveApps";
     private PredictiveAppsProvider mPredictiveAppsProvider;
     private boolean mShowPredictiveApps;
 
@@ -371,7 +370,7 @@ public class Launcher extends BaseActivity
         }
 
         mContext = getApplicationContext();
-        mShowPredictiveApps = Utilities.getPrefs(mContext).getBoolean(KEY_ENABLE_PREDICTIVE_APPS, true);
+        mShowPredictiveApps = Utilities.isPredictiveAppsEnabled(mContext);
         if (mShowPredictiveApps) {
              mPredictiveAppsProvider = new PredictiveAppsProvider(mContext);
         }
@@ -4214,7 +4213,7 @@ public class Launcher extends BaseActivity
             }
             if (Utilities.ICON_PACK_PREFERENCE_KEY.equals(key) || Utilities.ADAPTIVE_ICONS_PREFERENCE_KEY.equals(key)
                     || Utilities.LEGACY_ICON_PREFERENCE_KEY.equals(key) || Utilities.ICON_SHAPE_PREFERENCE_KEY.equals(key)
-                    || Utilities.ICON_SHADOW_PREFERENCE_KEY.equals(key)) {
+                    || Utilities.ICON_SHADOW_PREFERENCE_KEY.equals(key) || Utilities.SHOW_PREDICTIVE_APPS.equals(key)) {
                 mModel.clearIconCache();
                 mModel.forceReload();
                 mOnResumeNeedsLoad = true;
