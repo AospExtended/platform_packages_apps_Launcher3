@@ -141,6 +141,7 @@ public final class Utilities {
     public static final String SHOW_SEARCH_BAR_LOCATION_PREFERENCE_KEY = "pref_searchBarLocation";
     static final String KEY_HIDDEN_APPS = "hidden_app";
     static final String KEY_HIDDEN_APPS_SET = "hidden_app_set";
+    public static final String SHOW_EVENTS_PREFERENCE_KEY = "pref_showEvents";
 
     public static boolean isPropertyEnabled(String propertyName) {
         return Log.isLoggable(propertyName, Log.VERBOSE);
@@ -204,6 +205,10 @@ public final class Utilities {
     // 0 is below hotseat 1 is above
     public static int getSearchBarLocation(Context context) {
         return Integer.valueOf(getPrefs(context).getString(SHOW_SEARCH_BAR_LOCATION_PREFERENCE_KEY, "0"));
+    }
+
+    public static boolean isShowEvents(Context context) {
+        return getPrefs(context).getBoolean(SHOW_EVENTS_PREFERENCE_KEY, true);
     }
 
     public static boolean getAllowRotationDefaultValue(Context context) {

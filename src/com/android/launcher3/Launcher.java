@@ -4231,6 +4231,7 @@ public class Launcher extends BaseActivity
             if (Utilities.SHOW_ALL_DAY_EVENTS_PREFERENCE_KEY.equals(key) ||
                     Utilities.SHOW_EVENTS_PERIOD_PREFERENCE_KEY.equals(key) ||
                     Utilities.SHOW_TODAY_PREFERENCE_KEY.equals(key) ||
+                    Utilities.SHOW_EVENTS_PREFERENCE_KEY.equals(key) ||
                     Utilities.WEATHER_ICON_PACK_PREFERENCE_KEY.equals(key)) {
                 if (mTopContainer != null) {
                     mTopContainer.updateSettings();
