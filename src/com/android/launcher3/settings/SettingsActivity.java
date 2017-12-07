@@ -238,6 +238,7 @@ public class SettingsActivity extends FragmentActivity
             switch (preference.getKey()) {
                 case NOTIFICATION_DOTS_PREFERENCE_KEY:
                     if (!Utilities.ATLEAST_OREO ||
+                            getContext().getSystemService(ActivityManager.class).isLowRamDevice() ||
                             !getResources().getBoolean(R.bool.notification_dots_enabled)) {
                         return false;
                     }
