@@ -127,6 +127,8 @@ public class DeviceProfile {
     private final Rect mHotseatPadding = new Rect();
     private boolean mIsSeascape;
 
+    private final int mBottomMarginHw;
+
     // Icon badges
     public BadgeRenderer mBadgeRenderer;
 
@@ -213,6 +215,12 @@ public class DeviceProfile {
                         + hotseatBarSidePaddingEndPx
                 : res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_size)
                         + hotseatBarTopPaddingPx + hotseatBarBottomPaddingPx;
+
+        mBottomMarginHw = res.getDimensionPixelSize(R.dimen.qsb_hotseat_bottom_margin_hw);
+        if (!isVerticalBarLayout()) {
+            hotseatBarSizePx += mBottomMarginHw;
+            hotseatBarBottomPaddingPx += mBottomMarginHw;
+        }
 
         // Calculate all of the remaining variables.
         updateAvailableDimensions(dm, res);
@@ -409,6 +417,17 @@ public class DeviceProfile {
     }
 
     public void updateInsets(Rect insets) {
+        if (!isVerticalBarLayout()) {
+            if (mInsets.bottom == 0 && insets.bottom != 0) {
+                //Navbar is now shown, remove padding
+                hotseatBarSizePx -= mBottomMarginHw;
+                hotseatBarBottomPaddingPx -= mBottomMarginHw;
+            } else if (mInsets.bottom != 0 && insets.bottom == 0) {
+                //Navbar is now hidden, show padding
+                hotseatBarSizePx += mBottomMarginHw;
+                hotseatBarBottomPaddingPx += mBottomMarginHw;
+            }
+        }
         mInsets.set(insets);
         updateWorkspacePadding();
     }

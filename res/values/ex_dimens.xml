@@ -34,6 +34,7 @@
     <dimen name="qsb_text_spacing">20.0dip</dimen>
     <dimen name="qsb_two_bubble_gap">8.0dip</dimen>
     <dimen name="qsb_widget_height">56.0dip</dimen>
+    <dimen name="qsb_hotseat_bottom_margin_hw">12dp</dimen>
 
     <!-- Icon pack -->
     <dimen name="app_icon_size">65dp</dimen>
