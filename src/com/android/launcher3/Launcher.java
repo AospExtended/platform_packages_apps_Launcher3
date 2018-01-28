@@ -393,9 +393,9 @@ public class Launcher extends BaseActivity
         wallpaperColorInfo.setOnThemeChangeListener(this);
 
         mSettingsObserver = new SystemThemeObserver(this.getContentResolver());
-        mSettingsObserver.register("system_ui_theme");
+        mSettingsObserver.register("system_theme_style");
         mSystemTheme = mSettingsObserver.getSettingInt();
-        boolean forceDark = mSystemTheme == 2;
+        boolean forceDark = mSystemTheme == 2 || mSystemTheme == 3 || mSystemTheme == 4;
         boolean forceLight = mSystemTheme == 1;
         overrideTheme(wallpaperColorInfo.isDark(), wallpaperColorInfo.supportsDarkText(), forceDark, forceLight);
 
