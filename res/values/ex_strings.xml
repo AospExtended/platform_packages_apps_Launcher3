@@ -43,4 +43,11 @@
     <string name="trust_apps_help">Help</string>
     <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
     <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+
+    <!-- Edit workspace -->
+    <string name="settings_edit_allow_title">Allow edit</string>
+    <string name="settings_edit_allow_summary_on">Icons and widgets can be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
+    <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
+
 </resources>
