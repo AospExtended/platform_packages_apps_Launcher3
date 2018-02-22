@@ -29,6 +29,7 @@ import com.android.launcher3.Hotseat;
 import com.android.launcher3.InsettableFrameLayout;
 import com.android.launcher3.R;
 import com.android.launcher3.views.BaseDragLayer;
+import com.android.launcher3.Utilities;
 
 public class HotseatQsbContainer extends Hotseat {
 
@@ -163,5 +164,6 @@ public class HotseatQsbContainer extends Hotseat {
             return;
         }
         mAllAppsQsb = null;
+        setVisibility(Utilities.isBottomSearchBarVisible(getContext()) ? VISIBLE : GONE);
     }
 }

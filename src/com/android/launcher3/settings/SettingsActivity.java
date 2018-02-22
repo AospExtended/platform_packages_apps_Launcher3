@@ -49,6 +49,7 @@ import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCal
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartScreenCallback;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.TwoStatePreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.LauncherAppState;
@@ -321,6 +322,18 @@ public class SettingsActivity extends FragmentActivity
                         }
                     });
                     return true;
+
+                case Utilities.BOTTOM_SEARCH_BAR_KEY:
+                    final TwoStatePreference showBottomSearchBar = (TwoStatePreference)
+                            findPreference(Utilities.BOTTOM_SEARCH_BAR_KEY);
+                    showBottomSearchBar.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                            return true;
+                        }
+                    });
+                    return true;
+
             }
 
             return true;

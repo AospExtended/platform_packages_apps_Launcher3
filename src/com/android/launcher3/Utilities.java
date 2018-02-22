@@ -81,6 +81,7 @@ import com.android.launcher3.model.data.ItemInfoWithIcon;
 import com.android.launcher3.pm.ShortcutConfigActivityInfo;
 import com.android.launcher3.shortcuts.ShortcutKey;
 import com.android.launcher3.shortcuts.ShortcutRequest;
+import com.android.launcher3.uioverrides.WallpaperColorInfo;
 import com.android.launcher3.util.IntArray;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
@@ -136,6 +137,9 @@ public final class Utilities {
 
     public static final String ICON_SIZE = "pref_custom_icon_size";
     public static final String FONT_SIZE = "pref_custom_font_size";
+
+    public static final String BOTTOM_SEARCH_BAR_KEY = "pref_bottom_search_bar";
+    public static final String TOP_SEARCH_BAR_KEY = "pref_top_search_bar";
 
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
@@ -717,6 +721,10 @@ public final class Utilities {
     public static boolean isDoubleTapGestureEnabled(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_DT_GESTURE, true);
+    }
+
+    public static boolean isBottomSearchBarVisible(Context context) {
+        return getPrefs(context).getBoolean(BOTTOM_SEARCH_BAR_KEY, true);
     }
 
     public static void restart(final Context context) {

@@ -24,4 +24,14 @@
     <dimen name="qsb_mic_width">48dp</dimen>
     <dimen name="qsb_shadow_margin">6dp</dimen>
     <dimen name="qsb_widget_height">56dp</dimen>
+
+    <!-- Hide/Show search bars -->
+    <dimen name="dynamic_grid_hotseat_top_padding">4dp</dimen>
+    <dimen name="dynamic_grid_hotseat_top_padding_widget">8dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_padding">4dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_non_tall_padding">16dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_padding_widget">48dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_non_tall_padding_widget">16dp</dimen>
+    <dimen name="dynamic_grid_hotseat_extra_vertical_size">20dp</dimen>
+    <dimen name="dynamic_grid_hotseat_extra_vertical_size_widget">24dp</dimen>
 </resources>
