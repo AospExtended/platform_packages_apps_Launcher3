@@ -149,4 +149,6 @@
 
     <string name="desktop_show_label_title">Показывать подписи</string>
     <string name="desktop_show_label_summary">Показывать подписи под значками.</string>
+
+    <string name="icon_shape_rounded_square">Квадрат с закругленными углами</string>
 </resources>
