@@ -379,4 +379,7 @@
     <string name="top_search_bar_title">Top search bar</string>
     <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
 
+    <string name="desktop_show_label_title">Show Labels</string>
+    <string name="desktop_show_label_summary">Show item labels below their icons.</string>
+
 </resources>

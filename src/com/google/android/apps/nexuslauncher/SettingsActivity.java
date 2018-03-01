@@ -95,6 +95,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
 
             findPreference(Utilities.BOTTOM_SEARCH_BAR_KEY).setOnPreferenceChangeListener(this);
             findPreference(Utilities.TOP_SEARCH_BAR_KEY).setOnPreferenceChangeListener(this);
+            findPreference(Utilities.DESKTOP_SHOW_LABEL).setOnPreferenceChangeListener(this);
 
             mGoogleNowPanel.setTitle(getDisplayGoogleTitle());
             if (!isPackageInstalled(GOOGLE_NOW_PACKAGE, mContext)) {
@@ -225,6 +226,7 @@ public class SettingsActivity extends com.android.launcher3.SettingsActivity imp
                     getDevicePrefs(mContext).edit().putString(KEY_SHOW_WEATHER_CLOCK, value).commit();
                     mShowClockWeather.setValue(value);
                     break;
+                case Utilities.DESKTOP_SHOW_LABEL:
                 case Utilities.BOTTOM_SEARCH_BAR_KEY:
                     if (preference instanceof TwoStatePreference) {
                         ((TwoStatePreference) preference).setChecked((boolean) newValue);
