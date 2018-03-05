@@ -418,5 +418,8 @@
     <string name="icon_shape_rounded_square">Rounded square</string>
 
     <string name="action_edit">Edit</string>
+
+    <string name="pref_override_icon_shape_dark_bg_title">Use dark shape</string>
+    <string name="pref_override_icon_shape_dark_bg_summary">Use a dark background color for icons without their own shape color</string>
 </resources>
 

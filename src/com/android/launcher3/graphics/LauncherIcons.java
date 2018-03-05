@@ -112,7 +112,9 @@ public class LauncherIcons {
             if (Utilities.ATLEAST_OREO && iconAppTargetSdk >= Build.VERSION_CODES.O) {
                 boolean[] outShape = new boolean[1];
                 AdaptiveIconDrawable dr = (AdaptiveIconDrawable)
-                        context.getDrawable(R.drawable.adaptive_icon_drawable_wrapper).mutate();
+                        context.getDrawable(Utilities.shapeOverrideDarkBg(context)
+                        ? R.drawable.adaptive_icon_drawable_wrapper_dark
+                        : R.drawable.adaptive_icon_drawable_wrapper).mutate();
                 dr.setBounds(0, 0, 1, 1);
                 scale = normalizer.getScale(icon, null, dr.getIconMask(), outShape);
                 if ((forceWrap || isDefaultIconPack(context) || FeatureFlags.LEGACY_ICON_TREATMENT)
@@ -166,7 +168,9 @@ public class LauncherIcons {
             if (Utilities.ATLEAST_OREO && iconAppTargetSdk >= Build.VERSION_CODES.O) {
                 boolean[] outShape = new boolean[1];
                 AdaptiveIconDrawable dr = (AdaptiveIconDrawable)
-                        context.getDrawable(R.drawable.adaptive_icon_drawable_wrapper).mutate();
+                        context.getDrawable(Utilities.shapeOverrideDarkBg(context)
+                        ? R.drawable.adaptive_icon_drawable_wrapper_dark
+                        : R.drawable.adaptive_icon_drawable_wrapper).mutate();
                 dr.setBounds(0, 0, 1, 1);
                 scale = normalizer.getScale(icon, iconBounds, dr.getIconMask(), outShape);
                 if (Utilities.ATLEAST_OREO && FeatureFlags.LEGACY_ICON_TREATMENT &&
@@ -308,7 +312,9 @@ public class LauncherIcons {
         try {
             if (!(drawable instanceof AdaptiveIconDrawable)) {
                 AdaptiveIconDrawable iconWrapper = (AdaptiveIconDrawable)
-                        context.getDrawable(R.drawable.adaptive_icon_drawable_wrapper).mutate();
+                        context.getDrawable(Utilities.shapeOverrideDarkBg(context)
+                        ? R.drawable.adaptive_icon_drawable_wrapper_dark
+                        : R.drawable.adaptive_icon_drawable_wrapper).mutate();
                 FixedScaleDrawable fsd = ((FixedScaleDrawable) iconWrapper.getForeground());
                 fsd.setDrawable(drawable);
                 fsd.setScale(scale);

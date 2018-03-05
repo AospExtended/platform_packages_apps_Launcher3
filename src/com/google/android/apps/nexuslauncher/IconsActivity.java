@@ -27,6 +27,8 @@ import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
+import android.preference.SwitchPreference;
+import android.preference.TwoStatePreference;
 import android.provider.Settings;
 import android.view.MenuItem;
 
@@ -83,6 +85,7 @@ public class IconsActivity extends com.android.launcher3.SettingsActivity implem
         private PackageManager mPackageManager;
         private Preference mIconPack;
         private Preference mIconShapeOverride;
+        private SwitchPreference mIconShapeOverrideBackground;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -112,12 +115,16 @@ public class IconsActivity extends com.android.launcher3.SettingsActivity implem
                 mIconBadgingObserver.register(NOTIFICATION_BADGING, NOTIFICATION_ENABLED_LISTENERS);
             }
 
+            mIconShapeOverrideBackground = (SwitchPreference)findPreference(Utilities.OVERRIDE_ICON_SHAPE_DARK_BG);
+            mIconShapeOverrideBackground.setOnPreferenceChangeListener(this);
+
             mIconShapeOverride = findPreference(IconShapeOverride.KEY_PREFERENCE);
             if (mIconShapeOverride != null) {
                 if (IconShapeOverride.isSupported(getActivity())) {
                     IconShapeOverride.handlePreferenceUi((ListPreference) mIconShapeOverride);
                 } else {
                     getPreferenceScreen().removePreference(mIconShapeOverride);
+                    getPreferenceScreen().removePreference(mIconShapeOverrideBackground);
                 }
             }
 
@@ -192,8 +199,12 @@ public class IconsActivity extends com.android.launcher3.SettingsActivity implem
         @Override
         public boolean onPreferenceChange(Preference preference, final Object newValue) {
             switch (preference.getKey()) {
-                /*case ICON_PACK_PREF:
-                    return true;*/
+                case Utilities.OVERRIDE_ICON_SHAPE_DARK_BG:
+                    if (preference instanceof TwoStatePreference) {
+                        ((TwoStatePreference) preference).setChecked((boolean) newValue);
+                        IconShapeOverride.refreshIcons(mContext);
+                    }
+                    return true;
             }
             return false;
         }

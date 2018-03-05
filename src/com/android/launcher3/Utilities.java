@@ -154,6 +154,12 @@ public final class Utilities {
 
     public static final String KEY_ICON_PACK = "icon-packs";
 
+    public static final String OVERRIDE_ICON_SHAPE_DARK_BG = "pref_override_icon_shape_dark_bg";
+
+    public static boolean shapeOverrideDarkBg(Context context) {
+        return getPrefs(context).getBoolean(OVERRIDE_ICON_SHAPE_DARK_BG, false);
+    }
+
     public static boolean showSwipeUpIndicator(Context context) {
         return getPrefs(context).getBoolean(KEY_SHOW_SWIPEUP_ARROW,
                 true);

@@ -13,6 +13,12 @@
         </intent>
     </com.android.launcher3.views.ButtonPreference>
 
+    <Preference
+        android:persistent="true"
+        android:key="icon-packs"
+        android:title="@string/icons_pack_name"
+        android:icon="@drawable/icon_pack"/>
+
     <ListPreference
         android:key="pref_override_icon_shape"
         android:title="@string/icon_shape_override_label"
@@ -22,9 +28,11 @@
         android:defaultValue=""
         android:persistent="false" />
 
-    <Preference
-        android:persistent="true"
-        android:key="icon-packs"
-        android:title="@string/icons_pack_name"
-        android:icon="@drawable/icon_pack"/>
+    <SwitchPreference
+        android:key="pref_override_icon_shape_dark_bg"
+        android:title="@string/pref_override_icon_shape_dark_bg_title"
+        android:summary="@string/pref_override_icon_shape_dark_bg_summary"
+        android:defaultValue="false"
+        android:persistent="true" />
+
 </PreferenceScreen>

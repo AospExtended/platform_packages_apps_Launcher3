@@ -151,5 +151,8 @@
 
     <string name="other_category_title">Altro</string>
     <string name="other_category_summary">Opzioni aggiuntive</string>
+
+    <string name="pref_override_icon_shape_dark_bg_title">Usa sfondo scuro</string>
+    <string name="pref_override_icon_shape_dark_bg_summary">Usa un colore scuro come sfondo per la forma delle icone che non hanno un proprio colore definito</string>
 </resources>
 
