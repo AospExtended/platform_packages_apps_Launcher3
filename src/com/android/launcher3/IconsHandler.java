@@ -366,7 +366,7 @@ public class IconsHandler {
         }
 
         Bitmap wrapped = LauncherIcons.createBadgedIconBitmap(d, Process.myUserHandle(),
-                mContext, Build.VERSION.SDK_INT, true);
+                mContext, Build.VERSION.SDK_INT, false);
 
         Random random = new Random();
         int id = random.nextInt(mBackImages.size());
