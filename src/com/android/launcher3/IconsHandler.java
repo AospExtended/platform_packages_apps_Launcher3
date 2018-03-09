@@ -56,6 +56,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.android.launcher3.graphics.LauncherIcons;
+import com.android.launcher3.graphics.IconNormalizer;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -125,6 +126,7 @@ public class IconsHandler {
         } else {
             mDrawables.clear();
         }
+        mFactor = 1.0f;
 
         if (isDefaultIconPack()) {
             return;
@@ -377,6 +379,11 @@ public class IconsHandler {
         Bitmap result = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(result);
         canvas.drawBitmap(backImage, 0, 0, null);
+
+        IconNormalizer normalizer = IconNormalizer.getInstance(mContext);
+        if (!normalizer.isTransparentBitmap(backImage)) {
+            mFactor = 0.7f;
+        }
 
         Bitmap scaledBitmap = Bitmap.createScaledBitmap(wrapped,
                 (int) (w * mFactor), (int) (h * mFactor), false);

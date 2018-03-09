@@ -192,13 +192,17 @@ public class IconNormalizer {
     /**
      * Used to determine if certain the bitmap is transparent.
      */
-    private boolean isTransparentBitmap(Bitmap bitmap) {
+    public boolean isTransparentBitmap(Bitmap bitmap) {
         int w = mBounds.width();
         int h = mBounds.height();
-        bitmap.getPixels(mPixelsARGB, 0 /* the first index to write into the array */,
-                w /* stride */,
-                mBounds.left, mBounds.top,
-                w, h);
+        try {
+            bitmap.getPixels(mPixelsARGB, 0 /* the first index to write into the array */,
+                    w /* stride */,
+                    mBounds.left, mBounds.top,
+                    w, h);
+        } catch (Exception e) {
+            return false;
+        }
         int sum = 0;
         for (int i = 0; i < w * h; i++) {
             if(Color.alpha(mPixelsARGB[i]) > MIN_VISIBLE_ALPHA) {
