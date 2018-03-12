@@ -109,7 +109,7 @@
         <item name="android:alpha">0</item>
         <item name="android:elevation">3dp</item>
         <item name="android:saveEnabled">false</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/fastscroller_thumb_text_color</item>
         <item name="android:includeFontPadding">false</item>
     </style>
 
