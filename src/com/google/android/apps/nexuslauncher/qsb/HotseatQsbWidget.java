@@ -7,6 +7,7 @@ import android.animation.ObjectAnimator;
 import android.app.ActivityManager;
 import android.app.WallpaperInfo;
 import android.app.WallpaperManager;
+import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -143,8 +144,11 @@ public class HotseatQsbWidget extends AbstractQsbLayout implements WallpaperColo
 
     @Override
     protected void noGoogleAppSearch() {
-        getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com")));
-        playQsbAnimation();
+        try {
+            getContext().startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com")));
+            playQsbAnimation();
+        } catch (ActivityNotFoundException ignored) {
+        }
     }
 
     private void playAnimation(boolean hideWorkspace, boolean longDuration) {
