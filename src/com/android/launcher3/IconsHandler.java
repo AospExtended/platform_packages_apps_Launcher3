@@ -360,6 +360,10 @@ public class IconsHandler {
         return LauncherIcons.createBadgedIconBitmap(defaultIcon, info.user, context, Build.VERSION_CODES.O);
     }
 
+    public Bitmap getBadgedCustomIcon(Drawable d, Context ctx) {
+        return LauncherIcons.createBadgedIconBitmap(d, Process.myUserHandle(), ctx, Build.VERSION_CODES.O);
+    }
+
     private Bitmap generateBitmap(ComponentName componentName, Bitmap defaultBitmap) {
         Drawable d = new BitmapDrawable(mContext.getResources(), defaultBitmap);
         if (mBackImages.isEmpty()) {
