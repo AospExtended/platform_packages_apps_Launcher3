@@ -33,4 +33,6 @@
     <string name="loading">Loading, please wait</string>
     <string name="icon_chooser">Icon chooser</string>
     <string name="icon_search">Search for icons</string>
+
+    <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
 </resources>

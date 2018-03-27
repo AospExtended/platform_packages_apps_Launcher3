@@ -322,13 +322,11 @@ public class IconsHandler {
     }
 
     public void switchIconPacks(String packageName) {
+        new IconPackLoader(packageName).execute();
+    }
 
-        if (packageName.equals(mIconPackPackageName)) {
-            packageName = mDefaultIconPack;
-        }
-        if (packageName.equals(mDefaultIconPack) || mIconPacks.containsKey(packageName)) {
-            new IconPackLoader(packageName).execute();
-        }
+    public String getCurrentIconPackPackageName() {
+        return mIconPackPackageName;
     }
 
     public Bitmap getDrawableIconForPackage(ComponentName componentName) {

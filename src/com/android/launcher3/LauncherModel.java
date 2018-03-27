@@ -34,6 +34,7 @@ import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
+import android.widget.Toast;
 
 import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.compat.PackageInstallerCompat.PackageInstallInfo;
@@ -316,14 +317,23 @@ public class LauncherModel extends BroadcastReceiver
     public void onPackageChanged(String packageName, UserHandle user) {
         int op = PackageUpdatedTask.OP_UPDATE;
         enqueueModelUpdateTask(new PackageUpdatedTask(op, user, packageName));
-        //IconCache.getIconsHandler(mApp.getContext()).switchIconPacks(packageName);
+
+        IconsHandler handler = IconCache.getIconsHandler(mApp.getContext());
+        final String currentIconPack = handler.getCurrentIconPackPackageName();
+        if (packageName.equals(currentIconPack)) {
+            notifyUserIconPackChanged();
+        }
+    }
+
+    private void notifyUserIconPackChanged() {
+        Toast.makeText(mApp.getContext(), R.string.icon_pack_updated, Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onPackageRemoved(String packageName, UserHandle user) {
         onPackagesRemoved(user, packageName);
         Context context = mApp.getContext();
-        String defaultIconPack = context.getString(R.string.default_iconpack);
+        final String defaultIconPack = context.getString(R.string.default_iconpack);
 
         //switch to default icon pack if the applied one is removed
         if (PreferenceManager.getDefaultSharedPreferences(context).getString(Utilities.KEY_ICON_PACK, defaultIconPack).equals(packageName)) {
