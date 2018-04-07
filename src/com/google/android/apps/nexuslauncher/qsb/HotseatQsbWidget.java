@@ -77,8 +77,8 @@ public class HotseatQsbWidget extends AbstractQsbLayout implements WallpaperColo
 
     private void setColors() {
         View.inflate(new ContextThemeWrapper(getContext(), mIsDefaultLiveWallpaper ? R.style.HotseatQsbTheme_Colored : R.style.HotseatQsbTheme), R.layout.qsb_hotseat_content, this);
-        int color = Themes.getAttrBoolean(mActivity, R.attr.isMainColorDark) ? 0xCC444444 : 0x99FAFAFA;
-        bz(mIsDefaultLiveWallpaper ? 0xCCFFFFFF : color);
+        int color = getResources().getColor(Themes.getAttrBoolean(mActivity, R.attr.isMainColorDark) ? R.color.qsb_background_hotseat_dark : R.color.qsb_background_hotseat_default);
+        bz(mIsDefaultLiveWallpaper ? getResources().getColor(R.color.qsb_background_hotseat_white) : color);
     }
 
     private void openQSB() {
