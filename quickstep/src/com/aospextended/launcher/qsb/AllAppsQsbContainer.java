@@ -176,9 +176,8 @@ public class AllAppsQsbContainer extends FrameLayout implements Insettable, OnCl
 
     @Override
     public void onExtractedColorsChanged(WallpaperColorInfo wallpaperColorInfo) {
-        setColor(ColorUtils.compositeColors(ColorUtils.compositeColors(
-                Themes.getAttrBoolean(mLauncher, R.attr.isMainColorDark) 
-                ? -650362813 : -855638017, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)), wallpaperColorInfo.getMainColor()));
+        int color = getResources().getColor(Themes.getAttrBoolean(mLauncher, R.attr.isMainColorDark) ? R.color.qsb_background_drawer_dark : R.color.qsb_background_drawer_default);
+        setColor(ColorUtils.compositeColors(ColorUtils.compositeColors(color, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)), wallpaperColorInfo.getMainColor()));
     }
 
     @Override
