@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.graphics.ColorUtils;
 import android.view.Menu;
 import android.view.View;
@@ -51,6 +52,7 @@ public class NexusLauncher {
 
     class NexusLauncherCallbacks implements LauncherCallbacks, SharedPreferences.OnSharedPreferenceChangeListener, WallpaperColorInfo.OnChangeListener {
         private SmartspaceView mSmartspace;
+        private final FeedReconnector mFeedReconnector = new FeedReconnector();
 
         private static final String KEY_SHOW_WEATHER_CLOCK = "pref_show_clock_weather";
 
@@ -98,6 +100,7 @@ public class NexusLauncher {
 
         public void onAttachedToWindow() {
             mClient.onAttachedToWindow();
+            mFeedReconnector.start();
         }
 
         public void onCreate(final Bundle bundle) {
@@ -155,6 +158,7 @@ public class NexusLauncher {
         }
 
         public void onDetachedFromWindow() {
+            mFeedReconnector.stop();
             mClient.onDetachedFromWindow();
         }
 
@@ -301,6 +305,36 @@ public class NexusLauncher {
             mUiInformation.putBoolean("is_background_dark", Themes.getAttrBoolean(mLauncher, R.attr.isMainColorDark));
 
             mClient.redraw(mUiInformation);
+        }
+
+        class FeedReconnector implements Runnable {
+            private final static int MAX_RETRIES = 10;
+            private final static int RETRY_DELAY_MS = 500;
+
+            private final Handler mHandler = new Handler();
+            private int mFeedConnectionTries;
+
+            void start() {
+                stop();
+                mFeedConnectionTries = 0;
+                mHandler.post(this);
+            }
+
+            void stop() {
+                mHandler.removeCallbacks(this);
+            }
+
+            @Override
+            public void run() {
+                if (Utilities.getPrefs(mLauncher).getBoolean(HomeScreenActivity.ENABLE_MINUS_ONE_PREF, true) &&
+                        !mClient.mDestroyed &&
+                        mClient.mLayoutParams != null &&
+                        !mOverlay.mAttached &&
+                        mFeedConnectionTries++ < MAX_RETRIES) {
+                    mClient.exchangeConfig();
+                    mHandler.postDelayed(this, RETRY_DELAY_MS);
+                }
+            }
         }
     }
 
