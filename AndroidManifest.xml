@@ -108,6 +108,7 @@
             android:name="com.android.launcher3.SettingsActivity"
             android:label="@string/settings_button_text"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.google.android.apps.nexuslauncher.NexusLauncherActivity" >
             <intent-filter>
@@ -121,6 +122,7 @@
             android:name="com.google.android.apps.nexuslauncher.HomeScreenActivity"
             android:label="@string/home_category_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.google.android.apps.nexuslauncher.SettingsActivity" >
         </activity>
@@ -130,6 +132,7 @@
             android:name="com.google.android.apps.nexuslauncher.AppDrawerActivity"
             android:label="@string/app_drawer_category_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.google.android.apps.nexuslauncher.SettingsActivity" >
         </activity>
@@ -139,6 +142,7 @@
             android:name="com.google.android.apps.nexuslauncher.IconsActivity"
             android:label="@string/icon_category_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.google.android.apps.nexuslauncher.SettingsActivity" >
         </activity>
@@ -148,12 +152,14 @@
             android:name="com.google.android.apps.nexuslauncher.OtherActivity"
             android:label="@string/other_category_title"
             android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.google.android.apps.nexuslauncher.SettingsActivity" >
         </activity>
 
         <activity
             android:name="com.android.launcher3.hideapps.MultiSelectRecyclerViewActivity"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:label="@string/hidden_app"
             android:theme="@android:style/Theme.DeviceDefault.Settings" >
@@ -165,6 +171,7 @@
 
         <activity
             android:name="com.android.launcher3.ChooseIconActivity"
+            android:excludeFromRecents="true"
             android:autoRemoveFromRecents="true"
             android:label="@string/icon_chooser"
             android:theme="@android:style/Theme.DeviceDefault.Settings" />
