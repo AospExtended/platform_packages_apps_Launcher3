@@ -49,7 +49,6 @@
     <Preference
         android:key="other"
         android:title="@string/other_category_title"
-        android:summary="@string/other_category_summary"
         android:layout="@layout/other_layout">
         <intent
             android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
