@@ -412,7 +412,7 @@
     <string name="grid_category_title">Columns and rows</string>
     <string name="number_of_columns_title">Grid columns</string>
     <string name="number_of_rows_title">Grid rows</string>
-    <string name="number_of_hotseat_title">Hotseat icons</string>
+    <string name="number_of_hotseat_title">Dock icons</string>
 
     <string name="icon_shape_rounded_square">Rounded square</string>
 
