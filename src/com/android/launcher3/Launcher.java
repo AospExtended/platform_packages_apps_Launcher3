@@ -4001,6 +4001,7 @@ public class Launcher extends BaseActivity
         listPopupWindow.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                listPopupWindow.dismiss();
                 Intent intent = new Intent(Launcher.this, ChooseIconActivity.class);
                 ChooseIconActivity.setItemInfo(info);
                 intent.putExtra("app_package", component.getPackageName());
