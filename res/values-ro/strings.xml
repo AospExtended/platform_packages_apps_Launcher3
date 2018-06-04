@@ -146,4 +146,66 @@
     <string name="title_disable_suggestions_prompt">Dezactivați sugestiile de aplicații?</string>
     <string name="msg_disable_suggestions_prompt">Sugestiile nu vor apărea la începutul listei de aplicații, iar datele despre utilizare folosite pentru a le crea vor fi șterse definitiv.</string>
     <string name="label_turn_off_suggestions">DEZACTIVAȚI</string>
+ 
+ <!-- Preference categories -->
+    <string name="home_category_title">Ecran de pornire</string>
+    <string name="app_drawer_category_title">Listă aplicaţii</string>
+    <string name="icon_category_title">Pictograme aplicaţii</string>
+    <string name="widget_category_title">Widgeturi</string>
+    <string name="other_category_title">Altele</string>
+
+    <!-- About -->
+    <string name="about_credits">Dezvoltator</string>
+    <string name="about_credits_ok">OK</string>
+    <string name="about_amirzaidi_title">Amir Zaidi</string>
+    <string name="about_amirzaidi_summary">Inginerie inversă a caracteristicilor pixel launcher în Launcher 3</string>
+    <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Ascundere aplicaţii</string>
+    <string name="hide_app_sum">Ascundeţi aplicații în lista aplicațiilor</string>
+    <string name="hide_app_selected">&#160;selectate</string>
+    <string name="hidden_app">Toate aplicaţiile</string>
+    <string name="hide_selected">Ascundeţi aplicaţiile selectate</string>
+    <string name="more">Mai multe</string>
+    <string name="reset_hidden_apps">Resetaţi tot</string>
+    <string name="reset_hidden_apps_done">Aplicațiile ascunse sunt acum disponibile</string>
+
+    <!-- Swipe up indicator -->
+    <string name="show_swipeup_arrow">Indicator glisare în sus</string>
+    <string name="show_swipeup_arrow_summary">Se afișează o săgeată în sus deasupra dock-ului</string>
+
+    <string name="pref_show_clock_weather">Vremea și data pe ecranul principal</string>
+    <string name="pref_show_clock_weather_both">Se afișează atât data cât și vremea</string>
+    <string name="pref_show_clock_weather_nothing">Nu se afișează</string>
+    <string name="pref_show_clock_weather_clock_only">Se afișează doar data</string>
+    <string name="pref_show_clock_weather_weather_only">Se afișează doar vremea</string>
+
+    <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Bara de căutare jos</string>
+    <string name="bottom_search_bar_summary">Se afișează bara de căutare jos sub dock</string>
+    <string name="top_search_bar_title">Bara de căutare sus</string>
+    <string name="top_search_bar_summary">Se afișează bara de căutare sus</string>
+
+    <string name="desktop_show_label_title">Afişare etichete</string>
+    <string name="desktop_show_label_summary">Se afișează etichetele pictogramelor.</string>
+
+    <string name="num_default">Implicit</string>
+    <string name="num_three">Trei</string>
+    <string name="num_four">Patru</string>
+    <string name="num_five">Cinci</string>
+    <string name="num_six">Şase</string>
+    <string name="num_seven">Şapte</string>
+
+    <string name="grid_category_title">Coloane şi rânduri</string>
+    <string name="number_of_columns_title">Coloane în grilă</string>
+    <string name="number_of_rows_title">Rânduri în grilă</string>
+    <string name="number_of_hotseat_title">Număr de pictograme în dock</string>
+
+    <string name="icon_shape_rounded_square">Pătrat rotunjit</string>
+
+    <string name="action_edit">Editare</string>
+
+    <string name="pref_override_icon_shape_dark_bg_title">Utilizare formă întunecată</string>
+    <string name="pref_override_icon_shape_dark_bg_summary">Utilizați o culoare de fundal întunecată pentru pictogramele fără formă</string>
 </resources>
