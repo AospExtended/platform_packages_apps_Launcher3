@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Preference categories -->
+    <string name="home_category_title">Home screen</string>
+    <string name="app_drawer_category_title">App drawer</string>
+    <string name="icon_category_title">App icons</string>
+    <string name="widget_category_title">Widgets</string>
+    <string name="other_category_title">Miscellaneous</string>
+
+    <!-- About -->
+    <string name="about_credits">Credits</string>
+    <string name="about_credits_ok">OK</string>
+    <string name="about_amirzaidi_title">Amir Zaidi</string>
+    <string name="about_amirzaidi_summary">Reverse engineered pixel launcher features onto Launcher 3</string>
+    <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
+
+    <!-- Hidden app -->
+    <string name="hide_app">Hide apps</string>
+    <string name="hide_app_sum">Hide apps from the app drawer</string>
+    <string name="hide_app_selected">&#160;selected</string>
+    <string name="hidden_app">All apps</string>
+    <string name="hide_selected">Hide selected app(s)</string>
+    <string name="more">More</string>
+    <string name="reset_hidden_apps">Reset all</string>
+    <string name="reset_hidden_apps_done">Hidden apps are now available</string>
+
+    <!-- Icon pack -->
+    <string name="default_iconpack" translatable="false">Stock</string>
+    <string name="default_iconpack_title">Default</string>
+    <string name="icons_pack_name">Icon pack</string>
+    <string name="edit_drop_target_label">Edit</string>
+    <string name="edit_app">Edit</string>
+    <string name="reset_icon">Reset</string>
+    <string name="customize">Customize</string>
+    <string name="visual">Visual</string>
+    <string name="all_icons">All icons</string>
+    <string name="similar_icons">Similar icons</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Label</string>
+    <string name="loading">Loading, please wait</string>
+    <string name="icon_chooser">Icon chooser</string>
+    <string name="icon_search">Search for icons</string>
+
+    <string name="icon_pack_updated">Your launcher icon pack has been updated, new icons for your apps might be available.</string>
+
+    <!-- Swipe up indicator -->
+    <string name="show_swipeup_arrow">Swipe up indicator</string>
+    <string name="show_swipeup_arrow_summary">Show the swipe up arrow indicator on top of the dock</string>
+
+    <string name="pref_show_clock_weather">Home screen date and weather</string>
+    <string name="pref_show_clock_weather_both">Show both date and weather</string>
+    <string name="pref_show_clock_weather_nothing">Don\'t show</string>
+    <string name="pref_show_clock_weather_clock_only">Show date only</string>
+    <string name="pref_show_clock_weather_weather_only">Show weather only</string>
+
+    <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Bottom search bar</string>
+    <string name="bottom_search_bar_summary">Show the bottom search bar at the bottom of the dock</string>
+    <string name="top_search_bar_title">Top search bar</string>
+    <string name="top_search_bar_summary">Show the bottom search at the top of the app drawer</string>
+
+    <string name="desktop_show_label_title">Show Labels</string>
+    <string name="desktop_show_label_summary">Show item labels below their icons.</string>
+
+    <string name="num_default">Default</string>
+    <string name="num_three">Three</string>
+    <string name="num_four">Four</string>
+    <string name="num_five">Five</string>
+    <string name="num_six">Six</string>
+    <string name="num_seven">Seven</string>
+
+    <string name="grid_category_title">Columns and rows</string>
+    <string name="number_of_columns_title">Grid columns</string>
+    <string name="number_of_rows_title">Grid rows</string>
+    <string name="number_of_hotseat_title">Dock icons</string>
+
+    <string name="icon_shape_rounded_square">Rounded square</string>
+
+    <string name="action_edit">Edit</string>
+
+    <string name="pref_override_icon_shape_dark_bg_title">Use dark shape</string>
+    <string name="pref_override_icon_shape_dark_bg_summary">Use a dark background color for icons without their own shape color</string>
+
+    <string name="smartspace_hours_mins">%1$s %2$s</string>
+
+</resources>
