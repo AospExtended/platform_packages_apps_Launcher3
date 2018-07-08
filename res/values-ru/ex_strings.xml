@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Домашний экран</string>
+  <string name="app_drawer_category_title">Меню приложений</string>
+  <string name="icon_category_title">Иконки приложений</string>
+  <string name="widget_category_title">Виджеты</string>
+  <string name="other_category_title">Другие настройки</string>
   <!-- About -->
+  <string name="about_credits">Благодарности</string>
+  <string name="about_credits_ok">Ок</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Разобрал Pixel Launcher и перенёс функции в Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Скрыть приложения</string>
+  <string name="hide_app_sum">Скрыть приложения из меню</string>
+  <string name="hide_app_selected">&#160;выбрано</string>
+  <string name="hidden_app">Все приложения</string>
+  <string name="hide_selected">Скрыть выбранные приложения</string>
+  <string name="more">Больше</string>
+  <string name="reset_hidden_apps">Сбросить всё</string>
+  <string name="reset_hidden_apps_done">Скрытые приложения теперь доступны</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">По умолчанию</string>
+  <string name="icons_pack_name">Набор иконок</string>
+  <string name="edit_drop_target_label">Изменить</string>
+  <string name="edit_app">Изменить</string>
+  <string name="reset_icon">Сбросить</string>
+  <string name="customize">Настроить</string>
+  <string name="visual">Внешний вид</string>
+  <string name="all_icons">Все иконки</string>
+  <string name="similar_icons">Похожие иконки</string>
+  <string name="ok">Ок</string>
+  <string name="icon_label">Подпись</string>
+  <string name="loading">Загрузка, пожалуйста подождите</string>
+  <string name="icon_chooser">Выбор иконки</string>
+  <string name="icon_search">Найти иконки</string>
+  <string name="icon_pack_updated">Пакет иконок для вашего лаунчера был обновлён, могут быть доступны новые иконки.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Индикатор открытия меню приложений</string>
+  <string name="show_swipeup_arrow_summary">Показывать стрелку над док-баром</string>
+  <string name="pref_show_clock_weather">Дата и погода на рабочем столе</string>
+  <string name="pref_show_clock_weather_both">Показывать и дату, и погоду</string>
+  <string name="pref_show_clock_weather_nothing">Не показывать</string>
+  <string name="pref_show_clock_weather_clock_only">Показывать только дату</string>
+  <string name="pref_show_clock_weather_weather_only">Показывать только погоду</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Строка поиска внизу</string>
+  <string name="bottom_search_bar_summary">Показывать строку поиска под док-баром</string>
+  <string name="top_search_bar_title">Строка поиска сверху</string>
+  <string name="top_search_bar_summary">Показывать нижнюю строку поиска над док-баром</string>
+  <string name="desktop_show_label_title">Показывать подписи</string>
+  <string name="desktop_show_label_summary">Показывать подписи ниже иконок.</string>
+  <string name="num_default">По умолчанию</string>
+  <string name="num_three">Три</string>
+  <string name="num_four">Четыре</string>
+  <string name="num_five">Пять</string>
+  <string name="num_six">Шесть</string>
+  <string name="num_seven">Семь</string>
+  <string name="grid_category_title">Столбцы и строки</string>
+  <string name="number_of_columns_title">Количество столбцов</string>
+  <string name="number_of_rows_title">Количество рядов</string>
+  <string name="number_of_hotseat_title">Иконки док-бара</string>
+  <string name="icon_shape_rounded_square">Скругленный квадрат</string>
+  <string name="action_edit">Изменить</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Темный фон иконок</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Использовать темный цвет фона для иконок без собственного цвета</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

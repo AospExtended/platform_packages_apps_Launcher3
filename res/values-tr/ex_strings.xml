@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Ana ekran</string>
+  <string name="app_drawer_category_title">Uygulama çekmecesi</string>
+  <string name="icon_category_title">Uygulama simgesi</string>
+  <string name="widget_category_title">Widgetler</string>
+  <string name="other_category_title">Çeşitli</string>
   <!-- About -->
+  <string name="about_credits">Ekip</string>
+  <string name="about_credits_ok">Tamam</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Launcher 3 üzerine ters mühendislik pixel başlatıcısı özellikleri</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Uygulamalar gizle</string>
+  <string name="hide_app_sum">Uygulamaları uygulama çekmecesinde gizle</string>
+  <string name="hide_app_selected">&#160;seçildi</string>
+  <string name="hidden_app">Tüm uygulamalar</string>
+  <string name="hide_selected">Seçilen uygulamaları gizle(s)</string>
+  <string name="more">Daha</string>
+  <string name="reset_hidden_apps">Tümünü sıfırla</string>
+  <string name="reset_hidden_apps_done">Gizli uygulamalar artık mevcut</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Varsayılan</string>
+  <string name="icons_pack_name">Simge paketi</string>
+  <string name="edit_drop_target_label">Düzenle</string>
+  <string name="edit_app">Düzenle</string>
+  <string name="reset_icon">Sıfırla</string>
+  <string name="customize">Özelleştir</string>
+  <string name="visual">Görsel</string>
+  <string name="all_icons">Tüm simgeler</string>
+  <string name="similar_icons">Benzer simgeler</string>
+  <string name="ok">Tamam</string>
+  <string name="icon_label">Etiket</string>
+  <string name="loading">Yükleniyor, lütfen bekleyin</string>
+  <string name="icon_chooser">Simge seçici</string>
+  <string name="icon_search">Simgeler ara</string>
+  <string name="icon_pack_updated">Başlatıcı simge paketiniz güncellendi, uygulamalarınız için yeni simgeler mevcut olabilir.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Yukarı kaydırma göstergesi</string>
+  <string name="show_swipeup_arrow_summary">Alt panelin üst kısmında hızlı yukarı kaydırma göstergesini göster</string>
+  <string name="pref_show_clock_weather">Ana ekran tarihi ve hava durumu</string>
+  <string name="pref_show_clock_weather_both">Tarihi ve hava durumunu göster</string>
+  <string name="pref_show_clock_weather_nothing">Gösterme</string>
+  <string name="pref_show_clock_weather_clock_only">Sadece tarihi göster</string>
+  <string name="pref_show_clock_weather_weather_only">Sadece hava durumunu göster</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Alt arama çubuğu</string>
+  <string name="bottom_search_bar_summary">Alt panelin altında arama çubuğunu göster</string>
+  <string name="top_search_bar_title">Üst arama çubuğu</string>
+  <string name="top_search_bar_summary">Uygulama çekmecesinin üstünde arama çubuğunu göster</string>
+  <string name="desktop_show_label_title">Etiketleri göster</string>
+  <string name="desktop_show_label_summary">Öğe etiketlerini simgelerinin altında göster.</string>
+  <string name="num_default">Varsayılan</string>
+  <string name="num_three">Üç</string>
+  <string name="num_four">Dört</string>
+  <string name="num_five">Beş</string>
+  <string name="num_six">Altı</string>
+  <string name="num_seven">Yedi</string>
+  <string name="grid_category_title">Sütunlar ve satırlar</string>
+  <string name="number_of_columns_title">Klavuz sütunları</string>
+  <string name="number_of_rows_title">Klavuz satırları</string>
+  <string name="number_of_hotseat_title">Alt panel simgeleri</string>
+  <string name="icon_shape_rounded_square">Yuvarlak kare</string>
+  <string name="action_edit">Düzenle</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Koyu şekli kullan</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Kendi şekil rengi olmayan simgeler için koyu arkaplan rengini kullan</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

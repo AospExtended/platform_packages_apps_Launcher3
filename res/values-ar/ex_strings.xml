@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">الشاشة الرئيسية</string>
+  <string name="app_drawer_category_title">درج التطبيق</string>
+  <string name="icon_category_title">رموز التطبيق</string>
+  <string name="widget_category_title">تطبيقات مصغّرة</string>
+  <string name="other_category_title">متفرقات</string>
   <!-- About -->
+  <string name="about_credits">المساهمون في العمل</string>
+  <string name="about_credits_ok">حسناً</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">خصائص مشغل بكسل في Launcher3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">إخفاء تطبيقات</string>
+  <string name="hide_app_sum">إخفاء تطبيقات من درج التطبيقات</string>
+  <string name="hide_app_selected">تم إختياره;160#&amp;</string>
+  <string name="hidden_app">كل التطبيقات</string>
+  <string name="hide_selected">إخفاء التطبيقات المختارة</string>
+  <string name="more">المزيد</string>
+  <string name="reset_hidden_apps">إعادة تعيين الكل</string>
+  <string name="reset_hidden_apps_done">التطبيقات المخفية متاحة الآن</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">الافتراضي</string>
+  <string name="icons_pack_name">حزم الإيقونات</string>
+  <string name="edit_drop_target_label">تحرير</string>
+  <string name="edit_app">تعديل</string>
+  <string name="reset_icon">إعادة تعيين</string>
+  <string name="customize">تخصيص</string>
+  <string name="visual">بصري</string>
+  <string name="all_icons">جميع الأيقونات</string>
+  <string name="similar_icons">أيقونات متشابهة</string>
+  <string name="ok">حسناً</string>
+  <string name="icon_label">التسمية</string>
+  <string name="loading">يتم التحميل ، يرجى الانتظار</string>
+  <string name="icon_chooser">محدد الأيقونة</string>
+  <string name="icon_search">البحث عن الأيقونات</string>
+  <string name="icon_pack_updated">تم تحديث حزمة أيقونات المشغل الخاص بك، أيقونات جديدة للتطبيقات الخاصة بك قد تكون متاحة.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">مؤشر السحب للاعلى</string>
+  <string name="show_swipeup_arrow_summary">اظهار سهم مؤشر السحب للاعلى فوق الشريط السفلي</string>
+  <string name="pref_show_clock_weather">تاريخ و طقس الشاشة الرئيسية</string>
+  <string name="pref_show_clock_weather_both">إظهار كل من التاريخ والطقس</string>
+  <string name="pref_show_clock_weather_nothing">لا تظهر</string>
+  <string name="pref_show_clock_weather_clock_only">إظهار التاريخ فقط</string>
+  <string name="pref_show_clock_weather_weather_only">إظهار الطقس فقط</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">شريط البحث السفلي</string>
+  <string name="bottom_search_bar_summary">إظهار شريط البحث السفلي تحت الشريط السفلي</string>
+  <string name="top_search_bar_title">شريط البحث العلوي</string>
+  <string name="top_search_bar_summary">عرض البحث السفلي في الجزء العلوي من درج التطبيق</string>
+  <string name="desktop_show_label_title">عرض التسميات</string>
+  <string name="desktop_show_label_summary">إظهار تسميات العناصر تحت رموزها.</string>
+  <string name="num_default">افتراضي</string>
+  <string name="num_three">ثلاثة</string>
+  <string name="num_four">أربعة</string>
+  <string name="num_five">خمسة</string>
+  <string name="num_six">ستة</string>
+  <string name="num_seven">سبعة</string>
+  <string name="grid_category_title">الأعمدة والصفوف</string>
+  <string name="number_of_columns_title">أعمدة الشبكة</string>
+  <string name="number_of_rows_title">صفوف الشبكة</string>
+  <string name="number_of_hotseat_title">أيقونات الشريط السفلي</string>
+  <string name="icon_shape_rounded_square">مربع مدور</string>
+  <string name="action_edit">تعديل</string>
+  <string name="pref_override_icon_shape_dark_bg_title">إستخدام الشكل الداكن</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">استخدم لون خلفية داكن للرموز بدون لون شكلها الخاص</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

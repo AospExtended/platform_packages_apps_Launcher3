@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Ecranul de pornire</string>
+  <string name="app_drawer_category_title">Listă aplicații</string>
+  <string name="icon_category_title">Pictograme aplicații</string>
+  <string name="widget_category_title">Widgeturi</string>
+  <string name="other_category_title">Diverse</string>
   <!-- About -->
+  <string name="about_credits">Contribuţii</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Inginerie inversă a caracteristicilor pixel launcher în Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Ascundere aplicaţii</string>
+  <string name="hide_app_sum">Ascundeţi aplicații în lista aplicaţiilor</string>
+  <string name="hide_app_selected">&#160;selectate</string>
+  <string name="hidden_app">Toate aplicațiile</string>
+  <string name="hide_selected">Ascundeţi aplicaţiile selectate</string>
+  <string name="more">Mai multe</string>
+  <string name="reset_hidden_apps">Resetare toate</string>
+  <string name="reset_hidden_apps_done">Aplicațiile ascunse sunt disponibile</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Implicit</string>
+  <string name="icons_pack_name">Pachet de pictograme</string>
+  <string name="edit_drop_target_label">Editare</string>
+  <string name="edit_app">Editare</string>
+  <string name="reset_icon">Resetare</string>
+  <string name="customize">Personalizare</string>
+  <string name="visual">Vizual</string>
+  <string name="all_icons">Toate pictogramele</string>
+  <string name="similar_icons">Pictograme similare</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Etichetă</string>
+  <string name="loading">Se încarcă, aşteptaţi</string>
+  <string name="icon_chooser">Selector pictograme</string>
+  <string name="icon_search">Căutare pictograme</string>
+  <string name="icon_pack_updated">Pachetul de pictograme a fost actualizat, noi pictograme pot fi disponibile pentru aplicații.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Indicator glisare în sus</string>
+  <string name="show_swipeup_arrow_summary">Afișare cursor deasupra dockului</string>
+  <string name="pref_show_clock_weather">Vremea și data pe ecranul principal</string>
+  <string name="pref_show_clock_weather_both">Afișați atât data cât și vremea</string>
+  <string name="pref_show_clock_weather_nothing">Nu se afișează</string>
+  <string name="pref_show_clock_weather_clock_only">Afișați doar data</string>
+  <string name="pref_show_clock_weather_weather_only">Afișați doar vremea</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Bara de căutare jos</string>
+  <string name="bottom_search_bar_summary">Afișați bara de căutare jos sub dock</string>
+  <string name="top_search_bar_title">Bara de căutare sus</string>
+  <string name="top_search_bar_summary">Afișați bara de căutare sus</string>
+  <string name="desktop_show_label_title">Afişare etichete</string>
+  <string name="desktop_show_label_summary">Se afișează etichetele pictogramelor.</string>
+  <string name="num_default">Implicit</string>
+  <string name="num_three">Trei</string>
+  <string name="num_four">Patru</string>
+  <string name="num_five">Cinci</string>
+  <string name="num_six">Șase</string>
+  <string name="num_seven">Șapte</string>
+  <string name="grid_category_title">Coloane şi rânduri</string>
+  <string name="number_of_columns_title">Coloane în grilă</string>
+  <string name="number_of_rows_title">Rânduri în grilă</string>
+  <string name="number_of_hotseat_title">Pictograme dock</string>
+  <string name="icon_shape_rounded_square">Pătrat rotunjit</string>
+  <string name="action_edit">Editare</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Utilizare formă întunecată</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Utilizați o culoare de fundal întunecată pentru pictogramele fără formă</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

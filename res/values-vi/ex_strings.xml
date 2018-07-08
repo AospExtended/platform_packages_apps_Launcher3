@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Màn hình chính</string>
+  <string name="app_drawer_category_title">Tất cả ứng dụng</string>
+  <string name="icon_category_title">Biểu tượng ứng dụng</string>
+  <string name="widget_category_title">Tiện ích</string>
+  <string name="other_category_title">Linh tinh</string>
   <!-- About -->
+  <string name="about_credits">Những người đóng góp</string>
+  <string name="about_credits_ok">Đồng ý</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Trình mở ứng dụng pixel với thiết kế đảo ngược dựa trên Trình mở ứng dụng 3</string>
+  <string name="about_amirzaidi_url">https://github.com/akhilnarang</string>
   <!-- Hidden app -->
+  <string name="hide_app">Ẩn ứng dụng</string>
+  <string name="hide_app_sum">Ẩn ứng dụng</string>
+  <string name="hide_app_selected">&#160;đã chọn</string>
+  <string name="hidden_app">Tất cả ứng dụng</string>
+  <string name="hide_selected">Ẩn (các) ứng dụng đã chọn</string>
+  <string name="more">Thêm</string>
+  <string name="reset_hidden_apps">Đặt lại tất cả</string>
+  <string name="reset_hidden_apps_done">Các ứng dụng ẩn đã có trở lại</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Mặc định</string>
+  <string name="icons_pack_name">Gói biểu tượng</string>
+  <string name="edit_drop_target_label">Chỉnh sửa</string>
+  <string name="edit_app">Chỉnh sửa</string>
+  <string name="reset_icon">Thiết lập lại</string>
+  <string name="customize">Tùy chỉnh</string>
+  <string name="visual">Trực quan</string>
+  <string name="all_icons">Tất cả biểu tượng</string>
+  <string name="similar_icons">Các biểu tượng tương tự</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Nhãn</string>
+  <string name="loading">Đang tải, xin vui lòng chờ</string>
+  <string name="icon_chooser">Bộ chọn biểu tượng</string>
+  <string name="icon_search">Tìm kiếm biểu tượng</string>
+  <string name="icon_pack_updated">Gói biểu tượng của bạn đã được cập nhật, các biểu tượng mới cho các ứng dụng của bạn đã có sẵn.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Dấu trượt lên</string>
+  <string name="show_swipeup_arrow_summary">Hiện thị dấu mũi tên trượt lên ở phần đầu của thanh công cụ</string>
+  <string name="pref_show_clock_weather">Ngày và thời tiết trên màn hình chính</string>
+  <string name="pref_show_clock_weather_both">Hiển thị cả ngày và thời tiết</string>
+  <string name="pref_show_clock_weather_nothing">Không hiển thị</string>
+  <string name="pref_show_clock_weather_clock_only">Hiển thị chỉ ngày</string>
+  <string name="pref_show_clock_weather_weather_only">Hiển thị chỉ thời tiết</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Thanh tìm kiếm dưới cùng</string>
+  <string name="bottom_search_bar_summary">Hiện thị thanh tìm kiếm ở dưới cùng của thanh công cụ</string>
+  <string name="top_search_bar_title">Thanh tìm kiếm trên cùng</string>
+  <string name="top_search_bar_summary">Hiện thị thanh tìm kiếm trên cùng của ngăn chứa ứng dụng</string>
+  <string name="desktop_show_label_title">Hiển thị tên</string>
+  <string name="desktop_show_label_summary">Hiển thị tên dưới mỗi biểu tượng.</string>
+  <string name="num_default">Mặc định</string>
+  <string name="num_three">Ba</string>
+  <string name="num_four">Bốn</string>
+  <string name="num_five">Năm</string>
+  <string name="num_six">Sáu</string>
+  <string name="num_seven">Bảy</string>
+  <string name="grid_category_title">Cột và các hàng</string>
+  <string name="number_of_columns_title">Lưới cột</string>
+  <string name="number_of_rows_title">Lưới hàng</string>
+  <string name="number_of_hotseat_title">Biểu tượng hay dùng</string>
+  <string name="icon_shape_rounded_square">Hình vuông bo góc</string>
+  <string name="action_edit">Chỉnh sửa</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Dùng kiểu màu tối</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Sử dụng màu nền tối cho các biểu tượng thay vì màu nền của biểu tượng đó</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

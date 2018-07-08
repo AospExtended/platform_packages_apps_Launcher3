@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Schermata principale</string>
+  <string name="app_drawer_category_title">Menù delle applicazioni</string>
+  <string name="icon_category_title">Icone app</string>
+  <string name="widget_category_title">Widgets</string>
+  <string name="other_category_title">Varie</string>
   <!-- About -->
+  <string name="about_credits">Ringraziamenti</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Funzionalità del Pixel Launcher adattate a Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Nascondi Applicazioni</string>
+  <string name="hide_app_sum">Nascondi le app dal menù delle applicazioni</string>
+  <string name="hide_app_selected">&#160;selezionato</string>
+  <string name="hidden_app">Tutte le applicazioni</string>
+  <string name="hide_selected">Nascondi le app selezionate</string>
+  <string name="more">Altro</string>
+  <string name="reset_hidden_apps">Ripristina tutto</string>
+  <string name="reset_hidden_apps_done">Le applicazioni nascoste sono disponibili</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Predefinito</string>
+  <string name="icons_pack_name">Pacchetto icone</string>
+  <string name="edit_drop_target_label">Modifica</string>
+  <string name="edit_app">Modifica</string>
+  <string name="reset_icon">Ripristina</string>
+  <string name="customize">Personalizza</string>
+  <string name="visual">Visualizza</string>
+  <string name="all_icons">Tutte le icone</string>
+  <string name="similar_icons">Icone simili</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Etichetta</string>
+  <string name="loading">Caricamento, attendere prego</string>
+  <string name="icon_chooser">Seleziona icona</string>
+  <string name="icon_search">Cerca icone</string>
+  <string name="icon_pack_updated">Il tuo pacchetto icone è stato aggiornato, potrebbero essere disponibili nuove icone per le tue app.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Indicatore di scorrimento</string>
+  <string name="show_swipeup_arrow_summary">Mostra una freccia sopra la dock per indicare lo scorrimento in alto per aprire il menù delle app</string>
+  <string name="pref_show_clock_weather">Data e meteo schermata principale</string>
+  <string name="pref_show_clock_weather_both">Mostra entrambi</string>
+  <string name="pref_show_clock_weather_nothing">Non mostrare</string>
+  <string name="pref_show_clock_weather_clock_only">Mostra solo la data</string>
+  <string name="pref_show_clock_weather_weather_only">Mostra solo il meteo</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Barra di ricerca in basso</string>
+  <string name="bottom_search_bar_summary">Mostra la barra di ricerca in basso sotto al dock</string>
+  <string name="top_search_bar_title">Barra di ricerca sopra</string>
+  <string name="top_search_bar_summary">Mostra la barra di ricerca in basso nella parte superiore del menù delle app</string>
+  <string name="desktop_show_label_title">Msotra etichette</string>
+  <string name="desktop_show_label_summary">Mostra le etichette degli elementi sotto le loro icone.</string>
+  <string name="num_default">Predefinito</string>
+  <string name="num_three">Tre</string>
+  <string name="num_four">Quattro</string>
+  <string name="num_five">Cinque</string>
+  <string name="num_six">Sei</string>
+  <string name="num_seven">Sette</string>
+  <string name="grid_category_title">Colonne e righe</string>
+  <string name="number_of_columns_title">Colonne griglia</string>
+  <string name="number_of_rows_title">Righe griglia</string>
+  <string name="number_of_hotseat_title">Icone nel dock</string>
+  <string name="icon_shape_rounded_square">Quadrato arrotondato</string>
+  <string name="action_edit">Modifica</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Usa la forma scura</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Usa un colore di sfondo scuro per le icone senza il colore di forma</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

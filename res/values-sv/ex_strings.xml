@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Startskärm</string>
+  <string name="app_drawer_category_title">App låda</string>
+  <string name="icon_category_title">App ikon</string>
+  <string name="widget_category_title">Widgetar</string>
+  <string name="other_category_title">Övrigt</string>
   <!-- About -->
+  <string name="about_credits">Tack till</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Omvänd konstruerad pixel launcher funktioner till Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Dölj appar</string>
+  <string name="hide_app_sum">Dölj app från app lådan</string>
+  <string name="hide_app_selected">&#160;vald</string>
+  <string name="hidden_app">Alla appar</string>
+  <string name="hide_selected">Dölj valda appar</string>
+  <string name="more">Mer</string>
+  <string name="reset_hidden_apps">Återställ allt</string>
+  <string name="reset_hidden_apps_done">Dolda appar är nu tillgängliga</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Standard</string>
+  <string name="icons_pack_name">Ikonpaket</string>
+  <string name="edit_drop_target_label">Redigera</string>
+  <string name="edit_app">Redigera</string>
+  <string name="reset_icon">Återställa</string>
+  <string name="customize">Anpassa</string>
+  <string name="visual">Visuellt</string>
+  <string name="all_icons">Alla ikoner</string>
+  <string name="similar_icons">Liknande ikoner</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Etikett</string>
+  <string name="loading">Laddar, vänligen vänta</string>
+  <string name="icon_chooser">Ikon väljaren</string>
+  <string name="icon_search">Sök efter ikoner</string>
+  <string name="icon_pack_updated">Din launcher Ikonpaket har uppdaterats, det kan finnas nya ikoner för dina appar.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Svep uppåt indikator</string>
+  <string name="show_swipeup_arrow_summary">Visa svepa upp pil ovanpå dock</string>
+  <string name="pref_show_clock_weather">Startskärm datum och väder</string>
+  <string name="pref_show_clock_weather_both">Visa både datum och väder</string>
+  <string name="pref_show_clock_weather_nothing">Dölj</string>
+  <string name="pref_show_clock_weather_clock_only">Visa endast datum</string>
+  <string name="pref_show_clock_weather_weather_only">Visa endast väder</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Nedre sökfält</string>
+  <string name="bottom_search_bar_summary">Visa nedre sökfältet längst ned i dockan</string>
+  <string name="top_search_bar_title">Visa sökfältet längst upp</string>
+  <string name="top_search_bar_summary">Visa nedre sökfältet överst på applådan</string>
+  <string name="desktop_show_label_title">Visa etiketter</string>
+  <string name="desktop_show_label_summary">Visa etiketter nedanför deras ikoner.</string>
+  <string name="num_default">Standard</string>
+  <string name="num_three">Tre</string>
+  <string name="num_four">Fyra</string>
+  <string name="num_five">Fem</string>
+  <string name="num_six">Sex</string>
+  <string name="num_seven">Sju</string>
+  <string name="grid_category_title">Kolumner och rader</string>
+  <string name="number_of_columns_title">Rutnät kolumner</string>
+  <string name="number_of_rows_title">Rutnät rader</string>
+  <string name="number_of_hotseat_title">Dock ikoner</string>
+  <string name="icon_shape_rounded_square">Rundad kvadrat</string>
+  <string name="action_edit">Redigera</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Använd mörkt form</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Använd en mörk bakgrundsfärg för ikoner utan sin egen form färg</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Écran d\'accueil</string>
+  <string name="app_drawer_category_title">Menu applications</string>
+  <string name="icon_category_title">Icônes d\'application</string>
+  <string name="widget_category_title">Widgets</string>
+  <string name="other_category_title">Divers</string>
   <!-- About -->
+  <string name="about_credits">Crédits</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Rétro-ingénierie et portage des fonctionnalités de \"Pixel Launcher\" sur Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Masquer les applications</string>
+  <string name="hide_app_sum">Masquer les applications dans le tiroir d\'applications</string>
+  <string name="hide_app_selected">&#160;sélectionné(es)</string>
+  <string name="hidden_app">Toutes les applications</string>
+  <string name="hide_selected">Masquer les applications sélectionnées</string>
+  <string name="more">Plus</string>
+  <string name="reset_hidden_apps">Réinitialiser</string>
+  <string name="reset_hidden_apps_done">Les applications précédemment masquées sont de nouveau affichées</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Par défaut</string>
+  <string name="icons_pack_name">Pack d\'icônes</string>
+  <string name="edit_drop_target_label">Modifier</string>
+  <string name="edit_app">Modifier</string>
+  <string name="reset_icon">Réinitialiser</string>
+  <string name="customize">Personnaliser</string>
+  <string name="visual">Visuel</string>
+  <string name="all_icons">Toutes les icônes</string>
+  <string name="similar_icons">Icônes similaires</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Titre </string>
+  <string name="loading">Chargement, veuillez patienter...</string>
+  <string name="icon_chooser">Sélecteur d\'icônes</string>
+  <string name="icon_search">Rechercher des icônes</string>
+  <string name="icon_pack_updated">Le paquet d\'icônes du lanceur d\'application a été mis à jour. De nouvelles icônes pour les applications sont peut-être disponibles.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Indicateur de déploiement</string>
+  <string name="show_swipeup_arrow_summary">Afficher la flèche d\'ouverture par glissement du menu des applications au-dessus du Dock</string>
+  <string name="pref_show_clock_weather">Date et météo sur l\'écran d’accueil</string>
+  <string name="pref_show_clock_weather_both">Afficher la date et la météo</string>
+  <string name="pref_show_clock_weather_nothing">Ne pas afficher</string>
+  <string name="pref_show_clock_weather_clock_only">Afficher la date uniquement</string>
+  <string name="pref_show_clock_weather_weather_only">Afficher la météo uniquement</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Barre de recherche inférieure</string>
+  <string name="bottom_search_bar_summary">Afficher la barre de recherche inférieure en dessous du Dock</string>
+  <string name="top_search_bar_title">Barre de recherche supérieure</string>
+  <string name="top_search_bar_summary">Afficher la barre de recherche supérieure en haut du tiroir d\'applications</string>
+  <string name="desktop_show_label_title">Afficher les libellés</string>
+  <string name="desktop_show_label_summary">Afficher le nom de l\'élément en dessous de son icône.</string>
+  <string name="num_default">Par défaut</string>
+  <string name="num_three">Trois</string>
+  <string name="num_four">Quatre</string>
+  <string name="num_five">Cinq</string>
+  <string name="num_six">Six</string>
+  <string name="num_seven">Sept</string>
+  <string name="grid_category_title">Colonnes et lignes</string>
+  <string name="number_of_columns_title">Nombre de colonnes</string>
+  <string name="number_of_rows_title">Nombre de lignes</string>
+  <string name="number_of_hotseat_title">Icônes du dock</string>
+  <string name="icon_shape_rounded_square">Carré arrondi</string>
+  <string name="action_edit">Modifier</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Utiliser le thème sombre</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Utiliser une couleur d\'arrière-plan sombre pour les icônes sans couleur propre</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

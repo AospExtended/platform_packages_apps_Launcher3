@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Pantalla de inicio</string>
+  <string name="app_drawer_category_title">Cajón de aplicaciones</string>
+  <string name="icon_category_title">Iconos de aplicaciones</string>
+  <string name="widget_category_title">Widgets</string>
+  <string name="other_category_title">Varios</string>
   <!-- About -->
+  <string name="about_credits">Créditos</string>
+  <string name="about_credits_ok">Aceptar</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Características de ingeniería inversa de Pixel Launcher en Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Ocultar aplicaciones</string>
+  <string name="hide_app_sum">Ocultar aplicaciones del cajón de aplicaciones</string>
+  <string name="hide_app_selected">&#160;seleccionada</string>
+  <string name="hidden_app">Todas las aplicaciones</string>
+  <string name="hide_selected">Ocultar aplicación(nes) seleccionada(s)</string>
+  <string name="more">Más</string>
+  <string name="reset_hidden_apps">Reiniciar todo</string>
+  <string name="reset_hidden_apps_done">Las aplicaciones ocultas ahora están disponibles</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Por defecto</string>
+  <string name="icons_pack_name">Paquete de iconos</string>
+  <string name="edit_drop_target_label">Editar</string>
+  <string name="edit_app">Editar</string>
+  <string name="reset_icon">Reiniciar</string>
+  <string name="customize">Personalizar</string>
+  <string name="visual">Visual</string>
+  <string name="all_icons">Todos los iconos</string>
+  <string name="similar_icons">Iconos similares</string>
+  <string name="ok">Aceptar</string>
+  <string name="icon_label">Etiqueta</string>
+  <string name="loading">Cargando, espera por favor</string>
+  <string name="icon_chooser">Selector de iconos</string>
+  <string name="icon_search">Búsqueda de iconos</string>
+  <string name="icon_pack_updated">El paquete de iconos del lanzador ha sido actualizado, podría haber nuevos iconos disponibles para tus aplicaciones.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Indicador de deslizamiento ascendente</string>
+  <string name="show_swipeup_arrow_summary">Mostrar la flecha de deslizamiento ascendente sobre el \"dock\"</string>
+  <string name="pref_show_clock_weather">Fecha y clima en la pantalla de inicio</string>
+  <string name="pref_show_clock_weather_both">Mostrar la fecha y el clima</string>
+  <string name="pref_show_clock_weather_nothing">No mostrar</string>
+  <string name="pref_show_clock_weather_clock_only">Mostrar sólo la fecha</string>
+  <string name="pref_show_clock_weather_weather_only">Mostrar sólo el clima</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Barra inferior de búsqueda</string>
+  <string name="bottom_search_bar_summary">Mostrar la barra inferior de búsqueda en la base del \"dock\"</string>
+  <string name="top_search_bar_title">Barra superior de búsqueda</string>
+  <string name="top_search_bar_summary">Mostrar la barra inferior de búsqueda encima del cajón de aplicaciones</string>
+  <string name="desktop_show_label_title">Mostrar etiquetas</string>
+  <string name="desktop_show_label_summary">Mostrar etiquetas de elementos debajo de los iconos.</string>
+  <string name="num_default">Por defecto</string>
+  <string name="num_three">Tres</string>
+  <string name="num_four">Cuatro</string>
+  <string name="num_five">Cinco</string>
+  <string name="num_six">Seis</string>
+  <string name="num_seven">Siete</string>
+  <string name="grid_category_title">Columnas y filas</string>
+  <string name="number_of_columns_title">Columnas de la cuadrícula</string>
+  <string name="number_of_rows_title">Filas de la cuadrícula</string>
+  <string name="number_of_hotseat_title">Iconos en el \"dock\"</string>
+  <string name="icon_shape_rounded_square">Cuadrado redondeado</string>
+  <string name="action_edit">Editar</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Usar estilo oscuro</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Usar un color de fondo oscuro para los iconos sin su propio color de forma</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

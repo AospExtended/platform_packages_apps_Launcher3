@@ -19,9 +19,43 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Αρχική οθόνη</string>
+  <string name="app_drawer_category_title">Συρτάρι εφαρμογών</string>
+  <string name="icon_category_title">Εικονίδιο εφαρμογής</string>
+  <string name="widget_category_title">Γραφικά στοιχεία</string>
+  <string name="other_category_title">Διάφορα</string>
   <!-- About -->
+  <string name="about_credits">Συντελεστές</string>
+  <string name="about_credits_ok">ΟΚ</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Αντίστροφης μηχανικής χαρακτηριστικών pixel launcher σε Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Απόκρυψη εφαρμογών</string>
+  <string name="hide_app_sum">Απόκρυψη εφαρμογών από το συρτάρι εφαρμογών</string>
+  <string name="hide_app_selected">&#160;επιλεγμένες</string>
+  <string name="hidden_app">Όλες οι εφαρμογές</string>
+  <string name="hide_selected">Απόκρυψη επιλεγμένων εφαρμογής(ων)</string>
+  <string name="more">Περισσότερα</string>
+  <string name="reset_hidden_apps">Επαναφορά όλων</string>
+  <string name="reset_hidden_apps_done">Κρυμμένες εφαρμογές είναι τώρα διαθέσιμες</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Προεπιλογή</string>
+  <string name="icons_pack_name">Πακέτο εικονιδίων</string>
+  <string name="edit_drop_target_label">Επεξεργασία</string>
+  <string name="edit_app">Επεξεργασία</string>
+  <string name="reset_icon">Επαναφορά</string>
+  <string name="customize">Προσαρμογή</string>
+  <string name="visual">Οπτική</string>
+  <string name="all_icons">Όλα τα εικονίδια</string>
+  <string name="similar_icons">Παρόμοια εικονίδια</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Ετικέτα</string>
+  <string name="loading">Φόρτωση, παρακαλώ περιμένετε</string>
+  <string name="icon_chooser">Επιλογέας εικονιδίου</string>
+  <string name="icon_search">Αναζήτηση για εικονίδια</string>
+  <string name="icon_pack_updated">Έχει ενημερωθεί το πακέτο εικονιδίων του launcher, νέα εικονίδια για τις εφαρμογές σας μπορεί να είναι διαθέσιμα.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Σύρετε τον δείκτη προς τα επάνω</string>
   <!-- Hide/Show search bars -->
 </resources>

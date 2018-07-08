@@ -19,9 +19,66 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Startscherm</string>
+  <string name="app_drawer_category_title">App overzicht</string>
+  <string name="icon_category_title">App pictogrammen</string>
+  <string name="widget_category_title">Widgets</string>
+  <string name="other_category_title">Overig</string>
   <!-- About -->
+  <string name="about_credits">Credits</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Verberg apps</string>
+  <string name="hide_app_sum">Apps verbergen in het app-overzicht</string>
+  <string name="hide_app_selected">&#160;geselecteerd</string>
+  <string name="hidden_app">Alle apps</string>
+  <string name="hide_selected">Verberg geselecteerde app(s)</string>
+  <string name="more">Meer</string>
+  <string name="reset_hidden_apps">Reset alles</string>
+  <string name="reset_hidden_apps_done">Verborgen apps zijn nu beschikbaar</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Standaard</string>
+  <string name="icons_pack_name">Icon pack</string>
+  <string name="edit_drop_target_label">Wijzig</string>
+  <string name="edit_app">Wijzig</string>
+  <string name="reset_icon">Reset</string>
+  <string name="customize">Pas aan</string>
+  <string name="visual">Visueel</string>
+  <string name="all_icons">Alle iconen</string>
+  <string name="similar_icons">Gelijkaardige iconen</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Label</string>
+  <string name="loading">Laden, even geduld</string>
+  <string name="icon_chooser">Icoon kiezer</string>
+  <string name="icon_search">Zoek iconen</string>
+  <string name="icon_pack_updated">Het icon pack van uw launcher is geüpdatet, nieuwe iconen voor uw apps kunnen beschikbaar zijn.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Veeg omhoog indicator</string>
+  <string name="show_swipeup_arrow_summary">Toon de veeg omhoog pijlindicator bovenop het dock</string>
+  <string name="pref_show_clock_weather">Startscherm weer en datum</string>
+  <string name="pref_show_clock_weather_both">Weer en datum weergeven</string>
+  <string name="pref_show_clock_weather_nothing">Toon niet</string>
+  <string name="pref_show_clock_weather_clock_only">Toon enkel datum</string>
+  <string name="pref_show_clock_weather_weather_only">Toon enkel weer</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Zoekbalk onder</string>
+  <string name="top_search_bar_title">Zoekbalk weergeven boven</string>
+  <string name="desktop_show_label_title">Toon labels</string>
+  <string name="num_default">Standaard</string>
+  <string name="num_three">Drie</string>
+  <string name="num_four">Vier</string>
+  <string name="num_five">Vijf</string>
+  <string name="num_six">Zes</string>
+  <string name="num_seven">Zeven</string>
+  <string name="grid_category_title">Kolommen en rijen</string>
+  <string name="number_of_columns_title">Kolommen raster</string>
+  <string name="number_of_rows_title">Rijen raster</string>
+  <string name="number_of_hotseat_title">Dock iconen</string>
+  <string name="icon_shape_rounded_square">Afgerond vierkant</string>
+  <string name="action_edit">Pas aan</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Gebruik donker thema</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Gebruik donkere achtergrond voor pictogrammen zonder hun eigen kleur</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

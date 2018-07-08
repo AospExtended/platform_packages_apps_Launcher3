@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Domovská obrazovka</string>
+  <string name="app_drawer_category_title">Ponuka aplikácií</string>
+  <string name="icon_category_title">Ikony aplikácií</string>
+  <string name="widget_category_title">Miniaplikácie</string>
+  <string name="other_category_title">Rôzne</string>
   <!-- About -->
+  <string name="about_credits">Poďakovania</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Funkcie Pixel Launcheru v Launcheru 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Skrytie aplikácií</string>
+  <string name="hide_app_sum">Skryť aplikácie zo zoznamu aplikácií</string>
+  <string name="hide_app_selected">&#160;vybraných</string>
+  <string name="hidden_app">Všetky aplikácie</string>
+  <string name="hide_selected">Skryť vybrané aplikácie</string>
+  <string name="more">Viac</string>
+  <string name="reset_hidden_apps">Resetovať všetko</string>
+  <string name="reset_hidden_apps_done">Skryté aplikácie sú teraz k dispozícii</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Predvolený</string>
+  <string name="icons_pack_name">Balík ikon</string>
+  <string name="edit_drop_target_label">Upraviť</string>
+  <string name="edit_app">Upraviť</string>
+  <string name="reset_icon">Resetovať</string>
+  <string name="customize">Prispôsobiť</string>
+  <string name="visual">Vzhľad</string>
+  <string name="all_icons">Všetky ikony</string>
+  <string name="similar_icons">Podobné ikony</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Názov</string>
+  <string name="loading">Nahrávanie, čakajte prosím</string>
+  <string name="icon_chooser">Výber ikony</string>
+  <string name="icon_search">Vyhľadávanie ikon</string>
+  <string name="icon_pack_updated">Váš balík ikon spúšťača bol aktualizovaný, nové ikony pre vaše aplikácie môžu byť k dispozícii.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Ukazovateľ posunutia nahor</string>
+  <string name="show_swipeup_arrow_summary">Zobraziť ukazovateľ šípky hore na vrchole doku</string>
+  <string name="pref_show_clock_weather">Dátum a počasie na domovskej obrazovke</string>
+  <string name="pref_show_clock_weather_both">Zobraziť dátum a počasie</string>
+  <string name="pref_show_clock_weather_nothing">Nezobrazovať</string>
+  <string name="pref_show_clock_weather_clock_only">Zobraziť iba dátum</string>
+  <string name="pref_show_clock_weather_weather_only">Zobraziť iba počasie</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Dolný vyhľadávací panel</string>
+  <string name="bottom_search_bar_summary">Zobraziť vyhľadávací panel v dolnej časti doku</string>
+  <string name="top_search_bar_title">Horný vyhľadávací panel</string>
+  <string name="top_search_bar_summary">Zobraziť vyhľadávací panel v horne časti doku</string>
+  <string name="desktop_show_label_title">Zobraziť názvy</string>
+  <string name="desktop_show_label_summary">Zobraziť názvy položiek pod ich ikonami.</string>
+  <string name="num_default">Predvolené</string>
+  <string name="num_three">Tri</string>
+  <string name="num_four">Štyri</string>
+  <string name="num_five">Päť</string>
+  <string name="num_six">Šesť</string>
+  <string name="num_seven">Sedem</string>
+  <string name="grid_category_title">Stĺpce a riadky</string>
+  <string name="number_of_columns_title">Stĺpce mriežky</string>
+  <string name="number_of_rows_title">Riadky mriežky</string>
+  <string name="number_of_hotseat_title">Ikony v doku</string>
+  <string name="icon_shape_rounded_square">Zaoblený štvorec</string>
+  <string name="action_edit">Upraviť</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Použiť tmavý vzhľad</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Použiť tmavú farbu pozadia pre ikony bez vlastnej farby</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

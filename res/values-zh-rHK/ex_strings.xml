@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">主畫面</string>
+  <string name="app_drawer_category_title">應用程式清單</string>
+  <string name="icon_category_title">應用程式圖示</string>
+  <string name="widget_category_title">小工具</string>
+  <string name="other_category_title">其他設定</string>
   <!-- About -->
+  <string name="about_credits">感謝</string>
+  <string name="about_credits_ok">確定</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">逆向移植 pixel 桌面的功能到 Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">隱藏應用程式</string>
+  <string name="hide_app_sum">從應用程式清單中隱藏應用程式</string>
+  <string name="hide_app_selected">&#160; 已選取</string>
+  <string name="hidden_app">所有應用程式</string>
+  <string name="hide_selected">隱藏所選取的應用程式</string>
+  <string name="more">更多</string>
+  <string name="reset_hidden_apps">全部重設</string>
+  <string name="reset_hidden_apps_done">隱藏目前可用的應用程式</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">預設</string>
+  <string name="icons_pack_name">圖示包</string>
+  <string name="edit_drop_target_label">編輯</string>
+  <string name="edit_app">編輯</string>
+  <string name="reset_icon">重設</string>
+  <string name="customize">自訂</string>
+  <string name="visual">外觀</string>
+  <string name="all_icons">所有的圖示</string>
+  <string name="similar_icons">相似的圖示</string>
+  <string name="ok">確定</string>
+  <string name="icon_label">標籤</string>
+  <string name="loading">正在載入，請稍候</string>
+  <string name="icon_chooser">圖示選擇器</string>
+  <string name="icon_search">搜尋圖示</string>
+  <string name="icon_pack_updated">您的啟動器圖示包已更新, 您的應用程式的新圖示可能已生效。</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">向上滑動指示</string>
+  <string name="show_swipeup_arrow_summary">在 dock 頂部顯示向上滑動箭頭指示</string>
+  <string name="pref_show_clock_weather">主畫面日期與天氣</string>
+  <string name="pref_show_clock_weather_both">顯示日期和天氣</string>
+  <string name="pref_show_clock_weather_nothing">不顯示</string>
+  <string name="pref_show_clock_weather_clock_only">僅顯示日期</string>
+  <string name="pref_show_clock_weather_weather_only">僅顯示天氣</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">底部搜尋列</string>
+  <string name="bottom_search_bar_summary">在 Dock 列底部顯示 Google 搜尋列</string>
+  <string name="top_search_bar_title">頂部搜尋列</string>
+  <string name="top_search_bar_summary">在應用程式清單的頂部顯示底部搜尋</string>
+  <string name="desktop_show_label_title">顯示標籤</string>
+  <string name="desktop_show_label_summary">在圖示下方顯示項目標籤。</string>
+  <string name="num_default">預設</string>
+  <string name="num_three">3</string>
+  <string name="num_four">4</string>
+  <string name="num_five">5</string>
+  <string name="num_six">6</string>
+  <string name="num_seven">7</string>
+  <string name="grid_category_title">列和行</string>
+  <string name="number_of_columns_title">網格列數</string>
+  <string name="number_of_rows_title">網格行數</string>
+  <string name="number_of_hotseat_title">Dock 圖示</string>
+  <string name="icon_shape_rounded_square">圓角正方形</string>
+  <string name="action_edit">編輯</string>
+  <string name="pref_override_icon_shape_dark_bg_title">使用深色形狀</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">對沒有自己形狀顏色的圖示使用深色背景色</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

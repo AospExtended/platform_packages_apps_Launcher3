@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">ホーム画面</string>
+  <string name="app_drawer_category_title">アプリドロワー</string>
+  <string name="icon_category_title">アプリアイコン</string>
+  <string name="widget_category_title">ウィジェット</string>
+  <string name="other_category_title">その他</string>
   <!-- About -->
+  <string name="about_credits">クレジット</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Launcher3にリバースエンジニアリングされたPixel Launcherの機能</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">アプリを隠す</string>
+  <string name="hide_app_sum">ドロワーからアプリを非表示にする</string>
+  <string name="hide_app_selected">&#160;選択済み</string>
+  <string name="hidden_app">全てのアプリ</string>
+  <string name="hide_selected">選択したアプリを非表示</string>
+  <string name="more">さらに表示</string>
+  <string name="reset_hidden_apps">全てリセット</string>
+  <string name="reset_hidden_apps_done">非表示のアプリが利用可能になりました</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">デフォルト</string>
+  <string name="icons_pack_name">アイコンパック</string>
+  <string name="edit_drop_target_label">編集</string>
+  <string name="edit_app">編集</string>
+  <string name="reset_icon">初期化</string>
+  <string name="customize">カスタマイズ</string>
+  <string name="visual">外観</string>
+  <string name="all_icons">全てのアイコン</string>
+  <string name="similar_icons">類似のアイコン</string>
+  <string name="ok">OK</string>
+  <string name="icon_label">ラベル</string>
+  <string name="loading">読み込み中です。しばらくお待ちください。</string>
+  <string name="icon_chooser">アイコンの選択</string>
+  <string name="icon_search">アイコンを検索する</string>
+  <string name="icon_pack_updated">ランチャーアイコンパックが更新されました。あなたのアプリの新しいアイコンが利用可能になるかもしれません。</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">スワイプアップインジケーター</string>
+  <string name="show_swipeup_arrow_summary">ドックの上にスワイプの上向き矢印インジケータを表示する</string>
+  <string name="pref_show_clock_weather">ホーム画面の日付と天気</string>
+  <string name="pref_show_clock_weather_both">日付と天気を表示する</string>
+  <string name="pref_show_clock_weather_nothing">表示しない</string>
+  <string name="pref_show_clock_weather_clock_only">日付のみ表示</string>
+  <string name="pref_show_clock_weather_weather_only">天気のみ表示</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">下部の検索バー</string>
+  <string name="bottom_search_bar_summary">ドックの下部に検索バーを表示する</string>
+  <string name="top_search_bar_title">上部の検索バー</string>
+  <string name="top_search_bar_summary">アプリドロワーの上部に検索バーを表示する</string>
+  <string name="desktop_show_label_title">ラベルを表示</string>
+  <string name="desktop_show_label_summary">アイコンの下にアイテムラベルを表示する</string>
+  <string name="num_default">デフォルト</string>
+  <string name="num_three">3</string>
+  <string name="num_four">4</string>
+  <string name="num_five">5</string>
+  <string name="num_six">6</string>
+  <string name="num_seven">7</string>
+  <string name="grid_category_title">列数と行数</string>
+  <string name="number_of_columns_title">格子の列</string>
+  <string name="number_of_rows_title">格子の行</string>
+  <string name="number_of_hotseat_title">ドックアイコン</string>
+  <string name="icon_shape_rounded_square">丸い長方形</string>
+  <string name="action_edit">編集</string>
+  <string name="pref_override_icon_shape_dark_bg_title">暗色の影を使用</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">アイコン自身の影の色を使わずに暗い背景色を使用する</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

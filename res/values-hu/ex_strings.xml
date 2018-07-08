@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Kezdőképernyő</string>
+  <string name="app_drawer_category_title">Alkalmazásfiók</string>
+  <string name="icon_category_title">Alkalmazásikonok</string>
+  <string name="widget_category_title">Kisalkalmazások</string>
+  <string name="other_category_title">Egyebek</string>
   <!-- About -->
+  <string name="about_credits">Készítők</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Újratervezett Pixel indító funkciók Launcher 3-on</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Alkalmazások elrejtése</string>
+  <string name="hide_app_sum">Alkalmazások elrejtése az alkalmazásfiókban</string>
+  <string name="hide_app_selected">&#160;kiválasztva</string>
+  <string name="hidden_app">Az összes alkalmazás</string>
+  <string name="hide_selected">A kiválasztott alkalmazás(ok) elrejtése</string>
+  <string name="more">Továbbiak</string>
+  <string name="reset_hidden_apps">Az összes visszaállítása</string>
+  <string name="reset_hidden_apps_done">A Rejtett alkalmazások újra elérhetők</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Alapértelmezett</string>
+  <string name="icons_pack_name">Ikoncsomag</string>
+  <string name="edit_drop_target_label">Szerkesztés</string>
+  <string name="edit_app">Szerkesztés</string>
+  <string name="reset_icon">Visszaállítás</string>
+  <string name="customize">Testreszabás</string>
+  <string name="visual">Kinézet</string>
+  <string name="all_icons">Az összes ikon</string>
+  <string name="similar_icons">A hasonló ikonok</string>
+  <string name="ok">OK</string>
+  <string name="icon_label">Címke</string>
+  <string name="loading">Betöltés, kis türelmet...</string>
+  <string name="icon_chooser">Ikonválasztó</string>
+  <string name="icon_search">Ikonkeresése</string>
+  <string name="icon_pack_updated">Az Ön főképernyőjének ikoncsomagja frissítésre került, nézze meg, hogy mely alkalmazásaihoz érhetők el új ikonok.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Felfelé csúsztatás kijelzése</string>
+  <string name="show_swipeup_arrow_summary">Mutasson a dokk tetején felfelé mutató nyilat csúsztatáskor</string>
+  <string name="pref_show_clock_weather">Kezdőképernyő-dátum és időjárás</string>
+  <string name="pref_show_clock_weather_both">Mindkettő (dátum és időjárás) megjelenítése</string>
+  <string name="pref_show_clock_weather_nothing">Ne jelenítse meg</string>
+  <string name="pref_show_clock_weather_clock_only">Csak a dátumot jelenítse meg</string>
+  <string name="pref_show_clock_weather_weather_only">Csak az időjárást jelenítse meg</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Alsó keresősáv</string>
+  <string name="bottom_search_bar_summary">Az alsó keresősáv megjelenítése a dokk alján</string>
+  <string name="top_search_bar_title">Felső keresősáv</string>
+  <string name="top_search_bar_summary">A felső keresősáv megjelenítése az alkalmazásfiók tetején</string>
+  <string name="desktop_show_label_title">Feliratok megjelenítése</string>
+  <string name="desktop_show_label_summary">Megjeleníti az elemek nevét az ikonjaik alatt.</string>
+  <string name="num_default">Alapértelmezett</string>
+  <string name="num_three">Három</string>
+  <string name="num_four">Négy</string>
+  <string name="num_five">Öt</string>
+  <string name="num_six">Hat</string>
+  <string name="num_seven">Hét</string>
+  <string name="grid_category_title">Oszlopok és sorok</string>
+  <string name="number_of_columns_title">Oszloprács</string>
+  <string name="number_of_rows_title">Sorrács</string>
+  <string name="number_of_hotseat_title">A Dokk ikonjai</string>
+  <string name="icon_shape_rounded_square">Lekerekített négyzet</string>
+  <string name="action_edit">Szerkesztés</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Sötét forma használata</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Használjon sötét háttérszínt az ikonokhoz, saját színük helyett</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

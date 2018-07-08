@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">Startbildschirm</string>
+  <string name="app_drawer_category_title">App-Drawer</string>
+  <string name="icon_category_title">App-Symbole</string>
+  <string name="widget_category_title">Widgets</string>
+  <string name="other_category_title">Verschiedenes</string>
   <!-- About -->
+  <string name="about_credits">Autoren</string>
+  <string name="about_credits_ok">OK</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">Reverse Engineered Pixel Launcher Funktionen auf Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">Apps ausblenden</string>
+  <string name="hide_app_sum">Apps in der App-Liste ausblenden</string>
+  <string name="hide_app_selected">&#160;ausgewählt</string>
+  <string name="hidden_app">Alle Apps</string>
+  <string name="hide_selected">Ausgewählte App(s) ausblenden</string>
+  <string name="more">Mehr</string>
+  <string name="reset_hidden_apps">Alles zurücksetzen</string>
+  <string name="reset_hidden_apps_done">Versteckte Apps sind nun verfügbar</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">Standardeinstellung</string>
+  <string name="icons_pack_name">Symbolpaket</string>
+  <string name="edit_drop_target_label">Bearbeiten</string>
+  <string name="edit_app">Bearbeiten</string>
+  <string name="reset_icon">Zurücksetzen</string>
+  <string name="customize">Anpassen</string>
+  <string name="visual">Visuell</string>
+  <string name="all_icons">Alle Symbole</string>
+  <string name="similar_icons">Ähnliche Symbole</string>
+  <string name="ok">Ok</string>
+  <string name="icon_label">Label</string>
+  <string name="loading">Lädt, bitte warten</string>
+  <string name="icon_chooser">Symbolauswahl</string>
+  <string name="icon_search">Nach Symbolen suchen</string>
+  <string name="icon_pack_updated">Ihr Launcher-Symbol-Paket wurde aktualisiert, neue Symbole für Ihre Anwendungen sind möglicherweise verfügbar.</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">Hoch wischen-Anzeige</string>
+  <string name="show_swipeup_arrow_summary">Zeige den nach oben-Pfeil oben auf dem Dock an</string>
+  <string name="pref_show_clock_weather">Startbildschirm-Datum und -Wetter</string>
+  <string name="pref_show_clock_weather_both">Zeige Datum und Wetter</string>
+  <string name="pref_show_clock_weather_nothing">Nicht anzeigen</string>
+  <string name="pref_show_clock_weather_clock_only">Zeige nur Datum</string>
+  <string name="pref_show_clock_weather_weather_only">Zeige nur Wetter</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">Untere Suchleiste</string>
+  <string name="bottom_search_bar_summary">Die untere Suchleiste unten im Dock anzeigen</string>
+  <string name="top_search_bar_title">Obere Suchleiste</string>
+  <string name="top_search_bar_summary">Die untere Suchleiste oben im Dock anzeigen</string>
+  <string name="desktop_show_label_title">Beschriftung einblenden</string>
+  <string name="desktop_show_label_summary">Bezeichnungen unter deren Symbolen anzeigen.</string>
+  <string name="num_default">Standard</string>
+  <string name="num_three">Drei</string>
+  <string name="num_four">Vier</string>
+  <string name="num_five">Fünf</string>
+  <string name="num_six">Sechs</string>
+  <string name="num_seven">Sieben</string>
+  <string name="grid_category_title">Spalten und Zeilen</string>
+  <string name="number_of_columns_title">Rasterspalten</string>
+  <string name="number_of_rows_title">Rasterzeilen</string>
+  <string name="number_of_hotseat_title">Dock-Symbole</string>
+  <string name="icon_shape_rounded_square">Abgerundetes Quadrat</string>
+  <string name="action_edit">Bearbeiten</string>
+  <string name="pref_override_icon_shape_dark_bg_title">Dunkles Design verwenden</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">Dunkle Hintergrundfarbe für Symbole ohne eigene Form-Farbe verwenden</string>
+  <string name="smartspace_hours_mins">%1$s %2$s</string>
 </resources>

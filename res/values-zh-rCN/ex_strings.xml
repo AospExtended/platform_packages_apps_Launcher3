@@ -19,9 +19,70 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Preference categories -->
+  <string name="home_category_title">主屏幕</string>
+  <string name="app_drawer_category_title">应用抽屉</string>
+  <string name="icon_category_title">应用图标</string>
+  <string name="widget_category_title">小部件</string>
+  <string name="other_category_title">杂项</string>
   <!-- About -->
+  <string name="about_credits">贡献</string>
+  <string name="about_credits_ok">确定</string>
+  <string name="about_amirzaidi_title">Amir Zaidi</string>
+  <string name="about_amirzaidi_summary">逆向移植 pixel 桌面的功能到 Launcher 3</string>
+  <string name="about_amirzaidi_url">https://github.com/amirzaidi</string>
   <!-- Hidden app -->
+  <string name="hide_app">隐藏应用</string>
+  <string name="hide_app_sum">从应用抽屉隐藏应用</string>
+  <string name="hide_app_selected">&#160;已选择</string>
+  <string name="hidden_app">所有应用</string>
+  <string name="hide_selected">隐藏选中的应用</string>
+  <string name="more">更多</string>
+  <string name="reset_hidden_apps">全部重置</string>
+  <string name="reset_hidden_apps_done">隐藏当前可用的应用</string>
   <!-- Icon pack -->
+  <string name="default_iconpack_title">默认</string>
+  <string name="icons_pack_name">图标包</string>
+  <string name="edit_drop_target_label">编辑</string>
+  <string name="edit_app">编辑</string>
+  <string name="reset_icon">重置</string>
+  <string name="customize">自定义</string>
+  <string name="visual">外观</string>
+  <string name="all_icons">所有图标</string>
+  <string name="similar_icons">相似图标</string>
+  <string name="ok">确定</string>
+  <string name="icon_label">标签</string>
+  <string name="loading">正在加载，请稍后</string>
+  <string name="icon_chooser">图标选择器</string>
+  <string name="icon_search">搜索图标</string>
+  <string name="icon_pack_updated">您的启动器图标包已更新, 您的应用程序的新图标可能生效。</string>
   <!-- Swipe up indicator -->
+  <string name="show_swipeup_arrow">向上滑动指示</string>
+  <string name="show_swipeup_arrow_summary">在托盘顶部显示向上滑动箭头标示</string>
+  <string name="pref_show_clock_weather">主屏幕日期和天气</string>
+  <string name="pref_show_clock_weather_both">显示日期和天气</string>
+  <string name="pref_show_clock_weather_nothing">隐藏</string>
+  <string name="pref_show_clock_weather_clock_only">只显示日期</string>
+  <string name="pref_show_clock_weather_weather_only">只显示天气</string>
   <!-- Hide/Show search bars -->
+  <string name="bottom_search_bar_title">底部搜索栏</string>
+  <string name="bottom_search_bar_summary">在托盘底部显示底部搜索栏</string>
+  <string name="top_search_bar_title">顶部搜索栏</string>
+  <string name="top_search_bar_summary">在应用抽屉的顶部显示底部搜索栏</string>
+  <string name="desktop_show_label_title">显示标签</string>
+  <string name="desktop_show_label_summary">在图标下方显示项目标签</string>
+  <string name="num_default">默认</string>
+  <string name="num_three">3</string>
+  <string name="num_four">4</string>
+  <string name="num_five">5</string>
+  <string name="num_six">6</string>
+  <string name="num_seven">7</string>
+  <string name="grid_category_title">行数和列数</string>
+  <string name="number_of_columns_title">网格列数</string>
+  <string name="number_of_rows_title">网格行数</string>
+  <string name="number_of_hotseat_title">托盘图标</string>
+  <string name="icon_shape_rounded_square">圆角正方形</string>
+  <string name="action_edit">编辑</string>
+  <string name="pref_override_icon_shape_dark_bg_title">使用暗色阴影</string>
+  <string name="pref_override_icon_shape_dark_bg_summary">对没有自己形状阴影的图标使用深色背景色</string>
+  <string name="smartspace_hours_mins">%1$s%2$s</string>
 </resources>
