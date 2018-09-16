@@ -60,4 +60,8 @@
     <string name="legacy_icon_mask_title">Disable shape mask on legacy icons</string>
     <string name="legacy_icon_mask_summary">Doesn\'t allow icons to be reshaped with adaptive icon mask. Icon pack must be reapplied after toggling</string>
 
+    <!-- Swipe down to clear recents -->
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
+
 </resources>
