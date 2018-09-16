@@ -21,4 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Show search bar</string>
     <string name="show_searchbar_summary">Show the search bar on the home screen</string>
 
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
+
 </resources>

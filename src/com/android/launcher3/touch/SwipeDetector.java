@@ -400,6 +400,10 @@ public class SwipeDetector {
         return true;
     }
 
+    public boolean wasInitialTouchNegative() {
+        return mSubtractDisplacement > 0;
+    }
+
     private void reportDragEnd() {
         mVelocityTracker.computeCurrentVelocity(1000, mMaxVelocity);
         float velocity = mDir.getVelocity(mVelocityTracker, mIsRtl) / 1000;

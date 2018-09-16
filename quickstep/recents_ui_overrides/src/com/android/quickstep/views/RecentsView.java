@@ -1028,7 +1028,7 @@ public abstract class RecentsView<T extends BaseActivity> extends PagedView impl
         }
     }
 
-    private void addDismissedTaskAnimations(View taskView, AnimatorSet anim, long duration) {
+    private void addDismissedTaskAnimations(View taskView, AnimatorSet anim, long duration, boolean goingUp) {
         addAnim(ObjectAnimator.ofFloat(taskView, ALPHA, 0), duration, ACCEL_2, anim);
         if (QUICKSTEP_SPRINGS.get() && taskView instanceof TaskView)
             addAnim(new SpringObjectAnimator<>(taskView, VIEW_TRANSLATE_Y,
@@ -1037,8 +1037,14 @@ public abstract class RecentsView<T extends BaseActivity> extends PagedView impl
                             0, -taskView.getHeight()),
                     duration, LINEAR, anim);
         else {
-            addAnim(ObjectAnimator.ofFloat(taskView, TRANSLATION_Y, -taskView.getHeight()),
+            if (goingUp) {
+                addAnim(ObjectAnimator.ofFloat(taskView, TRANSLATION_Y, -taskView.getHeight()),
+                        duration, LINEAR, anim);
+            } else if (getSwipeForClearAllState()) {
+                addAnim(ObjectAnimator.ofFloat(taskView, TRANSLATION_Y, taskView.getHeight()),
                     duration, LINEAR, anim);
+            }
+
         }
     }
 
@@ -1085,7 +1091,7 @@ public abstract class RecentsView<T extends BaseActivity> extends PagedView impl
             View child = getChildAt(i);
             if (child == taskView) {
                 if (animateTaskView) {
-                    addDismissedTaskAnimations(taskView, anim, duration);
+                    addDismissedTaskAnimations(taskView, anim, duration, true);
                 }
             } else {
                 // If we just take newScroll - oldScroll, everything to the right of dragged task
@@ -1183,7 +1189,7 @@ public abstract class RecentsView<T extends BaseActivity> extends PagedView impl
 
         int count = getTaskViewCount();
         for (int i = 0; i < count; i++) {
-            addDismissedTaskAnimations(getChildAt(i), anim, duration);
+            addDismissedTaskAnimations(getChildAt(i), anim, duration, false);
         }
 
         mPendingAnimation = pendingAnimation;
@@ -1733,5 +1739,9 @@ public abstract class RecentsView<T extends BaseActivity> extends PagedView impl
             mOverlayEnabled = overlayEnabled;
             updateEnabledOverlays();
         }
+    }
+
+    public boolean getSwipeForClearAllState() {
+        return Utilities.getPrefs(mActivity).getBoolean("pref_allowSwipeDownClearAll", false);
     }
 }
