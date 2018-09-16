@@ -371,6 +371,10 @@ public class SwipeDetector {
         return mDir.isPositive(mSubtractDisplacement);
     }
 
+    public boolean wasInitialTouchNegative() {
+        return mSubtractDisplacement > 0;
+    }
+
     private boolean reportDragging(MotionEvent event) {
         if (mDisplacement != mLastDisplacement) {
             if (DBG) {
