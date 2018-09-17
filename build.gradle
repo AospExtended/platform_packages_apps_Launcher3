@@ -71,6 +71,12 @@ android {
         withoutQuickstep {
             dimension "recents"
         }
+
+        searchlauncher {
+            dimension "default"
+            applicationId 'com.android.launcher3'
+            testApplicationId 'com.android.launcher3.tests'
+        }
     }
 
     // Disable release builds for now
@@ -136,6 +142,12 @@ android {
             java.srcDirs = ['quickstep/src', 'go/quickstep/src']
             manifest.srcFile "quickstep/AndroidManifest.xml"
         }
+
+        searchlauncher {
+            res.srcDirs = ['searchlauncher/res']
+            java.srcDirs = ['src_flags', 'searchlauncher/src']
+            manifest.srcFile "searchlauncher/AndroidManifest.xml"
+        }
     }
 }
 
@@ -161,6 +173,7 @@ dependencies {
 
     // Required for AOSP to compile. This is already included in the sysui_shared.jar
     withoutQuickstepImplementation fileTree(dir: "${FRAMEWORK_PREBUILTS_DIR}/libs", include: 'plugin_core.jar')
+    searchlauncherImplementation fileTree(dir: "searchlauncher/libs", include: 'gsa.jar')
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation "org.mockito:mockito-core:1.9.5"
