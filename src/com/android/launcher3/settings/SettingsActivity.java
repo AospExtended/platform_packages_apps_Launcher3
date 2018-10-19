@@ -27,12 +27,15 @@ import android.app.Fragment;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.launcher3.LauncherFiles;
+import com.android.launcher3.LauncherTab;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
@@ -41,11 +44,13 @@ import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragment;
 import androidx.preference.PreferenceFragment.OnPreferenceStartFragmentCallback;
 import androidx.preference.PreferenceFragment.OnPreferenceStartScreenCallback;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 import androidx.recyclerview.widget.RecyclerView;
 
 /**
@@ -68,6 +73,8 @@ public class SettingsActivity extends Activity
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
     public static final String GRID_OPTIONS_PREFERENCE_KEY = "pref_grid_options";
+
+    public static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,6 +185,13 @@ public class SettingsActivity extends Activity
                     screen.removePreference(preference);
                 }
             }
+
+            SwitchPreference feedIntegration = (SwitchPreference)
+                    findPreference(KEY_FEED_INTEGRATION);
+
+            if (!hasPackageInstalled(LauncherTab.SEARCH_PACKAGE)) {
+                getPreferenceScreen().removePreference(feedIntegration);
+            }
         }
 
         @Override
@@ -252,6 +266,16 @@ public class SettingsActivity extends Activity
                     getView().postDelayed(highlighter, DELAY_HIGHLIGHT_DURATION_MILLIS);
                     mPreferenceHighlighted = true;
                 }
+            }
+        }
+
+        private boolean hasPackageInstalled(String pkgName) {
+            try {
+                ApplicationInfo ai = getContext().getPackageManager()
+                        .getApplicationInfo(pkgName, 0);
+                return ai.enabled;
+            } catch (PackageManager.NameNotFoundException e) {
+                return false;
             }
         }
 

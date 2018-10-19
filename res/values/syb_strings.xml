@@ -26,4 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
     <string name="state_loading">Applying\u2026</string>
 
+    <!-- Google Feed -->
+    <string name="settings_feed">Enable Google feed integration</string>
+
 </resources>
