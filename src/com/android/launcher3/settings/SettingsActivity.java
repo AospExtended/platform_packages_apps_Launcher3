@@ -81,6 +81,8 @@ public class SettingsActivity extends FragmentActivity
     public static final String KEY_TRUST_APPS = "pref_trust_apps";
     public static final String KEY_ICON_PACK = "pref_icon_pack";
 
+    public static boolean restartNeeded = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,10 +106,8 @@ public class SettingsActivity extends FragmentActivity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (Utilities.KEY_DT_GESTURE.equals(key)) {
-                Utilities.restart(this);
-        }
-   }
+        restartNeeded = true;
+    }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
         if (Utilities.ATLEAST_P && getSupportFragmentManager().isStateSaved()) {
@@ -170,6 +170,14 @@ public class SettingsActivity extends FragmentActivity
             setPreferencesFromResource(R.xml.launcher_preferences, rootKey);
 
             updatePreferences();
+
+            HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
+            mHomeKeyListener.setOnHomePressedListener(() -> {
+                if (restartNeeded) {
+                    Utilities.restart(getActivity());
+                }
+            });
+            mHomeKeyListener.startWatch();
 
             Utilities.getPrefs(getContext())
                     .registerOnSharedPreferenceChangeListener(this);
@@ -340,6 +348,9 @@ public class SettingsActivity extends FragmentActivity
                 mNotificationDotsObserver = null;
             }
             super.onDestroy();
+            if (restartNeeded) {
+                Utilities.restart(getActivity());
+            }
         }
 
         private void setupIconPackPreference(Preference preference) {
