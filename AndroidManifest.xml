@@ -136,17 +136,12 @@
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.android.launcher3.SettingsActivity" />
 
-        <activity
-            android:name="com.android.launcher3.CustomizeActivity"
-            android:label="@string/customize"
-            android:autoRemoveFromRecents="true"
-            android:theme="@style/SettingsTheme" />
-
+        <!-- Hidden apps -->
         <activity
             android:name="com.android.launcher3.MultiSelectRecyclerViewActivity"
             android:autoRemoveFromRecents="true"
             android:label="@string/hidden_app"
-            android:theme="@style/SettingsTheme" />
+            android:theme="@android:style/Theme.DeviceDefault.Settings" />
 
         <!--
         The settings provider contains Home's data, like the workspace favorites. The permissions
