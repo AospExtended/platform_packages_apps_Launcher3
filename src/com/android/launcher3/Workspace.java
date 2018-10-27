@@ -55,6 +55,7 @@ import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseArray;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -62,6 +63,8 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.Toast;
+
+import com.android.internal.util.aospextended.AEXUtils;
 
 import com.android.launcher3.LauncherAppWidgetHost.ProviderChangedListener;
 import com.android.launcher3.accessibility.AccessibleDragListenerAdapter;
@@ -255,6 +258,8 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
 
     private final StatsLogManager mStatsLogManager;
 
+    private GestureDetector mGestureListener;
+
     /**
      * Used to inflate the Workspace from XML.
      *
@@ -286,8 +291,24 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
 
         // Disable multitouch across the workspace/all apps/customize tray
         setMotionEventSplittingEnabled(true);
+
+        context.enforceCallingOrSelfPermission(
+                    android.Manifest.permission.DEVICE_POWER, null);
+        mGestureListener =
+                new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+            @Override
+            public boolean onDoubleTap(MotionEvent event) {
+                AEXUtils.switchScreenOff(context);
+                return true;
+            }
+        });
+
         setOnTouchListener(new WorkspaceTouchListener(mLauncher, this));
         mStatsLogManager = StatsLogManager.newInstance(context);
+    }
+
+    public boolean checkDoubleTap(MotionEvent ev) {
+        return mGestureListener.onTouchEvent(ev);
     }
 
     @Override
