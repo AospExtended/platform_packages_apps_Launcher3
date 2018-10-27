@@ -48,6 +48,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.InvariantDeviceProfile;
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
@@ -138,7 +139,14 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        restartNeeded = true;
+        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+        } else if (Utilities.KEY_DT_GESTURE.equals(key)) {
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+        } else  if (Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+        }
+
     }
 
     private boolean startPreference(String fragment, Bundle args, String key) {
@@ -209,14 +217,6 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
             getPreferenceManager().setSharedPreferencesName(LauncherFiles.SHARED_PREFERENCES_KEY);
             setPreferencesFromResource(R.xml.launcher_preferences, rootKey);
-
-            HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
-            mHomeKeyListener.setOnHomePressedListener(() -> {
-                if (restartNeeded) {
-                    Utilities.restart(getActivity());
-                }
-            });
-            mHomeKeyListener.startWatch();
 
             PreferenceScreen screen = getPreferenceScreen();
             for (int i = screen.getPreferenceCount() - 1; i >= 0; i--) {
@@ -372,10 +372,10 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
 
         @Override
         public void onDestroy() {
+            // if we don't press the home button but the back button to close Settings,
+            // then we must force a restart because the home button watcher wouldn't trigger it
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             super.onDestroy();
-            if (restartNeeded) {
-                Utilities.restart(getActivity());
-            }
         }
     }
 }
