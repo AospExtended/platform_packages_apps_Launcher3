@@ -48,6 +48,7 @@ import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
@@ -106,7 +107,9 @@ public class SettingsActivity extends FragmentActivity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        restartNeeded = true;
+        if (Utilities.KEY_DT_GESTURE.equals(key)) {
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+        }
     }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
@@ -170,14 +173,6 @@ public class SettingsActivity extends FragmentActivity
             setPreferencesFromResource(R.xml.launcher_preferences, rootKey);
 
             updatePreferences();
-
-            HomeKeyWatcher mHomeKeyListener = new HomeKeyWatcher(getActivity());
-            mHomeKeyListener.setOnHomePressedListener(() -> {
-                if (restartNeeded) {
-                    Utilities.restart(getActivity());
-                }
-            });
-            mHomeKeyListener.startWatch();
 
             Utilities.getPrefs(getContext())
                     .registerOnSharedPreferenceChangeListener(this);
@@ -347,10 +342,10 @@ public class SettingsActivity extends FragmentActivity
                 mNotificationDotsObserver.unregister();
                 mNotificationDotsObserver = null;
             }
+            // if we don't press the home button but the back button to close Settings,
+            // then we must force a restart because the home button watcher wouldn't trigger it
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             super.onDestroy();
-            if (restartNeeded) {
-                Utilities.restart(getActivity());
-            }
         }
 
         private void setupIconPackPreference(Preference preference) {
