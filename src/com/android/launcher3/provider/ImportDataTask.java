@@ -50,6 +50,7 @@ import com.android.launcher3.model.GridSizeMigrationTask;
 import com.android.launcher3.util.IntArray;
 import com.android.launcher3.util.IntSparseArrayMap;
 import com.android.launcher3.util.PackageManagerHelper;
+import com.android.launcher3.Utilities;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -104,7 +105,7 @@ public class ImportDataTask {
                 .getSerialNumberForUser(Process.myUserHandle()));
 
         boolean createEmptyRowOnFirstScreen;
-        if (FeatureFlags.QSB_ON_FIRST_SCREEN) {
+        if (Utilities.showQSB(mContext)) {
             try (Cursor c = mContext.getContentResolver().query(mOtherFavoritesUri, null,
                     // get items on the first row of the first screen (min screen id)
                     "profileId = ? AND container = -100 AND cellY = 0 AND screen = " +
