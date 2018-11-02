@@ -101,6 +101,8 @@ import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.android.internal.util.aospextended.AEXUtils;
+
 /**
  * Various utilities shared amongst the Launcher's classes.
  */
@@ -135,6 +137,7 @@ public final class Utilities {
      */
     public static final int EDGE_NAV_BAR = 1 << 8;
 
+    public static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
     public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
     private static final long WAIT_BEFORE_RESTART = 250;
@@ -168,6 +171,8 @@ public final class Utilities {
     // An intent extra to indicate the launch source by launcher.
     public static final String EXTRA_WALLPAPER_LAUNCH_SOURCE =
             "com.android.wallpaper.LAUNCH_SOURCE";
+
+    public static final String SEARCH_PACKAGE = "com.google.android.googlequicksearchbox";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -865,6 +870,14 @@ public final class Utilities {
         public int getIntrinsicWidth() {
             return mSize;
         }
+    }
+
+    public static boolean showQSB(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        if (!AEXUtils.isPackageInstalled(context, SEARCH_PACKAGE)) {
+            return false;
+        }
+        return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
     }
 
     public static boolean isDoubleTapGestureEnabled(Context context) {
