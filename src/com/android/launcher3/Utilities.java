@@ -123,6 +123,7 @@ public final class Utilities {
     public static final String GRID_COLUMNS = "pref_grid_columns";
     public static final String GRID_ROWS = "pref_grid_rows";
     public static final String HOTSEAT_ICONS = "pref_hotseat_icons";
+	public static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
 
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
@@ -679,6 +680,10 @@ public final class Utilities {
             }
             android.os.Process.killProcess(android.os.Process.myPid());
         });
+    }
+
+    public static boolean showQSB(Context context) {
+        return getPrefs(context).getBoolean(KEY_SHOW_SEARCHBAR, true);
     }
 
 }
