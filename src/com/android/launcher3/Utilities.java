@@ -94,8 +94,6 @@ import java.util.regex.Pattern;
 
 import static com.android.launcher3.ItemInfoWithIcon.FLAG_ICON_BADGED;
 
-import com.android.internal.util.syberia.SyberiaUtils;
-
 /**
  * Various utilities shared amongst the Launcher's classes.
  */
@@ -790,7 +788,7 @@ public final class Utilities {
 
     public static boolean showQSB(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
-        if (!SyberiaUtils.isPackageInstalled(context, SEARCH_PACKAGE)) {
+        if (!LauncherAppState.getInstanceNoCreate().isSearchAppAvailable()) {
             return false;
         }
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
