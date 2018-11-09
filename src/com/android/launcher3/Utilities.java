@@ -101,8 +101,6 @@ import java.util.function.Consumer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.android.internal.util.aospextended.AEXUtils;
-
 /**
  * Various utilities shared amongst the Launcher's classes.
  */
@@ -874,7 +872,7 @@ public final class Utilities {
 
     public static boolean showQSB(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
-        if (!AEXUtils.isPackageInstalled(context, SEARCH_PACKAGE)) {
+        if (!LauncherAppState.getInstanceNoCreate().isSearchAppAvailable()) {
             return false;
         }
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
