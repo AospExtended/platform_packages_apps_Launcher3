@@ -54,6 +54,7 @@ import com.android.launcher3.util.PackageManagerHelper;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import com.android.launcher3.Utilities;
 
 /**
  * Utility class to import data from another Launcher which is based on Launcher3 schema.

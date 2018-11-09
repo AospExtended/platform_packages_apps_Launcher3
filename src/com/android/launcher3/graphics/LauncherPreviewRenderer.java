@@ -105,6 +105,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import com.android.launcher3.Utilities;
 
 /**
  * Utility class for generating the preview of Launcher for a given InvariantDeviceProfile.
