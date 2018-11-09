@@ -105,6 +105,8 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
+import com.android.launcher3.Utilities;
+
 /**
  * Utility class for generating the preview of Launcher for a given InvariantDeviceProfile.
  * Steps:
