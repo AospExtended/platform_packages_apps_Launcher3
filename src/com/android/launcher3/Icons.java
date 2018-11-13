@@ -32,6 +32,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.MenuItem;
 
@@ -48,6 +49,7 @@ import java.util.Objects;
 public class Icons extends SettingsActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     private static final String ICON_BADGING_PREFERENCE_KEY = "pref_icon_badging";
+    static final String KEY_PREF_LEGACY_ICON_MASK = "pref_legacy_icon_mask";
 
     /** Hidden field Settings.Secure.NOTIFICATION_BADGING */
     public static final String NOTIFICATION_BADGING = "notification_badging";
@@ -127,6 +129,7 @@ public class Icons extends SettingsActivity implements PreferenceFragment.OnPref
                     return true;
                 }
             });
+
         }
 
         @Override
