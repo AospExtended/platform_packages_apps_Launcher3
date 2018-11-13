@@ -32,6 +32,7 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
+import android.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.MenuItem;
 
@@ -48,6 +49,7 @@ import java.util.Objects;
 public class Icons extends SettingsActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     private static final String ICON_BADGING_PREFERENCE_KEY = "pref_icon_badging";
+    private static final String KEY_PREF_LEGACY_ICON_MASK = "pref_legacy_icon_mask";
 
     /** Hidden field Settings.Secure.NOTIFICATION_BADGING */
     public static final String NOTIFICATION_BADGING = "notification_badging";
@@ -117,12 +119,22 @@ public class Icons extends SettingsActivity implements PreferenceFragment.OnPref
                 }
             }
 
+            SwitchPreference forceLegacyIconMask = (SwitchPreference)
+                    findPreference(KEY_PREF_LEGACY_ICON_MASK);
+
             final ListPreference iconSizes = (ListPreference) findPreference(Utilities.ICON_SIZE);
             iconSizes.setSummary(iconSizes.getEntry());
             iconSizes.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     int index = iconSizes.findIndexOfValue((String) newValue);
                     iconSizes.setSummary(iconSizes.getEntries()[index]);
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
+
+            forceLegacyIconMask.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
                 }
