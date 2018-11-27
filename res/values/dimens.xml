@@ -227,4 +227,7 @@
     <!-- Overview -->
     <dimen name="options_menu_icon_size">24dp</dimen>
     <dimen name="options_menu_thumb_size">32dp</dimen>
+
+    <dimen name="dynamic_grid_hotseat_top_padding_hidden_bottom_qsb">8dp</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_padding_hidden_bottom_qsb">0dp</dimen>
 </resources>
