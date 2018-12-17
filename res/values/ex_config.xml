@@ -24,4 +24,7 @@
     <item type="id" name="g_icon" />
     <item type="id" name="mic_icon" />
 
+    <!-- Quickspace -->
+    <item type="id" name="reserved_container_workspace" />
+
 </resources>

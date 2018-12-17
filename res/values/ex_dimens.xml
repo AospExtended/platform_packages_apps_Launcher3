@@ -41,4 +41,7 @@
     <dimen name="edit_dialog_min_width">200dp</dimen>
     <dimen name="grid_item_spacing">15dp</dimen>
 
+    <!-- QuickSpace -->
+    <dimen name="quickspace_title_size">24dp</dimen>
+
 </resources>

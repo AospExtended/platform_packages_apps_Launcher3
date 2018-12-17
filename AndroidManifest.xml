@@ -70,6 +70,9 @@
         android:protectionLevel="signatureOrSystem"/>
     <uses-permission android:name="com.google.android.apps.nexuslauncher.permission.QSB" />
 
+    <!-- QuickSpace -->
+    <uses-permission android:name="org.pixelexperience.weather.client.READ_WEATHER" />
+
     <application
         android:backupAgent="com.android.launcher3.LauncherBackupAgent"
         android:fullBackupOnly="true"

@@ -37,6 +37,7 @@ import com.android.internal.util.aospextended.AEXUtils;
 public class Homescreen extends SettingsActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
+    static final String KEY_SHOW_QUICKSPACE = "pref_show_quickspace";
 
     @Override
     protected void onCreate(final Bundle bundle) {
@@ -78,6 +79,8 @@ public class Homescreen extends SettingsActivity implements PreferenceFragment.O
 
             SwitchPreference feedIntegration = (SwitchPreference)
                     findPreference(KEY_FEED_INTEGRATION);
+            SwitchPreference showQuickspace = (SwitchPreference)
+                    findPreference(KEY_SHOW_QUICKSPACE);
 
             if (!AEXUtils.isPackageInstalled(mContext, LauncherTab.SEARCH_PACKAGE)) {
                 getPreferenceScreen().removePreference(feedIntegration);
@@ -136,6 +139,13 @@ public class Homescreen extends SettingsActivity implements PreferenceFragment.O
 
             SwitchPreference showBottomSearchBar = (SwitchPreference) findPreference(Utilities.BOTTOM_SEARCH_BAR_KEY);
             showBottomSearchBar.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
+
+            showQuickspace.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;

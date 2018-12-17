@@ -35,4 +35,9 @@
         <item name="android:outlineProvider">none</item>
     </style>
 
+    <!-- QuickSpace -->
+    <style name="QuickSpaceText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
 </resources>

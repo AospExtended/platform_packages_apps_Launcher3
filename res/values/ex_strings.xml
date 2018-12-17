@@ -126,4 +126,9 @@
     <string name="lock_desktop_title">Lock desktop</string>
     <string name="lock_desktop_summary">Prevent the homescreen from being modified</string>
     <string name="lock_desktop_toast">Desktop is locked. Unlock it to proceed.</string>
+
+    <!-- QuickSpace -->
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Show at the top of your Home screen</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>
