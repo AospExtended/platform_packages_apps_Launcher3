@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="pref_custom_recents_corner_switch"
+        android:title="@string/custom_recents_corners_switch_title"
+        android:summary="@string/custom_recents_corners_switch_summary"
+        android:defaultValue="false"
+        android:persistent="true"/>
+
+    <ListPreference
+        android:key="pref_custom_recents_corner_type"
+        android:title="@string/custom_recents_corners_type_title"
+        android:summary="%s"
+        android:entries="@array/custom_recents_corners_type_names"
+        android:entryValues="@array/custom_recents_corners_type_values"
+        android:defaultValue="0"
+        android:persistent="true"
+        android:dependency="pref_custom_recents_corner_switch"/>
+
+</PreferenceScreen>
