@@ -131,6 +131,14 @@
             android:autoRemoveFromRecents="true"
             android:parentActivityName="com.android.launcher3.SettingsActivity" />
 
+        <!-- Recents -->
+        <activity
+            android:name="com.android.launcher3.Recents"
+            android:label="@string/recents_category_title"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true"
+            android:parentActivityName="com.android.launcher3.SettingsActivity" />
+
         <!-- Gestures -->
         <activity
             android:name="com.android.launcher3.Gestures"
