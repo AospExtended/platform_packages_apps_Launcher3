@@ -22,12 +22,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="pref_homescreen_dt_gestures_names">
         <item>@string/pref_homescreen_dt_gestures_none</item>
         <item>@string/pref_homescreen_dt_gestures_sleep</item>
         <item>@string/pref_homescreen_dt_gestures_torch</item>
+        <item>@string/pref_homescreen_dt_gestures_google</item>
     </string-array>
 
     <!-- Grid layout -->
