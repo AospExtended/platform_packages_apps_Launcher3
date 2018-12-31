@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- QSB -->
+    <item type="id" name="hotseat_qsb_menu_item" />
+    <item type="id" name="drag_indicator" />
+    <item type="id" name="g_icon" />
+    <item type="id" name="mic_icon" />
+
+</resources>
