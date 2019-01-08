@@ -128,9 +128,7 @@ public class HotseatQsbView extends BaseQsbView {
         View.inflate(new ContextThemeWrapper(getContext(), R.style.HotseatQsbTheme), R.layout.qsb_hotseat_content, this);
         setColor(nightModeWantsDarkTheme ? 0xD9444444 : 0xCCFFFFFF);
         setColorAlpha(ColorUtils.setAlphaComponent(mColor, mQsbConfig.getMicOpacity()));
-        TextView hintView = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.qsb_hint, this, false);
-        setHintText("Tap to search on Google", hintView);
-        addView(hintView);
+
     }
 
     public void reinflateViews() {
