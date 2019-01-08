@@ -17,8 +17,6 @@ package com.android.launcher3.qsb;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.app.WallpaperInfo;
-import android.app.WallpaperManager;
 import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -27,6 +25,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
@@ -43,6 +42,7 @@ import com.android.launcher3.Launcher;
 import com.android.launcher3.LauncherCallbacks;
 import com.android.launcher3.qsb.configs.ConfigurationBuilder;
 import com.android.launcher3.qsb.configs.QsbConfiguration;
+import com.android.launcher3.uioverrides.WallpaperColorInfo;
 
 import com.android.launcher3.CellLayout;
 import com.android.launcher3.DeviceProfile;
@@ -53,13 +53,15 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 
 import java.util.List;
 
-public class HotseatQsbView extends BaseQsbView {
+public class HotseatQsbView extends BaseQsbView implements WallpaperColorInfo.OnChangeListener {
 
-    private BroadcastReceiver mWallpaperChanged;
     private BroadcastReceiver mSearchReceiver;
 
     public Context mContext;
     private QsbConfiguration mQsbConfig;
+
+    private int mThemeRes = R.style.AppTheme;
+    WallpaperColorInfo mWallpaperColorInfo;
 
     public HotseatQsbView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0);
@@ -68,12 +70,6 @@ public class HotseatQsbView extends BaseQsbView {
     public HotseatQsbView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         mContext = context;
-        mWallpaperChanged = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context context, Intent intent) {
-                reinflateViews();
-            }
-        };
         mSearchReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -86,6 +82,37 @@ public class HotseatQsbView extends BaseQsbView {
         };
         mQsbConfig = QsbConfiguration.getInstance(context);
         setOnClickListener(this);
+
+        // Update theme
+        WallpaperColorInfo wallpaperColorInfo = WallpaperColorInfo.getInstance(context);
+        wallpaperColorInfo.addOnChangeListener(this);
+        int themeRes = getThemeRes(wallpaperColorInfo);
+        if (themeRes != mThemeRes) {
+            mThemeRes = themeRes;
+        }
+        updateTheme(wallpaperColorInfo);
+    }
+
+    @Override
+    public void onExtractedColorsChanged(WallpaperColorInfo wallpaperColorInfo) {
+        if (mThemeRes != getThemeRes(wallpaperColorInfo)) {
+            updateTheme(wallpaperColorInfo);
+            reinflateViews();
+        }
+    }
+
+    protected int getThemeRes(WallpaperColorInfo wallpaperColorInfo) {
+        if (wallpaperColorInfo.isDark()) {
+            return wallpaperColorInfo.supportsDarkText() ?
+                    R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark;
+        } else {
+            return wallpaperColorInfo.supportsDarkText() ?
+                    R.style.AppTheme_DarkText : R.style.AppTheme;
+        }
+    }
+
+    private void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
+        mWallpaperColorInfo = wallpaperColorInfo;
     }
 
     @Override
@@ -93,7 +120,6 @@ public class HotseatQsbView extends BaseQsbView {
         loadViews();
         setSuperGAlpha();
         super.onAttachedToWindow();
-        getContext().registerReceiver(mWallpaperChanged, new IntentFilter("android.intent.action.WALLPAPER_CHANGED"));
         setMicRipple();
         setOnFocusChangeListener(mLauncher.mFocusHandler);
     }
@@ -101,7 +127,7 @@ public class HotseatQsbView extends BaseQsbView {
     @Override
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        getContext().unregisterReceiver(mWallpaperChanged);
+        WallpaperColorInfo.getInstance(mContext).removeOnChangeListener(this);
     }
 
     public void setSuperGAlpha() {
@@ -120,8 +146,11 @@ public class HotseatQsbView extends BaseQsbView {
     }
 
     public void loadViews() {
+        final Configuration config = mContext.getResources().getConfiguration();
+        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
+                == Configuration.UI_MODE_NIGHT_YES;
         View.inflate(new ContextThemeWrapper(getContext(), R.style.HotseatQsbTheme), R.layout.qsb_hotseat_content, this);
-        setColor(0xCCFFFFFF);
+        setColor(nightModeWantsDarkTheme ? 0xD9444444 : 0xCCFFFFFF);
         setColorAlpha(ColorUtils.setAlphaComponent(mColor, mQsbConfig.getMicOpacity()));
         TextView hintView = (TextView) LayoutInflater.from(getContext()).inflate(R.layout.qsb_hint, this, false);
         setHintText("Tap to search on Google", hintView);
