@@ -119,7 +119,7 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
         final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
                 == Configuration.UI_MODE_NIGHT_YES;
         setColor(ColorUtils.compositeColors(
-                ColorUtils.compositeColors(nightModeWantsDarkTheme ? 0xD9444444 : 0xCCFFFFFF, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)),
+                ColorUtils.compositeColors(nightModeWantsDarkTheme ? 0xD9282828 : 0xCCFFFFFF, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)),
                 wallpaperColorInfo.getMainColor()));
     }
 
@@ -149,7 +149,7 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
         setMicPaint(0.0f);
         mUseTwoBubbles = false;
         setHintText(mQsbConfig.hintTextValue(), mHint);
-        setMicRipple();
+        //setMicRipple();
     }
 
     public void onClick(View view) {

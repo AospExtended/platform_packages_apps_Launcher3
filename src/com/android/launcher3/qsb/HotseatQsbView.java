@@ -96,7 +96,7 @@ public class HotseatQsbView extends BaseQsbView {
         loadViews();
         setSuperGAlpha();
         super.onAttachedToWindow();
-        setMicRipple();
+        //setMicRipple();
         setOnFocusChangeListener(mLauncher.mFocusHandler);
     }
 
@@ -126,7 +126,7 @@ public class HotseatQsbView extends BaseQsbView {
         final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
                 == Configuration.UI_MODE_NIGHT_YES;
         View.inflate(new ContextThemeWrapper(getContext(), R.style.HotseatQsbTheme), R.layout.qsb_hotseat_content, this);
-        setColor(nightModeWantsDarkTheme ? 0xD9444444 : 0xCCFFFFFF);
+        setColor(nightModeWantsDarkTheme ? 0xD9282828 : 0xCCFFFFFF);
         setColorAlpha(ColorUtils.setAlphaComponent(mColor, mQsbConfig.getMicOpacity()));
 
     }
@@ -136,7 +136,7 @@ public class HotseatQsbView extends BaseQsbView {
         loadViews();
         setSuperGAlpha();
         getBaseQsbView();
-        setMicRipple();
+        //setMicRipple();
     }
 
     @Override
