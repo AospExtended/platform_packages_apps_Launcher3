@@ -17,16 +17,50 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Nastavenia</string>
     <!-- Categories -->
+    <string name="home_category_title">Domovská obrazovka</string>
+    <string name="home_category_summary">Nastaviť Google now panel a ďalšie</string>
+    <string name="icons_category_title">Ikony</string>
+    <string name="icons_category_summary">Nastaviť tvar ikony, veľkosť a ďalšie</string>
+    <string name="app_drawer_category_title">Ponuka aplikácií</string>
+    <string name="app_drawer_category_summary">Prispôsobiť ponuku aplikácií</string>
+    <string name="gestures_category_title">Gestá</string>
+    <string name="gestures_category_summary">Podeľte sa o svoju skúsenosť</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Rozloženie s mriežkou</string>
+    <string name="icon_layout_title">Rozloženie ikon</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Balík ikon</string>
+    <string name="icon_pack_summary">Zmeňte si vzhľad ikon aplikácii</string>
+    <string name="icon_pack_none">Žiadny</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Tvar ikony</string>
+    <string name="icon_shape_rounded_square">Zaoblený štvorec</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Vynútiť tvar ikon na staršie ikony</string>
+    <string name="legacy_icon_mask_summary">Môže spôsobiť problém s vlastným balíkom ikon, ak je toto povolené</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Veľkosť ikony</string>
+    <string name="icon_size_extra_small">Drobné</string>
+    <string name="icon_size_small">Malé</string>
+    <string name="icon_size_average">Predvolené</string>
+    <string name="icon_size_large">Veľké</string>
+    <string name="icon_size_extra_large">Extra veľké</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Vymazať všetky položky</string>
+    <string name="allow_swipe_down_clearall_desc">Potiahnite zvislo nadol v zobrazení nedávnych aplikáciách a zrušte všetky aplikácie</string>
+    <string name="pref_homescreen_dt_gestures_title">Dvojité poklepanie</string>
+    <string name="pref_homescreen_dt_gestures_summary">Vyberte akciu gesta dvojitým ťuknutím na domovskej obrazovke</string>
+    <string name="pref_homescreen_dt_gestures_none">Žiadny</string>
+    <string name="pref_homescreen_dt_gestures_torch">Svietidlo</string>
+    <string name="pref_notifications_gesture_title">Gesto notifikácií</string>
+    <string name="pref_notifications_gesture_summary">Potiahnite zvislo nadol na domácej obrazovke pre zobrazenie QS panelu</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Zobraziť Google aplikácie</string>
     <!-- Grid -->
     <!-- Hidden apps -->
     <!-- Show labels on icon -->
     <!-- Show searchbar -->
+    <!-- Recents corned -->
 </resources>

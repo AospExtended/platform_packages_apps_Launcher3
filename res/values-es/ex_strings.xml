@@ -17,9 +17,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
-    <string name="settings_title">Ajustes</string>
+    <string name="settings_title">Ajustes de Home</string>
     <!-- Categories -->
-    <string name="home_category_title">Pantalla de inicio</string>
+    <string name="home_category_title">Home screen</string>
     <string name="home_category_summary">Configura el panel de Google Now y más</string>
     <string name="icons_category_title">Iconos</string>
     <string name="icons_category_summary">Configura la forma y el tamaño de los iconos y más</string>
@@ -33,17 +33,53 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon packs -->
     <string name="icon_pack">Paquete de iconos</string>
     <string name="icon_pack_summary">Cambia la apariencia de tus iconos</string>
+    <string name="icon_pack_none">Ninguno</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forma del icono</string>
+    <string name="icon_shape_rounded_square">Cuadrado redondeado</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Forzar máscara de forma en los iconos antiguos</string>
+    <string name="legacy_icon_mask_summary">Puede causar problema con paquetes de iconos personalizados, si está habilitado</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Tamaño del icono</string>
+    <string name="icon_size_extra_small">Muy pequeño</string>
+    <string name="icon_size_small">Pequeño</string>
+    <string name="icon_size_average">Por defecto</string>
+    <string name="icon_size_large">Grande</string>
     <string name="icon_size_extra_large">Muy grande</string>
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Limpiar todo</string>
+    <string name="allow_swipe_down_clearall_desc">Deslizamiento verticalmente hacia abajo para borrar todas las apps</string>
     <string name="pref_homescreen_dt_gestures_title">Gestos de doble toque</string>
+    <string name="pref_homescreen_dt_gestures_summary">Seleccione la acción de doble toque en la pantalla de inicio</string>
+    <string name="pref_homescreen_dt_gestures_none">Ninguno</string>
+    <string name="pref_homescreen_dt_gestures_torch">Linterna</string>
+    <string name="pref_notifications_gesture_title">Gesto de notificaciones</string>
+    <string name="pref_notifications_gesture_summary">Deslizamiento verticalmente hacia abajo en la pantalla de inicio para mostrar el panel de ajustes rápidos</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Mostrar aplicación de Google</string>
+    <string name="google_feed_summary">A la izquierda de la antalla de inicio principal</string>
     <!-- Grid -->
+    <string name="num_default">Por defecto</string>
+    <string name="number_of_columns_title">Número de columnas</string>
+    <string name="number_of_rows_title">Número de filas</string>
+    <string name="number_of_hotseat_title">Número de iconos en el dock</string>
+    <string name="state_loading">Aplicando\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Ocultar aplicaciones</string>
+    <string name="hide_app_sum">Ocultar aplicaciones del cajón de aplicaciones</string>
+    <string name="hide_app_selected">&#160;seleccionada</string>
+    <string name="hidden_app">Todas las aplicaciones</string>
     <string name="hide_selected">Esconder aplicaciones seleccionada(s)</string>
+    <string name="more">Más</string>
+    <string name="reset_hidden_apps">Reiniciar todo</string>
+    <string name="reset_hidden_apps_done">Las aplicaciones ocultas ahora están disponibles</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Nombres de aplicaciones</string>
+    <string name="desktop_show_label_summary">Mostrar nombres de aplicaciones en la pantalla de inicio</string>
+    <string name="allapps_show_label_summary">Mostrar nombres de aplicaciones en la pantalla de inicio</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Mostrar la barra de búsqueda</string>
+    <string name="show_searchbar_summary">Mostrar la barra de búsqueda en la pantalla de inicio</string>
+    <!-- Recents corned -->
 </resources>

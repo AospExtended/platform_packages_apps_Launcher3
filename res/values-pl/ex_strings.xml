@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gest dwukrotnego dotknięcia</string>
     <string name="pref_homescreen_dt_gestures_summary">Wybierz akcję dwukrotnego kliknięcia na ekranie głównym</string>
     <string name="pref_homescreen_dt_gestures_none">Brak</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Uśpij</string>
     <string name="pref_homescreen_dt_gestures_torch">Latarka</string>
     <string name="pref_notifications_gesture_title">Gest powiadomień</string>
     <string name="pref_notifications_gesture_summary">Przesuń pionowo w dół ekranu głównego, aby wyświetlić panel powiadomień</string>
@@ -77,9 +76,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="reset_hidden_apps_done">Ukryte aplikacje są teraz widoczne</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Etykiety aplikacji</string>
-    <string name="desktop_show_label_summary">Usuwa etykiety ikon aplikacji na ekranie głównym</string>
-    <string name="allapps_show_label_summary">Usuwa etykiety ikon aplikacji na ekranie głównym</string>
+    <string name="desktop_show_label_summary">Wyświetlanie etykiet aplikacji na ekranie głównym</string>
+    <string name="allapps_show_label_summary">Wyświetlanie etykiet aplikacji w szufladzie aplikacji</string>
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Pokaż pasek wyszukiwania</string>
     <string name="show_searchbar_summary">Usuwa etykiety ikon aplikacji na ekranie głównym</string>
+    <!-- Recents corned -->
 </resources>

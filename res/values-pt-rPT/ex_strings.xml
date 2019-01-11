@@ -17,16 +17,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Definições</string>
     <!-- Categories -->
+    <string name="home_category_title">Ecrã inicial</string>
+    <string name="home_category_summary">Definir o Google agora painel e mais</string>
+    <string name="icons_category_title">Ícones</string>
+    <string name="icons_category_summary">Definir a forma de ícone, tamanho e muito mais</string>
+    <string name="app_drawer_category_title">Gaveta de aplicações</string>
+    <string name="app_drawer_category_summary">Personalizar gaveta de aplicações</string>
+    <string name="gestures_category_title">Gestos</string>
+    <string name="gestures_category_summary">Partilhe a sua experiência</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Layout em grelha</string>
+    <string name="icon_layout_title">Layout de ícone</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Pacote de ícones</string>
+    <string name="icon_pack_summary">Mude o Visual de seus ícones do app</string>
+    <string name="icon_pack_none">Nenhum</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forma dos ícones</string>
+    <string name="icon_shape_rounded_square">Quadrado arredondado</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Máscara de forma força nos ícones legados</string>
+    <string name="legacy_icon_mask_summary">Pode causar problema com pacotes de ícone personalizado, se habilitado</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Tamanho do Ícone</string>
+    <string name="icon_size_extra_small">Muito pequeno</string>
+    <string name="icon_size_small">Pequeno</string>
+    <string name="icon_size_average">Padrão</string>
+    <string name="icon_size_large">Grande</string>
+    <string name="icon_size_extra_large">Muito grande</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Claro tudo de vista recents</string>
+    <string name="allow_swipe_down_clearall_desc">Furto verticalmente para baixo na visualização recents para limpar todos os apps</string>
+    <string name="pref_homescreen_dt_gestures_title">Gesto de toque duplo</string>
+    <string name="pref_homescreen_dt_gestures_summary">Selecione a ação do gesto duplo toque na tela inicial do</string>
+    <string name="pref_homescreen_dt_gestures_none">Nenhum</string>
+    <string name="pref_homescreen_dt_gestures_torch">Lanterna</string>
+    <string name="pref_notifications_gesture_title">Gesto de notificações</string>
+    <string name="pref_notifications_gesture_summary">Furto verticalmente para baixo na tela inicial para mostrar o painel de QS</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Exibir Google app</string>
+    <string name="google_feed_summary">À esquerda da tela home principal</string>
     <!-- Grid -->
+    <string name="num_default">Padrão</string>
+    <string name="number_of_columns_title">Número de colunas</string>
+    <string name="number_of_rows_title">Número de linhas</string>
+    <string name="number_of_hotseat_title">Número de ícones da doca</string>
+    <string name="state_loading">Applying\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Ocultar aplicações</string>
+    <string name="hide_app_sum">Ocultar aplicações no menu</string>
+    <string name="hide_app_selected">&#160;selecionado</string>
+    <string name="hidden_app">Todas as aplicações</string>
+    <string name="hide_selected">Ocultar a(s) aplicação(ões) selecionada(s)</string>
+    <string name="more">Mais</string>
+    <string name="reset_hidden_apps">Restaurar tudo</string>
+    <string name="reset_hidden_apps_done">As aplicações escondidas estão agora disponíveis</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Rótulos de App</string>
+    <string name="desktop_show_label_summary">Remove as etiquetas dos ícones das aplicações do ecrã inicial</string>
+    <string name="allapps_show_label_summary">Remove as etiquetas dos ícones das aplicações do ecrã inicial</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Mostrar barra de pesquisa</string>
+    <string name="show_searchbar_summary">Remove as etiquetas dos ícones das aplicações do ecrã inicial</string>
+    <!-- Recents corned -->
 </resources>

@@ -65,7 +65,6 @@ icon_pack_picker_dialog_title
 
 smartbar_ime_action_none
 கோப்பு: strings. xml</string>
-    <string name="pref_homescreen_dt_gestures_sleep">உறக்கநிலையிலிரு</string>
     <string name="pref_homescreen_dt_gestures_torch">பிரகாச ஒளி
 
 powermenu_torch
@@ -97,4 +96,5 @@ powermenu_torch
     <!-- Show searchbar -->
     <string name="show_searchbar_title">தேடல் பட்டையைக் காண்பி</string>
     <string name="show_searchbar_summary">முகப்புத் திரையில் தேடல் பட்டியைக் காண்பி</string>
+    <!-- Recents corned -->
 </resources>

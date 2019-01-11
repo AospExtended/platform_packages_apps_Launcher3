@@ -17,16 +17,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">सेटिंग्स</string>
     <!-- Categories -->
+    <string name="home_category_title">होम स्क्रीन</string>
+    <string name="home_category_summary">गूगल नाउ पैनल तथा अन्य सेट करें</string>
+    <string name="icons_category_title">आइकॉन</string>
+    <string name="icons_category_summary">आइकॉन आकार, आकृति तथा अन्य सेट करें</string>
+    <string name="app_drawer_category_title">एप्लिकेशन ड्रॉअर</string>
+    <string name="app_drawer_category_summary">अपने एप्लिकेशन ड्रॉअर बदलाव करें</string>
+    <string name="gestures_category_title">गेस्चर्स</string>
+    <string name="gestures_category_summary">अपने अनुभव को बढ़ाएं</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">ग्रिड का डिज़ाइन</string>
+    <string name="icon_layout_title">आइकॉन का डिज़ाइन</string>
     <!-- Icon packs -->
+    <string name="icon_pack">आइकॉन पैक</string>
+    <string name="icon_pack_summary">अपने ऐप आइकन्स की दिखावट बदलें</string>
+    <string name="icon_pack_none">कोई भी नहीं</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">आइकॉन आकृति</string>
+    <string name="icon_shape_rounded_square">गोल कोने वाला वर्ग</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">लीगेसी आइकन्स पर आकृति मास्क लागू करें</string>
+    <string name="legacy_icon_mask_summary">सक्षम होने पर, कस्टम आइकॉन पैक के साथ समस्या पैदा कर सकता है</string>
     <!-- Icon size -->
+    <string name="icon_size_title">आइकॉन का आकार</string>
+    <string name="icon_size_extra_small">बहुत छोटा</string>
+    <string name="icon_size_small">छोटा</string>
+    <string name="icon_size_average">डिफॉल्ट</string>
+    <string name="icon_size_large">बड़ा</string>
+    <string name="icon_size_extra_large">ज्यादा बड़ा</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">रिसेंट्स से सभी ऐप्स हटाएं</string>
+    <string name="allow_swipe_down_clearall_desc">रिसेंट्स से सभी ऐप्स को हटाने के लिए ऊपर से नीचे की ओर स्वाइप करें</string>
+    <string name="pref_homescreen_dt_gestures_title">डबल-टैप जेस्चर</string>
+    <string name="pref_homescreen_dt_gestures_summary">होम स्क्रीन पर डबल टैप जेस्चर की कार्रवाई का चयन करें</string>
+    <string name="pref_homescreen_dt_gestures_none">कोई भी नहीं</string>
+    <string name="pref_homescreen_dt_gestures_torch">टॉर्च</string>
+    <string name="pref_notifications_gesture_title">सुचना जेस्चर</string>
+    <string name="pref_notifications_gesture_summary">QS पैनल को दिखाने के लिए होम स्क्रीन पर ऊपर से नीचे की ओर स्वाइप करें</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">गूगल ऐप प्रदर्शित करें</string>
+    <string name="google_feed_summary">मुख्य होम स्क्रीन के बाईं ओर</string>
     <!-- Grid -->
+    <string name="num_default">डिफॉल्ट</string>
+    <string name="number_of_columns_title">स्तंभों की संख्या</string>
+    <string name="number_of_rows_title">पंक्तियों की संख्या</string>
+    <string name="number_of_hotseat_title">डॉक चिह्न की संख्या</string>
+    <string name="state_loading">लागू हो रहा है\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">एप्स छुपाएं</string>
+    <string name="hide_app_sum">एप्लिकेशन ड्रॉअर से एप्लिकेशन छुपाएं</string>
+    <string name="hide_app_selected">&#160;चयनित</string>
+    <string name="hidden_app">सभी ऐप्स</string>
+    <string name="hide_selected">चयनित एप्लिकेशन छुपाएँ</string>
+    <string name="more">अधिक</string>
+    <string name="reset_hidden_apps">सभी रीसेट करें</string>
+    <string name="reset_hidden_apps_done">छुपे हुए ऐप्स अब उपलब्ध हैं</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">एप्लिकेशन लेबल</string>
+    <string name="desktop_show_label_summary">होम स्क्रीन पर ऐप्स के लेबल दिखाएं</string>
+    <string name="allapps_show_label_summary">एप्लिकेशन ड्रॉअर में ऐप्स के लेबल दिखाएं</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">खोज बार दिखाएं</string>
+    <string name="show_searchbar_summary">होम स्क्रीन पर खोज बार दिखाएं</string>
+    <!-- Recents corned -->
 </resources>

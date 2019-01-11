@@ -17,16 +17,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Nastavitve</string>
     <!-- Categories -->
+    <string name="home_category_title">Začetni zaslon</string>
+    <string name="home_category_summary">Nastavite Google Now ploščo in več</string>
+    <string name="icons_category_title">Ikone</string>
+    <string name="icons_category_summary">Nastavite obliko ikon, velikost in več</string>
+    <string name="app_drawer_category_title">Predal aplikacij</string>
+    <string name="app_drawer_category_summary">Prilagodite vaš predal aplikacij</string>
+    <string name="gestures_category_title">Poteze</string>
+    <string name="gestures_category_summary">Izboljšajte svojo izkušnjo</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Razporeditev mreže</string>
+    <string name="icon_layout_title">Razporeditev ikon</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Paket ikon</string>
+    <string name="icon_pack_summary">Spremenite izgled vaših ikon aplikacij</string>
+    <string name="icon_pack_none">Brez</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Oblika ikon</string>
+    <string name="icon_shape_rounded_square">Zaobljen kvadrat</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Vsili obliko na zapuščinskih ikonah</string>
+    <string name="legacy_icon_mask_summary">Lahko povzroči težavo s paketi ikon po meri, če je omogočeno</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Velikost ikon</string>
+    <string name="icon_size_extra_small">Drobne</string>
+    <string name="icon_size_small">Majhne</string>
+    <string name="icon_size_average">Privzeto</string>
+    <string name="icon_size_large">Velike</string>
+    <string name="icon_size_extra_large">Zelo velike</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Počisti vse iz pregleda nedavnih</string>
+    <string name="allow_swipe_down_clearall_desc">Potegnite navpično navzdol v pregledu nedavnih, da počistite vse aplikacije</string>
+    <string name="pref_homescreen_dt_gestures_title">Poteza dvojnega tapa</string>
+    <string name="pref_homescreen_dt_gestures_summary">Izberite dejanje poteze dvojnega tapa na začetnem zaslonu</string>
+    <string name="pref_homescreen_dt_gestures_none">Brez</string>
+    <string name="pref_homescreen_dt_gestures_torch">Svetilka</string>
+    <string name="pref_notifications_gesture_title">Poteza za obvestila</string>
+    <string name="pref_notifications_gesture_summary">Potegnite navpično navzdol na začetnem zaslonu za prikaz plošče hitrih nastavitev</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Pokaži aplikacijo Google</string>
+    <string name="google_feed_summary">V levo od glavnega začetnega zaslona</string>
     <!-- Grid -->
+    <string name="num_default">Privzeto</string>
+    <string name="number_of_columns_title">Število stolpcev</string>
+    <string name="number_of_rows_title">Število vrstic</string>
+    <string name="number_of_hotseat_title">Število ikon v nabrežju</string>
+    <string name="state_loading">Uveljavljanje \u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Skrij aplikacije</string>
+    <string name="hide_app_sum">Skrij aplikacije iz predala aplikacij</string>
+    <string name="hide_app_selected">&#160;izbranih</string>
+    <string name="hidden_app">Vse aplikacije</string>
+    <string name="hide_selected">Skrij izbrane aplikacije</string>
+    <string name="more">Več</string>
+    <string name="reset_hidden_apps">Ponastavi vse</string>
+    <string name="reset_hidden_apps_done">Skrite aplikacije so zdaj na voljo</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Oznake aplikacij</string>
+    <string name="desktop_show_label_summary">Prikaži oznake aplikacij na začetnem zaslonu</string>
+    <string name="allapps_show_label_summary">Prikaži oznake aplikacij v predalu aplikacij</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Pokaži iskalno vrstico</string>
+    <string name="show_searchbar_summary">Prikaži iskalna vrstico na začetnem zaslonu</string>
+    <!-- Recents corned -->
 </resources>

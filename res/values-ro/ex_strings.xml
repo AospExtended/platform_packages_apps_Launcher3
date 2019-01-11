@@ -17,16 +17,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Setări</string>
     <!-- Categories -->
+    <string name="home_category_title">Panou Principal</string>
+    <string name="home_category_summary">Setează panoul Google Now și altele</string>
+    <string name="icons_category_title">Iconițe</string>
+    <string name="icons_category_summary">Setează forma iconițelor, mărimea și altele</string>
+    <string name="app_drawer_category_title">Desfășurător aplicații</string>
+    <string name="app_drawer_category_summary">Configurează-ți desfășurătorul de aplicații</string>
+    <string name="gestures_category_title">Gesturi</string>
+    <string name="gestures_category_summary">Îmbunătățește-ți experiența</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Formatul chenarului</string>
+    <string name="icon_layout_title">Formatul iconițelor</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Pachet de iconițe</string>
+    <string name="icon_pack_summary">Schimbă aspectul iconițelor aplicațiilor</string>
+    <string name="icon_pack_none">Nici una</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forma iconițelor</string>
+    <string name="icon_shape_rounded_square">Pătrat rotunjit</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Forțează forma pe iconițele originale</string>
+    <string name="legacy_icon_mask_summary">Poate cauza erori la pachetele de iconițe custom, dacă este activat</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Dimensiune iconiță</string>
+    <string name="icon_size_extra_small">Mică</string>
+    <string name="icon_size_small">Mică</string>
+    <string name="icon_size_average">Prestabilită</string>
+    <string name="icon_size_large">Mare</string>
+    <string name="icon_size_extra_large">Foarte mare</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Șterge tot din vizualizare recente</string>
+    <string name="allow_swipe_down_clearall_desc">Glisează in jos în vizualizare recente pentru a elimina toate aplicațiile</string>
+    <string name="pref_homescreen_dt_gestures_title">Gest dublă atingere</string>
+    <string name="pref_homescreen_dt_gestures_summary">Selectează acțiunea gestului de dublă atingere pe panoul principal</string>
+    <string name="pref_homescreen_dt_gestures_none">Nici unul</string>
+    <string name="pref_homescreen_dt_gestures_torch">Lanternă</string>
+    <string name="pref_notifications_gesture_title">Gesturi notificări</string>
+    <string name="pref_notifications_gesture_summary">Glisează în jos pe panoul principal pentru a afișa panoul QS</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Afișează aplicația Google</string>
+    <string name="google_feed_summary">Spre stânga pe panoul principal</string>
     <!-- Grid -->
+    <string name="num_default">Implicit</string>
+    <string name="number_of_columns_title">Numărul de coloane</string>
+    <string name="number_of_rows_title">Numărul de rânduri</string>
+    <string name="number_of_hotseat_title">Numărul iconițelor din dock</string>
+    <string name="state_loading">Aplicare\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Ascunde aplicațiile</string>
+    <string name="hide_app_sum">Ascunde aplicațiile din desfășurătorul de aplicații</string>
+    <string name="hide_app_selected">&#160; selectată</string>
+    <string name="hidden_app">Toate aplicațiile</string>
+    <string name="hide_selected">Ascunde aplicația(iile) selectate</string>
+    <string name="more">Mai mult</string>
+    <string name="reset_hidden_apps">Resetează toate</string>
+    <string name="reset_hidden_apps_done">Ascunderea aplicațiilor este acum disponibilă</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Etichetele aplicației</string>
+    <string name="desktop_show_label_summary">Arată etichetele aplicațiilor pe panoul principal</string>
+    <string name="allapps_show_label_summary">Afișează etichetele aplicațiilor în desfășurător</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Afișează bara de căutare</string>
+    <string name="show_searchbar_summary">Afișează bara de căutare pe panoul principal</string>
+    <!-- Recents corned -->
 </resources>

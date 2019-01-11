@@ -17,6 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">ตั้งค่า</string>
     <!-- Categories -->
     <string name="home_category_title">หน้าจอหลัก</string>
     <string name="home_category_summary">ตั้งค่า google now และอื่นๆ</string>
@@ -37,6 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_shape_override_label_custom">รูปทรงไอคอน</string>
     <string name="icon_shape_rounded_square">ทรงกลม</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">เปลี่ยนรูปทรงบนไอค่อนเดิม</string>
     <string name="legacy_icon_mask_summary">อาจทำให้เกิดปัญหากับชุดไอคอนที่กำหนดเอง ถ้าเปิดใช้งาน</string>
     <!-- Icon size -->
     <string name="icon_size_title">ขนาดของไอคอน</string>
@@ -51,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">แตะสองครั้ง</string>
     <string name="pref_homescreen_dt_gestures_summary">เลือกการดำเนินการของท่าแตะสองครั้งบนหน้าจอ</string>
     <string name="pref_homescreen_dt_gestures_none">ไม่มี</string>
-    <string name="pref_homescreen_dt_gestures_sleep">พักหน้าจอ</string>
     <string name="pref_homescreen_dt_gestures_torch">ไฟฉาย</string>
     <string name="pref_notifications_gesture_title">ระดับเสียงแจ้งเตือน</string>
     <string name="pref_notifications_gesture_summary">ปัดนิ้วลงในแนวตั้งบนหน้าจอจะแสดงแผง QS</string>
@@ -71,11 +72,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="hidden_app">แอพพลิเคชั่นทั้งหมด</string>
     <string name="hide_selected">ซ่อนแอพที่เลือก</string>
     <string name="more">เพิ่ม​เติม</string>
-    <string name="reset_hidden_apps">เริ่มใหม่ทั้งหมด</string>
-    <string name="reset_hidden_apps_done">ซ่อนแอปใช้งานอยู่</string>
+    <string name="reset_hidden_apps">ตั้งค่าใหม่ทั้งหมด</string>
+    <string name="reset_hidden_apps_done">ซ่อนแอปที่ใช้งานอยู่</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">ชื่อแอป</string>
     <string name="desktop_show_label_summary">โชว์ชื่อแอปบนหน้าจอหลัก</string>
-    <string name="allapps_show_label_summary">โชว์ชื่อแอปบนหน้าเมนูแอป</string>
+    <string name="allapps_show_label_summary">โชว์ชื่อแอปบนหน้าเมนู</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">แสดงแถบค้นหา</string>
+    <string name="show_searchbar_summary">แสคงแถบค้นหาบนหน้าจอหลัก</string>
+    <!-- Recents corned -->
 </resources>

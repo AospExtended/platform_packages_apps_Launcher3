@@ -17,6 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">ການຕັ້ງຄ່າ</string>
     <!-- Categories -->
     <!-- Sub categories -->
     <!-- Icon packs -->
@@ -29,4 +30,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Hidden apps -->
     <!-- Show labels on icon -->
     <!-- Show searchbar -->
+    <!-- Recents corned -->
 </resources>

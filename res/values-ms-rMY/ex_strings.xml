@@ -39,6 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_shape_rounded_square">Persegi bulat</string>
     <!-- Icon mask -->
     <string name="legacy_icon_mask_title">Paksa topeng bentuk ke atas ikon legasi</string>
+    <string name="legacy_icon_mask_summary">Boleh menyebabkan masalah dengan pek ikon tersuai, jika diaktifkan</string>
     <!-- Icon size -->
     <string name="icon_size_title">Saiz ikon</string>
     <string name="icon_size_extra_small">Sangat kecil</string>
@@ -47,9 +48,38 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_size_large">Besar</string>
     <string name="icon_size_extra_large">Sangat besar</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Kosongkan semua dari pandangan menaik</string>
+    <string name="allow_swipe_down_clearall_desc">Leret menegak ke bawah dalam paparan hujah untuk membersihkan semua aplikasi</string>
+    <string name="pref_homescreen_dt_gestures_title">Gerakkan isyarat dua kali</string>
+    <string name="pref_homescreen_dt_gestures_summary">Pilih tindakan isyarat ketik dua kali pada skrin utama</string>
+    <string name="pref_homescreen_dt_gestures_none">Tiada</string>
+    <string name="pref_homescreen_dt_gestures_torch">Lampu suluh</string>
+    <string name="pref_notifications_gesture_title">Pemberitahuan isyarat</string>
+    <string name="pref_notifications_gesture_summary">Leret ke bawah ke bawah pada skrin utama untuk menunjukkan panel QS</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Paparkan apl Google</string>
+    <string name="google_feed_summary">Di sebelah kiri skrin utama utama</string>
     <!-- Grid -->
+    <string name="num_default">Lalai</string>
+    <string name="number_of_columns_title">Bilangan lajur</string>
+    <string name="number_of_rows_title">Bilangan lajur</string>
+    <string name="number_of_hotseat_title">Bilangan ikon dok</string>
+    <string name="state_loading">Memohon \ u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Sembunyikan aplikasinya</string>
+    <string name="hide_app_sum">Sembunyikan aplikasi dari laci aplikasi</string>
+    <string name="hide_app_selected">&#160;dipilih</string>
+    <string name="hidden_app">Semua aplikasi</string>
+    <string name="hide_selected">Sembunyikan aplikasi yang dipilih(s)</string>
+    <string name="more">Lebih banyak</string>
+    <string name="reset_hidden_apps">Tetapkan semula semua</string>
+    <string name="reset_hidden_apps_done">Apl tersembunyi kini tersedia</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Label aplikasi</string>
+    <string name="desktop_show_label_summary">Tunjukkan label aplikasi pada skrin utama</string>
+    <string name="allapps_show_label_summary">Tunjukkan label aplikasi pada skrin utama</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Tunjukkan bar carian</string>
+    <string name="show_searchbar_summary">Tunjukkan bar carian di skrin utama</string>
+    <!-- Recents corned -->
 </resources>

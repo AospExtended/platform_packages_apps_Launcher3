@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">ژست حرکتی دوبار ضربه زدن</string>
     <string name="pref_homescreen_dt_gestures_summary">انتخاب عمل ژست حرکتی 2 با ضربه زدن در صفحه اصلی</string>
     <string name="pref_homescreen_dt_gestures_none">هیچکدام</string>
-    <string name="pref_homescreen_dt_gestures_sleep">رفتن به حالت خواب</string>
     <string name="pref_homescreen_dt_gestures_torch">چراغ قوه</string>
     <string name="pref_notifications_gesture_title">ژست حرکتی اعلانات</string>
     <string name="pref_notifications_gesture_summary">برای دیدن منوی تنظیمات سریع در صفحه اصلی بصورت عمودی به پایین بکشید</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">نمایش نوار جستجو</string>
     <string name="show_searchbar_summary">نمایس نوار جستجو در صفحه اصلی</string>
+    <!-- Recents corned -->
 </resources>

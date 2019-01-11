@@ -48,12 +48,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_size_large">Velké</string>
     <string name="icon_size_extra_large">Extra velké</string>
     <!-- Gestures -->
-    <string name="allow_swipe_down_clearall_title">Zobrazení tlačítka \"Vymazat vše\"</string>
+    <string name="allow_swipe_down_clearall_title">Vymazat vše ze zobrazení nedávných</string>
     <string name="allow_swipe_down_clearall_desc">Přejděte svisle dolů v zobrazení nedávných a vymažte všechny aplikace</string>
     <string name="pref_homescreen_dt_gestures_title">Gesto dvojím poklepáním</string>
     <string name="pref_homescreen_dt_gestures_summary">Vyberte gesto dvojím poklepáním na domovskou obrazovku</string>
     <string name="pref_homescreen_dt_gestures_none">Žádné</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Spánek</string>
     <string name="pref_homescreen_dt_gestures_torch">Svítilna</string>
     <string name="pref_notifications_gesture_title">Gesta oznámení</string>
     <string name="pref_notifications_gesture_summary">Přejetím svisle směrem dolů na domovské obrazovce se zobrazí panel QS</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Zobrazit vyhledávací lištu</string>
     <string name="show_searchbar_summary">Zobrazit vyhledávací lištu na domovské obrazovce</string>
+    <!-- Recents corned -->
 </resources>

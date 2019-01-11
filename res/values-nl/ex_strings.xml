@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Dubbelklik gebaren</string>
     <string name="pref_homescreen_dt_gestures_summary">Selecteer de actie van het dubbelklik gebaar op het thuisscherm</string>
     <string name="pref_homescreen_dt_gestures_none">Geen</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Slaapstand</string>
     <string name="pref_homescreen_dt_gestures_torch">Zaklamp</string>
     <string name="pref_notifications_gesture_title">Meldingen gebaar</string>
     <string name="pref_notifications_gesture_summary">Verticaal omlaag vegen op het beginscherm voor het QS paneel weergeven</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Zoekbalk weergeven</string>
     <string name="show_searchbar_summary">Toon de zoekbalk op het thuisscherm</string>
+    <!-- Recents corned -->
 </resources>

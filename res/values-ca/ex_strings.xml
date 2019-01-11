@@ -17,16 +17,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Configuració</string>
     <!-- Categories -->
+    <string name="home_category_title">Pàgina d\'inici</string>
+    <string name="icons_category_title">Icones</string>
+    <string name="app_drawer_category_title">Calaix d\'aplicacions</string>
+    <string name="app_drawer_category_summary">Personalitza el calaix d\'aplicacions</string>
+    <string name="gestures_category_title">Gestos</string>
+    <string name="gestures_category_summary">Millora la teva experiència</string>
     <!-- Sub categories -->
     <!-- Icon packs -->
+    <string name="icon_pack">Paquet d\'icones</string>
+    <string name="icon_pack_none">Cap</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forma de la icona</string>
+    <string name="icon_shape_rounded_square">Quadrat arrodonit</string>
     <!-- Icon mask -->
     <!-- Icon size -->
+    <string name="icon_size_average">Per defecte</string>
     <!-- Gestures -->
     <!-- Google Feed -->
     <!-- Grid -->
     <!-- Hidden apps -->
+    <string name="more">Més</string>
+    <string name="reset_hidden_apps">Restablir tot</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Etiquetes de les aplicacions</string>
+    <string name="desktop_show_label_summary">Mostrar les etiquetes de les aplicacions a la pantalla d\'inici</string>
+    <string name="allapps_show_label_summary">Mostrar les etiquetes de les aplicacions al calaix d\'aplicacions</string>
     <!-- Show searchbar -->
+    <!-- Recents corned -->
 </resources>

@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Dvigubo bakstelėjimo gestas</string>
     <string name="pref_homescreen_dt_gestures_summary">Pasirinkite veiksmą, dvigubo bakstelėjimo gestas, pradiniame ekrane</string>
     <string name="pref_homescreen_dt_gestures_none">Nėra</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Miego režimas</string>
     <string name="pref_homescreen_dt_gestures_torch">Žibintuvėlis</string>
     <string name="pref_notifications_gesture_title">Pranešimų gestas</string>
     <string name="pref_notifications_gesture_summary">Norėdami pamatyti QS skydelį, perbraukite vertikaliai žemyn pradiniame ekrane</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Rodyti paieškos juostą</string>
     <string name="show_searchbar_summary">Rodyti paieškos juostą pradiniame ekrane</string>
+    <!-- Recents corned -->
 </resources>

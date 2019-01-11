@@ -20,15 +20,62 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="settings_title">സെറ്റിംഗ്സ്</string>
     <!-- Categories -->
     <string name="home_category_title">ഹോം സ്ക്രീൻ</string>
+    <string name="home_category_summary">ഗൂഗ്ൾ നൗ പന്നേൽ സെറ്റ് ചെയുക പിന്നെ അതികവും</string>
+    <string name="icons_category_title">ഐക്കൺ</string>
+    <string name="icons_category_summary">ഐക്കൺ ഷാപ്പ് സയിസ് അധികവും ക്രേമികരിക്കുക</string>
+    <string name="app_drawer_category_title">അപ്പ് ട്രൗർ</string>
+    <string name="app_drawer_category_summary">അപ്പോ ട്രൗർ ക്രേമികരിക്കുക</string>
+    <string name="gestures_category_title">ആംഗ്യങ്ങൾ</string>
+    <string name="gestures_category_summary">എക്സ്പീരിയൻസ് എൻഹൻസ് ചെയുക</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">ഗ്രിഡ് ലേഔട്ട്</string>
+    <string name="icon_layout_title">ഐക്കൺ ലേഔട്ട്</string>
     <!-- Icon packs -->
+    <string name="icon_pack">ഐക്കൺ പാക്കുകൾ</string>
+    <string name="icon_pack_summary">അപ്പ് ഐക്കൺ ലുക്ക് ക്രേമികരിക്കുക</string>
+    <string name="icon_pack_none">ഒന്നുമില്ല</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">ഇക്കോണിറ്റ ഷാപ്പ്</string>
+    <string name="icon_shape_rounded_square">റൗണ്ടഡ് സ്ക്വാർ</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">ഫോഴ്സ് ഷാപ്പ് മാസ്‌ക് ഓണ് ലെഗസി ഐക്കൻസ്</string>
+    <string name="legacy_icon_mask_summary">ഓണ് ചെയ്താൽ കസ്റ്റോഎം ഐക്കൻസ് ക്രേമികരണ തകറുകളെ വരും</string>
     <!-- Icon size -->
+    <string name="icon_size_title">ഐക്കൺ സ്‌ഐസി</string>
+    <string name="icon_size_extra_small">തീരെ ചെറിയ</string>
+    <string name="icon_size_small">ചെറുത്</string>
+    <string name="icon_size_average">സാധാ ഗതിയിലേക്ക്</string>
+    <string name="icon_size_large">വലിയ</string>
+    <string name="icon_size_extra_large">വളരെ വലുത്</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">റീസെന്റസ് വിഈ ക്ലീർ ചെയുക</string>
+    <string name="allow_swipe_down_clearall_desc">സ്വിപെ വേര്തികളി ഡോണൻഡ് ഇൻ റീസെന്റസ് വിഈ റ്റോ ക്ലീർ ഓൾ അപ്പ്‌സ്</string>
+    <string name="pref_homescreen_dt_gestures_title">ഡബിൾ ടാപ്പ് ജസ്റ്രേ</string>
+    <string name="pref_homescreen_dt_gestures_summary">ഡബിൾ ടാപ്പ് ജിസ്റർ ഇന്റെ ആക്ഷൻ തിരഞ്ഞെടുക്കുക</string>
+    <string name="pref_homescreen_dt_gestures_none">ഒന്നുമില്ല</string>
+    <string name="pref_homescreen_dt_gestures_torch">ടോർച്ച്</string>
+    <string name="pref_notifications_gesture_title">നോട്ടിഫിക്കേഷൻസ് ജെസ്‌റ്റർ</string>
+    <string name="pref_notifications_gesture_summary">ഹോം സ്ക്രീൻ നിന്നെ താഴേക്ക് വലിക്കുമ്പോൾ നോട്ടിഫിക്കേഷൻസ് പാനിൽ കണ്ണാം</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">ഗൂഗ്ൾ അപ്പ് കാണിക്കുക</string>
+    <string name="google_feed_summary">ഹോംസ്ക്രീൻ നിന്ന് ഇടത്തേക്കെ</string>
     <!-- Grid -->
+    <string name="num_default">സാധാ ഗതിയിലേക്ക്</string>
+    <string name="number_of_columns_title">കളികളുടെ എണ്ണം</string>
+    <string name="number_of_rows_title">അറകളുടെ എണ്ണം</string>
+    <string name="number_of_hotseat_title">ഡോക്ക് ഐക്കൻസ് ഇന്റെ എണ്ണം</string>
+    <string name="state_loading">അപ്പലയിങ്\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">അപ്പ്‌സ് മറക്കുക</string>
+    <string name="hide_app_sum">അപ്പ് ട്രൗർ നിന്ന് അപ്പ്‌സ് മറക്കുക</string>
+    <string name="hide_app_selected">&#160;സെലക്ട് ചെയ്തിരിക്കുന്നു</string>
+    <string name="hidden_app">എല്ലാ ആപ്സുകളും</string>
+    <string name="hide_selected">സെലക്ട് ചെയ്‌തിരിക്കുന്ന അപ്പ്‌സ് ഹിടെ ചെയ്യുക.</string>
+    <string name="more">കൂടുതൽ</string>
+    <string name="reset_hidden_apps">എല്ലാം പഴയ ക്രേമികരണ പോലെ ആക്കുക</string>
+    <string name="reset_hidden_apps_done">മറഞ്ഞിരിക്കുന്ന അപോസ് ഇപ്പോൾ ലഭ്യമാന്ന്</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">അപ്പ്‌സ് ലബെൽസ്</string>
     <!-- Show searchbar -->
+    <!-- Recents corned -->
 </resources>

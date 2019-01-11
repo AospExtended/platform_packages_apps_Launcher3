@@ -17,16 +17,69 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Paramètres</string>
     <!-- Categories -->
+    <string name="home_category_title">Écran d\'accueil</string>
+    <string name="home_category_summary">Définir le panel Google now et plus</string>
+    <string name="icons_category_title">Icônes</string>
+    <string name="icons_category_summary">Définir la forme de l’icône, taille, etc</string>
+    <string name="app_drawer_category_title">Menu des applications</string>
+    <string name="app_drawer_category_summary">Personnaliser votre menu des applications</string>
+    <string name="gestures_category_title">Gestes</string>
+    <string name="gestures_category_summary">Améliorez votre expérience</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Damier</string>
+    <string name="icon_layout_title">Disposition des icônes</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Pack d\'icônes</string>
+    <string name="icon_pack_summary">Changer le look de vos icônes</string>
+    <string name="icon_pack_none">Aucun</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Forme des icônes</string>
+    <string name="icon_shape_rounded_square">Carré arrondi</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Forcer l\'utilisation du masque de forme sur les anciennes icônes</string>
+    <string name="legacy_icon_mask_summary">Si activé, peut provoquer des erreurs avec des packs d\'icônes personnalisées</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Taille d\'icône</string>
+    <string name="icon_size_extra_small">Très petit</string>
+    <string name="icon_size_small">Petit</string>
+    <string name="icon_size_average">Par défaut</string>
+    <string name="icon_size_large">Grand</string>
+    <string name="icon_size_extra_large">Très grand</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Fermer toutes les applications récentes</string>
+    <string name="allow_swipe_down_clearall_desc">Faites glisser le doigt vers le bas dans le panneau d\'applications récentes pour tout fermer</string>
+    <string name="pref_homescreen_dt_gestures_title">Double appui</string>
+    <string name="pref_homescreen_dt_gestures_summary">Sélectionner l\'action du geste par double appui sur l\'écran d\'accueil</string>
+    <string name="pref_homescreen_dt_gestures_none">Aucun</string>
+    <string name="pref_homescreen_dt_gestures_torch">Lampe-torche</string>
+    <string name="pref_notifications_gesture_title">Gestes pour les notifications</string>
+    <string name="pref_notifications_gesture_summary">Faites glisser le doigt vers le bas sur l\'écran d\'accueil pour montrer le panneau de paramètres rapides</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Afficher l\'appli Google</string>
+    <string name="google_feed_summary">À gauche de l\'écran d\'accueil</string>
     <!-- Grid -->
+    <string name="num_default">Par défaut</string>
+    <string name="number_of_columns_title">Nombre de colonnes</string>
+    <string name="number_of_rows_title">Nombre de lignes</string>
+    <string name="number_of_hotseat_title">Nombre d\'icônes du dock</string>
+    <string name="state_loading">Application en cours\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Cacher les applications</string>
+    <string name="hide_app_sum">Masquer les applications dans le tiroir d\'applications</string>
+    <string name="hide_app_selected">&#160;sélectionné(es)</string>
+    <string name="hidden_app">Toutes les applications</string>
+    <string name="hide_selected">Masquer l\'(les) application(s) sélectionnée(s)</string>
+    <string name="more">Plus</string>
+    <string name="reset_hidden_apps">Tout réinitialiser</string>
+    <string name="reset_hidden_apps_done">Les applications précédemment masquées sont de nouveau affichées</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Nom des applications</string>
+    <string name="desktop_show_label_summary">Afficher le nom des applications de l\'écran d\'accueil</string>
+    <string name="allapps_show_label_summary">Afficher le nom des applications dans le tiroir d\'applications</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Afficher la barre de recherche</string>
+    <string name="show_searchbar_summary">Afficher la barre de recherche sur l\'écran d\'accueil</string>
+    <!-- Recents corned -->
 </resources>

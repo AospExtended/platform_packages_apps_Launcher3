@@ -23,9 +23,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="home_category_summary">Atur panel Google Now dan lainnya</string>
     <string name="icons_category_title">Ikon</string>
     <string name="icons_category_summary">Atur bentuk ikon, ukuran, dan lainnya</string>
-    <string name="app_drawer_category_title">Laci aplikasi</string>
-    <string name="app_drawer_category_summary">Kustomisasi laci aplikasi anda</string>
-    <string name="gestures_category_title">Gerakan</string>
+    <string name="app_drawer_category_title">Deret Aplikasi</string>
+    <string name="app_drawer_category_summary">Kustomisasi deret aplikasi Anda</string>
+    <string name="gestures_category_title">Gestur</string>
     <string name="gestures_category_summary">Meningkatkan pengalaman Anda</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Tata letak Grid</string>
@@ -49,14 +49,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_size_extra_large">Sangat Besar</string>
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Bersihkan semua tampilan terkini</string>
-    <string name="allow_swipe_down_clearall_desc">Geser ke bawah secara tegak lurus(vertikal) di recent view untuk menghapus semua aplikasi</string>
-    <string name="pref_homescreen_dt_gestures_title">Isyarat dua kali ketuk</string>
-    <string name="pref_homescreen_dt_gestures_summary">Pilih aksi gerakan ketuk dua kali di layar utama</string>
+    <string name="allow_swipe_down_clearall_desc">Geser ke bawah secara vertikal di recent view untuk menghapus semua aplikasi</string>
+    <string name="pref_homescreen_dt_gestures_title">Gestur sentuh dua kali</string>
+    <string name="pref_homescreen_dt_gestures_summary">Pilih aksi gerakan double tap di layar utama</string>
     <string name="pref_homescreen_dt_gestures_none">Tidak Ada</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Tidur</string>
     <string name="pref_homescreen_dt_gestures_torch">Senter</string>
-    <string name="pref_notifications_gesture_title">Isyarat notifikasi</string>
-    <string name="pref_notifications_gesture_summary">Usap secara tegak lurus ke bawah di layar utama untuk menampilkan panel notifikasi</string>
+    <string name="pref_notifications_gesture_title">Gestur notifikasi</string>
+    <string name="pref_notifications_gesture_summary">Usap secara vertikal ke bawah di layar utama untuk menampilkan panel notifikasi</string>
     <!-- Google Feed -->
     <string name="google_feed_title">Tampilan Google app</string>
     <string name="google_feed_summary">Disebelah kiri dari layar utama</string>
@@ -68,7 +67,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">Menerapkan\u2026</string>
     <!-- Hidden apps -->
     <string name="hide_app">Sembunyikan aplikasi-aplikasi</string>
-    <string name="hide_app_sum">Sembunyikan aplikasi dari laci aplikasi</string>
+    <string name="hide_app_sum">Sembunyikan apps dari daftar</string>
     <string name="hide_app_selected">&#160;dipilih</string>
     <string name="hidden_app">Semua aplikasi</string>
     <string name="hide_selected">Sembunyikan aplikasi yang terpilih</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Tampilkan bar pencarian</string>
     <string name="show_searchbar_summary">Tampilkan bar pencarian di layar utama</string>
+    <!-- Recents corned -->
 </resources>

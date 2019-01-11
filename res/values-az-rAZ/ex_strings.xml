@@ -17,16 +17,65 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Tənzimləmələr</string>
     <!-- Categories -->
+    <string name="home_category_title">Ana ekran</string>
+    <string name="home_category_summary">Google Now panelini və digərlərini tənzimlə</string>
+    <string name="icons_category_title">Nişanlar</string>
+    <string name="icons_category_summary">Nişan görünüşünü, ölçüsünü və s. tənzimlə</string>
+    <string name="app_drawer_category_title">Tətbiq siyirtməsi</string>
+    <string name="app_drawer_category_summary">Tətbiq siyirtməsini özəlləşdirin</string>
+    <string name="gestures_category_title">Hərəkətlər</string>
+    <string name="gestures_category_summary">Praktikanızı artırın</string>
     <!-- Sub categories -->
+    <string name="icon_layout_title">Nişan düzülüşü</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Nişan paketi</string>
+    <string name="icon_pack_summary">Tətbiqlərinizin görünüş nişanını dəyişin</string>
+    <string name="icon_pack_none">Heç biri</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Nişan şəkli</string>
+    <string name="icon_shape_rounded_square">Dairəvi kvadrat</string>
     <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Köhnə nişanlar üzərindəki forma maska ​​çəkin</string>
+    <string name="legacy_icon_mask_summary">Aktivləşdirildikdə, xüsusi nişan paketləri ilə problem yarada bilər</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Nişan ölçüsü</string>
+    <string name="icon_size_extra_small">Çox kiçik</string>
+    <string name="icon_size_small">Kiçik</string>
+    <string name="icon_size_average">Standart</string>
+    <string name="icon_size_large">Böyük</string>
+    <string name="icon_size_extra_large">Çox böyük</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Son görülənlərin hamısını təmizlə</string>
+    <string name="allow_swipe_down_clearall_desc">Bütün tətbiqləri silmək üçün təkrarlanan görünüşlərdə aşağıya doğru sürüşdürün</string>
+    <string name="pref_homescreen_dt_gestures_title">Cüt toxunma hərəkətləri </string>
+    <string name="pref_homescreen_dt_gestures_summary">Əsas ekrana cüt barmaq ilə toxunmaq üçün əməliyyat seçin</string>
+    <string name="pref_homescreen_dt_gestures_none">Heç biri</string>
+    <string name="pref_homescreen_dt_gestures_torch">Fənər</string>
+    <string name="pref_notifications_gesture_title">Bildirişlər hərəkətləri</string>
+    <string name="pref_notifications_gesture_summary">Sürətli tənzimləmələr panelini açmaq üçün əsas ekrandan aşağıya doğru sürüşdürün</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Google tətbiqi göstər</string>
+    <string name="google_feed_summary">Əsas ekranın sol tərəfində</string>
     <!-- Grid -->
+    <string name="num_default">Standart</string>
+    <string name="number_of_columns_title">Sütun sayı</string>
+    <string name="number_of_rows_title">Sətir sayı </string>
+    <string name="number_of_hotseat_title">Alt panel nişan sayı</string>
+    <string name="state_loading">Tətbiq edilir\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Tətbiqləri gizlət</string>
+    <string name="hide_app_sum">Tətbiqləri tətbiq siyirtməsində gizlət</string>
+    <string name="hide_app_selected">&#160;seçildi</string>
+    <string name="hidden_app">Bütün tətbiqlər</string>
+    <string name="hide_selected">Seçilən tətbiqləri gizlət</string>
+    <string name="more">Diğər</string>
+    <string name="reset_hidden_apps">Hamısını sıfırla</string>
+    <string name="reset_hidden_apps_done">Gizlin tətbiqləri artıq görünür</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Tətbiq etiketləri</string>
+    <string name="desktop_show_label_summary">Əsas ekranda olan tətbiqlərin etiketlərini göstər</string>
     <!-- Show searchbar -->
+    <!-- Recents corned -->
 </resources>

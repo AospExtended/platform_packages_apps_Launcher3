@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gesto doppio tocco</string>
     <string name="pref_homescreen_dt_gestures_summary">Seleziona l\'azione del doppio tocco sulla schermata principale</string>
     <string name="pref_homescreen_dt_gestures_none">Nessuno</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Standby</string>
     <string name="pref_homescreen_dt_gestures_torch">Torcia</string>
     <string name="pref_notifications_gesture_title">Gesto sulle notifiche</string>
     <string name="pref_notifications_gesture_summary">Scorri verticalmente verso il basso nella schermata iniziale per visualizzare il pannello delle impostazioni rapide</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Visualizza barra di ricerca</string>
     <string name="show_searchbar_summary">Visualizza la barra di ricerca sulla schermata iniziale</string>
+    <!-- Recents corned -->
 </resources>

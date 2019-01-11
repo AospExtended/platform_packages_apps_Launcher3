@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">A dupla érintéses vezérlés</string>
     <string name="pref_homescreen_dt_gestures_summary">Válasszon egy műveletet a kezdőlap dupla érintéses vezérléséhez</string>
     <string name="pref_homescreen_dt_gestures_none">Ne történjen semmi</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Alvó módba küldés</string>
     <string name="pref_homescreen_dt_gestures_torch">Zseblámpa bekapcsolása</string>
     <string name="pref_notifications_gesture_title">Az értesítési vezérlés</string>
     <string name="pref_notifications_gesture_summary">Csúsztasson függőlegesen lefelé a kezdőképernyőn a Gyorsbeállítások-panel megjelenítéséhez</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Keresősáv megjelenítése</string>
     <string name="show_searchbar_summary">A Kezdőképernyőn megjelenítésre kerül a keresősáv</string>
+    <!-- Recents corned -->
 </resources>

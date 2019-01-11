@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- General -->
     <string name="settings_title">Ayarlar</string>
     <!-- Categories -->
-    <string name="home_category_title">Ana ekran</string>
+    <string name="home_category_title">Başlangıç ekranı</string>
     <string name="home_category_summary">Google now paneli ve daha fazlasını ayarla</string>
     <string name="icons_category_title">Simgeler</string>
     <string name="icons_category_summary">Simge şeklini, boyutunu ve daha fazlasını ayarla</string>
@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Çift dokunma hareketi</string>
     <string name="pref_homescreen_dt_gestures_summary">Ana ekrana çift dokunma hareketi için eylem seçin</string>
     <string name="pref_homescreen_dt_gestures_none">Yok</string>
-    <string name="pref_homescreen_dt_gestures_sleep">Uyku</string>
     <string name="pref_homescreen_dt_gestures_torch">El feneri</string>
     <string name="pref_notifications_gesture_title">Bildirim hareketi</string>
     <string name="pref_notifications_gesture_summary">Hızlı ayarlar panelini göstermek için ana ekranda dikey olarak aşağı doğru hızlıca kaydırın</string>
@@ -70,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="hide_app">Uygulamalar gizle</string>
     <string name="hide_app_sum">Uygulamaları uygulama çekmecesinde gizle</string>
     <string name="hide_app_selected">&#160;seçildi</string>
-    <string name="hidden_app">Tüm uygulamalar</string>
+    <string name="hidden_app">All apps</string>
     <string name="hide_selected">Seçilen uygulamaları gizle(s)</string>
     <string name="more">Daha</string>
     <string name="reset_hidden_apps">Tümünü sıfırla</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Arama çubuğunu göster</string>
     <string name="show_searchbar_summary">Ana ekranda arama çubuğunu göster</string>
+    <!-- Recents corned -->
 </resources>

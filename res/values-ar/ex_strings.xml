@@ -53,7 +53,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">إيماءة الضغط المزدوج</string>
     <string name="pref_homescreen_dt_gestures_summary">حدد إجراء إيماءة الضغط المزدوج على الشاشة الرئيسية</string>
     <string name="pref_homescreen_dt_gestures_none">لا شيء</string>
-    <string name="pref_homescreen_dt_gestures_sleep">السكون</string>
     <string name="pref_homescreen_dt_gestures_torch">ضوء الفلاش</string>
     <string name="pref_notifications_gesture_title">إيماءة الإشعارات</string>
     <string name="pref_notifications_gesture_summary">السحب عمودياً لأسفل على الشاشة الرئيسية لعرض لوحة الإشعارات</string>
@@ -82,4 +81,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show searchbar -->
     <string name="show_searchbar_title">إظهار شريط البحث</string>
     <string name="show_searchbar_summary">إظهار شريط البحث على الشاشة الرئيسية</string>
+    <!-- Recents corned -->
 </resources>
