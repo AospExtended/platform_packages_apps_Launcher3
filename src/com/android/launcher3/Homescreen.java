@@ -37,7 +37,6 @@ import com.android.internal.util.aospextended.AEXUtils;
 public class Homescreen extends SettingsActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
     static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
-    static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
 
     @Override
     protected void onCreate(final Bundle bundle) {
@@ -80,12 +79,8 @@ public class Homescreen extends SettingsActivity implements PreferenceFragment.O
             SwitchPreference feedIntegration = (SwitchPreference)
                     findPreference(KEY_FEED_INTEGRATION);
 
-            SwitchPreference showSearchBar = (SwitchPreference)
-                    findPreference(KEY_SHOW_SEARCHBAR);
-
             if (!AEXUtils.isPackageInstalled(mContext, LauncherTab.SEARCH_PACKAGE)) {
                 getPreferenceScreen().removePreference(feedIntegration);
-                getPreferenceScreen().removePreference(showSearchBar);
             }
 
             // Setup allow rotation preference
@@ -133,13 +128,6 @@ public class Homescreen extends SettingsActivity implements PreferenceFragment.O
 
             SwitchPreference desktopShowLabel = (SwitchPreference) findPreference(Utilities.DESKTOP_SHOW_LABEL);
             desktopShowLabel.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
-                public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
-                    return true;
-                }
-            });
-
-            showSearchBar.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
