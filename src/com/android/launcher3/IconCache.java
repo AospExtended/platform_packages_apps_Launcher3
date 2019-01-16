@@ -27,6 +27,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
+import android.content.ContentResolver;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
@@ -38,6 +39,7 @@ import android.os.Handler;
 import android.os.Process;
 import android.os.SystemClock;
 import android.os.UserHandle;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.v4.graphics.ColorUtils;
 import android.text.TextUtils;
@@ -141,8 +143,14 @@ public class IconCache {
     }
 
     public void setIconPack() {
-        mIconsHandler.updatePrefs(Utilities.getPrefs(mContext)
-                .getString("pref_iconPackPackage", ""));
+        String iconPackPackagePref = Utilities.getPrefs(mContext).getString("pref_iconPackPackage", "");
+
+        if(iconPackPackagePref != null) {
+        mIconsHandler.updatePrefs(iconPackPackagePref);
+        Settings.System.putString(mContext.getContentResolver(),
+                 Settings.System.RECENTS_ICON_PACK, iconPackPackagePref);
+        }
+
     }
 
     public boolean isDefaultIconPack() {
