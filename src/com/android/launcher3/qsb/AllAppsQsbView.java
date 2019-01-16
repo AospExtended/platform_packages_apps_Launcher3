@@ -16,6 +16,7 @@
 package com.android.launcher3.qsb;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
@@ -50,6 +51,7 @@ import com.android.launcher3.qsb.configs.ConfigurationBuilder;
 import com.android.launcher3.qsb.configs.QsbConfiguration;
 import com.android.launcher3.qsb.search.DefaultSearchView;
 import com.android.launcher3.search.SearchThread;
+import com.android.launcher3.util.PackageStatusReceiver;
 
 import com.android.internal.util.aospextended.AEXUtils;
 
@@ -64,6 +66,7 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
     public boolean mKeepDefaultView;
     public DefaultSearchView mDefaultSearchView;
     public TextView mHint;
+    private PackageStatusReceiver mGsaStatus;
     public int mShadowAlpha;
     public boolean mUseDefaultSearch;
 
@@ -80,6 +83,13 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
         mMarginAdjusting = mContext.getResources().getDimensionPixelSize(R.dimen.qsb_margin_top_adjusting);
         mTranslationY = getTranslationY();
         setClipToPadding(false);
+        mGsaStatus = new PackageStatusReceiver(context) {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                loadMicViews();
+                setSearchType();
+            }
+        };
     }
 
     @Override
@@ -104,12 +114,14 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
     @Override
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
+        mGsaStatus.register(LauncherCallbacks.SEARCH_PACKAGE);
         onExtractedColorsChanged(mWallpaperColorInfo);
         updateConfiguration();
     }
 
     @Override
     public void onDetachedFromWindow() {
+        mGsaStatus.unregister();
         WallpaperColorInfo.getInstance(getContext()).removeOnChangeListener(this);
         super.onDetachedFromWindow();
     }
