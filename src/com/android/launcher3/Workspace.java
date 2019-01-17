@@ -98,6 +98,8 @@ import com.android.launcher3.widget.PendingAddShortcutInfo;
 import com.android.launcher3.widget.PendingAddWidgetInfo;
 import com.android.launcher3.widget.PendingAppWidgetHostView;
 
+import com.android.internal.utils.ActionHandler;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
@@ -310,7 +312,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
                     if (e2.getY() - e1.getY() > 160/*min distance*/
                             && Math.abs(velocityY) > 250/*min speed*/) {
                         if(Utilities.useNotificationsGesture(context)) {
-                            openNotifications();
+                            ActionHandler.expandNotificationPanel();
                         }
                     }
                 } catch (Exception e) {
@@ -341,17 +343,6 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
 
     public void setGestures(int mode) {
         mGestureMode = mode;
-    }
-
-    private boolean openNotifications() {
-        try {
-            Class.forName("android.app.StatusBarManager")
-                    .getMethod("expandNotificationsPanel")
-                    .invoke(mLauncher.getSystemService("statusbar"));
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 
     public boolean checkCustomGestures(MotionEvent ev) {
