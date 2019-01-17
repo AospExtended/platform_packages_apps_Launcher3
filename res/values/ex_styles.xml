@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* Copyright 2018, CypherOS
+/* Copyright 2017, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,10 +16,12 @@
 */
 -->
 
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<resources>
 
     <!-- QSB -->
-    <attr name="gIcon" format="reference" />
-    <attr name="micIcon" format="reference" />
+    <style name="HotseatQsbTheme">
+        <item name="gIcon">@drawable/ic_super_g_color</item>
+        <item name="micIcon">@drawable/ic_poodle_color</item>
+    </style>
 
 </resources>

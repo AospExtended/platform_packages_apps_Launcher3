@@ -17,5 +17,7 @@
 -->
 
 <resources>
+
     <bool name="allow_swipe_down_clearall">false</bool>
+
 </resources>

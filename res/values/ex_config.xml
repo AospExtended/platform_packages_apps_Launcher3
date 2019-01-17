@@ -18,11 +18,10 @@
 
 <resources>
 
-    <!-- Fastscroller -->
-    <color name="fastscroller_thumb_background_color">@*android:color/accent_device_default_light</color>
-
     <!-- QSB -->
-    <color name="qsb_drawer_text_color_normal">#ff212121</color>
+    <item type="id" name="hotseat_qsb_menu_item" />
+    <item type="id" name="drag_indicator" />
+    <item type="id" name="g_icon" />
+    <item type="id" name="mic_icon" />
 
 </resources>
-
