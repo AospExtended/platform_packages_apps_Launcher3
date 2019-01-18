@@ -22,15 +22,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
-    <string name="home_category_summary">Set Google now panel and more</string>
+    <string name="home_category_summary">Grid layout, app labels and dock</string>
     <string name="icons_category_title">Icons</string>
-    <string name="icons_category_summary">Set icon shape, size and more</string>
+    <string name="icons_category_summary">Icon pack, shape, size and notification dots</string>
     <string name="app_drawer_category_title">App drawer</string>
-    <string name="app_drawer_category_summary">Customize your app drawer</string>
+    <string name="app_drawer_category_summary">Hide apps and app drawer labels</string>
     <string name="recents_category_title">Recents</string>
     <string name="recents_category_summary">Customize your recents card</string>
     <string name="gestures_category_title">Gestures</string>
-    <string name="gestures_category_summary">Enhance your experience</string>
+    <string name="gestures_category_summary">Double tap, notifications and clear-all gestures</string>
 
     <!-- Sub categories -->
     <string name="home_grid_title">Grid layout</string>
