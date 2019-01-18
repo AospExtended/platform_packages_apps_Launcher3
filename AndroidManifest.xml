@@ -51,9 +51,17 @@
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+
+    <!-- Recents kill-app feature -->
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Permissions used for gestures -->
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.STATUS_BAR_SERVICE" />
 
     <!-- Google QSB -->
     <permission
