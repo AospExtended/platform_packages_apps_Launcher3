@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <SwitchPreference
-        android:key="pref_allowSwipeDownClearAll"
-        android:title="@string/allow_swipe_down_clearall_title"
-        android:summary="@string/allow_swipe_down_clearall_desc"
-        android:defaultValue="@bool/allow_swipe_down_clearall"
-        android:persistent="true" />
-
-    <SwitchPreference
-        android:key="pref_notifications_gesture"
-        android:title="@string/pref_notifications_gesture_title"
-        android:summary="@string/pref_notifications_gesture_summary"
-        android:defaultValue="true"
-        android:persistent="true"/>
-
     <ListPreference
         android:key="pref_homescreen_dt_gestures"
         android:title="@string/pref_homescreen_dt_gestures_title"
-        android:summary="@string/pref_homescreen_dt_gestures_summary"
-        android:entries="@array/pref_homescreen_dt_gestures_names"
-        android:entryValues="@array/pref_homescreen_dt_gestures_values"
-        android:defaultValue=""
+        android:entries="@array/pref_homescreen_gestures_names"
+        android:entryValues="@array/pref_homescreen_gestures_values"
+        android:defaultValue="0"
         android:persistent="false" />
+
+    <ListPreference
+        android:key="pref_homescreen_swipe_down_gestures"
+        android:title="@string/pref_homescreen_swipe_down_gestures_title"
+        android:entries="@array/pref_homescreen_gestures_names"
+        android:entryValues="@array/pref_homescreen_gestures_values"
+        android:defaultValue="7"
+        android:persistent="false" />
+
+    <PreferenceCategory
+        android:title="@string/gestures_other_category_title">
+
+        <SwitchPreference
+            android:key="pref_allowSwipeDownClearAll"
+            android:title="@string/allow_swipe_down_clearall_title"
+            android:summary="@string/allow_swipe_down_clearall_desc"
+            android:defaultValue="@bool/allow_swipe_down_clearall"
+            android:persistent="true" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
