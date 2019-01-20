@@ -73,8 +73,8 @@
     <string name="pref_homescreen_gestures_qs_panel">QS panel</string>
 
     <!-- Google Feed -->
-    <string name="google_feed_title">Display Google app</string>
-    <string name="google_feed_summary">To the left of the main Home screen</string>
+    <string name="google_feed_title">Enable Google App and Search</string>
+    <string name="google_feed_summary">Show Google App with right swipe from home screen and use its search engine for hotseats</string>
 
     <!-- Grid -->
     <string name="num_default">Default</string>

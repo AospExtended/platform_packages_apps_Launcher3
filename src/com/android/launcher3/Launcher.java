@@ -1466,18 +1466,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     public void startSearch(String initialQuery, boolean selectInitialQuery,
             Bundle appSearchData, boolean globalSearch) {
 
-        View gIcon = findViewById(R.id.g_icon);
-        while (gIcon != null && !gIcon.isClickable()) {
-            if (gIcon.getParent() instanceof View) {
-                gIcon = (View)gIcon.getParent();
-            } else {
-                gIcon = null;
-            }
-        }
-        if (gIcon != null && gIcon.performClick()) {
-            return;
-        }
-
         if (appSearchData == null) {
             appSearchData = new Bundle();
             appSearchData.putString("source", "launcher-search");
@@ -2502,7 +2490,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         return super.onKeyShortcut(keyCode, event);
     }
 
-    private boolean isFeedIntegrationEnabled() {
+    public boolean isFeedIntegrationEnabled() {
         return Utilities.hasFeedIntegration(this);
     }
 
