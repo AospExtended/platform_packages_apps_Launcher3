@@ -155,6 +155,10 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
     public void onClick(View view) {
         super.onClick(view);
         if (view == this) {
+            if (!Launcher.getLauncher(getContext()).isFeedIntegrationEnabled()) {
+                Launcher.getLauncher(getContext()).startSearch("", false, null, true);
+                return;
+            }
             startSearch("", mResult);
         }
     }
