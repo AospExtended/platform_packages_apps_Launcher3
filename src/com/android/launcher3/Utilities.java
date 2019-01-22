@@ -180,23 +180,71 @@ public final class Utilities {
     }
 
     public static float getIconSizeModifier(Context context) {
-        String saved = getPrefs(context).getString(ICON_SIZE, "average");
+        String saved = getPrefs(context).getString(ICON_SIZE, "100");
         float offset;
         switch (saved) {
-            case "extrasmall":
+            case "050":
+                offset = 0.50F;
+                break;
+            case "055":
+                offset = 0.55F;
+                break;
+            case "060":
+                offset = 0.60F;
+                break;
+            case "065":
+                offset = 0.65F;
+                break;
+            case "070":
+                offset = 0.70F;
+                break;
+            case "075":
                 offset = 0.75F;
                 break;
-            case "small":
+            case "080":
+                offset = 0.80F;
+                break;
+            case "085":
+                offset = 0.85F;
+                break;
+            case "090":
                 offset = 0.90F;
                 break;
-            case "average":
+            case "095":
+                offset = 0.95F;
+                break;
+            case "100":
                 offset = 1.00F;
                 break;
-            case "large":
+            case "105":
+                offset = 1.05F;
+                break;
+            case "110":
                 offset = 1.10F;
                 break;
-            case "extralarge":
+            case "115":
+                offset = 1.15F;
+                break;
+            case "120":
+                offset = 1.20F;
+                break;
+            case "125":
                 offset = 1.25F;
+                break;
+            case "130":
+                offset = 1.30F;
+                break;
+            case "135":
+                offset = 1.35F;
+                break;
+            case "140":
+                offset = 1.40F;
+                break;
+            case "145":
+                offset = 1.45F;
+                break;
+            case "150":
+                offset = 1.50F;
                 break;
             default:
                 offset = 1.00F;

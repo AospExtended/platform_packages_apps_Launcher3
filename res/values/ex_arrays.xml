@@ -63,19 +63,51 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- Icon size -->
     <string-array name="icon_size_names" translatable="false">
-        <item>@string/icon_size_extra_small</item>
-        <item>@string/icon_size_small</item>
-        <item>@string/icon_size_average</item>
-        <item>@string/icon_size_large</item>
-        <item>@string/icon_size_extra_large</item>
+        <item>-50</item>
+        <item>-45</item>
+        <item>-40</item>
+        <item>-35</item>
+        <item>-30</item>
+        <item>-25</item>
+        <item>-20</item>
+        <item>-15</item>
+        <item>-10</item>
+        <item>-5</item>
+        <item>@string/num_default</item>
+        <item>+5</item>
+        <item>+10</item>
+        <item>+15</item>
+        <item>+20</item>
+        <item>+25</item>
+        <item>+30</item>
+        <item>+35</item>
+        <item>+40</item>
+        <item>+45</item>
+        <item>+50</item>
     </string-array>
 
     <string-array name="icon_size_values" translatable="false">
-        <item>extrasmall</item>
-        <item>small</item>
-        <item>average</item>
-        <item>large</item>
-        <item>extralarge</item>
+        <item>050</item>
+        <item>055</item>
+        <item>060</item>
+        <item>065</item>
+        <item>070</item>
+        <item>075</item>
+        <item>080</item>
+        <item>085</item>
+        <item>090</item>
+        <item>095</item>
+        <item>100</item>
+        <item>105</item>
+        <item>110</item>
+        <item>115</item>
+        <item>120</item>
+        <item>125</item>
+        <item>130</item>
+        <item>135</item>
+        <item>140</item>
+        <item>145</item>
+        <item>150</item>
     </string-array>
 
     <!-- Recents cards values -->
