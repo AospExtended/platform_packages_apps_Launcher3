@@ -46,7 +46,7 @@
             android:summary="%s"
             android:entries="@array/icon_size_names"
             android:entryValues="@array/icon_size_values"
-            android:defaultValue="average"
+            android:defaultValue="100"
             android:persistent="true" />
 
     </PreferenceCategory>
