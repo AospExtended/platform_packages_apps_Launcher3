@@ -37,6 +37,10 @@
         </intent>
     </com.android.launcher3.settings.NotificationDotsPreference>
 
+    <Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name" />
+
     <SwitchPreference
         android:key="pref_add_icon_to_home"
         android:title="@string/auto_add_shortcuts_label"
