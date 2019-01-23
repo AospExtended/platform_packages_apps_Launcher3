@@ -95,6 +95,10 @@
     </androidx.preference.PreferenceScreen>
 
     <Preference
+        android:key="pref_trust_apps"
+        android:title="@string/trust_apps_manager_name" />
+
+    <Preference
         android:key="pref_developer_options"
         android:persistent="false"
         android:title="Developer Options"
