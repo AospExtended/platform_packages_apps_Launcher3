@@ -228,24 +228,6 @@ public final class Utilities {
             case "120":
                 offset = 1.20F;
                 break;
-            case "125":
-                offset = 1.25F;
-                break;
-            case "130":
-                offset = 1.30F;
-                break;
-            case "135":
-                offset = 1.35F;
-                break;
-            case "140":
-                offset = 1.40F;
-                break;
-            case "145":
-                offset = 1.45F;
-                break;
-            case "150":
-                offset = 1.50F;
-                break;
             default:
                 offset = 1.00F;
                 break;
