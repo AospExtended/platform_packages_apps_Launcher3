@@ -30,6 +30,7 @@ import android.view.HapticFeedbackConstants;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.android.launcher3.DragSource;
 import com.android.launcher3.DropTarget;
@@ -521,6 +522,8 @@ public class DragController implements DragDriver.EventListener, TouchController
     public boolean onControllerTouchEvent(MotionEvent ev) {
         if (Utilities.isDesktopLocked(mLauncher.getApplicationContext())) {
             cancelDrag();
+            Toast.makeText(mLauncher.getApplicationContext(), R.string.lock_desktop_toast,
+                Toast.LENGTH_SHORT).show();
             return false;
         }
         if (mDragDriver == null || mOptions == null || mOptions.isAccessibleDrag) {
