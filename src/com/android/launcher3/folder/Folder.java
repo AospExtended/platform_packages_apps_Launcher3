@@ -45,6 +45,7 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.launcher3.AbstractFloatingView;
 import com.android.launcher3.Alarm;
@@ -1323,6 +1324,8 @@ public class Folder extends AbstractFloatingView implements DragSource,
             if (hasFocus) {
                 if (Utilities.isDesktopLocked(v.getContext())) {
                     v.clearFocus();
+                    Toast.makeText(v.getContext(),
+                        R.string.lock_desktop_toast, Toast.LENGTH_SHORT).show();
                 } else {
                     startEditingFolderName();
                 }
