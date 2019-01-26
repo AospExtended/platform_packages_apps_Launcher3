@@ -110,4 +110,8 @@
     <string name="label_search">Search</string>
     <string name="label_voice_search">Voice search</string>
 
+    <!-- Lock desktop -->
+    <string name="lock_desktop_title">Lock desktop</string>
+    <string name="lock_desktop_summary">Prevent the homescreen from being modified</string>
+
 </resources>
