@@ -146,6 +146,11 @@ public final class Utilities {
     public static final String PREF_NOTIFICATIONS_GESTURE = "pref_notifications_gesture";
     public static final String PREF_CUSTOM_RECENTS_ROUND_SWITCH = "pref_custom_recents_corner_switch";
     public static final String PREF_CUSTOM_RECENTS_ROUND_TYPE = "pref_custom_recents_corner_type";
+    public static final String PREF_ALLAPPS_LONG_LABELS = "pref_allapps_long_labels";
+
+    public static boolean showAllAppsLongLabels(Context context) {
+        return getPrefs(context).getBoolean(PREF_ALLAPPS_LONG_LABELS, false);
+    }
 
     public static boolean useNotificationsGesture(Context context) {
         return getPrefs(context).getBoolean(PREF_NOTIFICATIONS_GESTURE, true);
