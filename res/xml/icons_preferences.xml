@@ -49,13 +49,6 @@
             android:defaultValue="100"
             android:persistent="true" />
 
-        <SwitchPreference
-            android:key="pref_allapps_long_labels"
-            android:title="@string/allapps_long_labels_title"
-            android:summary="@string/allapps_long_labels_summary"
-            android:persistent="true"
-            android:defaultValue="false" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
