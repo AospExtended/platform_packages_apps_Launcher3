@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">아이콘 모양, 크기 등 설정하기</string>
     <string name="app_drawer_category_title">앱 서랍</string>
     <string name="app_drawer_category_summary">앱 서랍을 꾸미세요</string>
+    <string name="recents_category_title">최근 앱</string>
+    <string name="recents_category_summary">최근 앱 메뉴 꾸미기</string>
     <string name="gestures_category_title">제스처</string>
     <string name="gestures_category_summary">경험을 향상시키세요</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">아이콘 모양</string>
     <string name="icon_shape_rounded_square">둥근 사각형</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">기존 아이콘에 마스크 모양 강제</string>
-    <string name="legacy_icon_mask_summary">커스텀 아이콘을 활성화 할 경우, 문제가 발생할 수 있습니다</string>
     <!-- Icon size -->
     <string name="icon_size_title">아이콘 크기</string>
     <string name="icon_size_extra_small">매우 작게</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">더블 탭 제스처</string>
     <string name="pref_homescreen_dt_gestures_summary">홈 화면에서 더블 탭을 했을 때 실행할 액션 선택하기</string>
     <string name="pref_homescreen_dt_gestures_none">없음</string>
+    <string name="pref_homescreen_dt_gestures_sleep">화면 끄기</string>
     <string name="pref_homescreen_dt_gestures_torch">손전등</string>
+    <string name="pref_homescreen_dt_gestures_google">구글 검색</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">구글 앱이 설치되지 않았습니다</string>
     <string name="pref_notifications_gesture_title">알림 제스쳐</string>
     <string name="pref_notifications_gesture_summary">빠른 설정 패널을 보려면 홈 화면에서 아래로 밀기</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">검색 바 표시</string>
     <string name="show_searchbar_summary">홈 화면에서 검색 바 표시</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">최근 앱 목록에 둥근 가장자리 사용자 지정</string>
+    <string name="custom_recents_corners_switch_summary">만약 비활성화된다면, 이것은 시스템/테마 에서 제공된 하나가 사용될것이다. 새로운 값을 적용하려면, 옵션을 선택하고 홈으로 가라.</string>
+    <string name="custom_recents_corners_type_title">사용자 지겅 최근 앱 둥근 정도.</string>
+    <string name="custom_recents_corners_type_default">기본</string>
+    <string name="custom_recents_corners_type_card">모서리가 둥근 카드</string>
+    <string name="custom_recents_corners_type_op">OP의 스타일</string>
 </resources>

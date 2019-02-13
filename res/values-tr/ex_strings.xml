@@ -19,12 +19,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- General -->
     <string name="settings_title">Ayarlar</string>
     <!-- Categories -->
-    <string name="home_category_title">Başlangıç ekranı</string>
+    <string name="home_category_title">Ana ekran</string>
     <string name="home_category_summary">Google now paneli ve daha fazlasını ayarla</string>
     <string name="icons_category_title">Simgeler</string>
     <string name="icons_category_summary">Simge şeklini, boyutunu ve daha fazlasını ayarla</string>
     <string name="app_drawer_category_title">Uygulama çekmecesi</string>
     <string name="app_drawer_category_summary">Uygulama çekmecenizi özelleştirin</string>
+    <string name="recents_category_title">Son uygulamalar</string>
+    <string name="recents_category_summary">Son uygulamalar kartı özelleştirmeleri</string>
     <string name="gestures_category_title">Hareketler</string>
     <string name="gestures_category_summary">Deneyiminizi geliştirin</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Simge şekli</string>
     <string name="icon_shape_rounded_square">Yuvarlak kare</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Eski simgeler üzerinde şekil maskesini zorla</string>
-    <string name="legacy_icon_mask_summary">Etkinleştirilmişse özel simge paketleriyle ilgili soruna neden olabilir</string>
     <!-- Icon size -->
     <string name="icon_size_title">Simge boyutu</string>
     <string name="icon_size_extra_small">Çok küçük</string>
@@ -53,8 +52,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Çift dokunma hareketi</string>
     <string name="pref_homescreen_dt_gestures_summary">Ana ekrana çift dokunma hareketi için eylem seçin</string>
     <string name="pref_homescreen_dt_gestures_none">Yok</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Ekranı kapat</string>
     <string name="pref_homescreen_dt_gestures_torch">El feneri</string>
-    <string name="pref_notifications_gesture_title">Bildirim hareketi</string>
+    <string name="pref_homescreen_dt_gestures_google">Google arama</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Google arama yüklü değil</string>
+    <string name="pref_notifications_gesture_title">Bildirim hareketleri</string>
     <string name="pref_notifications_gesture_summary">Hızlı ayarlar panelini göstermek için ana ekranda dikey olarak aşağı doğru hızlıca kaydırın</string>
     <!-- Google Feed -->
     <string name="google_feed_title">Google uygulamasını görüntüle</string>
@@ -69,7 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="hide_app">Uygulamalar gizle</string>
     <string name="hide_app_sum">Uygulamaları uygulama çekmecesinde gizle</string>
     <string name="hide_app_selected">&#160;seçildi</string>
-    <string name="hidden_app">All apps</string>
+    <string name="hidden_app">Tüm uygulamalar</string>
     <string name="hide_selected">Seçilen uygulamaları gizle(s)</string>
     <string name="more">Daha</string>
     <string name="reset_hidden_apps">Tümünü sıfırla</string>
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Arama çubuğunu göster</string>
     <string name="show_searchbar_summary">Ana ekranda arama çubuğunu göster</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Son uygulamalar yuvarlatılmış köşeleri kullan</string>
+    <string name="custom_recents_corners_switch_summary">Devre dışı bırakılırsa, sistem teması tarafından sağlananı kullanacaktır. Yeni değeri uygulamak için, seçiminizi yaptıktan sonra ana ekrana gidin.</string>
+    <string name="custom_recents_corners_type_title">Özel son uygulamalar yuvarlaklığı</string>
+    <string name="custom_recents_corners_type_default">Varsayılan</string>
+    <string name="custom_recents_corners_type_card">Yuvarlak kart</string>
+    <string name="custom_recents_corners_type_op">OP stili</string>
 </resources>

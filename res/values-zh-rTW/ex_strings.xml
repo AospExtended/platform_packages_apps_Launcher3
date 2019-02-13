@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">設定圖示形狀、大小等</string>
     <string name="app_drawer_category_title">應用程式清單</string>
     <string name="app_drawer_category_summary">自訂您的應用程式清單</string>
+    <string name="recents_category_title">總覽</string>
+    <string name="recents_category_summary">自訂您的總覽卡</string>
     <string name="gestures_category_title">手勢操作</string>
     <string name="gestures_category_summary">提升您的體驗</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">圖示形狀</string>
     <string name="icon_shape_rounded_square">圓角正方形</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">在舊的圖示上強制改變形狀</string>
-    <string name="legacy_icon_mask_summary">如果啟用, 可能會導致自訂圖示套件出現問題</string>
     <!-- Icon size -->
     <string name="icon_size_title">圖示大小</string>
     <string name="icon_size_extra_small">極小</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">雙擊手勢</string>
     <string name="pref_homescreen_dt_gestures_summary">選擇在主畫面上的雙擊手勢動作</string>
     <string name="pref_homescreen_dt_gestures_none">無</string>
+    <string name="pref_homescreen_dt_gestures_sleep">關閉螢幕</string>
     <string name="pref_homescreen_dt_gestures_torch">手電筒</string>
+    <string name="pref_homescreen_dt_gestures_google">Google 搜尋</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">未安裝 Google搜尋 應用程式</string>
     <string name="pref_notifications_gesture_title">通知手勢</string>
     <string name="pref_notifications_gesture_summary">在主畫面垂直向下滑動來顯示快速設定面板</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">顯示搜尋列</string>
     <string name="show_searchbar_summary">在主畫面上顯示搜索列</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">使用自訂的總覽卡圓角</string>
+    <string name="custom_recents_corners_switch_summary">如果禁用, 它將使用系統/主題提供的那個。若要應用新值, 請在選擇選項後轉到主頁。</string>
+    <string name="custom_recents_corners_type_title">自訂總覽卡圓度</string>
+    <string name="custom_recents_corners_type_default">預設</string>
+    <string name="custom_recents_corners_type_card">圓角總覽卡</string>
+    <string name="custom_recents_corners_type_op">OP 樣式</string>
 </resources>

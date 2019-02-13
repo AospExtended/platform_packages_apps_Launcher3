@@ -37,9 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Pictogram vorm</string>
     <string name="icon_shape_rounded_square">Afgerond vierkant</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Forceer vorm op oudere iconen</string>
-    <string name="legacy_icon_mask_summary">Indien ingeschakeld: kan problemen veroorzaken met eigen pictrogrampaketten</string>
     <!-- Icon size -->
     <string name="icon_size_title">Pictogram grootte</string>
     <string name="icon_size_extra_small">Klein</string>

@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">تنظیم آیکون و شکل، اندازه و بیشتر</string>
     <string name="app_drawer_category_title">کشوی برنامه ها</string>
     <string name="app_drawer_category_summary">شخصی سازی کشوی برنامه ها</string>
+    <string name="recents_category_title">اخیر</string>
     <string name="gestures_category_title">ژست های حرکتی</string>
     <string name="gestures_category_summary">بهبود تجربه شما</string>
     <!-- Sub categories -->
@@ -37,9 +38,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">شکل آیکون</string>
     <string name="icon_shape_rounded_square">گرد شده</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">اعمال کردن شکل ماسک بر روی آیکون های بومی</string>
-    <string name="legacy_icon_mask_summary">اگر روشن شود، می تواند مشکلی با ایکون پک های شخصی ایجاد کند</string>
     <!-- Icon size -->
     <string name="icon_size_title">اندازه آیکن</string>
     <string name="icon_size_extra_small">ریز</string>

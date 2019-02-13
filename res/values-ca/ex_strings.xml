@@ -26,13 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="gestures_category_title">Gestos</string>
     <string name="gestures_category_summary">Millora la teva experiència</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Disseny de quadrícula</string>
     <!-- Icon packs -->
     <string name="icon_pack">Paquet d\'icones</string>
     <string name="icon_pack_none">Cap</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Forma de la icona</string>
     <string name="icon_shape_rounded_square">Quadrat arrodonit</string>
-    <!-- Icon mask -->
     <!-- Icon size -->
     <string name="icon_size_average">Per defecte</string>
     <!-- Gestures -->

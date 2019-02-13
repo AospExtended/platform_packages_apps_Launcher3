@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Nastavit tvar, velikost ikon a další</string>
     <string name="app_drawer_category_title">Seznam aplikací</string>
     <string name="app_drawer_category_summary">Přizpůsobit seznam aplikací</string>
+    <string name="recents_category_title">Nedávné</string>
+    <string name="recents_category_summary">Přizpůsobte přehled nedávných aplikací</string>
     <string name="gestures_category_title">Gesta</string>
     <string name="gestures_category_summary">Vylepšete své zkušenosti</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Tvar ikony</string>
     <string name="icon_shape_rounded_square">Zaoblený čtverec</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Vynutit tvar pro starší ikony</string>
-    <string name="legacy_icon_mask_summary">Pokud je povoleno, může způsobit problém s vlastními ikonami</string>
     <!-- Icon size -->
     <string name="icon_size_title">Velikost ikon</string>
     <string name="icon_size_extra_small">Nejmenší</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gesto dvojím poklepáním</string>
     <string name="pref_homescreen_dt_gestures_summary">Vyberte gesto dvojím poklepáním na domovskou obrazovku</string>
     <string name="pref_homescreen_dt_gestures_none">Žádné</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Vypnout obrazovku</string>
     <string name="pref_homescreen_dt_gestures_torch">Svítilna</string>
+    <string name="pref_homescreen_dt_gestures_google">Vyhledávaní Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Vyhledávání Google není nainstalováno</string>
     <string name="pref_notifications_gesture_title">Gesta oznámení</string>
     <string name="pref_notifications_gesture_summary">Přejetím svisle směrem dolů na domovské obrazovce se zobrazí panel QS</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Zobrazit vyhledávací lištu</string>
     <string name="show_searchbar_summary">Zobrazit vyhledávací lištu na domovské obrazovce</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Použít pro nedávné vlastní zaoblené rohy</string>
+    <string name="custom_recents_corners_switch_summary">Je-li zakázáno, bude použit systémový motiv. Pro aplikaci nové hodnoty se po vybrání možnosti vraťtě Domů.</string>
+    <string name="custom_recents_corners_type_title">Vlastní zaoblení nedávných</string>
+    <string name="custom_recents_corners_type_default">Výchozí</string>
+    <string name="custom_recents_corners_type_card">Zaoblené karty</string>
+    <string name="custom_recents_corners_type_op">Styl OP</string>
 </resources>

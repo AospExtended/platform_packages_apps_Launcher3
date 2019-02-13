@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Ustaw kształt, rozmiar ikon i więcej</string>
     <string name="app_drawer_category_title">Lista aplikacji</string>
     <string name="app_drawer_category_summary">Dostosuj listę aplikacji</string>
+    <string name="recents_category_title">Najnowsze</string>
+    <string name="recents_category_summary">Dostosuj swoją kartę ostatnich</string>
     <string name="gestures_category_title">Gesty</string>
     <string name="gestures_category_summary">Zwiększ swoje wrażenia</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Kształt ikon</string>
     <string name="icon_shape_rounded_square">Zaokrąglony kwadrat</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Wymuś kształt dla starszych ikon</string>
-    <string name="legacy_icon_mask_summary">Może powodować problemy z niestandardowym pakietem ikon, jeżeli aktywne</string>
     <!-- Icon size -->
     <string name="icon_size_title">Rozmiar ikony</string>
     <string name="icon_size_extra_small">Bardzo mały</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gest dwukrotnego dotknięcia</string>
     <string name="pref_homescreen_dt_gestures_summary">Wybierz akcję dwukrotnego kliknięcia na ekranie głównym</string>
     <string name="pref_homescreen_dt_gestures_none">Brak</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Wyłącz ekran</string>
     <string name="pref_homescreen_dt_gestures_torch">Latarka</string>
+    <string name="pref_homescreen_dt_gestures_google">Wyszukiwarka Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Nie zainstalowano aplikacji Google</string>
     <string name="pref_notifications_gesture_title">Gest powiadomień</string>
     <string name="pref_notifications_gesture_summary">Przesuń pionowo w dół ekranu głównego, aby wyświetlić panel powiadomień</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Pokaż pasek wyszukiwania</string>
     <string name="show_searchbar_summary">Usuwa etykiety ikon aplikacji na ekranie głównym</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Użyj niestandardowych ostatnich zaokrąglonych narożników</string>
+    <string name="custom_recents_corners_switch_summary">Jeśli wyłączone, będą użyte dostarczone przez system / motyw. Aby zastosować nową wartość, przejdź do ekranu domowego po wybraniu opcji.</string>
+    <string name="custom_recents_corners_type_title">Niestandardowe ostatnie zaokrąglenie</string>
+    <string name="custom_recents_corners_type_default">Domyślne</string>
+    <string name="custom_recents_corners_type_card">Zaokrąglona karta</string>
+    <string name="custom_recents_corners_type_op">OP styl</string>
 </resources>

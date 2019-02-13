@@ -46,9 +46,6 @@ icon_pack_picker_dialog_title
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">படவுரு வடிவம்</string>
     <string name="icon_shape_rounded_square">வட்ட சதுர</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">மரபு சின்னங்கள் மீது வடிவம் வடிவ முகமூடி</string>
-    <string name="legacy_icon_mask_summary">செயல்படுத்தப்பட்டால், விருப்ப ஐகான்களுடன் சிக்கலை ஏற்படுத்தலாம்</string>
     <!-- Icon size -->
     <string name="icon_size_title">படவுரு வடிவம்</string>
     <string name="icon_size_extra_small">மிகச்சிறியது</string>

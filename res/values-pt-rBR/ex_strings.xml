@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Definir forma de ícone, tamanho e muito mais</string>
     <string name="app_drawer_category_title">Gaveta de apps</string>
     <string name="app_drawer_category_summary">Personalizar sua gaveta de aplicativos</string>
+    <string name="recents_category_title">Recentes</string>
+    <string name="recents_category_summary">Personalize sua visualização de aplicativos recentes</string>
     <string name="gestures_category_title">Gestos</string>
     <string name="gestures_category_summary">Compartilhe sua experiência</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">formato dos Icones</string>
     <string name="icon_shape_rounded_square">Cantos arredondados</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Máscara de forma força nos ícones legados</string>
-    <string name="legacy_icon_mask_summary">Pode causar problema com pacotes de ícone personalizado, se habilitado</string>
     <!-- Icon size -->
     <string name="icon_size_title">Tamanho dos ícones</string>
     <string name="icon_size_extra_small">Minúsculo</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gestos toque duplo</string>
     <string name="pref_homescreen_dt_gestures_summary">Selecione a ação do gesto duplo toque na tela inicial</string>
     <string name="pref_homescreen_dt_gestures_none">Nenhum</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Desligar tela</string>
     <string name="pref_homescreen_dt_gestures_torch">Lanterna</string>
+    <string name="pref_homescreen_dt_gestures_google">Pesquisa Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Aplicativo do Google não instalado</string>
     <string name="pref_notifications_gesture_title">Gesto de notificações</string>
     <string name="pref_notifications_gesture_summary">Arraste verticalmente para baixo na tela inicial para mostrar o painel de notificação</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Mostrar barra de pesquisa</string>
     <string name="show_searchbar_summary">Mostrar os rótulos de apps na tela inicial</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Usar cantos arrendados personalizados em recentes</string>
+    <string name="custom_recents_corners_switch_summary">Se desativado, usará aquele fornecido pelo sistema/tema. Para aplicar o novo valor, ir para o início depois de selecionar a sua opção.</string>
+    <string name="custom_recents_corners_type_title">Arredondamento de apps recentes personalizado</string>
+    <string name="custom_recents_corners_type_default">Padrão</string>
+    <string name="custom_recents_corners_type_card">Cartão arredondado</string>
+    <string name="custom_recents_corners_type_op">Estilo de OP</string>
 </resources>

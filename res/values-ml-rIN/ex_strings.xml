@@ -37,9 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">ഇക്കോണിറ്റ ഷാപ്പ്</string>
     <string name="icon_shape_rounded_square">റൗണ്ടഡ് സ്ക്വാർ</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">ഫോഴ്സ് ഷാപ്പ് മാസ്‌ക് ഓണ് ലെഗസി ഐക്കൻസ്</string>
-    <string name="legacy_icon_mask_summary">ഓണ് ചെയ്താൽ കസ്റ്റോഎം ഐക്കൻസ് ക്രേമികരണ തകറുകളെ വരും</string>
     <!-- Icon size -->
     <string name="icon_size_title">ഐക്കൺ സ്‌ഐസി</string>
     <string name="icon_size_extra_small">തീരെ ചെറിയ</string>

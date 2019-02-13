@@ -37,9 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">รูปทรงไอคอน</string>
     <string name="icon_shape_rounded_square">ทรงกลม</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">เปลี่ยนรูปทรงบนไอค่อนเดิม</string>
-    <string name="legacy_icon_mask_summary">อาจทำให้เกิดปัญหากับชุดไอคอนที่กำหนดเอง ถ้าเปิดใช้งาน</string>
     <!-- Icon size -->
     <string name="icon_size_title">ขนาดของไอคอน</string>
     <string name="icon_size_extra_small">เล็กมาก</string>

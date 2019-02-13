@@ -37,9 +37,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">ચિહ્ન આકાર</string>
     <string name="icon_shape_rounded_square">ગોળાકાર ચોરસ</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">લેગસી આઇકોન પર આકાર માસ્ક ફોર્સ કરો</string>
-    <string name="legacy_icon_mask_summary">જો સક્ષમ હોય, તો કસ્ટમ આયકન પેક્સ સાથે સમસ્યા ઊભી થઈ શકે છે</string>
     <!-- Icon size -->
     <string name="icon_size_title">ચિહ્ન કદ</string>
     <string name="icon_size_extra_small">ઝીણું</string>

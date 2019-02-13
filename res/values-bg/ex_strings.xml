@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Задаване на форма на икона, размер и др</string>
     <string name="app_drawer_category_title">Списък с приложения</string>
     <string name="app_drawer_category_summary">Персонализиране на чекмеджето с приложения</string>
+    <string name="recents_category_title">Скорошни</string>
+    <string name="recents_category_summary">Персонализиране на изгледа на Скорошни</string>
     <string name="gestures_category_title">Жестове</string>
     <string name="gestures_category_summary">Подобряване на вашия опит</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Форма на иконите</string>
     <string name="icon_shape_rounded_square">Заоблен квадрат</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Force shape mask on legacy icons</string>
-    <string name="legacy_icon_mask_summary">Ако е разрешено може да предизвика проблем с потребителските пакети с икони</string>
     <!-- Icon size -->
     <string name="icon_size_title">Размер на икона</string>
     <string name="icon_size_extra_small">Много малки</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Жестове при двоен тап</string>
     <string name="pref_homescreen_dt_gestures_summary">Изберете действие при двоен тап на началния екран</string>
     <string name="pref_homescreen_dt_gestures_none">Без</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Изключване на екрана</string>
     <string name="pref_homescreen_dt_gestures_torch">Фенерче</string>
+    <string name="pref_homescreen_dt_gestures_google">Търсене в Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Търсене в Google не е инсталирано</string>
     <string name="pref_notifications_gesture_title">Жестове за известията</string>
     <string name="pref_notifications_gesture_summary">Плъзнете вертикално надолу в началния екран да се покаже панелът с бързи настройки</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Покажи лентата за търсене</string>
     <string name="show_searchbar_summary">Покажи лентата за търсене на началния екран</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Използвайте заоблени ъгли в Скорошни</string>
+    <string name="custom_recents_corners_switch_summary">Ако е изключено, ще бъде използвана една от системните теми. За да влязат в сила промените, выйдете на рабочий стол после выбора.</string>
+    <string name="custom_recents_corners_type_title">Потребителски заоблени ъгли в Скорошни</string>
+    <string name="custom_recents_corners_type_default">По подразбиране</string>
+    <string name="custom_recents_corners_type_card">Заоблен квадрат</string>
+    <string name="custom_recents_corners_type_op">ОП стил</string>
 </resources>

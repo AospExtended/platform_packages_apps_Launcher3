@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Imposta la forma dell\'icona, dimensione e altro ancora</string>
     <string name="app_drawer_category_title">Menù delle applicazioni</string>
     <string name="app_drawer_category_summary">Personalizza il menù delle applicazioni</string>
+    <string name="recents_category_title">Recenti</string>
+    <string name="recents_category_summary">Personalizza l\'interfaccia delle applicazioni recenti</string>
     <string name="gestures_category_title">Gesti</string>
     <string name="gestures_category_summary">Migliora la tua esperienza</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Cambia la forma delle icone</string>
     <string name="icon_shape_rounded_square">Quadrato arrotondato</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Maschera di forma forza sulle icone legacy</string>
-    <string name="legacy_icon_mask_summary">Potrebbe causare problemi con pacchetti di icone personalizzate, se abilitato</string>
     <!-- Icon size -->
     <string name="icon_size_title">Dimensione icona</string>
     <string name="icon_size_extra_small">Molto piccolo</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Gesto doppio tocco</string>
     <string name="pref_homescreen_dt_gestures_summary">Seleziona l\'azione del doppio tocco sulla schermata principale</string>
     <string name="pref_homescreen_dt_gestures_none">Nessuno</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Spegni schermo</string>
     <string name="pref_homescreen_dt_gestures_torch">Torcia</string>
+    <string name="pref_homescreen_dt_gestures_google">Cerca con Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">La ricerca di Google non è installata</string>
     <string name="pref_notifications_gesture_title">Gesto sulle notifiche</string>
     <string name="pref_notifications_gesture_summary">Scorri verticalmente verso il basso nella schermata iniziale per visualizzare il pannello delle impostazioni rapide</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Visualizza barra di ricerca</string>
     <string name="show_searchbar_summary">Visualizza la barra di ricerca sulla schermata iniziale</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Usa gli angoli arrotondati personalizzati</string>
+    <string name="custom_recents_corners_switch_summary">Se disabilitato, utilizzerà quello fornito dal sistema/tema. Per applicare il nuovo valore, vai su home dopo aver selezionato l\'opzione.</string>
+    <string name="custom_recents_corners_type_title">Personalizza gli angoli dei recenti</string>
+    <string name="custom_recents_corners_type_default">Predefinito</string>
+    <string name="custom_recents_corners_type_card">Angoli arrotondati</string>
+    <string name="custom_recents_corners_type_op">Stile OP</string>
 </resources>

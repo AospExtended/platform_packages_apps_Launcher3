@@ -25,6 +25,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Nustatykite piktogramos formą, dydį ir dar daugiau</string>
     <string name="app_drawer_category_title">Programėlių meniu</string>
     <string name="app_drawer_category_summary">Naudokite sąrašą</string>
+    <string name="recents_category_title">Naujausi</string>
+    <string name="recents_category_summary">Tinkinkite naujausių programų išvaizdą</string>
     <string name="gestures_category_title">Gestai</string>
     <string name="gestures_category_summary">Pasidalinkite savo patirtimi</string>
     <!-- Sub categories -->
@@ -37,9 +39,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Piktogramų forma</string>
     <string name="icon_shape_rounded_square">Suapvalintas kvadratas</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Pakeisti formą senovinių piktogramų</string>
-    <string name="legacy_icon_mask_summary">Gali sukelti problemą naudojant priskirtus piktogramų paketus, jei įjungta</string>
     <!-- Icon size -->
     <string name="icon_size_title">Piktogramos dydis</string>
     <string name="icon_size_extra_small">Mažytis</string>
@@ -53,7 +52,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="pref_homescreen_dt_gestures_title">Dvigubo bakstelėjimo gestas</string>
     <string name="pref_homescreen_dt_gestures_summary">Pasirinkite veiksmą, dvigubo bakstelėjimo gestas, pradiniame ekrane</string>
     <string name="pref_homescreen_dt_gestures_none">Nėra</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Ekranas išjungtas</string>
     <string name="pref_homescreen_dt_gestures_torch">Žibintuvėlis</string>
+    <string name="pref_homescreen_dt_gestures_google">„Google“ paieška</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">\"Google\" paieška neįdiegta</string>
     <string name="pref_notifications_gesture_title">Pranešimų gestas</string>
     <string name="pref_notifications_gesture_summary">Norėdami pamatyti QS skydelį, perbraukite vertikaliai žemyn pradiniame ekrane</string>
     <!-- Google Feed -->
@@ -82,4 +84,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Rodyti paieškos juostą</string>
     <string name="show_searchbar_summary">Rodyti paieškos juostą pradiniame ekrane</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Naudokite pasirinktinius kampo nustatymus naujausioms programoms</string>
+    <string name="custom_recents_corners_switch_summary">Jei išjungta, bus naudojama viena iš numatytų sistemos temų. Jei norite taikyti naują reikšmę, eikite į darbalaukį po pasirinkimo.</string>
+    <string name="custom_recents_corners_type_title">Paskutinių programų individualus apvalinimas</string>
+    <string name="custom_recents_corners_type_default">Numatytas</string>
+    <string name="custom_recents_corners_type_card">Suapvalinta kortelė</string>
+    <string name="custom_recents_corners_type_op">OP stilius</string>
 </resources>

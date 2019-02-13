@@ -36,9 +36,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Nişan şəkli</string>
     <string name="icon_shape_rounded_square">Dairəvi kvadrat</string>
-    <!-- Icon mask -->
-    <string name="legacy_icon_mask_title">Köhnə nişanlar üzərindəki forma maska ​​çəkin</string>
-    <string name="legacy_icon_mask_summary">Aktivləşdirildikdə, xüsusi nişan paketləri ilə problem yarada bilər</string>
     <!-- Icon size -->
     <string name="icon_size_title">Nişan ölçüsü</string>
     <string name="icon_size_extra_small">Çox kiçik</string>
