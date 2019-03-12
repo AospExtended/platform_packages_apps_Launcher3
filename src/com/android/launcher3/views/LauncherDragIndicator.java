@@ -71,13 +71,13 @@ public class LauncherDragIndicator extends ImageView implements OnClickListener,
                 layoutParams.gravity = 83;
             }
             layoutParams.bottomMargin = dp.workspacePadding.bottom;
-            setImageResource(R.drawable.all_apps_handle_landscape);
+            // setImageResource(R.drawable.all_apps_handle_landscape);
         } else {
             layoutParams.rightMargin = 0;
             layoutParams.leftMargin = 0;
             layoutParams.gravity = 81;
             layoutParams.bottomMargin = getPortraitBottomMargin(dp, rect);
-            setImageResource(R.drawable.ic_drag_indicator);
+            // setImageResource(R.drawable.ic_drag_indicator);
         }
         int pageIndicatorSize = dp.pageIndicatorSizePx;
         layoutParams.height = pageIndicatorSize;
