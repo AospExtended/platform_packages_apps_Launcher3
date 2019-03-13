@@ -20,13 +20,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="settings_title">Настройки</string>
     <!-- Categories -->
     <string name="home_category_title">Начален екран</string>
-    <string name="home_category_summary">Инсталирай панела на Google now</string>
+    <string name="home_category_summary">Приложи Google now панела и още</string>
     <string name="icons_category_title">Икони</string>
-    <string name="icons_category_summary">Задаване на форма на икона, размер и др</string>
+    <string name="icons_category_summary">Задаване на форма на икона, размер и други</string>
     <string name="app_drawer_category_title">Списък с приложения</string>
-    <string name="app_drawer_category_summary">Персонализиране на чекмеджето с приложения</string>
+    <string name="app_drawer_category_summary">Персонализиране на менюто с приложения</string>
     <string name="recents_category_title">Скорошни</string>
-    <string name="recents_category_summary">Персонализиране на изгледа на Скорошни</string>
+    <string name="recents_category_summary">Персонализиране на изгледа на Скорошни приложения</string>
     <string name="gestures_category_title">Жестове</string>
     <string name="gestures_category_summary">Подобряване на вашия опит</string>
     <!-- Sub categories -->
@@ -44,22 +44,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icon_size_extra_small">Много малки</string>
     <string name="icon_size_small">Малки</string>
     <string name="icon_size_average">По подразбиране</string>
-    <string name="icon_size_large">Голям</string>
+    <string name="icon_size_large">Големи</string>
     <string name="icon_size_extra_large">Свръхголеми</string>
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Изчисти всички от списъка с последно отваряни</string>
     <string name="allow_swipe_down_clearall_desc">Плъзнете вертикално надолу в списъка с последно отваряни, за да изчистите всички приложения</string>
-    <string name="pref_homescreen_dt_gestures_title">Жестове при двоен тап</string>
-    <string name="pref_homescreen_dt_gestures_summary">Изберете действие при двоен тап на началния екран</string>
+    <string name="pref_homescreen_dt_gestures_title">Жестове при двукратно докосване</string>
+    <string name="pref_homescreen_dt_gestures_summary">Изберете действие при двукратно докосване на началния екран</string>
     <string name="pref_homescreen_dt_gestures_none">Без</string>
     <string name="pref_homescreen_dt_gestures_sleep">Изключване на екрана</string>
     <string name="pref_homescreen_dt_gestures_torch">Фенерче</string>
-    <string name="pref_homescreen_dt_gestures_google">Търсене в Google</string>
-    <string name="pref_homescreen_dt_gestures_google_toast">Търсене в Google не е инсталирано</string>
+    <string name="pref_homescreen_dt_gestures_google">Гугъл търсене</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Гугъл търсене не е инсталирано</string>
     <string name="pref_notifications_gesture_title">Жестове за известията</string>
     <string name="pref_notifications_gesture_summary">Плъзнете вертикално надолу в началния екран да се покаже панелът с бързи настройки</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Показване на Google app</string>
+    <string name="google_feed_title">Показване на Гугъл приложение</string>
     <string name="google_feed_summary">Отляво на основния начален екран</string>
     <!-- Grid -->
     <string name="num_default">По подразбиране</string>
@@ -69,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="state_loading">Прилагане\u2026</string>
     <!-- Hidden apps -->
     <string name="hide_app">Скрий приложения</string>
-    <string name="hide_app_sum">Скрий приложението от листа с приложения</string>
+    <string name="hide_app_sum">Скрий приложението от списъка с приложения</string>
     <string name="hide_app_selected">&#160;избрани</string>
     <string name="hidden_app">Всички приложения</string>
     <string name="hide_selected">Скриване на избраните програми</string>
@@ -79,15 +79,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Етикети на приложенията</string>
     <string name="desktop_show_label_summary">Покажи етикетите на приложенията на началния екран</string>
-    <string name="allapps_show_label_summary">Покажи етикетите на приложенията в чекмеджето</string>
+    <string name="allapps_show_label_summary">Покажи етикетите на приложенията в менюто с приложения</string>
     <!-- Show searchbar -->
     <string name="show_searchbar_title">Покажи лентата за търсене</string>
     <string name="show_searchbar_summary">Покажи лентата за търсене на началния екран</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Използвайте заоблени ъгли в Скорошни</string>
-    <string name="custom_recents_corners_switch_summary">Ако е изключено, ще бъде използвана една от системните теми. За да влязат в сила промените, выйдете на рабочий стол после выбора.</string>
+    <string name="custom_recents_corners_switch_summary">Ако е изключено, ще бъде използвана една от системните теми. За да влязат в сила промените, излезте на началния екран след избирането на опция.</string>
     <string name="custom_recents_corners_type_title">Потребителски заоблени ъгли в Скорошни</string>
     <string name="custom_recents_corners_type_default">По подразбиране</string>
     <string name="custom_recents_corners_type_card">Заоблен квадрат</string>
-    <string name="custom_recents_corners_type_op">ОП стил</string>
+    <string name="custom_recents_corners_type_op">OP стил</string>
 </resources>

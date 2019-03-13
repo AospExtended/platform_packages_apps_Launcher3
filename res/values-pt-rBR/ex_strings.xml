@@ -71,7 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="hide_app">Ocultar apps</string>
     <string name="hide_app_sum">Ocultar aplicativos da gaveta de aplicativos</string>
     <string name="hide_app_selected">&#160;selecionado</string>
-    <string name="hidden_app">Todos os apps</string>
+    <string name="hidden_app">Todos os aplicativos</string>
     <string name="hide_selected">Ocultar aplicativo(s) selecionado(s)</string>
     <string name="more">Mais</string>
     <string name="reset_hidden_apps">Restaurar todos</string>

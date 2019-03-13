@@ -81,7 +81,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="desktop_show_label_summary">Prikaži oznake aplikacij na začetnem zaslonu</string>
     <string name="allapps_show_label_summary">Prikaži oznake aplikacij v predalu aplikacij</string>
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Pokaži iskalno vrstico</string>
+    <string name="show_searchbar_title">Prikaži iskalno vrstico</string>
     <string name="show_searchbar_summary">Prikaži iskalna vrstico na začetnem zaslonu</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Uporabi zaobljene robove nedavnih po meri</string>

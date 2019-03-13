@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">ഐക്കൺ ഷാപ്പ് സയിസ് അധികവും ക്രേമികരിക്കുക</string>
     <string name="app_drawer_category_title">അപ്പ് ട്രൗർ</string>
     <string name="app_drawer_category_summary">അപ്പോ ട്രൗർ ക്രേമികരിക്കുക</string>
+    <string name="recents_category_title">അവസാനം ഉപയോഗിച്ചവ</string>
     <string name="gestures_category_title">ആംഗ്യങ്ങൾ</string>
     <string name="gestures_category_summary">എക്സ്പീരിയൻസ് എൻഹൻസ് ചെയുക</string>
     <!-- Sub categories -->

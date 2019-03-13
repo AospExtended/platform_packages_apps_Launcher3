@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="icons_category_summary">Atur bentuk ikon, ukuran, dan lainnya</string>
     <string name="app_drawer_category_title">Deret Aplikasi</string>
     <string name="app_drawer_category_summary">Kustomisasi deret aplikasi Anda</string>
-    <string name="recents_category_title">Recents</string>
+    <string name="recents_category_title">Baru digunakan</string>
     <string name="recents_category_summary">Sesuaikan tampilan Recents anda</string>
     <string name="gestures_category_title">Gestur</string>
     <string name="gestures_category_summary">Meningkatkan pengalaman Anda</string>
@@ -84,8 +84,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Tampilkan bar pencarian</string>
     <string name="show_searchbar_summary">Tampilkan bar pencarian di layar utama</string>
     <!-- Recents corned -->
-    <string name="custom_recents_corners_switch_title">Gunakan kostom sudut Recents</string>
-    <string name="custom_recents_corners_switch_summary">Jika dinonaktifkan, itu akan menggunakan yang disediakan oleh sistem/tema. Untuk menerapkan nilai baru, kembali ke beranda setelah memilih opsi Anda.</string>
+    <string name="custom_recents_corners_switch_title">Gunakan sudut Recents kustom</string>
+    <string name="custom_recents_corners_switch_summary">Jika tidak aktif, hanya akan menggunakan bawaan sistem/tema. Untuk menerapkan yang baru, kembali ke beranda setelah memilih pilihan Anda.</string>
     <string name="custom_recents_corners_type_title">Gaya sudut Recents</string>
     <string name="custom_recents_corners_type_default">Bawaan</string>
     <string name="custom_recents_corners_type_card">Membulat</string>

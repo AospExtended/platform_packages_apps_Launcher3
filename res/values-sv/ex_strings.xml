@@ -17,16 +17,71 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Inställningar</string>
     <!-- Categories -->
+    <string name="home_category_title">Startskärm</string>
+    <string name="home_category_summary">Ställ in Google-appen och mer</string>
+    <string name="icons_category_title">Ikoner</string>
+    <string name="icons_category_summary">Välj ikonstorlek och mer</string>
+    <string name="app_drawer_category_title">Program</string>
+    <string name="app_drawer_category_summary">Anpassa program</string>
+    <string name="recents_category_title">Senaste appar</string>
+    <string name="recents_category_summary">Anpassa översikt</string>
+    <string name="gestures_category_title">Gester</string>
+    <string name="gestures_category_summary">Förbättra din upplevelse</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Rutnät, layout</string>
+    <string name="icon_layout_title">Ikon-layout</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Ikonpaket</string>
+    <string name="icon_pack_summary">Ändra utseendet på appikoner</string>
+    <string name="icon_pack_none">Inget</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Ändra form på ikoner</string>
+    <string name="icon_shape_rounded_square">Rundad kvadrat</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Ikonstorlek</string>
+    <string name="icon_size_extra_small">Pytteliten</string>
+    <string name="icon_size_small">Liten</string>
+    <string name="icon_size_average">Standard</string>
+    <string name="icon_size_large">Stor</string>
+    <string name="icon_size_extra_large">Extra stor</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Rensa alla</string>
+    <string name="allow_swipe_down_clearall_desc">Svep lodrätt nedåt på senaste appar för att rensa alla</string>
+    <string name="pref_homescreen_dt_gestures_title">Dubbeltrycksåtgärd</string>
+    <string name="pref_homescreen_dt_gestures_summary">Välj en åtgärd för dubbeltryck på hemskärmen</string>
+    <string name="pref_homescreen_dt_gestures_none">Inget</string>
+    <string name="pref_homescreen_dt_gestures_sleep">Skärm av</string>
+    <string name="pref_homescreen_dt_gestures_torch">Ficklampa</string>
+    <string name="pref_homescreen_dt_gestures_google">Google Sök</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Google Sök är inte installerad</string>
+    <string name="pref_notifications_gesture_title">Aviseringsrörelse</string>
+    <string name="pref_notifications_gesture_summary">Svep lodrätt nedåt på startskärmen för att visa snabbinställningar</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Visa Google-appen</string>
     <!-- Grid -->
+    <string name="num_default">Standard</string>
+    <string name="number_of_columns_title">Antal kolumner</string>
+    <string name="number_of_rows_title">Antal rader</string>
+    <string name="number_of_hotseat_title">Antalet ikoner i dockan</string>
+    <string name="state_loading">Tillämpar \u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Dölj appar</string>
+    <string name="hide_app_sum">Dölj app från program</string>
+    <string name="hide_app_selected">&#160;vald</string>
+    <string name="hidden_app">Alla appar</string>
+    <string name="hide_selected">Dölj valda appar</string>
+    <string name="more">Mer</string>
+    <string name="reset_hidden_apps">Återställ allt</string>
+    <string name="reset_hidden_apps_done">Dolda appar är nu tillgängliga</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Etiketter</string>
+    <string name="desktop_show_label_summary">Visa etiketter under ikonerna på startskärmen</string>
+    <string name="allapps_show_label_summary">Visa etiketter under ikonerna i program</string>
     <!-- Show searchbar -->
+    <string name="show_searchbar_title">Visa sökfältet</string>
+    <string name="show_searchbar_summary">Visa sökfältet på startskärmen</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_type_default">Standard</string>
 </resources>

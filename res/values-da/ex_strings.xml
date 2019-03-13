@@ -17,7 +17,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Indstillinger</string>
     <!-- Categories -->
+    <string name="home_category_title">Startskærmen</string>
+    <string name="home_category_summary">Indstil Google nu panel og mere</string>
+    <string name="icons_category_title">Ikoner</string>
+    <string name="icons_category_summary">Angiv ikonform, størrelse m.m.</string>
+    <string name="app_drawer_category_title">App liste</string>
+    <string name="app_drawer_category_summary">Tilpas din App liste</string>
+    <string name="recents_category_title">Seneste</string>
+    <string name="recents_category_summary">Tilpasse dine seneste kort</string>
     <!-- Sub categories -->
     <!-- Icon packs -->
     <!-- Icon shape -->
