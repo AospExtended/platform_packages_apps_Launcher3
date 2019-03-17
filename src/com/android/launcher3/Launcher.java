@@ -2678,7 +2678,7 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         AlertDialog.Builder builder = new AlertDialog.Builder(
                 new ContextThemeWrapper(this, R.style.EditIconDialogStyle))
                 .setView(mIconPackView)
-                .setTitle(getString(R.string.edit_app))
+                .setTitle(getString(R.string.edit_drop_target_label))
                 .setOnDismissListener(new DialogInterface.OnDismissListener() {
                     @Override
                     public void onDismiss(DialogInterface dialog) {
