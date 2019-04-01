@@ -395,6 +395,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         inflateRootView(R.layout.launcher);
         setupViews();
         mPopupDataProvider = new PopupDataProvider(this::updateNotificationDots);
+        LauncherNotifications.getInstance().addListener(mPopupDataProvider);
 
         mAppTransitionManager = LauncherAppTransitionManager.newInstance(this);
         mAppTransitionManager.registerRemoteAnimations();
@@ -924,7 +925,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         mModel.refreshShortcutsIfRequired();
 
         // Set the notification listener and fetch updated notifications when we resume
-        NotificationListener.setNotificationsChangedListener(mPopupDataProvider);
+        NotificationListener.setNotificationsChangedListener(LauncherNotifications.getInstance());
 
         DiscoveryBounce.showForHomeIfNeeded(this);
     }
