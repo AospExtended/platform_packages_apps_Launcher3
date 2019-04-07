@@ -138,6 +138,7 @@ import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.util.PackageUserKey;
 import com.android.launcher3.util.PendingRequestArgs;
 import com.android.launcher3.util.SystemUiController;
+import com.android.launcher3.util.ThemeUtil;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.util.Thunk;
 import com.android.launcher3.util.TraceHelper;
@@ -2584,12 +2585,9 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
     @Override
     public void onExtractedColorsChanged(WallpaperColorInfo wallpaperColorInfo) {
         int alpha = getResources().getInteger(R.integer.extracted_color_gradient_alpha);
-        final Configuration config = this.getResources().getConfiguration();
-        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
         mUiInformation.putInt("background_color_hint", primaryColor(wallpaperColorInfo, this, alpha));
         mUiInformation.putInt("background_secondary_color_hint", secondaryColor(wallpaperColorInfo, this, alpha));
-        mUiInformation.putBoolean("is_background_dark", nightModeWantsDarkTheme);
+        mUiInformation.putBoolean("is_background_dark", ThemeUtil.isThemeDarkVariant(this,wallpaperColorInfo));
 
         mClient.redraw(mUiInformation);
 

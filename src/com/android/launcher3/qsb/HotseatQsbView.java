@@ -50,6 +50,7 @@ import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.compat.LauncherAppsCompat;
+import com.android.launcher3.util.ThemeUtil;
 
 import java.util.List;
 
@@ -122,11 +123,8 @@ public class HotseatQsbView extends BaseQsbView {
     }
 
     public void loadViews() {
-        final Configuration config = mContext.getResources().getConfiguration();
-        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
         View.inflate(new ContextThemeWrapper(getContext(), R.style.HotseatQsbTheme), R.layout.qsb_hotseat_content, this);
-        setColor(nightModeWantsDarkTheme ? 0xD9282828 : 0xCCFFFFFF);
+        setColor(ThemeUtil.getQsbColor(mContext, mWallpaperColorInfo));
         setColorAlpha(ColorUtils.setAlphaComponent(mColor, mQsbConfig.getMicOpacity()));
 
     }

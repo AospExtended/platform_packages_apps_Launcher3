@@ -31,6 +31,8 @@ import android.view.Gravity;
 
 import com.android.launcher3.LauncherAnimUtils;
 import com.android.launcher3.R;
+import com.android.launcher3.util.ThemeConstants;
+import com.android.launcher3.util.ThemeUtil;
 import com.android.launcher3.util.Themes;
 
 /**
@@ -94,9 +96,6 @@ public class AllAppsBackgroundDrawable extends Drawable {
         }
     }
 
-    /** The system setting for System Themes **/
-    private static final String SYSTEM_THEME_STYLE = "system_theme_style";
-
     protected final TransformedImageDrawable mHand;
     protected final TransformedImageDrawable[] mIcons;
     private final int mWidth;
@@ -109,18 +108,19 @@ public class AllAppsBackgroundDrawable extends Drawable {
         mWidth = res.getDimensionPixelSize(R.dimen.all_apps_background_canvas_width);
         mHeight = res.getDimensionPixelSize(R.dimen.all_apps_background_canvas_height);
 
-        final int systemTheme = Settings.System.getInt(context.getContentResolver(), SYSTEM_THEME_STYLE, 0);
-
-        switch (systemTheme) {
-            case 1:
+        switch (ThemeUtil.getCurrentTheme(context)) {
+            case ThemeConstants.LIGHT_THEME:
                 context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground);
                 break;
-            case 2:
+            case ThemeConstants.DARK_THEME:
                 context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Dark);
                 break;
-            case 3: case 4: case 5:
+            case ThemeConstants.BLACK_THEME:
+            case ThemeConstants.EXTENDED_THEME:
+            case ThemeConstants.CHOCOLATE_THEME:
                 context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Black);
                 break;
+            case ThemeConstants.AUTO:
             default:
                 context = new ContextThemeWrapper(context, Themes.getAttrBoolean(context, R.attr.isMainColorDark)
                         ? R.style.AllAppsEmptySearchBackground_Dark

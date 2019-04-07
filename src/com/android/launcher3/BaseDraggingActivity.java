@@ -40,6 +40,8 @@ import com.android.launcher3.compat.LauncherAppsCompat;
 import com.android.launcher3.uioverrides.DisplayRotationListener;
 import com.android.launcher3.uioverrides.WallpaperColorInfo;
 import com.android.launcher3.shortcuts.DeepShortcutManager;
+import com.android.launcher3.util.ThemeConstants;
+import com.android.launcher3.util.ThemeUtil;
 import com.android.launcher3.views.BaseDragLayer;
 
 /**
@@ -283,24 +285,22 @@ public abstract class BaseDraggingActivity extends BaseActivity
     }
 
     private void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
-        ContentResolver resolver = this.getContentResolver();
         final boolean supportsDarkText = wallpaperColorInfo.supportsDarkText();
-        final int systemTheme = Settings.System.getInt(resolver, SYSTEM_THEME_STYLE, 0);
-        switch (systemTheme) {
-            case 1:
+        switch (ThemeUtil.getCurrentTheme(this)) {
+            case ThemeConstants.LIGHT_THEME:
                 setTheme(supportsDarkText ? R.style.AppTheme_DarkText : R.style.AppTheme);
                 break;
-            case 2:
+            case ThemeConstants.DARK_THEME:
                 setTheme(supportsDarkText ? R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark);
                 break;
-            case 3: case 4: case 5:
+            case ThemeConstants.BLACK_THEME:
+            case ThemeConstants.EXTENDED_THEME:
+            case ThemeConstants.CHOCOLATE_THEME:
                 setTheme(supportsDarkText ? R.style.AppTheme_Black_DarkText : R.style.AppTheme_Black);
                 break;
+            case ThemeConstants.AUTO:
             default:
-                if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_AUTO) {
-                    setTheme(wallpaperColorInfo.supportsDarkText() ? R.style.AppTheme_DarkText :
-                            R.style.AppTheme);
-                } else if (mUiModeManager.getNightMode() == UiModeManager.MODE_NIGHT_YES) {
+                if (ThemeUtil.nightModeWantsDarkTheme(this) || wallpaperColorInfo.isDark()) {
                     setTheme(wallpaperColorInfo.supportsDarkText() ? R.style.AppTheme_Dark_DarkText :
                             R.style.AppTheme_Dark);
                 } else {

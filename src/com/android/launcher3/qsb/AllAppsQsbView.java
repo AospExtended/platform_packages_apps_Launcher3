@@ -42,6 +42,7 @@ import com.android.launcher3.allapps.SearchUiManager;
 import com.android.launcher3.allapps.search.AllAppsSearchBarController;
 import com.android.launcher3.uioverrides.WallpaperColorInfo;
 import com.android.launcher3.uioverrides.WallpaperColorInfo.OnChangeListener;
+import com.android.launcher3.util.ThemeUtil;
 import com.android.launcher3.util.Themes;
 
 import com.android.launcher3.LauncherCallbacks;
@@ -115,11 +116,8 @@ public class AllAppsQsbView extends BaseQsbView implements SearchUiManager, OnCh
 
     @Override
     public void onExtractedColorsChanged(WallpaperColorInfo wallpaperColorInfo) {
-        final Configuration config = mContext.getResources().getConfiguration();
-        final boolean nightModeWantsDarkTheme = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK)
-                == Configuration.UI_MODE_NIGHT_YES;
         setColor(ColorUtils.compositeColors(
-                ColorUtils.compositeColors(nightModeWantsDarkTheme ? 0xD9282828 : 0xCCFFFFFF, Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)),
+                ColorUtils.compositeColors(ThemeUtil.getQsbColor(mContext, wallpaperColorInfo), Themes.getAttrColor(mLauncher, R.attr.allAppsScrimColor)),
                 wallpaperColorInfo.getMainColor()));
     }
 
