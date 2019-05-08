@@ -296,6 +296,7 @@ public abstract class BaseDraggingActivity extends BaseActivity
             case ThemeConstants.BLACK_THEME:
             case ThemeConstants.EXTENDED_THEME:
             case ThemeConstants.CHOCOLATE_THEME:
+            case ThemeConstants.ELEGANT_THEME:
                 setTheme(supportsDarkText ? R.style.AppTheme_Black_DarkText : R.style.AppTheme_Black);
                 break;
             case ThemeConstants.AUTO:

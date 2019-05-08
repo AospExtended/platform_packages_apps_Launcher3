@@ -11,4 +11,5 @@ public class ThemeConstants {
     public static final int BLACK_THEME = 3;
     public static final int EXTENDED_THEME = 4;
     public static final int CHOCOLATE_THEME = 5;
+    public static final int ELEGANT_THEME = 6;
 }

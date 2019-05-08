@@ -118,6 +118,7 @@ public class AllAppsBackgroundDrawable extends Drawable {
             case ThemeConstants.BLACK_THEME:
             case ThemeConstants.EXTENDED_THEME:
             case ThemeConstants.CHOCOLATE_THEME:
+            case ThemeConstants.ELEGANT_THEME:
                 context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Black);
                 break;
             case ThemeConstants.AUTO:
