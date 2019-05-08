@@ -34,6 +34,8 @@ public class ThemeUtil {
                 return 0xFF332D4F;
             case ThemeConstants.CHOCOLATE_THEME:
                 return 0xFF473E38;
+            case ThemeConstants.ELEGANT_THEME:
+                return 0xFF173145;
             case ThemeConstants.AUTO:
             default:
                 if(nightModeWantsDarkTheme || wallpaperColorInfo.isDark()) {
@@ -54,6 +56,7 @@ public class ThemeUtil {
             case ThemeConstants.BLACK_THEME:
             case ThemeConstants.EXTENDED_THEME:
             case ThemeConstants.CHOCOLATE_THEME:
+            case ThemeConstants.ELEGANT_THEME:
                 return true;
             case ThemeConstants.AUTO:
             default:
