@@ -108,26 +108,23 @@ public class AllAppsBackgroundDrawable extends Drawable {
         mWidth = res.getDimensionPixelSize(R.dimen.all_apps_background_canvas_width);
         mHeight = res.getDimensionPixelSize(R.dimen.all_apps_background_canvas_height);
 
-        switch (ThemeUtil.getCurrentTheme(context)) {
-            case ThemeConstants.LIGHT_THEME:
-                context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground);
-                break;
-            case ThemeConstants.DARK_THEME:
-                context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Dark);
-                break;
-            case ThemeConstants.BLACK_THEME:
-            case ThemeConstants.EXTENDED_THEME:
-            case ThemeConstants.CHOCOLATE_THEME:
-            case ThemeConstants.ELEGANT_THEME:
-                context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Black);
-                break;
-            case ThemeConstants.AUTO:
-            default:
-                context = new ContextThemeWrapper(context, Themes.getAttrBoolean(context, R.attr.isMainColorDark)
-                        ? R.style.AllAppsEmptySearchBackground_Dark
-                        : R.style.AllAppsEmptySearchBackground);
-                break;
+        if(ThemeUtil.nightModeWantsDarkTheme(context) || Themes.getAttrBoolean(context, R.attr.isMainColorDark)) {
+            switch (ThemeUtil.getCurrentDarkTheme(context)) {
+                case ThemeConstants.DARK_THEME:
+                    default:
+                    context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Dark);
+                    break;
+                case ThemeConstants.BLACK_THEME:
+                case ThemeConstants.EXTENDED_THEME:
+                case ThemeConstants.CHOCOLATE_THEME:
+                case ThemeConstants.ELEGANT_THEME:
+                    context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground_Black);
+                    break;
+            }
+        } else {
+            context = new ContextThemeWrapper(context, R.style.AllAppsEmptySearchBackground);
         }
+
         mHand = new TransformedImageDrawable(context, R.drawable.ic_all_apps_bg_hand,
                 0.575f, 0.f, Gravity.CENTER_HORIZONTAL);
         mIcons = new TransformedImageDrawable[4];
