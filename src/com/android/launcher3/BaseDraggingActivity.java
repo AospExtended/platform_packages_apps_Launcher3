@@ -286,28 +286,21 @@ public abstract class BaseDraggingActivity extends BaseActivity
 
     private void updateTheme(WallpaperColorInfo wallpaperColorInfo) {
         final boolean supportsDarkText = wallpaperColorInfo.supportsDarkText();
-        switch (ThemeUtil.getCurrentTheme(this)) {
-            case ThemeConstants.LIGHT_THEME:
-                setTheme(supportsDarkText ? R.style.AppTheme_DarkText : R.style.AppTheme);
-                break;
-            case ThemeConstants.DARK_THEME:
-                setTheme(supportsDarkText ? R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark);
-                break;
-            case ThemeConstants.BLACK_THEME:
-            case ThemeConstants.EXTENDED_THEME:
-            case ThemeConstants.CHOCOLATE_THEME:
-            case ThemeConstants.ELEGANT_THEME:
-                setTheme(supportsDarkText ? R.style.AppTheme_Black_DarkText : R.style.AppTheme_Black);
-                break;
-            case ThemeConstants.AUTO:
-            default:
-                if (ThemeUtil.nightModeWantsDarkTheme(this) || wallpaperColorInfo.isDark()) {
-                    setTheme(wallpaperColorInfo.supportsDarkText() ? R.style.AppTheme_Dark_DarkText :
-                            R.style.AppTheme_Dark);
-                } else {
-                    setTheme(mThemeRes);
-                }
-                break;
+        if (ThemeUtil.nightModeWantsDarkTheme(this) || wallpaperColorInfo.isDark()) {
+            switch (ThemeUtil.getCurrentDarkTheme(this)) {
+                case ThemeConstants.DARK_THEME:
+                    default:
+                    setTheme(supportsDarkText ? R.style.AppTheme_Dark_DarkText : R.style.AppTheme_Dark);
+                    break;
+                case ThemeConstants.BLACK_THEME:
+                case ThemeConstants.EXTENDED_THEME:
+                case ThemeConstants.CHOCOLATE_THEME:
+                case ThemeConstants.ELEGANT_THEME:
+                    setTheme(supportsDarkText ? R.style.AppTheme_Black_DarkText : R.style.AppTheme_Black);
+                    break;
+            }
+        } else {
+            setTheme(mThemeRes);
         }
 
     }
