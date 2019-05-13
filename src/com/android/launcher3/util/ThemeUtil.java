@@ -9,9 +9,9 @@ import com.android.launcher3.uioverrides.WallpaperColorInfo;
 
 public class ThemeUtil {
 
-    public static int getCurrentTheme(Context context) {
+    public static int getCurrentDarkTheme(Context context) {
         ContentResolver resolver = context.getContentResolver();
-        return Settings.System.getInt(resolver, ThemeConstants.SYSTEM_THEME_STYLE, ThemeConstants.AUTO);
+        return Settings.System.getInt(resolver, ThemeConstants.SYSTEM_DARK_THEME_STYLE, ThemeConstants.DARK_THEME);
     }
 
     public static boolean nightModeWantsDarkTheme(Context context) {
@@ -21,47 +21,31 @@ public class ThemeUtil {
     }
 
     public static int getQsbColor(Context context, WallpaperColorInfo wallpaperColorInfo) {
-        final int currentTheme = getCurrentTheme(context);
+        final int currentTheme = getCurrentDarkTheme(context);
         final boolean nightModeWantsDarkTheme = nightModeWantsDarkTheme(context);
-        switch (currentTheme) {
-            case ThemeConstants.LIGHT_THEME:
-                return 0xCCFFFFFF;
-            case ThemeConstants.DARK_THEME:
-                return 0xD9282828;
-            case ThemeConstants.BLACK_THEME:
-                return 0xFF111111;
-            case ThemeConstants.EXTENDED_THEME:
-                return 0xFF332D4F;
-            case ThemeConstants.CHOCOLATE_THEME:
-                return 0xFF473E38;
-            case ThemeConstants.ELEGANT_THEME:
-                return 0xFF173145;
-            case ThemeConstants.AUTO:
-            default:
-                if(nightModeWantsDarkTheme || wallpaperColorInfo.isDark()) {
+        if (nightModeWantsDarkTheme || wallpaperColorInfo.isDark()) {
+            switch (currentTheme) {
+                case ThemeConstants.DARK_THEME:
+                    default:
                     return 0xD9282828;
-                } else {
-                    return 0xCCFFFFFF;
-                }
+                case ThemeConstants.BLACK_THEME:
+                    return 0xFF111111;
+                case ThemeConstants.EXTENDED_THEME:
+                    return 0xFF332D4F;
+                case ThemeConstants.CHOCOLATE_THEME:
+                    return 0xFF473E38;
+                case ThemeConstants.ELEGANT_THEME:
+                    return 0xFF173145;
+            }
+
+        } else {
+            return 0xCCFFFFFF;
         }
     }
 
     public static boolean isThemeDarkVariant(Context context, WallpaperColorInfo wallpaperColorInfo) {
-        final int currentTheme = getCurrentTheme(context);
         final boolean nightModeWantsDarkTheme = nightModeWantsDarkTheme(context);
-        switch (currentTheme) {
-            case ThemeConstants.LIGHT_THEME:
-                return false;
-            case ThemeConstants.DARK_THEME:
-            case ThemeConstants.BLACK_THEME:
-            case ThemeConstants.EXTENDED_THEME:
-            case ThemeConstants.CHOCOLATE_THEME:
-            case ThemeConstants.ELEGANT_THEME:
-                return true;
-            case ThemeConstants.AUTO:
-            default:
-                return (nightModeWantsDarkTheme || wallpaperColorInfo.isDark());
-        }
+        return (nightModeWantsDarkTheme || wallpaperColorInfo.isDark());
     }
 
 }
