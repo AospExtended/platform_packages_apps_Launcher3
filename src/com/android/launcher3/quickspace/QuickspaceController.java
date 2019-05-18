@@ -25,6 +25,7 @@ import android.provider.Settings;
 import com.android.internal.util.custom.weather.WeatherClient;
 import com.android.internal.util.custom.weather.WeatherClient.WeatherInfo;
 import com.android.internal.util.custom.weather.WeatherClient.WeatherObserver;
+import com.android.internal.util.aospextended.AEXUtils;
 
 import java.util.ArrayList;
 
@@ -38,9 +39,6 @@ public class QuickspaceController implements WeatherObserver {
     private QuickEventsController mEventsController;
     private WeatherClient mWeatherClient;
     private WeatherInfo mWeatherInfo;
-    private WeatherSettingsObserver mWeatherSettingsObserver;
-
-    private boolean mUseImperialUnit;
 
     public interface OnDataListener {
         void onDataUpdated();
@@ -50,10 +48,6 @@ public class QuickspaceController implements WeatherObserver {
         mContext = context;
         mHandler = new Handler();
         mWeatherClient = new WeatherClient(context);
-        mWeatherSettingsObserver = new WeatherSettingsObserver(
-                mHandler, context.getContentResolver());
-        mWeatherSettingsObserver.register();
-        mWeatherSettingsObserver.updateLockscreenUnit();
     }
 
     private void addEventsController() {
@@ -91,11 +85,10 @@ public class QuickspaceController implements WeatherObserver {
     }
 
     public String getWeatherTemp() {
-        int tempMetric = mWeatherInfo.getTemperature(true);
-        int tempImperial = mWeatherInfo.getTemperature(false);
-        String weatherTemp = mUseImperialUnit ?
-                Integer.toString(tempImperial) + "°F" :
-                Integer.toString(tempMetric) + "°C";
+        int temperature = mWeatherInfo.getTemperature(!AEXUtils.mccCheck(mContext));
+        String weatherTemp = AEXUtils.mccCheck(mContext) ?
+                Integer.toString(temperature) + "°F" :
+                Integer.toString(temperature) + "°C";
         return weatherTemp;
     }
 
@@ -114,33 +107,5 @@ public class QuickspaceController implements WeatherObserver {
                 }
             }
         });
-    }
-
-    private class WeatherSettingsObserver extends ContentObserver {
-
-        private Handler mHandler;
-        private ContentResolver mResolver;
-
-        WeatherSettingsObserver(Handler handler, ContentResolver resolver) {
-            super(handler);
-            mHandler = handler;
-            mResolver = resolver;
-        }
-
-        public void register() {
-            mResolver.registerContentObserver(Settings.System.getUriFor(
-                    SETTING_WEATHER_LOCKSCREEN_UNIT), false, this);
-        }
-
-        @Override
-        public void onChange(boolean selfChange) {
-            super.onChange(selfChange);
-            updateLockscreenUnit();
-        }
-
-        public void updateLockscreenUnit() {
-            mUseImperialUnit = Settings.System.getInt(mResolver, SETTING_WEATHER_LOCKSCREEN_UNIT, 1) != 0;
-            notifyListeners();
-        }
     }
 }
