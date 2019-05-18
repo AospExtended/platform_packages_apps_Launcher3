@@ -99,7 +99,7 @@ public class LauncherAppState {
         mContext = context;
 
         setSearchAppAvailable(AEXUtils.isPackageInstalled(context, LauncherTab.SEARCH_PACKAGE));
-        setCalendarAppAvailable(aosipUtils.isPackageInstalled(context, "com.google.android.calendar"));
+        setCalendarAppAvailable(AEXUtils.isPackageInstalled(context, "com.google.android.calendar"));
 
         mInvariantDeviceProfile = new InvariantDeviceProfile(mContext);
         mIconCache = new IconCache(mContext, mInvariantDeviceProfile);
