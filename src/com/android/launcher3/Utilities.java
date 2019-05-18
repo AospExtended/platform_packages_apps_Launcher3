@@ -69,7 +69,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.android.internal.util.aosip.aosipUtils;
+import com.android.internal.util.aospextended.AEXUtils;
 
 /**
  * Various utilities shared amongst the Launcher's classes.
