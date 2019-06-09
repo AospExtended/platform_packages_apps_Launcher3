@@ -21,18 +21,35 @@
     <string name="settings_title">Nustatymai</string>
     <!-- Categories -->
     <string name="home_category_title">Pradinis ekranas</string>
+    <string name="home_category_summary">Tinklelio išdėstymas, programų etiketės ir dokas</string>
     <string name="icons_category_title">Piktogramos</string>
+    <string name="icons_category_summary">Piktogramų paketas, forma, dydis ir pranešimo taškai</string>
     <string name="app_drawer_category_title">Programėlių meniu</string>
+    <string name="app_drawer_category_summary">Slėpti programų ir programėlės stalčių etiketes</string>
     <string name="recents_category_title">Naujausi</string>
     <string name="recents_category_summary">Tinkinkite naujausių programų išvaizdą</string>
     <string name="gestures_category_title">Gestai</string>
+    <string name="gestures_category_summary">Dukart bakstelėkite, braukite žemyn ir išvalykite visus gestus</string>
+    <string name="gestures_other_category_title">Kiti</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Tinklelio išdėstymas</string>
     <string name="icon_layout_title">Piktogramos išdėstymas</string>
     <!-- Icon packs -->
     <string name="icon_pack">Piktogramų rinkinys</string>
     <string name="icon_pack_summary">Keiskite programos piktogramų išvaizdą</string>
+    <string name="icon_pack_none">Numatytas</string>
+    <string name="edit_drop_target_label">Redaguoti</string>
+    <string name="edit_hint">Piktogramos pavadinimas</string>
+    <string name="reset_icon">Nustatyti iš naujo</string>
+    <string name="all_icons">Visos piktogramos</string>
+    <string name="similar_icons">Panašios piktogramos</string>
+    <string name="ok">Gerai</string>
+    <string name="icon_label">Etiketė</string>
+    <string name="loading">Kraunasi Prašome palaukti</string>
+    <string name="icon_chooser">Piktogramos pasirinkimas</string>
+    <string name="icon_search">Ieškoti piktogramų</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Jokių piktogramų pakuočių nėra</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Piktogramų forma</string>
     <string name="icon_shape_rounded_square">Suapvalintas kvadratas</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Išvalyti viską iš recenzijų peržiūros</string>
     <string name="allow_swipe_down_clearall_desc">Jei norite išvalyti visas programas, perbraukite vertikaliai žemyn</string>
+    <string name="pref_homescreen_dt_gestures_title">Dvigubas bakstelėjimas</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Braukite žemyn</string>
+    <string name="pref_homescreen_gestures_none">Nieko</string>
+    <string name="pref_homescreen_gestures_sleep">Ekranas išjungtas</string>
+    <string name="pref_homescreen_gestures_torch">Žibintuvėlis</string>
+    <string name="pref_homescreen_gestures_google">„Google“ paieška</string>
     <string name="pref_homescreen_dt_gestures_google_toast">\"Google\" paieška neįdiegta</string>
+    <string name="pref_homescreen_gestures_volume_panel">Garsumo skydelis</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Išvalyti pranešimus</string>
+    <string name="pref_homescreen_gestures_screenshot">Ekrano kopija</string>
+    <string name="pref_homescreen_gestures_notifications">Pranešimai</string>
+    <string name="pref_homescreen_gestures_qs_panel">Greitų nustatymų panelė</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Įgalinkite \"Google\" programą ir paieška</string>
+    <string name="google_feed_summary">Parodykite „Google“ programą, paspaudę tiesiai iš pagrindinio ekrano ir naudodamiesi paieškos sistema</string>
     <!-- Grid -->
     <string name="num_default">Numatytasis</string>
     <string name="number_of_columns_title">Stulpelių skaičius</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Paslėptos programėlės dabar yra prieinamos</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Programos etiketės</string>
+    <string name="desktop_show_label_summary">Rodyti pradinio ekrano programų etiketes</string>
     <string name="allapps_show_label_summary">Rodyti programos etiketes programos skydelyje</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Naudokite pasirinktinius kampo nustatymus naujausioms programoms</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Suapvalinta kortelė</string>
     <string name="custom_recents_corners_type_op">OP stilius</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Nustatymai</string>
+    <string name="label_search">Paieška</string>
+    <string name="label_voice_search">Paieška balsu</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Rodyti apačioje esančią paieškos juostą</string>
+    <string name="bottom_search_bar_summary">Rodyti paieškos juostą pradiniame ekrane</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Užrakinti darbalaukį</string>
+    <string name="lock_desktop_summary">Neleiskite keisti pradinio ekrano</string>
+    <string name="lock_desktop_toast">Darbalaukis yra užrakintas. Jei norite tęsti, atrakinkite.</string>
+    <!-- QuickSpace -->
 </resources>

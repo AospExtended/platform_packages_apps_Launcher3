@@ -21,18 +21,35 @@
     <string name="settings_title">Ustawienia</string>
     <!-- Categories -->
     <string name="home_category_title">Ekran główny</string>
+    <string name="home_category_summary">Układ siatki, etykiety aplikacji i doku</string>
     <string name="icons_category_title">Ikony</string>
+    <string name="icons_category_summary">Paczka ikon, ich kształt i rozmiar oraz kropki powiadomień</string>
     <string name="app_drawer_category_title">Lista aplikacji</string>
+    <string name="app_drawer_category_summary">Ukryj aplikacje i etykiety listy aplikacji</string>
     <string name="recents_category_title">Ostatnie</string>
     <string name="recents_category_summary">Dostosuj podgląd ostatnich aplikacji</string>
     <string name="gestures_category_title">Gesty</string>
+    <string name="gestures_category_summary">Dwuklik oraz gesty przesunięcia i wyczyszczenia</string>
+    <string name="gestures_other_category_title">Inne</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Układ siatki</string>
     <string name="icon_layout_title">Układ ikon</string>
     <!-- Icon packs -->
     <string name="icon_pack">Zestaw ikon</string>
     <string name="icon_pack_summary">Zmień wygląd ikon aplikacji</string>
+    <string name="icon_pack_none">Domyślna</string>
+    <string name="edit_drop_target_label">Edytuj</string>
+    <string name="edit_hint">Nazwa ikony</string>
+    <string name="reset_icon">Resetuj</string>
+    <string name="all_icons">Wszystkie ikony</string>
+    <string name="similar_icons">Podobne ikony</string>
+    <string name="ok">OK</string>
+    <string name="icon_label">Etykieta</string>
+    <string name="loading">Ładowanie, proszę czekać</string>
+    <string name="icon_chooser">Wybór ikon</string>
+    <string name="icon_search">Szukaj ikon</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Brak dostępnych paczek ikon</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Kształt ikon</string>
     <string name="icon_shape_rounded_square">Zaokrąglony kwadrat</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Wyczyść ostatnie</string>
     <string name="allow_swipe_down_clearall_desc">Przesuń palcem pionowo w dół w menu ostatnich aplikacji, aby wyczyścić wszystkie aplikacje</string>
+    <string name="pref_homescreen_dt_gestures_title">Dwukrotne tapnięcie</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Przesunięcie w dół</string>
+    <string name="pref_homescreen_gestures_none">Brak</string>
+    <string name="pref_homescreen_gestures_sleep">Wyłącz ekran</string>
+    <string name="pref_homescreen_gestures_torch">Latarka</string>
+    <string name="pref_homescreen_gestures_google">Wyszukiwarka Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Wyszukiwarka Google jest nie zainstalowana</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel głośności</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Wyczyść powiadomienia</string>
+    <string name="pref_homescreen_gestures_screenshot">Zrzut ekranu</string>
+    <string name="pref_homescreen_gestures_notifications">Powiadomienia</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel szybkich ustawień</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Włącz aplikację Google i Szukaj</string>
+    <string name="google_feed_summary">Pokaż aplikację Google po przesunięciu w prawo na ekranie głównym i użyj jej silnika wyszukiwania</string>
     <!-- Grid -->
     <string name="num_default">Domyślne</string>
     <string name="number_of_columns_title">Liczba kolumn</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Ukryte aplikacje są teraz widoczne</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Etykiety aplikacji</string>
+    <string name="desktop_show_label_summary">Wyświetlanie etykiet aplikacji na ekranie głównym</string>
     <string name="allapps_show_label_summary">Wyświetlanie etykiet aplikacji w liście aplikacji</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Użyj niestandardowych zaokrąglonych narożników w menu Ostatnich aplikacji</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Zaokrąglona karta</string>
     <string name="custom_recents_corners_type_op">Styl OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Ustawienia</string>
+    <string name="label_search">Szukaj</string>
+    <string name="label_voice_search">Wyszukiwanie głosowe</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Pokaż pasek wyszukiwania na dole</string>
+    <string name="bottom_search_bar_summary">Wyświetla pasek wyszukiwania w doku</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Blokada pulpitu</string>
+    <string name="lock_desktop_summary">Zapobiega modyfikacji ekranu głównego</string>
+    <string name="lock_desktop_toast">Pulpit jest zablokowany. Odblokuj go, aby kontynuować.</string>
+    <!-- QuickSpace -->
 </resources>

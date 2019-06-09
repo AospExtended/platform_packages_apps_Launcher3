@@ -21,17 +21,23 @@
     <string name="settings_title">Setări</string>
     <!-- Categories -->
     <string name="home_category_title">Panou Principal</string>
+    <string name="home_category_summary">Grila de aspect, app etichetele şi docking station</string>
     <string name="icons_category_title">Iconițe</string>
+    <string name="icons_category_summary">Icon pack, forma, mărimea și notificarea puncte</string>
     <string name="app_drawer_category_title">Desfășurător aplicații</string>
+    <string name="app_drawer_category_summary">Ascunde aplicaţii şi app sertar etichete</string>
     <string name="recents_category_title">Recente</string>
     <string name="recents_category_summary">Adjustează modul de afișare al recentelor</string>
     <string name="gestures_category_title">Gesturi</string>
+    <string name="gestures_category_summary">Dublu robinet, măturați în jos şi clar-toate gesturile</string>
+    <string name="gestures_other_category_title">Altele</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Formatul chenarului</string>
     <string name="icon_layout_title">Formatul iconițelor</string>
     <!-- Icon packs -->
     <string name="icon_pack">Pachet de iconițe</string>
     <string name="icon_pack_summary">Schimbă aspectul iconițelor aplicațiilor</string>
+    <string name="icon_pack_none">Prestabilit</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Forma iconițelor</string>
@@ -71,4 +77,5 @@
     <!-- QSB -->
     <!-- Hide/Show search bars -->
     <!-- Lock desktop -->
+    <!-- QuickSpace -->
 </resources>

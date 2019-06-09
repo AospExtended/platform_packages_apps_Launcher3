@@ -18,7 +18,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">ការ​កំណត់</string>
     <!-- Categories -->
+    <string name="home_category_title">អេក្រង់ដើម</string>
     <!-- Sub categories -->
     <!-- Icon packs -->
     <!-- Toast message for alerting users that no icon packs are available. -->
@@ -33,4 +35,5 @@
     <!-- QSB -->
     <!-- Hide/Show search bars -->
     <!-- Lock desktop -->
+    <!-- QuickSpace -->
 </resources>

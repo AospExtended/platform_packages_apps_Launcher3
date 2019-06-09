@@ -21,18 +21,35 @@
     <string name="settings_title">設定</string>
     <!-- Categories -->
     <string name="home_category_title">ホーム画面</string>
+    <string name="home_category_summary">グリッド設定、アプリラベル、ドック</string>
     <string name="icons_category_title">アイコン</string>
+    <string name="icons_category_summary">アイコンパック、形状、大きさ、通知ドット</string>
     <string name="app_drawer_category_title">アプリドロワー</string>
+    <string name="app_drawer_category_summary">アプリとアプリドロワーラベルを隠す</string>
     <string name="recents_category_title">アプリ履歴</string>
     <string name="recents_category_summary">アプリ履歴カードを編集する</string>
     <string name="gestures_category_title">ジェスチャー</string>
+    <string name="gestures_category_summary">ダブルタップ、下スワイプ、全て消去ジェスチャー</string>
+    <string name="gestures_other_category_title">その他</string>
     <!-- Sub categories -->
     <string name="home_grid_title">グリッドレイアウト</string>
     <string name="icon_layout_title">アイコンレイアウト</string>
     <!-- Icon packs -->
     <string name="icon_pack">アイコンパック</string>
     <string name="icon_pack_summary">アプリアイコンの外観を変更する</string>
+    <string name="icon_pack_none">既定</string>
+    <string name="edit_drop_target_label">編集</string>
+    <string name="edit_hint">アイコンの名前</string>
+    <string name="reset_icon">初期化</string>
+    <string name="all_icons">全てのアイコン</string>
+    <string name="similar_icons">類似のアイコン</string>
+    <string name="ok">OK</string>
+    <string name="icon_label">ラベル</string>
+    <string name="loading">読み込み中です。しばらくお待ち下さい...</string>
+    <string name="icon_chooser">アイコンの選択</string>
+    <string name="icon_search">アイコンを検索する</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">有効なアイコンパックがありません</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">アイコンの形状</string>
     <string name="icon_shape_rounded_square">丸い正方形</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">アプリ履歴を全てクリア</string>
     <string name="allow_swipe_down_clearall_desc">アプリ履歴で下スワイプすると全てクリアする</string>
+    <string name="pref_homescreen_dt_gestures_title">ダブルタップ</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">下にスワイプ</string>
+    <string name="pref_homescreen_gestures_none">なし</string>
+    <string name="pref_homescreen_gestures_sleep">画面を消灯</string>
+    <string name="pref_homescreen_gestures_torch">フラッシュライト</string>
+    <string name="pref_homescreen_gestures_google">Google 検索</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Google 検索はインストールされていません</string>
+    <string name="pref_homescreen_gestures_volume_panel">音量パネル</string>
+    <string name="pref_homescreen_gestures_clear_notifications">通知を消去</string>
+    <string name="pref_homescreen_gestures_screenshot">スクリーンショット</string>
+    <string name="pref_homescreen_gestures_notifications">通知</string>
+    <string name="pref_homescreen_gestures_qs_panel">クイック設定パネル</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Google アプリと検索の有効化</string>
+    <string name="google_feed_summary">ホーム画面から右にスワイプして Google アプリを表示しホットシートに検索エンジンを使用する</string>
     <!-- Grid -->
     <string name="num_default">既定</string>
     <string name="number_of_columns_title">列数</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">非表示のアプリが利用可能になりました</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">アプリラベル</string>
+    <string name="desktop_show_label_summary">ホーム画面でアプリのアイコンラベルを表示する</string>
     <string name="allapps_show_label_summary">アプリドロワーでアプリのアイコンラベルを表示する</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">カスタムアプリ履歴に丸い角を使用</string>
@@ -69,6 +100,18 @@
     <string name="custom_recents_corners_type_card">丸いカード</string>
     <string name="custom_recents_corners_type_op">OP のスタイル</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">設定</string>
+    <string name="label_search">検索</string>
+    <string name="label_voice_search">音声検索</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">下部に検索バーを表示</string>
+    <string name="bottom_search_bar_summary">ドックに検索バーを表示する</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">デスクトップをロック</string>
+    <string name="lock_desktop_summary">ホーム画面の編集を防ぐ</string>
+    <string name="lock_desktop_toast">デスクトップはロックされています。進めるにはロック解除して下さい。</string>
+    <!-- QuickSpace -->
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">ホーム画面の上部に表示する</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

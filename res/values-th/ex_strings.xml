@@ -26,13 +26,19 @@
     <string name="recents_category_title">เมื่อเร็ว ๆ นี้</string>
     <string name="recents_category_summary">กำหนดภาพรวมของรายการล่าสุด</string>
     <string name="gestures_category_title">ท่าทาง</string>
+    <string name="gestures_category_summary">แตะสองครั้ง ปัดลง และล้างการแจ้งเตือนทั้งหมด</string>
+    <string name="gestures_other_category_title">อื่นๆ</string>
     <!-- Sub categories -->
     <string name="home_grid_title">เค้าโครงตาราง</string>
     <string name="icon_layout_title">รูปไอคอน</string>
     <!-- Icon packs -->
     <string name="icon_pack">ชุดไอคอน</string>
     <string name="icon_pack_summary">เปลี่ยนลักษณะที่ปรากฏของไอคอนแอพ</string>
+    <string name="icon_pack_none">ค่าเริ่มต้น</string>
+    <string name="edit_drop_target_label">แก้ไข</string>
+    <string name="icon_search">ค้นหาไอคอน</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">ชุดไอคอนไม่พร้อมใช้งาน</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">รูปทรงไอคอน</string>
     <string name="icon_shape_rounded_square">ทรงกลม</string>
@@ -41,8 +47,20 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">ล้างทั้งหมดจากมุมมองรายการล่าสุด</string>
     <string name="allow_swipe_down_clearall_desc">ปัดลงเพื่อล้างแอปทั้งหมด</string>
+    <string name="pref_homescreen_dt_gestures_title">แตะสองครั้ง</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">ปัดหน้าจอลง</string>
+    <string name="pref_homescreen_gestures_none">ไม่มี</string>
+    <string name="pref_homescreen_gestures_sleep">ปิดหน้าจอ</string>
+    <string name="pref_homescreen_gestures_torch">ไฟฉาย</string>
+    <string name="pref_homescreen_gestures_google">ค้นหาด้วย Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">ไลบรารี่ Gd ไม่ได้ติดตั้ง</string>
+    <string name="pref_homescreen_gestures_volume_panel">แผงควบคุมระดับเสียง</string>
+    <string name="pref_homescreen_gestures_clear_notifications">ล้างการแจ้งเตือน</string>
+    <string name="pref_homescreen_gestures_screenshot">จับภาพหน้าจอ</string>
+    <string name="pref_homescreen_gestures_notifications">การแจ้งเตือน</string>
+    <string name="pref_homescreen_gestures_qs_panel">แผงตั้งค่าด่วน</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">เปิดใช้งานแอป Google และการค้นหา</string>
     <!-- Grid -->
     <string name="num_default">ค่าเริ่มต้น</string>
     <string name="number_of_columns_title">จำนวนคอลัมน์</string>
@@ -69,6 +87,11 @@
     <string name="custom_recents_corners_type_card">ทรงกลม</string>
     <string name="custom_recents_corners_type_op">สไตล์ OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">การตั้งค่า</string>
+    <string name="label_search">ค้นหา</string>
+    <string name="label_voice_search">ค้นหาด้วยเสียง</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">แสดงแถบค้นหาด้านล่าง</string>
     <!-- Lock desktop -->
+    <!-- QuickSpace -->
 </resources>

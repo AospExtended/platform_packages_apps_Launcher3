@@ -21,18 +21,35 @@
     <string name="settings_title">Ayarlar</string>
     <!-- Categories -->
     <string name="home_category_title">Ana ekran</string>
+    <string name="home_category_summary">Izgara yerleşimi, uygulama etiketleri ve alt panel</string>
     <string name="icons_category_title">Simgeler</string>
+    <string name="icons_category_summary">Simge paketi, şekli, boyutu ve bildirim noktaları</string>
     <string name="app_drawer_category_title">Uygulama çekmecesi</string>
+    <string name="app_drawer_category_summary">Uygulamaları ve uygulama çekmecesi etiketlerini gizle</string>
     <string name="recents_category_title">Son uygulamalar</string>
     <string name="recents_category_summary">Son uygulamalar kartı özelleştirmeleri</string>
     <string name="gestures_category_title">Hareketler</string>
+    <string name="gestures_category_summary">Çift dokunma, aşağı kaydırın ve tüm hareketleri temizleyin</string>
+    <string name="gestures_other_category_title">Diğer</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Izgara düzeni</string>
     <string name="icon_layout_title">Simge düzeni</string>
     <!-- Icon packs -->
     <string name="icon_pack">Simge paketi</string>
     <string name="icon_pack_summary">Uygulama simgelerinizin görünümünü değiştirin</string>
+    <string name="icon_pack_none">Varsayılan</string>
+    <string name="edit_drop_target_label">Düzenle</string>
+    <string name="edit_hint">Simge adı</string>
+    <string name="reset_icon">Sıfırla</string>
+    <string name="all_icons">Tüm simgeler</string>
+    <string name="similar_icons">Benzer simgeler</string>
+    <string name="ok">Tamam</string>
+    <string name="icon_label">Etiket</string>
+    <string name="loading">Yükleniyor, lütfen bekleyin</string>
+    <string name="icon_chooser">Simge seçici</string>
+    <string name="icon_search">Simgeler ara</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Simge paketi mevcut değil</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Simge şekli</string>
     <string name="icon_shape_rounded_square">Yuvarlak kare</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Tümünü görüntüleme görünümünden temizle</string>
     <string name="allow_swipe_down_clearall_desc">Tüm uygulamaları temizlemek için son görünümde dikey olarak aşağı doğru kaydırın</string>
+    <string name="pref_homescreen_dt_gestures_title">Çift dokunma</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Aşağı kaydırma</string>
+    <string name="pref_homescreen_gestures_none">Yok</string>
+    <string name="pref_homescreen_gestures_sleep">Ekranı kapat</string>
+    <string name="pref_homescreen_gestures_torch">El feneri</string>
+    <string name="pref_homescreen_gestures_google">Google arama</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Google arama yüklü değil</string>
+    <string name="pref_homescreen_gestures_volume_panel">Ses paneli</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Bildirimleri temizle</string>
+    <string name="pref_homescreen_gestures_screenshot">Ekran görüntüsü</string>
+    <string name="pref_homescreen_gestures_notifications">Bildirimler</string>
+    <string name="pref_homescreen_gestures_qs_panel">Hızlı ayarlar paneli</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Google uygulamasını ve aramayı etkinleştir</string>
+    <string name="google_feed_summary">Google uygulamasına ulaşmak için ana ekranda sağa doğru kaydırın ve web aramaları için arama motorunu kullanın</string>
     <!-- Grid -->
     <string name="num_default">Varsayılan</string>
     <string name="number_of_columns_title">Sütun sayısı</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Gizli uygulamalar artık mevcut</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Uygulama etiketleri</string>
+    <string name="desktop_show_label_summary">Ana ekrandaki uygulamaların etiketlerini göster</string>
     <string name="allapps_show_label_summary">Uygulama çekmecesinde uygulama etiketlerini göster</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Son uygulamalar yuvarlatılmış köşeleri kullan</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Yuvarlak kart</string>
     <string name="custom_recents_corners_type_op">OP stili</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Tercihler</string>
+    <string name="label_search">Arama</string>
+    <string name="label_voice_search">Sesli arama</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Arama çubuğunu altta göster</string>
+    <string name="bottom_search_bar_summary">Ana ekranda arama çubuğunu gösterir</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Ana ekranı kilitle</string>
+    <string name="lock_desktop_summary">Ana ekranın değiştirilmesini önle</string>
+    <string name="lock_desktop_toast">Masaüstü kilitlendi. Devam etmek için kilidi açın.</string>
+    <!-- QuickSpace -->
 </resources>

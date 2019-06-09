@@ -21,18 +21,35 @@
     <string name="settings_title">设置</string>
     <!-- Categories -->
     <string name="home_category_title">主屏幕</string>
+    <string name="home_category_summary">网格布局，应用标签和停靠栏</string>
     <string name="icons_category_title">图标</string>
+    <string name="icons_category_summary">图标包，形状，大小和通知点</string>
     <string name="app_drawer_category_title">应用抽屉</string>
+    <string name="app_drawer_category_summary">隐藏应用和应用抽屉标签</string>
     <string name="recents_category_title">最近任务</string>
     <string name="recents_category_summary">自定义你的最近任务卡</string>
     <string name="gestures_category_title">手势</string>
+    <string name="gestures_category_summary">双击，下滑和清除所有手势</string>
+    <string name="gestures_other_category_title">其他</string>
     <!-- Sub categories -->
     <string name="home_grid_title">网格布局</string>
     <string name="icon_layout_title">图标布局</string>
     <!-- Icon packs -->
     <string name="icon_pack">图标包</string>
     <string name="icon_pack_summary">更改应用图标的外观</string>
+    <string name="icon_pack_none">默认</string>
+    <string name="edit_drop_target_label">编辑</string>
+    <string name="edit_hint">图标名称</string>
+    <string name="reset_icon">重置</string>
+    <string name="all_icons">所有图标</string>
+    <string name="similar_icons">相似图标</string>
+    <string name="ok">确定</string>
+    <string name="icon_label">标签</string>
+    <string name="loading">正在加载，请稍候</string>
+    <string name="icon_chooser">图标选择器</string>
+    <string name="icon_search">搜索图标</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">没有可用的图标包</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">更改图标形状</string>
     <string name="icon_shape_rounded_square">圆角</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">在最近活动视图中清除所有</string>
     <string name="allow_swipe_down_clearall_desc">在最近视图中垂直向下滑动以清除所有应用</string>
+    <string name="pref_homescreen_dt_gestures_title">双击</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">向下滑动</string>
+    <string name="pref_homescreen_gestures_none">无</string>
+    <string name="pref_homescreen_gestures_sleep">关闭屏幕</string>
+    <string name="pref_homescreen_gestures_torch">手电筒</string>
+    <string name="pref_homescreen_gestures_google">Google 搜索</string>
     <string name="pref_homescreen_dt_gestures_google_toast">未安装 Google 搜索</string>
+    <string name="pref_homescreen_gestures_volume_panel">音量面板</string>
+    <string name="pref_homescreen_gestures_clear_notifications">清除通知</string>
+    <string name="pref_homescreen_gestures_screenshot">屏幕截图</string>
+    <string name="pref_homescreen_gestures_notifications">通知</string>
+    <string name="pref_homescreen_gestures_qs_panel">快速设置面板</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">启用 Google 应用和搜索</string>
+    <string name="google_feed_summary">主界面右滑显示谷歌应用并使用它的搜索引擎作为站点</string>
     <!-- Grid -->
     <string name="num_default">默认</string>
     <string name="number_of_columns_title">列数</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">隐藏当前可用的应用</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">应用标签</string>
+    <string name="desktop_show_label_summary">在主屏幕上显示应用的标签</string>
     <string name="allapps_show_label_summary">在应用抽屉中显示应用程序的标签</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">使用自定义的最近任务圆角</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">圆角正方形</string>
     <string name="custom_recents_corners_type_op">OP样式</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">首选项</string>
+    <string name="label_search">搜索</string>
+    <string name="label_voice_search">语音搜索</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">显示底部搜索栏</string>
+    <string name="bottom_search_bar_summary">在 Dock 上显示搜索栏</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">锁定桌面</string>
+    <string name="lock_desktop_summary">防止修改主屏幕</string>
+    <string name="lock_desktop_toast">桌面被锁定，解锁后继续。</string>
+    <!-- QuickSpace -->
 </resources>

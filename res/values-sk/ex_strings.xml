@@ -21,16 +21,35 @@
     <string name="settings_title">Nastavenia</string>
     <!-- Categories -->
     <string name="home_category_title">Domovská obrazovka</string>
+    <string name="home_category_summary">Rozloženie mriežky, štítky aplikácií a dok</string>
     <string name="icons_category_title">Ikony</string>
+    <string name="icons_category_summary">Sada ikon, tvar, veľkosť a notifikačné bodky</string>
     <string name="app_drawer_category_title">Ponuka aplikácií</string>
+    <string name="app_drawer_category_summary">Skryť aplikácie a aplikácie z menu aplikácií</string>
+    <string name="recents_category_title">Posledné</string>
+    <string name="recents_category_summary">Prispôsobiť prehľad nedávnych</string>
     <string name="gestures_category_title">Gestá</string>
+    <string name="gestures_category_summary">Dvakrát ťuknite, potiahnite prstom nadol a vyčistite všetky gestá</string>
+    <string name="gestures_other_category_title">Ostatné</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Rozloženie s mriežkou</string>
     <string name="icon_layout_title">Rozloženie ikon</string>
     <!-- Icon packs -->
     <string name="icon_pack">Balík ikon</string>
     <string name="icon_pack_summary">Zmeňte si vzhľad ikon aplikácii</string>
+    <string name="icon_pack_none">Predvolené</string>
+    <string name="edit_drop_target_label">Upraviť</string>
+    <string name="edit_hint">Meno Ikony</string>
+    <string name="reset_icon">Obnoviť</string>
+    <string name="all_icons">Všetky ikony</string>
+    <string name="similar_icons">Podobné ikony</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Názov</string>
+    <string name="loading">Načítavanie, čakajte prosím</string>
+    <string name="icon_chooser">Výber ikony</string>
+    <string name="icon_search">Vyhľadávanie ikon</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Nie sú k dispozícii žiadne balíky ikon</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Tvar ikony</string>
     <string name="icon_shape_rounded_square">Zaoblený štvorec</string>
@@ -39,12 +58,57 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Vymazať všetky položky</string>
     <string name="allow_swipe_down_clearall_desc">Potiahnite zvislo nadol v zobrazení nedávnych aplikáciách a zrušte všetky aplikácie</string>
+    <string name="pref_homescreen_dt_gestures_title">Dvojité kliknutie</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Posun dole</string>
+    <string name="pref_homescreen_gestures_none">Žiadne</string>
+    <string name="pref_homescreen_gestures_sleep">Vypnúť obrazovku</string>
+    <string name="pref_homescreen_gestures_torch">Baterka</string>
+    <string name="pref_homescreen_gestures_google">Vyhľadať pomocou Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Google nie je nainštalovaný</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel hlasitosti</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Vymazať upozornenia</string>
+    <string name="pref_homescreen_gestures_screenshot">Snímka obrazovky</string>
+    <string name="pref_homescreen_gestures_notifications">Upozornenia</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel rýchlych nastavení</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Povoliť Google app a hľadanie</string>
+    <string name="google_feed_summary">Ukázať Google App potiahnutím vpravo z pracovnej plochy na vyhľadávanie</string>
     <!-- Grid -->
+    <string name="num_default">Predvolené</string>
+    <string name="number_of_columns_title">Počet stĺpcov</string>
+    <string name="number_of_rows_title">Počet riadkov</string>
+    <string name="number_of_hotseat_title">Počet ikon v doku</string>
+    <string name="state_loading">Applikuje sa\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Skryť aplikácie</string>
+    <string name="hide_app_sum">Skryť aplikácie z ponuky aplikácií</string>
+    <string name="hide_app_selected">&#160;vybrané</string>
+    <string name="hidden_app">Všetky aplikácie</string>
+    <string name="hide_selected">Skryť vybrané aplikácie</string>
+    <string name="more">Viac</string>
+    <string name="reset_hidden_apps">Obnoviť všetko</string>
+    <string name="reset_hidden_apps_done">Skryté aplikácie ktoré nie sú teraz k dispozícii</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Popisky aplikácií</string>
+    <string name="desktop_show_label_summary">Zobraziť popisky aplikácií na domovskej obrazovke</string>
+    <string name="allapps_show_label_summary">Zobraziť popisky aplikácií v ponuke aplikácií</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Použiť pre nedávne aplikácie zaoblené rohy</string>
+    <string name="custom_recents_corners_switch_summary">Ak je zakázané, bude použitá varianta poskytnutá systémom / témou. Na použitie novej hodnoty sa po vybraní možnosti vráťte na domovskú obrazovku.</string>
+    <string name="custom_recents_corners_type_title">Zaoblenie rohov kariet nedávnych aplikácií</string>
+    <string name="custom_recents_corners_type_default">Predvolený</string>
+    <string name="custom_recents_corners_type_card">Zaoblené karty</string>
+    <string name="custom_recents_corners_type_op">Štýl OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Predvoľby</string>
+    <string name="label_search">Hladať</string>
+    <string name="label_voice_search">Hlasové vyhľadávanie</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Zobraziť panel vyhľadávania v dolnej časti</string>
+    <string name="bottom_search_bar_summary">Zobraziť panel vyhľadávania v Doku</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Uzamknutie pracovnej plochy</string>
+    <string name="lock_desktop_summary">Zabrániť vykonávanie zmien na domovskej obrazovke</string>
+    <string name="lock_desktop_toast">Plocha je uzamknutá. Odomknutie po procese.</string>
+    <!-- QuickSpace -->
 </resources>

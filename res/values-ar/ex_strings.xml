@@ -21,18 +21,35 @@
     <string name="settings_title">الإعدادت</string>
     <!-- Categories -->
     <string name="home_category_title">الشاشة الرئيسية</string>
+    <string name="home_category_summary">تخطيط الشبكة، تسميات التطبيق والشريط السفلي</string>
     <string name="icons_category_title">الأيقونات</string>
+    <string name="icons_category_summary">حزمة الايقونات، الشكل، حجم ونقاط الإشعار</string>
     <string name="app_drawer_category_title">درج التطبيق</string>
+    <string name="app_drawer_category_summary">إخفاء التطبيقات وتسميات درج التطبيقات</string>
     <string name="recents_category_title">التطبيقات الحديثة</string>
     <string name="recents_category_summary">تخصيص بطاقة التطبيقات الحديثة</string>
     <string name="gestures_category_title">الإيماءات</string>
+    <string name="gestures_category_summary">إيماءات الضغط المزدوج، السحب لأسفل و مسح الكل</string>
+    <string name="gestures_other_category_title">غير ذلك</string>
     <!-- Sub categories -->
     <string name="home_grid_title">تخطيط الشبكة</string>
     <string name="icon_layout_title">تخطيط الأيقونة</string>
     <!-- Icon packs -->
     <string name="icon_pack">حزم الإيقونات</string>
     <string name="icon_pack_summary">تغيير مظهر أيقونات التطبيق الخاص بك</string>
+    <string name="icon_pack_none">الإفتراضي</string>
+    <string name="edit_drop_target_label">تعديل</string>
+    <string name="edit_hint">أسم الأيقونة</string>
+    <string name="reset_icon">إعادة تعيين</string>
+    <string name="all_icons">جميع الأيقونات</string>
+    <string name="similar_icons">أيقونات متشابهة</string>
+    <string name="ok">حسناً</string>
+    <string name="icon_label">التسمية</string>
+    <string name="loading">يتم التحميل، يرجى الانتظار</string>
+    <string name="icon_chooser">محدد الأيقونة</string>
+    <string name="icon_search">البحث عن الأيقونات</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">لا توجد حزم رموز متاحة</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">شكل الأيقونة</string>
     <string name="icon_shape_rounded_square">مربع مدور</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">مسح الكل من عرض التطبيقات الحديثة</string>
     <string name="allow_swipe_down_clearall_desc">قم بالسحب عمودياً لأسفل في عرض التطبيقات الحديثة لمسح جميع التطبيقات</string>
+    <string name="pref_homescreen_dt_gestures_title">الضغط المزدوج</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">تمرير للأسفل</string>
+    <string name="pref_homescreen_gestures_none">لا شيء</string>
+    <string name="pref_homescreen_gestures_sleep">قفل الشاشة</string>
+    <string name="pref_homescreen_gestures_torch">ضوء الفلاش</string>
+    <string name="pref_homescreen_gestures_google">بحث Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">بحث Google غير مثبت</string>
+    <string name="pref_homescreen_gestures_volume_panel">لوحة مستوى الصوت</string>
+    <string name="pref_homescreen_gestures_clear_notifications">مسح الإشعارات</string>
+    <string name="pref_homescreen_gestures_screenshot">لقطة الشاشة</string>
+    <string name="pref_homescreen_gestures_notifications">الإشعارات</string>
+    <string name="pref_homescreen_gestures_qs_panel">لوحة الإعدادات السريعة</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">تمكين تطبيق Google والبحث</string>
+    <string name="google_feed_summary">عرض تطبيق Google بواسطة التمرير لليسار من الشاشة الرئيسية واستخدم محرك البحث الخاص به للشريط السفلي</string>
     <!-- Grid -->
     <string name="num_default">الافتراضي</string>
     <string name="number_of_columns_title">عدد الأعمدة</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">التطبيقات المخفية متاحة الآن</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">تسميات التطبيق</string>
+    <string name="desktop_show_label_summary">عرض تسميات التطبيقات على الشاشة الرئيسية</string>
     <string name="allapps_show_label_summary">إظهار تسميات التطبيقات في درج التطبيق</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">استخدام التطبيقات الحديثة المخصصة ذات الزوايا المدورة</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">بطاقة مدورة</string>
     <string name="custom_recents_corners_type_op">نمط OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">التفضيلات</string>
+    <string name="label_search">البحث</string>
+    <string name="label_voice_search">البحث الصوتي</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">إظهار شريط البحث في الأسفل</string>
+    <string name="bottom_search_bar_summary">عرض شريط البحث على الشريط السفلي</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">قفل سطح المكتب</string>
+    <string name="lock_desktop_summary">منع الشاشة الرئيسية من التعديل</string>
+    <string name="lock_desktop_toast">تم قفل سطح المكتب. إلغاء القفل للمضي قدماً.</string>
+    <!-- QuickSpace -->
 </resources>

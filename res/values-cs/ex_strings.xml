@@ -21,18 +21,35 @@
     <string name="settings_title">Nastavení</string>
     <!-- Categories -->
     <string name="home_category_title">Domovská obrazovka</string>
+    <string name="home_category_summary">Rozložení mřížky, popisky aplikací a dok</string>
     <string name="icons_category_title">Ikony</string>
+    <string name="icons_category_summary">Balíček ikon, tvar, velikost a tečky oznámení</string>
     <string name="app_drawer_category_title">Seznam aplikací</string>
+    <string name="app_drawer_category_summary">Skrýt popisky aplikací a menu aplikací</string>
     <string name="recents_category_title">Nedávné</string>
     <string name="recents_category_summary">Přizpůsobte přehled nedávných aplikací</string>
     <string name="gestures_category_title">Gesta</string>
+    <string name="gestures_category_summary">Dvojí poklepání, přejetí dolů a gesta \"vyčistit vše\"</string>
+    <string name="gestures_other_category_title">Ostatní</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Rozložení mřížky</string>
     <string name="icon_layout_title">Rozložení ikon</string>
     <!-- Icon packs -->
     <string name="icon_pack">Balíček ikon</string>
     <string name="icon_pack_summary">Změna vzhledu ikon aplikací</string>
+    <string name="icon_pack_none">Výchozí</string>
+    <string name="edit_drop_target_label">Upravit</string>
+    <string name="edit_hint">Název ikony</string>
+    <string name="reset_icon">Resetovat</string>
+    <string name="all_icons">Všechny ikony</string>
+    <string name="similar_icons">Podobné ikony</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Popisek</string>
+    <string name="loading">Načítám, vyčkejte prosím</string>
+    <string name="icon_chooser">Výběr ikony</string>
+    <string name="icon_search">Vyhledávání ikon</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">K dispozici nejsou žádné balíčky ikon</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Tvar ikony</string>
     <string name="icon_shape_rounded_square">Zaoblený čtverec</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Vymazat vše ze zobrazení nedávných</string>
     <string name="allow_swipe_down_clearall_desc">Přejděte svisle dolů v zobrazení nedávných a vymažte všechny aplikace</string>
+    <string name="pref_homescreen_dt_gestures_title">Dvojí poklepání</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Přejetí dolů</string>
+    <string name="pref_homescreen_gestures_none">Žádné</string>
+    <string name="pref_homescreen_gestures_sleep">Vypnout obrazovku</string>
+    <string name="pref_homescreen_gestures_torch">Svítilna</string>
+    <string name="pref_homescreen_gestures_google">Vyhledávaní Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Vyhledávání Google není nainstalováno</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel hlasitosti</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Vymazat oznámení</string>
+    <string name="pref_homescreen_gestures_screenshot">Snímek obrazovky</string>
+    <string name="pref_homescreen_gestures_notifications">Oznámení</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel QS</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Povolit aplikaci Google a vyhledávání</string>
+    <string name="google_feed_summary">Zobrazit aplikaci Google pravým přejetím z domovské obrazovky a použít vyhledávací nástroj pro hotseats</string>
     <!-- Grid -->
     <string name="num_default">Výchozí</string>
     <string name="number_of_columns_title">Počet sloupců</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Skryté aplikace jsou nyní k dispozici</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Popisky aplikací</string>
+    <string name="desktop_show_label_summary">Zobrazit popisky aplikací na domovské obrazovce</string>
     <string name="allapps_show_label_summary">Zobrazit popisky aplikací v seznamu</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Použít pro nedávné vlastní zaoblené rohy</string>
@@ -69,6 +100,18 @@
     <string name="custom_recents_corners_type_card">Zaoblené karty</string>
     <string name="custom_recents_corners_type_op">Styl OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Předvolby</string>
+    <string name="label_search">Hledat</string>
+    <string name="label_voice_search">Hlasové vyhledávání</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Zobrazit vyhledávací panel v dolní části</string>
+    <string name="bottom_search_bar_summary">Zobrazit vyhledávací panel na doku</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Uzamčení pracovní plochy</string>
+    <string name="lock_desktop_summary">Zabránit v úpravě domovské obrazovky</string>
+    <string name="lock_desktop_toast">Plocha je uzamčena. Odemkněte ji a pokračujte.</string>
+    <!-- QuickSpace -->
+    <string name="show_quickspace_title">At a Glance</string>
+    <string name="show_quickspace_summary">Zobrazit v horní části Domovské obrazovky</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

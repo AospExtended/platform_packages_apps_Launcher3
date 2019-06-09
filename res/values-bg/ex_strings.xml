@@ -21,18 +21,35 @@
     <string name="settings_title">Настройки</string>
     <!-- Categories -->
     <string name="home_category_title">Начален екран</string>
+    <string name="home_category_summary">Grid layout, app labels and dock</string>
     <string name="icons_category_title">Икони</string>
+    <string name="icons_category_summary">Пакет икони, форма, размер и точки на уведомления</string>
     <string name="app_drawer_category_title">Списък с приложения</string>
+    <string name="app_drawer_category_summary">Скрий приложения и етикети на приложенията</string>
     <string name="recents_category_title">Скорошни</string>
     <string name="recents_category_summary">Персонализиране на изгледа на Скорошни приложения</string>
     <string name="gestures_category_title">Жестове</string>
+    <string name="gestures_category_summary">Жестове двойно докосване, плъзване и изчисти всичко</string>
+    <string name="gestures_other_category_title">Други</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Мрежово оформление</string>
     <string name="icon_layout_title">Оформление на иконите</string>
     <!-- Icon packs -->
     <string name="icon_pack">Набор от икони</string>
     <string name="icon_pack_summary">Промяна облика на иконите на приложенията</string>
+    <string name="icon_pack_none">По подразбиране</string>
+    <string name="edit_drop_target_label">Редактиране</string>
+    <string name="edit_hint">Име на икона</string>
+    <string name="reset_icon">Нулиране</string>
+    <string name="all_icons">Всички икони</string>
+    <string name="similar_icons">Подобни икони</string>
+    <string name="ok">Ок</string>
+    <string name="icon_label">Етикет</string>
+    <string name="loading">Зареждане, моля изчакайте</string>
+    <string name="icon_chooser">Избор на икона</string>
+    <string name="icon_search">Търсене за икони</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Няма налични пакети с икони</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Форма на иконите</string>
     <string name="icon_shape_rounded_square">Заоблен квадрат</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Изчисти всички от списъка с последно отваряни</string>
     <string name="allow_swipe_down_clearall_desc">Плъзнете вертикално надолу в списъка с последно отваряни, за да изчистите всички приложения</string>
+    <string name="pref_homescreen_dt_gestures_title">Двойно докосване</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Плъзване надолу</string>
+    <string name="pref_homescreen_gestures_none">Без</string>
+    <string name="pref_homescreen_gestures_sleep">Изключване на екрана</string>
+    <string name="pref_homescreen_gestures_torch">Фенерче</string>
+    <string name="pref_homescreen_gestures_google">Гугъл търсене</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Гугъл търсене не е инсталирано</string>
+    <string name="pref_homescreen_gestures_volume_panel">Звуков панел</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Изчисти уведомления</string>
+    <string name="pref_homescreen_gestures_screenshot">Снимка на екрана</string>
+    <string name="pref_homescreen_gestures_notifications">Уведомления</string>
+    <string name="pref_homescreen_gestures_qs_panel">Панел за бързи настройки</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Разреши Гугъл приложение и търсене</string>
+    <string name="google_feed_summary">Покажи Гугъл приложение чрез плъзване отдясно от начален екран и използвай неговата търсачка</string>
     <!-- Grid -->
     <string name="num_default">По подразбиране</string>
     <string name="number_of_columns_title">Брой колони</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Скритите приложения вече са достъпни</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Етикети на приложенията</string>
+    <string name="desktop_show_label_summary">Покажи етикетите на приложенията на началния екран</string>
     <string name="allapps_show_label_summary">Покажи етикетите на приложенията в менюто с приложения</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Използвайте заоблени ъгли в Скорошни</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Заоблен квадрат</string>
     <string name="custom_recents_corners_type_op">OP стил</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Предпочитания</string>
+    <string name="label_search">Търсене</string>
+    <string name="label_voice_search">Гласово търсене</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Покажи лентата за търсене на долната част на екрана</string>
+    <string name="bottom_search_bar_summary">Покажи лентата за търсене на дока</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Заключване на работния плот</string>
+    <string name="lock_desktop_summary">Предотвратяване на промяна на началноя екран</string>
+    <string name="lock_desktop_toast">Работния плот е заключен. Отключи продължаване.</string>
+    <!-- QuickSpace -->
 </resources>

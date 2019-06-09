@@ -18,19 +18,97 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Seaded</string>
     <!-- Categories -->
+    <string name="home_category_title">Avakuva</string>
+    <string name="home_category_summary">Võrgu paigutus, rakenduse sildid ja dokk</string>
+    <string name="icons_category_title">Ikoonid</string>
+    <string name="icons_category_summary">Ikoon pakend, kuju, suurus ja teatamispunktid</string>
+    <string name="app_drawer_category_title">Rakenduse list</string>
+    <string name="app_drawer_category_summary">Peida rakenduste ja rakenduste sahtlite sildid</string>
+    <string name="recents_category_title">Hiljutised</string>
+    <string name="recents_category_summary">Kohandage oma uudiste kaarti</string>
+    <string name="gestures_category_title">Viiped</string>
+    <string name="gestures_category_summary">Topeltpuudutage, pühkige alla ja puhastage kõik žestid</string>
+    <string name="gestures_other_category_title">Muu</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Võrgustiku paigutus</string>
+    <string name="icon_layout_title">Ikoonide paigutus</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Ikoonipakk</string>
+    <string name="icon_pack_summary">Muutke rakenduse ikoonide välimust</string>
+    <string name="icon_pack_none">Vaikimisi</string>
+    <string name="edit_drop_target_label">Muuda</string>
+    <string name="edit_hint">Ikooni nimi</string>
+    <string name="reset_icon">Lähtesta</string>
+    <string name="all_icons">Kõik ikoonid</string>
+    <string name="similar_icons">Sarnased ikoonid</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Nimetus</string>
+    <string name="loading">Laadimine, palun oodake</string>
+    <string name="icon_chooser">Ikoonide valija</string>
+    <string name="icon_search">Otsi ikoone</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Ühtegi ikooni pakki pole saadaval</string>
     <!-- Icon shape -->
+    <string name="icon_shape_override_label_custom">Ikoonide kuju</string>
+    <string name="icon_shape_rounded_square">Ümardatud nurkadega ruut</string>
     <!-- Icon size -->
+    <string name="icon_size_title">Ikooni suurus</string>
     <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Kustuta kõik hiljutised vaated</string>
+    <string name="allow_swipe_down_clearall_desc">Kõigi rakenduste kustutamiseks libistage värskenduste vaates vertikaalselt alla</string>
+    <string name="pref_homescreen_dt_gestures_title">Topeltpuudutus</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Pühi alla</string>
+    <string name="pref_homescreen_gestures_none">Mitte ükski</string>
+    <string name="pref_homescreen_gestures_sleep">Ekraan väljas</string>
+    <string name="pref_homescreen_gestures_torch">Taskulamp</string>
+    <string name="pref_homescreen_gestures_google">Google\'i otsing</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Google otsing ei ole seadmele installeeritud</string>
+    <string name="pref_homescreen_gestures_volume_panel">Helipaneel</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Kustuta teavitused</string>
+    <string name="pref_homescreen_gestures_screenshot">Kuvatõmmis</string>
+    <string name="pref_homescreen_gestures_notifications">Teavitused</string>
+    <string name="pref_homescreen_gestures_qs_panel">Kiirseadete paneel</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Luba Google App ja otsing</string>
+    <string name="google_feed_summary">Näita Google Appi avalehe paremale pühkimisega ja kasuta oma otsingumootorit kuuma istekoha jaoks</string>
     <!-- Grid -->
+    <string name="num_default">Vaikimisi</string>
+    <string name="number_of_columns_title">Veergude arv</string>
+    <string name="number_of_rows_title">Ridade arv</string>
+    <string name="number_of_hotseat_title">Doki ikoonide arv</string>
+    <string name="state_loading">Rakendan\u2026</string>
     <!-- Hidden apps -->
+    <string name="hide_app">Peida rakendused</string>
+    <string name="hide_app_sum">Peida rakendusi rakenduste sahtlis</string>
+    <string name="hide_app_selected">&#160;valitud</string>
+    <string name="hidden_app">Kõik rakendused</string>
+    <string name="hide_selected">Peida valitud rakendus(ed)</string>
+    <string name="more">Rohkem</string>
+    <string name="reset_hidden_apps">Lähtesta kõik</string>
+    <string name="reset_hidden_apps_done">Varjatud rakendused on nüüd saadaval</string>
     <!-- Show labels on icon -->
+    <string name="app_show_label_title">Rakenduse sildid</string>
+    <string name="desktop_show_label_summary">Näita rakenduste silte avalehel</string>
+    <string name="allapps_show_label_summary">Kuva rakenduste sahtlis olevate rakenduste sildid</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_switch_title">Kasutage kohandatud ümardatud nurkade värskendusi</string>
+    <string name="custom_recents_corners_switch_summary">Kui see on keelatud, kasutab see süsteemi / teema pakutavat. Uue väärtuse rakendamiseks mine pärast valiku valimist koju.</string>
+    <string name="custom_recents_corners_type_title">Kohandatud kordab ümardust</string>
+    <string name="custom_recents_corners_type_default">Vaikimisi</string>
+    <string name="custom_recents_corners_type_card">Ümardatud kaart</string>
+    <string name="custom_recents_corners_type_op">OP stiil</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Eelistused</string>
+    <string name="label_search">Otsing</string>
+    <string name="label_voice_search">Häälotsing</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Näita otsinguriba all</string>
+    <string name="bottom_search_bar_summary">Näita dokkis asuvat otsinguriba</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Lukusta töölaud</string>
+    <string name="lock_desktop_summary">Ära takista avakuva muutmist</string>
+    <string name="lock_desktop_toast">Töölaud on lukustatud. Jätkamiseks avage see.</string>
+    <!-- QuickSpace -->
 </resources>

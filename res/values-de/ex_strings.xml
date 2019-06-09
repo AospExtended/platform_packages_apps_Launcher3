@@ -21,18 +21,35 @@
     <string name="settings_title">Einstellungen</string>
     <!-- Categories -->
     <string name="home_category_title">Startbildschirm</string>
+    <string name="home_category_summary">Raster-Layout, App-Beschriftungen und Dock</string>
     <string name="icons_category_title">Symbole</string>
+    <string name="icons_category_summary">Symbolpaket, Form, Größe und Benachrichtigungs-Punkte</string>
     <string name="app_drawer_category_title">App-Drawer</string>
+    <string name="app_drawer_category_summary">Apps und Appübersicht-Beschriftungen verstecken</string>
     <string name="recents_category_title">Anwendungsverlauf</string>
     <string name="recents_category_summary">Anpassen der Übersicht der aktiven Apps</string>
     <string name="gestures_category_title">Gesten</string>
+    <string name="gestures_category_summary">Doppelt tippen, nach unten wischen und alles löschen Gesten</string>
+    <string name="gestures_other_category_title">Sonstiges</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Rasteransicht</string>
     <string name="icon_layout_title">Icon Erscheinungsbild</string>
     <!-- Icon packs -->
     <string name="icon_pack">Icon-Pack</string>
     <string name="icon_pack_summary">Ändere das Aussehen deiner App Icons</string>
+    <string name="icon_pack_none">Standard</string>
+    <string name="edit_drop_target_label">Bearbeiten</string>
+    <string name="edit_hint">Iconname</string>
+    <string name="reset_icon">Zurücksetzen</string>
+    <string name="all_icons">Alle Icons</string>
+    <string name="similar_icons">Ähnliche Icons</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Label</string>
+    <string name="loading">Laden, bitte warten</string>
+    <string name="icon_chooser">Icon Auswahl</string>
+    <string name="icon_search">Nach Icons suchen</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Kein Icon-Packs sind gefunden</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Icon-Form</string>
     <string name="icon_shape_rounded_square">Abgerundetes Quadrat</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Beende alle Apps aus dem Anwendungsverlauf</string>
     <string name="allow_swipe_down_clearall_desc">Wische im Anwendungsverlauf herunter, um alle Apps zu beenden</string>
+    <string name="pref_homescreen_dt_gestures_title">Doppeltes Tippen</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Nach unten wischen</string>
+    <string name="pref_homescreen_gestures_none">Keine</string>
+    <string name="pref_homescreen_gestures_sleep">Bildschirm ausschalten</string>
+    <string name="pref_homescreen_gestures_torch">Taschenlampe</string>
+    <string name="pref_homescreen_gestures_google">Google-Suche</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Google-App nicht installiert</string>
+    <string name="pref_homescreen_gestures_volume_panel">Lautstärkeregler</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Benachrichtigungen löschen</string>
+    <string name="pref_homescreen_gestures_screenshot">Bildschirmfoto</string>
+    <string name="pref_homescreen_gestures_notifications">Benachrichtigungen</string>
+    <string name="pref_homescreen_gestures_qs_panel">Schnelleinstellungsmenü</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Aktiviere Google-App und -Suche</string>
+    <string name="google_feed_summary">Zeige Google-App mit einem Wisch von rechts auf dem Startbildschirm und benutze die Google Suche</string>
     <!-- Grid -->
     <string name="num_default">Standard</string>
     <string name="number_of_columns_title">Anzahl der Spalten</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Versteckte Apps sind nun verfügbar</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">App Beschriftungen</string>
+    <string name="desktop_show_label_summary">App-Beschriftungen auf dem Startbildschirm anzeigen</string>
     <string name="allapps_show_label_summary">App-Beschriftungen in der App-Übersicht anzeigen</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Verwenden Sie benutzerdefinierte Anwendungsverlauf, abgerundete Ecken</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Abgerundete Karte</string>
     <string name="custom_recents_corners_type_op">OP-Style</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Einstellungen</string>
+    <string name="label_search">Suchen</string>
+    <string name="label_voice_search">Sprachsuche</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Suchleiste unten anzeigen</string>
+    <string name="bottom_search_bar_summary">Suchleiste auf dem Dock anzeigen</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Startbildschirm sperren</string>
+    <string name="lock_desktop_summary">Verhindert Änderungen am Startbildschirm</string>
+    <string name="lock_desktop_toast">Startbildschirm ist gesperrt. Entsperren, um fortzufahren.</string>
+    <!-- QuickSpace -->
 </resources>

@@ -18,21 +18,38 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
-    <string name="settings_title">Thiết lập</string>
+    <string name="settings_title">Cài đặt</string>
     <!-- Categories -->
     <string name="home_category_title">Màn hình chính</string>
+    <string name="home_category_summary">Kích thước lưới, tên ứng dụng và thanh dock</string>
     <string name="icons_category_title">Biểu tượng</string>
+    <string name="icons_category_summary">Gói biểu tượng, hình dạng, kích thước biểu tượng và dấu chấm thông báo</string>
     <string name="app_drawer_category_title">Ngăn kéo ứng dụng</string>
-    <string name="recents_category_title">Đa nhiệm</string>
+    <string name="app_drawer_category_summary">Ẩn ứng dụng và tên ứng dụng</string>
+    <string name="recents_category_title">Gần đây</string>
     <string name="recents_category_summary">Tùy chỉnh thẻ của bạn</string>
     <string name="gestures_category_title">Cử chỉ</string>
+    <string name="gestures_category_summary">Chạm đúp, vuốt xuống và cử chỉ xoá tất cả</string>
+    <string name="gestures_other_category_title">Khác</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Bố trí lưới</string>
     <string name="icon_layout_title">Bố trí biểu tượng</string>
     <!-- Icon packs -->
     <string name="icon_pack">Gói biểu tượng</string>
     <string name="icon_pack_summary">Thay đổi giao diện của biểu tượng ứng dụng của bạn</string>
+    <string name="icon_pack_none">Mặc định</string>
+    <string name="edit_drop_target_label">Chỉnh sửa</string>
+    <string name="edit_hint">Tên biểu tượng</string>
+    <string name="reset_icon">Thiết lập lại</string>
+    <string name="all_icons">Tất cả biểu tượng</string>
+    <string name="similar_icons">Các biểu tượng tương tự</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Nhãn</string>
+    <string name="loading">Đang tải, xin vui lòng chờ</string>
+    <string name="icon_chooser">Bộ chọn biểu tượng</string>
+    <string name="icon_search">Tìm kiếm biểu tượng</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Không có gói biểu tượng nào</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Hình dạng biểu tượng</string>
     <string name="icon_shape_rounded_square">Hình vuông bo tròn cạnh</string>
@@ -40,9 +57,22 @@
     <string name="icon_size_title">Kích cỡ biểu tượng</string>
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Dọn sạch bộ chuyển đổi ứng dụng</string>
-    <string name="allow_swipe_down_clearall_desc">Kéo mạnh theo chiều dọc xuống trong recents xem để xóa tất cả ứng dụng</string>
-    <string name="pref_homescreen_dt_gestures_google_toast">Ứng dụng Google không được cài đặt</string>
+    <string name="allow_swipe_down_clearall_desc">Vuốt xuống để xoá tất cả tác vụ trong màn hình đa nhiệm</string>
+    <string name="pref_homescreen_dt_gestures_title">Nhấn đúp</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Vuốt xuống</string>
+    <string name="pref_homescreen_gestures_none">Không có</string>
+    <string name="pref_homescreen_gestures_sleep">Tắt màn hình</string>
+    <string name="pref_homescreen_gestures_torch">Đèn pin</string>
+    <string name="pref_homescreen_gestures_google">Tìm kiếm Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Ứng dụng Google chưa được cài đặt</string>
+    <string name="pref_homescreen_gestures_volume_panel">Bảng điều chỉnh âm lượng</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Xóa thông báo</string>
+    <string name="pref_homescreen_gestures_screenshot">Chụp màn hình</string>
+    <string name="pref_homescreen_gestures_notifications">Các thông báo</string>
+    <string name="pref_homescreen_gestures_qs_panel">Bảng cài đặt nhanh</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Bật Ứng dụng Google và Tìm kiếm</string>
+    <string name="google_feed_summary">Hiển thị Ứng dụng Google khi vuốt sang phải từ màn hình chính và sử dụng công cụ tìm kiếm Google cho thanh dock</string>
     <!-- Grid -->
     <string name="num_default">Khóa màn hình mặc định</string>
     <string name="number_of_columns_title">Số cột</string>
@@ -57,18 +87,28 @@
     <string name="hide_selected">Ẩn (các) ứng dụng đã chọn</string>
     <string name="more">Thêm</string>
     <string name="reset_hidden_apps">Thiết lập lại tất cả</string>
-    <string name="reset_hidden_apps_done">Các ứng dụng ẩn đã có trở lại</string>
+    <string name="reset_hidden_apps_done">Các ứng dụng bị ẩn đã xuất hiện lại</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Ứng dụng nhãn</string>
-    <string name="allapps_show_label_summary">Hiển thị các nhãn apps trong ngăn kéo ứng dụng</string>
+    <string name="desktop_show_label_summary">Hiển thị tên ứng dụng trên màn hình chính</string>
+    <string name="allapps_show_label_summary">Hiển thị tên ứng dụng trong ngăn kéo ứng dụng</string>
     <!-- Recents corned -->
-    <string name="custom_recents_corners_switch_title">Sử dụng tùy chỉnh khoảng cách các góc tròn</string>
-    <string name="custom_recents_corners_switch_summary">Nếu bị tắt, nó sẽ sử dụng cái được cung cấp bởi hệ thống / chủ đề. Để áp dụng giá trị mới, hãy về nhà sau khi chọn tùy chọn của bạn.</string>
-    <string name="custom_recents_corners_type_title">Tùy chỉnh độ tròn</string>
+    <string name="custom_recents_corners_switch_title">Mục gần đây bo tròn</string>
+    <string name="custom_recents_corners_switch_summary">Nếu mục này bị tắt, nó sẽ áp dụng cái được cung cấp bởi hệ thống /chủ đề. Để áp dụng, hãy về màn hình chính sau khi chọn tùy chọn của bạn.</string>
+    <string name="custom_recents_corners_type_title">Tùy chỉnh cách bo tròn</string>
     <string name="custom_recents_corners_type_default">Mặc định</string>
     <string name="custom_recents_corners_type_card">Thẻ tròn</string>
-    <string name="custom_recents_corners_type_op">Phong cách OP</string>
+    <string name="custom_recents_corners_type_op">Kiểu OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Tuỳ chỉnh</string>
+    <string name="label_search">Tìm kiếm</string>
+    <string name="label_voice_search">Tìm kiếm bằng giọng nói</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Hiển thị thanh tìm kiếm bên dưới</string>
+    <string name="bottom_search_bar_summary">Hiển thị thanh tìm kiếm dưới Dock</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Khóa màn hình chính</string>
+    <string name="lock_desktop_summary">Ngăn chặn các thay đổi trên màn hình chính</string>
+    <string name="lock_desktop_toast">Màn hình chính đã bị khoá. Mở khoá để tiếp tục.</string>
+    <!-- QuickSpace -->
 </resources>

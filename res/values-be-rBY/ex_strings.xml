@@ -21,18 +21,35 @@
     <string name="settings_title">Налады</string>
     <!-- Categories -->
     <string name="home_category_title">Галоўны экран</string>
+    <string name="home_category_summary">Макет сеткі, ярлыкі праграм і док-станцыя</string>
     <string name="icons_category_title">Значкі</string>
+    <string name="icons_category_summary">Пакет значкоў, форма, памер і колер індыкатара апавяшчэнняў</string>
     <string name="app_drawer_category_title">Спіс праграм</string>
+    <string name="app_drawer_category_summary">Схаваць праграмы і подпісы праграм</string>
     <string name="recents_category_title">Нядаўнія</string>
     <string name="recents_category_summary">Наладзіць выгляд спіса Нядаўніх праграм</string>
     <string name="gestures_category_title">Жэсты</string>
+    <string name="gestures_category_summary">Падвойны дотык, свайп уніз і ачысціць усе жэсты</string>
+    <string name="gestures_other_category_title">Iншае</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Размяшчэнне сеткі</string>
     <string name="icon_layout_title">Размяшчэнне значкоў</string>
     <!-- Icon packs -->
     <string name="icon_pack">Набор значкоў</string>
     <string name="icon_pack_summary">Змяніце знешні выгляд значкоў Вашых праграм</string>
+    <string name="icon_pack_none">Па змаўчанні</string>
+    <string name="edit_drop_target_label">Змяніць</string>
+    <string name="edit_hint">Назва значка</string>
+    <string name="reset_icon">Скінуць</string>
+    <string name="all_icons">Усе значкі</string>
+    <string name="similar_icons">Падобныя значкі</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Метка</string>
+    <string name="loading">Загрузка, калі ласка пачакайце</string>
+    <string name="icon_chooser">Выбар значка</string>
+    <string name="icon_search">Пошук значкоў</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Няма даступнага пакета значкоў</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Форма значкоў</string>
     <string name="icon_shape_rounded_square">Скруглены квадрат</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Ачысціць усё з Нядаўніх</string>
     <string name="allow_swipe_down_clearall_desc">Свайп ўніз ў рэжыме прагляду нядаўніх праграм, каб ачысціць ўсе</string>
+    <string name="pref_homescreen_dt_gestures_title">Падвойны націск</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Свайп уніз</string>
+    <string name="pref_homescreen_gestures_none">Няма</string>
+    <string name="pref_homescreen_gestures_sleep">Выключыць экран</string>
+    <string name="pref_homescreen_gestures_torch">Ліхтарык</string>
+    <string name="pref_homescreen_gestures_google">Пошук Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Пошук Google не ўсталяваны</string>
+    <string name="pref_homescreen_gestures_volume_panel">Панэль гучнасці</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Ачысціць апавяшчэнні</string>
+    <string name="pref_homescreen_gestures_screenshot">Здымак экрану</string>
+    <string name="pref_homescreen_gestures_notifications">Апавяшчэнні</string>
+    <string name="pref_homescreen_gestures_qs_panel">Панэль хуткіх налад</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Уключыць праграму Google і Пошук</string>
+    <string name="google_feed_summary">Паказаць праграму Google свайпам управа на хатнім экране і выкарыстоўваць яго пошукавую сістэму</string>
     <!-- Grid -->
     <string name="num_default">Па змаўчанні</string>
     <string name="number_of_columns_title">Колькасць слупкоў</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Схаваная праграмы цяпер даступныя</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Подпісы праграм</string>
+    <string name="desktop_show_label_summary">Паказаць подпісы значкоў праграм на хатнім экране</string>
     <string name="allapps_show_label_summary">Паказаць подпісы значкоў праграм на хатнім экране</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Выкарыстоўваць карыстацкія налады закруглення кутоў нядаўніх праграм</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Скругленыя ўкладкі</string>
     <string name="custom_recents_corners_type_op">OP стыль</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Налады</string>
+    <string name="label_search">Пошук</string>
+    <string name="label_voice_search">Галасавы пошук</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Паказваць панэль пошуку унізе</string>
+    <string name="bottom_search_bar_summary">Паказаць панэль пошуку ў док-бары</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Блакаванне працоўнага стала</string>
+    <string name="lock_desktop_summary">Забараніць змены хатняга экрана</string>
+    <string name="lock_desktop_toast">Працоўны стол заблакаваны. Разблакуйце яго, каб працягнуць.</string>
+    <!-- QuickSpace -->
 </resources>

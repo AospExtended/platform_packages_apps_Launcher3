@@ -21,18 +21,35 @@
     <string name="settings_title">Beállitások</string>
     <!-- Categories -->
     <string name="home_category_title">Kezdőképernyő</string>
+    <string name="home_category_summary">Rácselhelyezés, alkalmazásfeliratok és dokk</string>
     <string name="icons_category_title">Ikonok</string>
+    <string name="icons_category_summary">Ikoncsomag, forma, méret és értesítésjelzők</string>
     <string name="app_drawer_category_title">Alkalmazásfiók</string>
+    <string name="app_drawer_category_summary">Alkalmazások és alkalmazásfiók feliratainak elrejtése</string>
     <string name="recents_category_title">Előzmények</string>
     <string name="recents_category_summary">Az előzmény-kártyák testreszabása</string>
     <string name="gestures_category_title">Mozdulatvezérlés</string>
+    <string name="gestures_category_summary">Dupla érintés, lefelé csúsztatás és \'az összes törlése\' vezérlők</string>
+    <string name="gestures_other_category_title">Egyebek</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Rácselrendezés</string>
     <string name="icon_layout_title">Ikonelrendezés</string>
     <!-- Icon packs -->
     <string name="icon_pack">Ikoncsomag</string>
     <string name="icon_pack_summary">Változtassa meg az alkalmazásikonok kinézetét</string>
+    <string name="icon_pack_none">Alapértelmezett</string>
+    <string name="edit_drop_target_label">Szerkesztés</string>
+    <string name="edit_hint">Ikonnév</string>
+    <string name="reset_icon">Visszaállítás</string>
+    <string name="all_icons">Az összes ikon</string>
+    <string name="similar_icons">A hasonló ikonok</string>
+    <string name="ok">OK</string>
+    <string name="icon_label">Felirat</string>
+    <string name="loading">Betöltés, kis türelmet...</string>
+    <string name="icon_chooser">Ikonválasztó</string>
+    <string name="icon_search">Ikonkeresés</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Nincs elérhető ikoncsomag</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Az ikonok formája</string>
     <string name="icon_shape_rounded_square">Lekerekített négyzet</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Az összes Előzmény törlése</string>
     <string name="allow_swipe_down_clearall_desc">Csúsztasson függőlegesen lefelé, hogy törölje az összes alkalmazást az Előzményekből</string>
+    <string name="pref_homescreen_dt_gestures_title">Dupla érintés</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Lefelé csúsztatás</string>
+    <string name="pref_homescreen_gestures_none">Egyik sem</string>
+    <string name="pref_homescreen_gestures_sleep">A képernyő kikapcsolása</string>
+    <string name="pref_homescreen_gestures_torch">Zseblámpa</string>
+    <string name="pref_homescreen_gestures_google">Google-keresés</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Nincs telepítve a Google-keresés</string>
+    <string name="pref_homescreen_gestures_volume_panel">Hangerőszabályzó</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Az értesítések törlése</string>
+    <string name="pref_homescreen_gestures_screenshot">Képernyőmentés</string>
+    <string name="pref_homescreen_gestures_notifications">Értesítések</string>
+    <string name="pref_homescreen_gestures_qs_panel">Gyorsbeállítások-panel</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Google-alkalmazás és keresés engedélyezése</string>
+    <string name="google_feed_summary">A kezdőképernyőn jobb oldalról húzásra megjeleníti a Google-alkalmazást és használja annak keresőmotorját</string>
     <!-- Grid -->
     <string name="num_default">Alapértelmezett</string>
     <string name="number_of_columns_title">Az oszlopok száma</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">A rejtett alkalmazások újra elérhetőek</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Az alkalmazások neve</string>
+    <string name="desktop_show_label_summary">Az alkalmazásnevek megjelenítése a Kezdőképernyőn</string>
     <string name="allapps_show_label_summary">Az alkalmazások nevének megjelenítése az Alkalmazásfiókban</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Egyéni lekerekítések használata</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Kerekített szélű kártya</string>
     <string name="custom_recents_corners_type_op">OP-stílus</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Tulajdonságok</string>
+    <string name="label_search">Keresés</string>
+    <string name="label_voice_search">Hangalapú keresés</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">A keresősáv megjelenítése alul</string>
+    <string name="bottom_search_bar_summary">A keresősáv megjelenítése a Dokkon</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Asztalzárolás</string>
+    <string name="lock_desktop_summary">Megvédi a Kezdőképernyőt a módosítástól</string>
+    <string name="lock_desktop_toast">Kezdőképernyő zárolva. Oldja fel a folytatáshoz.</string>
+    <!-- QuickSpace -->
 </resources>

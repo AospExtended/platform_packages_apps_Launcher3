@@ -21,18 +21,35 @@
     <string name="settings_title">Настройки</string>
     <!-- Categories -->
     <string name="home_category_title">Домашний экран</string>
+    <string name="home_category_summary">Макет сетки, ярлыки приложений и док-станция</string>
     <string name="icons_category_title">Значки</string>
+    <string name="icons_category_summary">Пакет значков, форма, размер и цвет индикатора уведомлений</string>
     <string name="app_drawer_category_title">Меню приложений</string>
+    <string name="app_drawer_category_summary">Скрыть приложения и подписи приложений</string>
     <string name="recents_category_title">Недавние приложения</string>
     <string name="recents_category_summary">Настройте вид недавних приложений</string>
     <string name="gestures_category_title">Жесты</string>
+    <string name="gestures_category_summary">Двойное касание, свайп вниз и очистить все жесты</string>
+    <string name="gestures_other_category_title">Другое</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Макет сетки иконок</string>
     <string name="icon_layout_title">Расположение значка</string>
     <!-- Icon packs -->
     <string name="icon_pack">Набор иконок</string>
     <string name="icon_pack_summary">Измените внешний вид иконок приложений</string>
+    <string name="icon_pack_none">По-умолчанию</string>
+    <string name="edit_drop_target_label">Изменить</string>
+    <string name="edit_hint">Название значка</string>
+    <string name="reset_icon">Сбросить</string>
+    <string name="all_icons">Все иконки</string>
+    <string name="similar_icons">Похожие иконки</string>
+    <string name="ok">Ок</string>
+    <string name="icon_label">Подпись</string>
+    <string name="loading">Загрузка, пожалуйста подождите</string>
+    <string name="icon_chooser">Выбор иконки</string>
+    <string name="icon_search">Найти иконки</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Нет доступных иконок</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Форма значка</string>
     <string name="icon_shape_rounded_square">Скругленный квадрат</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Очистить всё из недавних</string>
     <string name="allow_swipe_down_clearall_desc">Свайп вниз что бы очистить список недавних приложений</string>
+    <string name="pref_homescreen_dt_gestures_title">Двойное касание</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Свайп вниз</string>
+    <string name="pref_homescreen_gestures_none">Не использовать</string>
+    <string name="pref_homescreen_gestures_sleep">Выключить экран</string>
+    <string name="pref_homescreen_gestures_torch">Фонарик</string>
+    <string name="pref_homescreen_gestures_google">Поиск Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Приложение Google поиск не установлено</string>
+    <string name="pref_homescreen_gestures_volume_panel">Панель громкости</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Очистить уведомления</string>
+    <string name="pref_homescreen_gestures_screenshot">Скриншот</string>
+    <string name="pref_homescreen_gestures_notifications">Уведомления</string>
+    <string name="pref_homescreen_gestures_qs_panel">Панель быстрых настроек</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Включить приложение Google и Поиск</string>
+    <string name="google_feed_summary">Показать приложение Google свайпом вправо с домашнего экрана и использовать его поисковую систему</string>
     <!-- Grid -->
     <string name="num_default">По-умолчанию</string>
     <string name="number_of_columns_title">Количество столбцов</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Скрытые приложения теперь доступны</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Подписи приложений</string>
+    <string name="desktop_show_label_summary">Показать названия приложений на домашнем экране</string>
     <string name="allapps_show_label_summary">Отображать названия иконок приложений на домашнем экране</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Использовать пользовательские настройки закругления углов недавних приложений</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Скруглённые вкладки</string>
     <string name="custom_recents_corners_type_op">Стиль OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Настройки</string>
+    <string name="label_search">Поиск</string>
+    <string name="label_voice_search">Голосовой поиск</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Показывать панель поиска внизу</string>
+    <string name="bottom_search_bar_summary">Отображение поиска в док баре</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Блокировать рабочий стол</string>
+    <string name="lock_desktop_summary">Запретить изменения домашнего экрана</string>
+    <string name="lock_desktop_toast">Рабочий стол заблокирован. Разблокируйте его, чтобы продолжить.</string>
+    <!-- QuickSpace -->
 </resources>

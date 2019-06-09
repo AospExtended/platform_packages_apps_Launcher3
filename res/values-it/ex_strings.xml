@@ -21,18 +21,35 @@
     <string name="settings_title">Impostazioni</string>
     <!-- Categories -->
     <string name="home_category_title">Schermata home</string>
+    <string name="home_category_summary">Impostazioni griglia, etichette applicazione e dock</string>
     <string name="icons_category_title">Icone</string>
+    <string name="icons_category_summary">Pacchetto icone, forma, dimensione e punti di notifica</string>
     <string name="app_drawer_category_title">Menù delle applicazioni</string>
+    <string name="app_drawer_category_summary">Nascondi app e etichette app nel drawer</string>
     <string name="recents_category_title">Recenti</string>
     <string name="recents_category_summary">Personalizza l\'interfaccia delle applicazioni recenti</string>
     <string name="gestures_category_title">Gesti</string>
+    <string name="gestures_category_summary">Doppio tocco, gesto scorrimento verso il basso e cancella tutto</string>
+    <string name="gestures_other_category_title">Altro</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Disposizione della griglia</string>
     <string name="icon_layout_title">Disposizione dell\'icona</string>
     <!-- Icon packs -->
     <string name="icon_pack">Pacchetto icone</string>
     <string name="icon_pack_summary">Cambia l\'aspetto delle icone delle app</string>
+    <string name="icon_pack_none">Predefinito</string>
+    <string name="edit_drop_target_label">Modifica</string>
+    <string name="edit_hint">Nome dell\'icona</string>
+    <string name="reset_icon">Ripristina</string>
+    <string name="all_icons">Tutte le icone</string>
+    <string name="similar_icons">Icone simili</string>
+    <string name="ok">Ok</string>
+    <string name="icon_label">Etichetta</string>
+    <string name="loading">Caricamento in corso, attendere prego</string>
+    <string name="icon_chooser">Seleziona icona</string>
+    <string name="icon_search">Ricerca per le icone</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Nessun pacchetto icone disponibile</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Cambia la forma delle icone</string>
     <string name="icon_shape_rounded_square">Quadrato arrotondato</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Cancella tutto dalla visualizzazione dei recenti</string>
     <string name="allow_swipe_down_clearall_desc">Scorri verticalmente verso il basso nella visualizzazione recenti per cancellare tutte le applicazioni</string>
+    <string name="pref_homescreen_dt_gestures_title">Doppio tocco</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Scorri verso il basso</string>
+    <string name="pref_homescreen_gestures_none">Nessuno</string>
+    <string name="pref_homescreen_gestures_sleep">Spegni schermo</string>
+    <string name="pref_homescreen_gestures_torch">Torcia</string>
+    <string name="pref_homescreen_gestures_google">Ricerca Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">La ricerca di Google non è installata</string>
+    <string name="pref_homescreen_gestures_volume_panel">Pannello volume</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Cancella le notifiche</string>
+    <string name="pref_homescreen_gestures_screenshot">Screenshot</string>
+    <string name="pref_homescreen_gestures_notifications">Notifiche</string>
+    <string name="pref_homescreen_gestures_qs_panel">Pannello impostazioni rapide</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Abilita App e Ricerca Google</string>
+    <string name="google_feed_summary">Mostra App Google sullo scorrimento a destra dalla schermata iniziale e usa il suo motore di ricerca nella barra apposita</string>
     <!-- Grid -->
     <string name="num_default">Predefinito</string>
     <string name="number_of_columns_title">Numero di colonne</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Le applicazioni nascoste sono ora disponibili</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Etichette delle applicazioni</string>
+    <string name="desktop_show_label_summary">Mostra le etichette delle app sulla schermata home</string>
     <string name="allapps_show_label_summary">Visualizza le etichette delle applicazioni del drawer</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Usa gli angoli arrotondati personalizzati</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Angoli arrotondati</string>
     <string name="custom_recents_corners_type_op">Stile OP</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Preferenze</string>
+    <string name="label_search">Ricerca</string>
+    <string name="label_voice_search">Ricerca vocale</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Mostra la barra di ricerca in basso</string>
+    <string name="bottom_search_bar_summary">Mostra la barra di ricerca nel Dock</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Blocca la schermata home</string>
+    <string name="lock_desktop_summary">Impedisci che la schermata home venga modificata</string>
+    <string name="lock_desktop_toast">Schermata home bloccata. Sbloccala per procedere.</string>
+    <!-- QuickSpace -->
 </resources>

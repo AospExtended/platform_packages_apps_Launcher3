@@ -21,18 +21,35 @@
     <string name="settings_title">Pengaturan</string>
     <!-- Categories -->
     <string name="home_category_title">Layar utama</string>
+    <string name="home_category_summary">Grid layout, app labels and dock</string>
     <string name="icons_category_title">Ikon</string>
+    <string name="icons_category_summary">Icon pack, shape, size and notification dots</string>
     <string name="app_drawer_category_title">Deret Aplikasi</string>
+    <string name="app_drawer_category_summary">Hide apps and app drawer labels</string>
     <string name="recents_category_title">Baru digunakan</string>
     <string name="recents_category_summary">Sesuaikan tampilan Recents anda</string>
     <string name="gestures_category_title">Gestur</string>
+    <string name="gestures_category_summary">Giemoks</string>
+    <string name="gestures_other_category_title">Lainnya</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Tata letak Grid</string>
     <string name="icon_layout_title">Tata letak ikon</string>
     <!-- Icon packs -->
     <string name="icon_pack">Paket ikon</string>
     <string name="icon_pack_summary">Ganti tampilan ikon aplikasi Anda</string>
+    <string name="icon_pack_none">Default</string>
+    <string name="edit_drop_target_label">Ubah</string>
+    <string name="edit_hint">Nama Ikon</string>
+    <string name="reset_icon">Atur ulang</string>
+    <string name="all_icons">Semua ikon</string>
+    <string name="similar_icons">Ikon serupa</string>
+    <string name="ok">Oke</string>
+    <string name="icon_label">Label</string>
+    <string name="loading">Memuat, harap tunggu</string>
+    <string name="icon_chooser">Pemilih ikon</string>
+    <string name="icon_search">Cari ikon</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Paket ikon tidak tesedia</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Bentuk ikon</string>
     <string name="icon_shape_rounded_square">Kotak bulat</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Bersihkan semua tampilan terkini</string>
     <string name="allow_swipe_down_clearall_desc">Geser ke bawah secara vertikal di recent view untuk menghapus semua aplikasi</string>
+    <string name="pref_homescreen_dt_gestures_title">Ketukan ganda</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Usap ke bawah</string>
+    <string name="pref_homescreen_gestures_none">Tidak ada</string>
+    <string name="pref_homescreen_gestures_sleep">Layar mati</string>
+    <string name="pref_homescreen_gestures_torch">Senter</string>
+    <string name="pref_homescreen_gestures_google">Pencarian Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Aplikasi Google tidak terpasang</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel volume</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Bersihkan pemberitahuan</string>
+    <string name="pref_homescreen_gestures_screenshot">Tangkapan layar</string>
+    <string name="pref_homescreen_gestures_notifications">Notifikasi</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel Setelan Cepat</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Nyalakan Aplikasi dan Pencarian Google</string>
+    <string name="google_feed_summary">Tampilkan Aplikasi Google dengan usapan kanan dari beranda dan gunakan mesin pencarinya untuk kebutuhan</string>
     <!-- Grid -->
     <string name="num_default">Bawaan</string>
     <string name="number_of_columns_title">Jumlah kolom</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Aplikasi yang tersembunyi sekarang tersedia</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Label aplikasi</string>
+    <string name="desktop_show_label_summary">Tampilkan label aplikasi di beranda</string>
     <string name="allapps_show_label_summary">Tamplikan label aplikasi di daftar laci aplikasi</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Gunakan sudut Recents kustom</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">Membulat</string>
     <string name="custom_recents_corners_type_op">Gaya OnePlus</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Preferensi</string>
+    <string name="label_search">Cari</string>
+    <string name="label_voice_search">Pencarian suara</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Tampilkan bilah pencarian di bawah</string>
+    <string name="bottom_search_bar_summary">Tampilkan bilah pencarian di Dok</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Kunci desktop</string>
+    <string name="lock_desktop_summary">Cegar layar beranda dari pengubahan</string>
+    <string name="lock_desktop_toast">Desktop terkunci. Buka kunci untuk memproses.</string>
+    <!-- QuickSpace -->
 </resources>

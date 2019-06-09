@@ -18,9 +18,29 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
+    <string name="settings_title">Settings</string>
     <!-- Categories -->
+    <string name="home_category_title">Home screen</string>
+    <string name="home_category_summary">Grid layout, app labels and dock</string>
+    <string name="icons_category_title">Icons</string>
+    <string name="icons_category_summary">Icon pack, shape, size and notification dots</string>
+    <string name="app_drawer_category_title">App drawer</string>
+    <string name="app_drawer_category_summary">Hide apps and app drawer labels</string>
+    <string name="recents_category_title">Recents</string>
+    <string name="recents_category_summary">Customize your recents card</string>
+    <string name="gestures_category_title">Gestures</string>
+    <string name="gestures_category_summary">Double tap, swipe down and clear-all gestures</string>
+    <string name="gestures_other_category_title">Other</string>
     <!-- Sub categories -->
+    <string name="home_grid_title">Grid layout</string>
+    <string name="icon_layout_title">Icon layout</string>
     <!-- Icon packs -->
+    <string name="icon_pack">Icon pack</string>
+    <string name="icon_pack_summary">Change the look of your app icons</string>
+    <string name="icon_pack_none">Default</string>
+    <string name="edit_drop_target_label">Edit</string>
+    <string name="edit_hint">Icon name</string>
+    <string name="reset_icon">မူလအတိုင်း ပြန်လည်ပြောင်းလဲမည်။</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
     <!-- Icon shape -->
     <!-- Icon size -->
@@ -33,4 +53,5 @@
     <!-- QSB -->
     <!-- Hide/Show search bars -->
     <!-- Lock desktop -->
+    <!-- QuickSpace -->
 </resources>

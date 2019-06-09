@@ -21,18 +21,35 @@
     <string name="settings_title">設定</string>
     <!-- Categories -->
     <string name="home_category_title">主畫面</string>
+    <string name="home_category_summary">網格布局，應用標籤及 Dock 欄</string>
     <string name="icons_category_title">圖示</string>
+    <string name="icons_category_summary">圖示包、圖示形狀、尺寸及通知圓點</string>
     <string name="app_drawer_category_title">應用程式清單</string>
+    <string name="app_drawer_category_summary">隱藏應用及文件夾標籤</string>
     <string name="recents_category_title">總覽</string>
     <string name="recents_category_summary">自訂您的總覽卡</string>
     <string name="gestures_category_title">手勢操作</string>
+    <string name="gestures_category_summary">雙擊，向下滑動及全部消除手勢</string>
+    <string name="gestures_other_category_title">其它</string>
     <!-- Sub categories -->
     <string name="home_grid_title">格線配置</string>
     <string name="icon_layout_title">圖示佈局</string>
     <!-- Icon packs -->
     <string name="icon_pack">圖示套件</string>
     <string name="icon_pack_summary">更改應用圖示的外觀</string>
+    <string name="icon_pack_none">預設</string>
+    <string name="edit_drop_target_label">編輯</string>
+    <string name="edit_hint">圖示名稱</string>
+    <string name="reset_icon">重設</string>
+    <string name="all_icons">所有圖示</string>
+    <string name="similar_icons">相似的圖示</string>
+    <string name="ok">確定</string>
+    <string name="icon_label">標籤</string>
+    <string name="loading">載入中，請稍候...</string>
+    <string name="icon_chooser">圖示選擇器</string>
+    <string name="icon_search">搜尋圖示</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">沒有可用的圖示包</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">圖示形狀</string>
     <string name="icon_shape_rounded_square">圓角正方形</string>
@@ -41,8 +58,21 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">從最近瀏覽畫面清除</string>
     <string name="allow_swipe_down_clearall_desc">在最近瀏覽畫面垂直向下滑動來清除所有應用程式</string>
+    <string name="pref_homescreen_dt_gestures_title">輕觸兩下</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">向下滑動</string>
+    <string name="pref_homescreen_gestures_none">無</string>
+    <string name="pref_homescreen_gestures_sleep">關閉螢幕</string>
+    <string name="pref_homescreen_gestures_torch">手電筒</string>
+    <string name="pref_homescreen_gestures_google">Google 搜尋</string>
     <string name="pref_homescreen_dt_gestures_google_toast">未安裝 Google搜尋 應用程式</string>
+    <string name="pref_homescreen_gestures_volume_panel">音量面板</string>
+    <string name="pref_homescreen_gestures_clear_notifications">清除通知</string>
+    <string name="pref_homescreen_gestures_screenshot">螢幕截圖</string>
+    <string name="pref_homescreen_gestures_notifications">通知</string>
+    <string name="pref_homescreen_gestures_qs_panel">快速設定面板</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">啟用 Google 應用程式和搜尋</string>
+    <string name="google_feed_summary">向右滑動以顯示 Google 應用程式，並使用其搜尋列作為快捷欄位</string>
     <!-- Grid -->
     <string name="num_default">預設</string>
     <string name="number_of_columns_title">欄數</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">隱藏應用程式功能目前是可用的</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">應用程式標籤</string>
+    <string name="desktop_show_label_summary">在主畫面上顯示應用程式的標籤</string>
     <string name="allapps_show_label_summary">在檔案匣中顯示應用程式的標籤</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">使用自訂的總覽卡圓角</string>
@@ -69,6 +100,15 @@
     <string name="custom_recents_corners_type_card">圓角總覽卡</string>
     <string name="custom_recents_corners_type_op">OP 樣式</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">優先選項</string>
+    <string name="label_search">搜尋</string>
+    <string name="label_voice_search">語音搜尋</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">在底部顯示搜尋列</string>
+    <string name="bottom_search_bar_summary">在 Dock 欄上顯示搜尋列</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">鎖定桌面</string>
+    <string name="lock_desktop_summary">防止主畫面被修改</string>
+    <string name="lock_desktop_toast">桌面已鎖定。解鎖以繼續。</string>
+    <!-- QuickSpace -->
 </resources>
