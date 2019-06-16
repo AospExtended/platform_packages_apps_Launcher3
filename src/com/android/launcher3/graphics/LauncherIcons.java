@@ -42,7 +42,7 @@ import android.os.Build;
 import android.os.Process;
 import android.os.UserHandle;
 import android.support.annotation.Nullable;
-
+import android.util.DisplayMetrics;
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.FastBitmapDrawable;
 import com.android.launcher3.IconCache;
@@ -314,7 +314,7 @@ public class LauncherIcons implements AutoCloseable {
             BitmapDrawable bitmapDrawable = (BitmapDrawable) icon;
             Bitmap bitmap = bitmapDrawable.getBitmap();
             if (bitmap != null && bitmap.getDensity() == Bitmap.DENSITY_NONE) {
-                bitmapDrawable.setTargetDensity(mContext.getResources().getDisplayMetrics());
+                bitmapDrawable.setTargetDensity(DisplayMetrics.DENSITY_XXXHIGH);
             }
         }
 
