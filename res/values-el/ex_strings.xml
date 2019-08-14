@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Αποτροπή τροποποίησης στην αρχική οθόνη</string>
     <string name="lock_desktop_toast">Αρχική οθόνη είναι κλειδωμένη. Ξεκλειδώστε τη για συνέχεια.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Με μια Ματιά</string>
+    <string name="show_quickspace_summary">Εμφάνιση στο επάνω μέρος της Αρχικής Οθόνης</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

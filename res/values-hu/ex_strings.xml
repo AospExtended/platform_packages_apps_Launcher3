@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Megvédi a Kezdőképernyőt a módosítástól</string>
     <string name="lock_desktop_toast">Kezdőképernyő zárolva. Oldja fel a folytatáshoz.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Belepillantás</string>
+    <string name="show_quickspace_summary">Az Ön kezdőképernyőjének tetején jelenik meg</string>
+    <string name="abbrev_wday_month_day_no_year">MMM. d., EEEE</string>
 </resources>

@@ -29,7 +29,7 @@
     <string name="recents_category_title">最近任务</string>
     <string name="recents_category_summary">自定义你的最近任务卡</string>
     <string name="gestures_category_title">手势</string>
-    <string name="gestures_category_summary">双击，下滑和清除所有手势</string>
+    <string name="gestures_category_summary">双击、下滑及全部清除 手势</string>
     <string name="gestures_other_category_title">其他</string>
     <!-- Sub categories -->
     <string name="home_grid_title">网格布局</string>
@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">防止修改主屏幕</string>
     <string name="lock_desktop_toast">桌面被锁定，解锁后继续。</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">一目了然</string>
+    <string name="show_quickspace_summary">在主屏幕的顶部显示</string>
+    <string name="abbrev_wday_month_day_no_year">星期 月份 日</string>
 </resources>

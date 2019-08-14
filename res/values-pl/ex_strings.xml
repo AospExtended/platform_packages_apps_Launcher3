@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Zapobiega modyfikacji ekranu głównego</string>
     <string name="lock_desktop_toast">Pulpit jest zablokowany. Odblokuj go, aby kontynuować.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">W skrócie</string>
+    <string name="show_quickspace_summary">Pokaż u góry ekranu głównego</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

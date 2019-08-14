@@ -31,6 +31,16 @@
     <!-- Icon packs -->
     <string name="icon_pack">آیکون پک</string>
     <string name="icon_pack_summary">تغییر ظاهر آیکون برنامه</string>
+    <string name="icon_pack_none">پیش‌فرض</string>
+    <string name="edit_drop_target_label">ویرایش</string>
+    <string name="edit_hint">نام آیکون</string>
+    <string name="reset_icon">بازنشانی</string>
+    <string name="all_icons">تمام آیکون ها</string>
+    <string name="similar_icons">آیکون های مشابه</string>
+    <string name="ok">تایید</string>
+    <string name="icon_label">برچسب</string>
+    <string name="loading">درحال بارگذاری، لطفاً کمی صبر کنید</string>
+    <string name="icon_search">جستجو برای آیکون ها</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">شکل آیکون</string>
@@ -40,6 +50,12 @@
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">همه رو از فعالیت های اخیر پاک کن</string>
     <string name="allow_swipe_down_clearall_desc">برای پاک کردن همه برنامه در نمای رویداد های اخیرتان بصورت عمودی به پایین بکشید</string>
+    <string name="pref_homescreen_gestures_none">هیچکدام</string>
+    <string name="pref_homescreen_gestures_torch">چراغ قوه</string>
+    <string name="pref_homescreen_gestures_google">جستجوی گوگل</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">برنامه جستجوی گوگل نصب نشده</string>
+    <string name="pref_homescreen_gestures_screenshot">اسکرین شات</string>
+    <string name="pref_homescreen_gestures_notifications">اعلانات</string>
     <!-- Google Feed -->
     <!-- Grid -->
     <string name="num_default">پیش‌فرض</string>
@@ -60,7 +76,10 @@
     <string name="app_show_label_title">برچسب های برنامه</string>
     <string name="allapps_show_label_summary">نشان دادن برچسب های برنامه در کشوی برنامه ها</string>
     <!-- Recents corned -->
+    <string name="custom_recents_corners_type_default">پیش‌فرض</string>
     <!-- QSB -->
+    <string name="label_search">جستجو</string>
+    <string name="label_voice_search">جستجوی صوتی</string>
     <!-- Hide/Show search bars -->
     <!-- Lock desktop -->
     <!-- QuickSpace -->

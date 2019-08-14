@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Impedir modificação do ecrã inicial</string>
     <string name="lock_desktop_toast">Desktop está bloqueado. Desbloquear para continuar.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Num relance</string>
+    <string name="show_quickspace_summary">Mostrar no topo do ecrã inicial</string>
+    <string name="abbrev_wday_month_day_no_year">AAAAMMMd</string>
 </resources>

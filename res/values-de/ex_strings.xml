@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Verhindert Änderungen am Startbildschirm</string>
     <string name="lock_desktop_toast">Startbildschirm ist gesperrt. Entsperren, um fortzufahren.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Auf einen Blick</string>
+    <string name="show_quickspace_summary">Zeigt es oben auf dem Startbildschirm an</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

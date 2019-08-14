@@ -28,6 +28,11 @@
     <string name="home_grid_title">Disseny de quadrícula</string>
     <!-- Icon packs -->
     <string name="icon_pack">Paquet d\'icones</string>
+    <string name="icon_pack_none">Per defecte</string>
+    <string name="edit_drop_target_label">Edita</string>
+    <string name="edit_hint">Nom de la icona</string>
+    <string name="reset_icon">Restableix</string>
+    <string name="all_icons">Totes les icones</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Forma de la icona</string>

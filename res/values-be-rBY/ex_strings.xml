@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Забараніць змены хатняга экрана</string>
     <string name="lock_desktop_toast">Працоўны стол заблакаваны. Разблакуйце яго, каб працягнуць.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Адлюстроўваць у верхняй частцы Хатняга экрана</string>
+    <string name="abbrev_wday_month_day_no_year">ГГГГМММд</string>
 </resources>

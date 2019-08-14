@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Ära takista avakuva muutmist</string>
     <string name="lock_desktop_toast">Töölaud on lukustatud. Jätkamiseks avage see.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Ainsa pilguga</string>
+    <string name="show_quickspace_summary">Näita avakuva ülaosas</string>
+    <string name="abbrev_wday_month_day_no_year">NNNNKKp</string>
 </resources>

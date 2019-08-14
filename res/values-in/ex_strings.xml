@@ -30,7 +30,7 @@
     <string name="recents_category_summary">Sesuaikan tampilan Recents anda</string>
     <string name="gestures_category_title">Gestur</string>
     <string name="gestures_category_summary">Giemoks</string>
-    <string name="gestures_other_category_title">Lainnya</string>
+    <string name="gestures_other_category_title">Other</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Tata letak Grid</string>
     <string name="icon_layout_title">Tata letak ikon</string>
@@ -61,18 +61,18 @@
     <string name="pref_homescreen_dt_gestures_title">Ketukan ganda</string>
     <string name="pref_homescreen_swipe_down_gestures_title">Usap ke bawah</string>
     <string name="pref_homescreen_gestures_none">Tidak ada</string>
-    <string name="pref_homescreen_gestures_sleep">Layar mati</string>
-    <string name="pref_homescreen_gestures_torch">Senter</string>
-    <string name="pref_homescreen_gestures_google">Pencarian Google</string>
-    <string name="pref_homescreen_dt_gestures_google_toast">Aplikasi Google tidak terpasang</string>
-    <string name="pref_homescreen_gestures_volume_panel">Panel volume</string>
-    <string name="pref_homescreen_gestures_clear_notifications">Bersihkan pemberitahuan</string>
+    <string name="pref_homescreen_gestures_sleep">Screen off</string>
+    <string name="pref_homescreen_gestures_torch">Flashlight</string>
+    <string name="pref_homescreen_gestures_google">Google search</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Google search is not installed</string>
+    <string name="pref_homescreen_gestures_volume_panel">Volume panel</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Clear notifications</string>
     <string name="pref_homescreen_gestures_screenshot">Tangkapan layar</string>
-    <string name="pref_homescreen_gestures_notifications">Notifikasi</string>
-    <string name="pref_homescreen_gestures_qs_panel">Panel Setelan Cepat</string>
+    <string name="pref_homescreen_gestures_notifications">Notifications</string>
+    <string name="pref_homescreen_gestures_qs_panel">QS panel</string>
     <!-- Google Feed -->
-    <string name="google_feed_title">Nyalakan Aplikasi dan Pencarian Google</string>
-    <string name="google_feed_summary">Tampilkan Aplikasi Google dengan usapan kanan dari beranda dan gunakan mesin pencarinya untuk kebutuhan</string>
+    <string name="google_feed_title">Enable Google App and Search</string>
+    <string name="google_feed_summary">Show Google App with right swipe from home screen and use its search engine for hotseats</string>
     <!-- Grid -->
     <string name="num_default">Bawaan</string>
     <string name="number_of_columns_title">Jumlah kolom</string>
@@ -90,14 +90,14 @@
     <string name="reset_hidden_apps_done">Aplikasi yang tersembunyi sekarang tersedia</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Label aplikasi</string>
-    <string name="desktop_show_label_summary">Tampilkan label aplikasi di beranda</string>
+    <string name="desktop_show_label_summary">Show the labels of apps on the homescreen</string>
     <string name="allapps_show_label_summary">Tamplikan label aplikasi di daftar laci aplikasi</string>
     <!-- Recents corned -->
-    <string name="custom_recents_corners_switch_title">Gunakan sudut Recents kustom</string>
-    <string name="custom_recents_corners_switch_summary">Jika tidak aktif, hanya akan menggunakan bawaan sistem/tema. Untuk menerapkan yang baru, kembali ke beranda setelah memilih pilihan Anda.</string>
-    <string name="custom_recents_corners_type_title">Gaya sudut Recents</string>
-    <string name="custom_recents_corners_type_default">Bawaan</string>
-    <string name="custom_recents_corners_type_card">Membulat</string>
+    <string name="custom_recents_corners_switch_title">Use custom recents rounded corners</string>
+    <string name="custom_recents_corners_switch_summary">If disabled, it\'ll use the one provided by the system/theme. To apply the new value, go to home after selecting your option.</string>
+    <string name="custom_recents_corners_type_title">Custom recents roundness</string>
+    <string name="custom_recents_corners_type_default">Default</string>
+    <string name="custom_recents_corners_type_card">Rounded Card</string>
     <string name="custom_recents_corners_type_op">Gaya OnePlus</string>
     <!-- QSB -->
     <string name="hotseat_qsb_preferences">Preferensi</string>
@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Cegar layar beranda dari pengubahan</string>
     <string name="lock_desktop_toast">Desktop terkunci. Buka kunci untuk memproses.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Sekilas</string>
+    <string name="show_quickspace_summary">Tampilkan dibagian atas layar beranda Anda</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

@@ -23,7 +23,7 @@
     <string name="home_category_title">Pantalla de inicio</string>
     <string name="home_category_summary">Diseño de la cuadrícula, etiquetas de las aplicaciones y dock</string>
     <string name="icons_category_title">Iconos</string>
-    <string name="icons_category_summary">Pack de iconos, forma, tamaño y puntos de notificación</string>
+    <string name="icons_category_summary">Paquete de iconos, forma, tamaño y puntos de notificación</string>
     <string name="app_drawer_category_title">Cajón de aplicaciones</string>
     <string name="app_drawer_category_summary">Ocultar aplicaciones y etiquetas del cajón de aplicaciones</string>
     <string name="recents_category_title">Recientes</string>
@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Evitar que la pantalla de inicio sea modificada</string>
     <string name="lock_desktop_toast">Escritorio bloqueado. Desbloquealo para continuar.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">De Un Vistazo</string>
+    <string name="show_quickspace_summary">Mostrar en la parte superior de tu pantalla de inicio</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

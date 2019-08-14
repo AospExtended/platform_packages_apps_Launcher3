@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Заборонити змінення робочого столу</string>
     <string name="lock_desktop_toast">Робочий стіл заблокований. Розблокуйте щоб продовжити.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">At A Glance</string>
+    <string name="show_quickspace_summary">Відображати в верхній частині Домашнього екрану</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

@@ -26,7 +26,7 @@
     <string name="icons_category_summary">Gói biểu tượng, hình dạng, kích thước biểu tượng và dấu chấm thông báo</string>
     <string name="app_drawer_category_title">Ngăn kéo ứng dụng</string>
     <string name="app_drawer_category_summary">Ẩn ứng dụng và tên ứng dụng</string>
-    <string name="recents_category_title">Gần đây</string>
+    <string name="recents_category_title">Đa nhiệm</string>
     <string name="recents_category_summary">Tùy chỉnh thẻ của bạn</string>
     <string name="gestures_category_title">Cử chỉ</string>
     <string name="gestures_category_summary">Chạm đúp, vuốt xuống và cử chỉ xoá tất cả</string>
@@ -52,7 +52,7 @@
     <string name="msg_no_icon_pack">Không có gói biểu tượng nào</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Hình dạng biểu tượng</string>
-    <string name="icon_shape_rounded_square">Hình vuông bo tròn cạnh</string>
+    <string name="icon_shape_rounded_square">Hình vuông bo góc</string>
     <!-- Icon size -->
     <string name="icon_size_title">Kích cỡ biểu tượng</string>
     <!-- Gestures -->
@@ -89,11 +89,11 @@
     <string name="reset_hidden_apps">Thiết lập lại tất cả</string>
     <string name="reset_hidden_apps_done">Các ứng dụng bị ẩn đã xuất hiện lại</string>
     <!-- Show labels on icon -->
-    <string name="app_show_label_title">Ứng dụng nhãn</string>
+    <string name="app_show_label_title">Nhãn ứng dụng</string>
     <string name="desktop_show_label_summary">Hiển thị tên ứng dụng trên màn hình chính</string>
     <string name="allapps_show_label_summary">Hiển thị tên ứng dụng trong ngăn kéo ứng dụng</string>
     <!-- Recents corned -->
-    <string name="custom_recents_corners_switch_title">Mục gần đây bo tròn</string>
+    <string name="custom_recents_corners_switch_title">Sử dụng đa nhiệm bo tròn góc</string>
     <string name="custom_recents_corners_switch_summary">Nếu mục này bị tắt, nó sẽ áp dụng cái được cung cấp bởi hệ thống /chủ đề. Để áp dụng, hãy về màn hình chính sau khi chọn tùy chọn của bạn.</string>
     <string name="custom_recents_corners_type_title">Tùy chỉnh cách bo tròn</string>
     <string name="custom_recents_corners_type_default">Mặc định</string>
@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Ngăn chặn các thay đổi trên màn hình chính</string>
     <string name="lock_desktop_toast">Màn hình chính đã bị khoá. Mở khoá để tiếp tục.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Xem nhanh</string>
+    <string name="show_quickspace_summary">Hiển thị ở đầu màn hình chính của bạn</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

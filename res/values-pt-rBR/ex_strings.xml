@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Impedir que a tela inicial seja modificada</string>
     <string name="lock_desktop_toast">Área de trabalho bloqueada. Desbloqueie para prosseguir.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Resumo</string>
+    <string name="show_quickspace_summary">Mostrar no topo da tela inicial</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

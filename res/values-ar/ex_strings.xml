@@ -24,10 +24,10 @@
     <string name="home_category_summary">تخطيط الشبكة، تسميات التطبيق والشريط السفلي</string>
     <string name="icons_category_title">الأيقونات</string>
     <string name="icons_category_summary">حزمة الايقونات، الشكل، حجم ونقاط الإشعار</string>
-    <string name="app_drawer_category_title">درج التطبيق</string>
-    <string name="app_drawer_category_summary">إخفاء التطبيقات وتسميات درج التطبيقات</string>
-    <string name="recents_category_title">التطبيقات الحديثة</string>
-    <string name="recents_category_summary">تخصيص بطاقة التطبيقات الحديثة</string>
+    <string name="app_drawer_category_title">قائمة التطبيقات</string>
+    <string name="app_drawer_category_summary">إخفاء التطبيقات وتسميات قائمة التطبيقات</string>
+    <string name="recents_category_title">التطبيقات الأخيرة</string>
+    <string name="recents_category_summary">تخصيص بطاقة التطبيقات الاخيرة</string>
     <string name="gestures_category_title">الإيماءات</string>
     <string name="gestures_category_summary">إيماءات الضغط المزدوج، السحب لأسفل و مسح الكل</string>
     <string name="gestures_other_category_title">غير ذلك</string>
@@ -56,8 +56,8 @@
     <!-- Icon size -->
     <string name="icon_size_title">حجم الأيقونة</string>
     <!-- Gestures -->
-    <string name="allow_swipe_down_clearall_title">مسح الكل من عرض التطبيقات الحديثة</string>
-    <string name="allow_swipe_down_clearall_desc">قم بالسحب عمودياً لأسفل في عرض التطبيقات الحديثة لمسح جميع التطبيقات</string>
+    <string name="allow_swipe_down_clearall_title">مسح الكل من عرض التطبيقات الاخيرة</string>
+    <string name="allow_swipe_down_clearall_desc">قم بالسحب عمودياً لأسفل في عرض التطبيقات الاخيرة لمسح جميع التطبيقات</string>
     <string name="pref_homescreen_dt_gestures_title">الضغط المزدوج</string>
     <string name="pref_homescreen_swipe_down_gestures_title">تمرير للأسفل</string>
     <string name="pref_homescreen_gestures_none">لا شيء</string>
@@ -67,7 +67,7 @@
     <string name="pref_homescreen_dt_gestures_google_toast">بحث Google غير مثبت</string>
     <string name="pref_homescreen_gestures_volume_panel">لوحة مستوى الصوت</string>
     <string name="pref_homescreen_gestures_clear_notifications">مسح الإشعارات</string>
-    <string name="pref_homescreen_gestures_screenshot">لقطة الشاشة</string>
+    <string name="pref_homescreen_gestures_screenshot">أخذ لقطة للشاشة</string>
     <string name="pref_homescreen_gestures_notifications">الإشعارات</string>
     <string name="pref_homescreen_gestures_qs_panel">لوحة الإعدادات السريعة</string>
     <!-- Google Feed -->
@@ -93,9 +93,9 @@
     <string name="desktop_show_label_summary">عرض تسميات التطبيقات على الشاشة الرئيسية</string>
     <string name="allapps_show_label_summary">إظهار تسميات التطبيقات في درج التطبيق</string>
     <!-- Recents corned -->
-    <string name="custom_recents_corners_switch_title">استخدام التطبيقات الحديثة المخصصة ذات الزوايا المدورة</string>
+    <string name="custom_recents_corners_switch_title">استخدام التطبيقات الاخيرة المخصصة ذات الزوايا المدورة</string>
     <string name="custom_recents_corners_switch_summary">إذا تم تعطيلها، فستستخدم الطريقة التي يوفرها النظام / السمة. لتطبيق القيمة الجديدة، انتقل إلى الرئيسية بعد تحديد الخيار الخاص بك.</string>
-    <string name="custom_recents_corners_type_title">أستدارة التطبيقات الحديثة المخصصة</string>
+    <string name="custom_recents_corners_type_title">أستدارة التطبيقات الاخيرة المخصصة</string>
     <string name="custom_recents_corners_type_default">الافتراضي</string>
     <string name="custom_recents_corners_type_card">بطاقة مدورة</string>
     <string name="custom_recents_corners_type_op">نمط OP</string>
@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">منع الشاشة الرئيسية من التعديل</string>
     <string name="lock_desktop_toast">تم قفل سطح المكتب. إلغاء القفل للمضي قدماً.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">النظرة السريعة</string>
+    <string name="show_quickspace_summary">تظهر في الجزء العلوي من شاشتك الرئيسية</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

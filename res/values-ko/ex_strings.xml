@@ -29,6 +29,7 @@
     <string name="recents_category_title">최근 앱</string>
     <string name="recents_category_summary">최근 앱 메뉴 꾸미기</string>
     <string name="gestures_category_title">제스처</string>
+    <string name="gestures_category_summary">두 번 누르기, 쓸어 내리기, 모두 지우기 제스처</string>
     <string name="gestures_other_category_title">기타</string>
     <!-- Sub categories -->
     <string name="home_grid_title">그리드 레이아웃</string>
@@ -60,6 +61,7 @@
     <string name="pref_homescreen_dt_gestures_title">두 번 탭하기</string>
     <string name="pref_homescreen_swipe_down_gestures_title">아래로 쓸어 내리기</string>
     <string name="pref_homescreen_gestures_none">사용하지 않음</string>
+    <string name="pref_homescreen_gestures_sleep">화면 꺼짐</string>
     <string name="pref_homescreen_gestures_torch">손전등</string>
     <string name="pref_homescreen_gestures_google">Google 검색</string>
     <string name="pref_homescreen_dt_gestures_google_toast">구글 앱이 설치되지 않았습니다</string>
@@ -109,4 +111,7 @@
     <string name="lock_desktop_summary">홈 화면이 수정되는 것을 방지합니다</string>
     <string name="lock_desktop_toast">바탕 화면이 잠겼습니다. 계속하려면 잠금을 해제하세요.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">한 눈에 보기</string>
+    <string name="show_quickspace_summary">홈 화면 상단에 표시</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Neleiskite keisti pradinio ekrano</string>
     <string name="lock_desktop_toast">Darbalaukis yra užrakintas. Jei norite tęsti, atrakinkite.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Iš pirmo žvilgsnio</string>
+    <string name="show_quickspace_summary">Rodyti pradinio ekrano viršuje</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

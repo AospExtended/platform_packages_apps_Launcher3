@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Empêcher la modification de l\'écran d\'accueil</string>
     <string name="lock_desktop_toast">Le bureau est verrouillé. Déverrouillez-le pour continuer.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">En un coup d’œil</string>
+    <string name="show_quickspace_summary">Montrer en haut de votre écran d\'accueil</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

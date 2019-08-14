@@ -25,7 +25,7 @@
     <string name="icons_category_title">アイコン</string>
     <string name="icons_category_summary">アイコンパック、形状、大きさ、通知ドット</string>
     <string name="app_drawer_category_title">アプリドロワー</string>
-    <string name="app_drawer_category_summary">アプリとアプリドロワーラベルを隠す</string>
+    <string name="app_drawer_category_summary">アプリとアプリドロワーのラベルを隠す</string>
     <string name="recents_category_title">アプリ履歴</string>
     <string name="recents_category_summary">アプリ履歴カードを編集する</string>
     <string name="gestures_category_title">ジェスチャー</string>
@@ -40,7 +40,7 @@
     <string name="icon_pack_none">既定</string>
     <string name="edit_drop_target_label">編集</string>
     <string name="edit_hint">アイコンの名前</string>
-    <string name="reset_icon">初期化</string>
+    <string name="reset_icon">リセット</string>
     <string name="all_icons">全てのアイコン</string>
     <string name="similar_icons">類似のアイコン</string>
     <string name="ok">OK</string>

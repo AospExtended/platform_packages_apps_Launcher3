@@ -21,28 +21,58 @@
     <string name="settings_title">Nastavitve</string>
     <!-- Categories -->
     <string name="home_category_title">Začetni zaslon</string>
+    <string name="home_category_summary">Razporeditev mreže, oznake aplikacij in nabrežje</string>
     <string name="icons_category_title">Ikone</string>
+    <string name="icons_category_summary">Paket ikon, oblika, velikost in obvestilne pike</string>
     <string name="app_drawer_category_title">Predal aplikacij</string>
+    <string name="app_drawer_category_summary">Skrij aplikacije in oznake v predalu aplikacij</string>
     <string name="recents_category_title">Nedavne</string>
     <string name="recents_category_summary">Prilagodite vašo karto nedavnih</string>
     <string name="gestures_category_title">Poteze</string>
+    <string name="gestures_category_summary">Dvojni tap, poteg navzdol in počisti vse poteze</string>
+    <string name="gestures_other_category_title">Drugo</string>
     <!-- Sub categories -->
     <string name="home_grid_title">Razporeditev mreže</string>
     <string name="icon_layout_title">Razporeditev ikon</string>
     <!-- Icon packs -->
     <string name="icon_pack">Paket ikon</string>
     <string name="icon_pack_summary">Spremenite izgled vaših ikon aplikacij</string>
+    <string name="icon_pack_none">Privzeto</string>
+    <string name="edit_drop_target_label">Urejanje</string>
+    <string name="edit_hint">Ime ikone</string>
+    <string name="reset_icon">Ponastavi</string>
+    <string name="all_icons">Vse ikone</string>
+    <string name="similar_icons">Podobne ikone</string>
+    <string name="ok">V redu</string>
+    <string name="icon_label">Oznaka</string>
+    <string name="loading">Nalaganje, prosimo počakajte</string>
+    <string name="icon_chooser">Izbirnik ikon</string>
+    <string name="icon_search">Iskanje ikon</string>
     <!-- Toast message for alerting users that no icon packs are available. -->
+    <string name="msg_no_icon_pack">Na voljo ni paketov ikon</string>
     <!-- Icon shape -->
     <string name="icon_shape_override_label_custom">Oblika ikon</string>
-    <string name="icon_shape_rounded_square">Zaobljen kvadrat</string>
+    <string name="icon_shape_rounded_square">Zaobljen kvadrat (alt)</string>
     <!-- Icon size -->
     <string name="icon_size_title">Velikost ikon</string>
     <!-- Gestures -->
     <string name="allow_swipe_down_clearall_title">Počisti vse iz pregleda nedavnih</string>
     <string name="allow_swipe_down_clearall_desc">Potegnite navpično navzdol v pregledu nedavnih, da počistite vse aplikacije</string>
+    <string name="pref_homescreen_dt_gestures_title">Dvojni tap</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Poteg navzdol</string>
+    <string name="pref_homescreen_gestures_none">Brez</string>
+    <string name="pref_homescreen_gestures_sleep">Izklopi zaslon</string>
+    <string name="pref_homescreen_gestures_torch">Svetilka</string>
+    <string name="pref_homescreen_gestures_google">Iskanje Google</string>
     <string name="pref_homescreen_dt_gestures_google_toast">Iskanje Google ni nameščeno</string>
+    <string name="pref_homescreen_gestures_volume_panel">Plošča za glasnost</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Počisti obvestila</string>
+    <string name="pref_homescreen_gestures_screenshot">Posnetek zaslona</string>
+    <string name="pref_homescreen_gestures_notifications">Obvestila</string>
+    <string name="pref_homescreen_gestures_qs_panel">Plošča hitrih nastavitev</string>
     <!-- Google Feed -->
+    <string name="google_feed_title">Omogoči aplikacijo Google in iskanje</string>
+    <string name="google_feed_summary">Prikaži aplikacijo Google s potegom desno in uporabi njen pogon za iskanje</string>
     <!-- Grid -->
     <string name="num_default">Privzeto</string>
     <string name="number_of_columns_title">Število stolpcev</string>
@@ -60,6 +90,7 @@
     <string name="reset_hidden_apps_done">Skrite aplikacije so zdaj na voljo</string>
     <!-- Show labels on icon -->
     <string name="app_show_label_title">Oznake aplikacij</string>
+    <string name="desktop_show_label_summary">Prikaži oznake aplikacij na začetnem zaslonu</string>
     <string name="allapps_show_label_summary">Prikaži oznake aplikacij v predalu aplikacij</string>
     <!-- Recents corned -->
     <string name="custom_recents_corners_switch_title">Uporabi zaobljene robove nedavnih po meri</string>
@@ -69,7 +100,18 @@
     <string name="custom_recents_corners_type_card">Zaobljena karta</string>
     <string name="custom_recents_corners_type_op">OP slog</string>
     <!-- QSB -->
+    <string name="hotseat_qsb_preferences">Nastavitve</string>
+    <string name="label_search">Iskanje</string>
+    <string name="label_voice_search">Glasovno iskanje</string>
     <!-- Hide/Show search bars -->
+    <string name="bottom_search_bar_title">Prikaži iskalno vrstico na dnu</string>
+    <string name="bottom_search_bar_summary">Prikaži iskalno vrstico v nabrežju</string>
     <!-- Lock desktop -->
+    <string name="lock_desktop_title">Zakleni namizje</string>
+    <string name="lock_desktop_summary">Prepreči spremembe začetnega zaslona</string>
+    <string name="lock_desktop_toast">Namizje je zaklenjeno. Odklenite ga za nadaljevanje.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">Hiter pregled</string>
+    <string name="show_quickspace_summary">Prikaži na vrhu vašega začetnega zaslona</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>

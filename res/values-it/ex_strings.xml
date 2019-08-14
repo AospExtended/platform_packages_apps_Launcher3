@@ -111,4 +111,7 @@
     <string name="lock_desktop_summary">Impedisci che la schermata home venga modificata</string>
     <string name="lock_desktop_toast">Schermata home bloccata. Sbloccala per procedere.</string>
     <!-- QuickSpace -->
+    <string name="show_quickspace_title">A prima vista</string>
+    <string name="show_quickspace_summary">Mostra nella parte superiore della tua schermata Home</string>
+    <string name="abbrev_wday_month_day_no_year">EEEEMMMd</string>
 </resources>
