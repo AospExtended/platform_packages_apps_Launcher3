@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2018-2019 Syberia Project
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Show searchbar -->
+    <string name="show_searchbar_title">Панель поиска</string>
+    <string name="show_searchbar_summary">Отображать панель поиска Google на домашнем экране</string>
+
+    <string name="state_loading">Применяем\u2026</string>
+
+    <!-- Google Feed -->
+    <string name="settings_feed_title">Панель Google Feed</string>
+    <string name="settings_feed_summary">Отображать слева от главного экрана</string>
+
+    <!-- Gestures -->
+    <string name="gestures_category">Жесты</string>
+    <string name="allow_swipe_down_clearall_title">Закрыть все недавние приложения</string>
+    <string name="allow_swipe_down_clearall_desc">Вертикальный свайп вниз в Недавних для закрытия всех приложений</string>
+    <string name="pref_notifications_gesture_title">Жест уведомлений</string>
+    <string name="pref_notifications_gesture_summary">Вертикальный свайп вниз на главном экране чтобы открыть панель быстрых настроек</string>
+    <string name="pref_dt_gesture_title">Жест двойного нажатия</string>
+    <string name="pref_dt_gesture_summary">Двойное нажатие на пустом месте выключает экран</string>
+
+</resources>
