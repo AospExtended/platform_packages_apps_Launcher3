@@ -50,7 +50,6 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentSender;
 import android.content.SharedPreferences;
-import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.database.sqlite.SQLiteDatabase;
@@ -168,7 +167,7 @@ import androidx.annotation.Nullable;
  */
 public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         LauncherModel.Callbacks, LauncherProviderChangeListener, UserEventDelegate,
-        InvariantDeviceProfile.OnIDPChangeListener, OnSharedPreferenceChangeListener {
+        InvariantDeviceProfile.OnIDPChangeListener {
     public static final String TAG = "Launcher";
     static final boolean LOGD = false;
 
@@ -381,6 +380,17 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
 
         mFeedIntegrationEnabled = isFeedIntegrationEnabled();
         mLauncherTab = new LauncherTab(this, mFeedIntegrationEnabled);
+        if (mFeedIntegrationEnabled) {
+                ClientOptions clientOptions = new ClientOptions(mFeedIntegrationEnabled ? 1 : 0);
+                final LauncherClient client = mLauncherTab.getClient();
+                if (clientOptions.options != client.mFlags) {
+                    client.mFlags = clientOptions.options;
+                    if (client.getParams() != null) {
+                        client.updateConfiguration();
+                    }
+                    client.getEventInfo().parse("setClientOptions ", client.mFlags);
+                }
+        }
 
         setContentView(mLauncherView);
         getRootView().dispatchInsets();
@@ -395,8 +405,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             mLauncherCallbacks.onCreate(savedInstanceState);
         }
         mRotationHelper.initialize();
-
-        mSharedPrefs.registerOnSharedPreferenceChangeListener(this);
 
         TraceHelper.endSection("Launcher-onCreate");
         RaceConditionTracker.onEvent(ON_CREATE_EVT, EXIT);
@@ -1550,7 +1558,6 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
             mLauncherCallbacks.onDestroy();
         }
 
-        mSharedPrefs.unregisterOnSharedPreferenceChangeListener(this);
     }
 
     public LauncherAccessibilityDelegate getAccessibilityDelegate() {
@@ -2667,22 +2674,4 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         void onLauncherResume();
     }
 
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (SettingsActivity.KEY_FEED_INTEGRATION.equals(key)) {
-            if (mLauncherTab != null) {
-                mFeedIntegrationEnabled = isFeedIntegrationEnabled();
-                ClientOptions clientOptions = new ClientOptions(mFeedIntegrationEnabled ? 1 : 0);
-                final LauncherClient client = mLauncherTab.getClient();
-                if (clientOptions.options != client.mFlags) {
-                    client.mFlags = clientOptions.options;
-                    if (client.getParams() != null) {
-                        client.updateConfiguration();
-                    }
-                    client.getEventInfo().parse("setClientOptions ", client.mFlags);
-                }
-            }
-
-        }
-    }
 }

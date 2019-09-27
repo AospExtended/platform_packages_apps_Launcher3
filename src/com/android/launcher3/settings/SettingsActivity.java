@@ -113,10 +113,13 @@ public class SettingsActivity extends Activity
                 c.getPackageManager().setComponentEnabledSetting(cn, newValue,
                         PackageManager.DONT_KILL_APP);
             }
-        }
-        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)
-               || Utilities.KEY_DT_GESTURE.equals(key)
-               || Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
+        } else if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+                Utilities.restart(this);
+        } else if (Utilities.KEY_DT_GESTURE.equals(key)) {
+                Utilities.restart(this);
+        } else  if (Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
+                Utilities.restart(this);
+        } else if (KEY_FEED_INTEGRATION.equals(key)) {
                 Utilities.restart(this);
         }
     }
