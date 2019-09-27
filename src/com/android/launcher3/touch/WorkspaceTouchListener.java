@@ -43,6 +43,8 @@ import com.android.launcher3.testing.TestLogging;
 import com.android.launcher3.testing.TestProtocol;
 import com.android.launcher3.views.OptionsPopupView;
 
+import com.android.launcher3.Utilities;
+
 /**
  * Helper class to handle touch on empty space in workspace and show options popup on long press
  */
@@ -65,7 +67,7 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
     private final Workspace mWorkspace;
     private final PointF mTouchDownPoint = new PointF();
     private final float mTouchSlop;
-
+    private boolean mDoubleTapEnabled;
     private int mLongPressState = STATE_CANCELLED;
 
     private final GestureDetector mGestureDetector;
@@ -77,12 +79,12 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
         // likely to cause movement.
         mTouchSlop = 2 * ViewConfiguration.get(launcher).getScaledTouchSlop();
         mGestureDetector = new GestureDetector(workspace.getContext(), this);
+        mDoubleTapEnabled = Utilities.isDoubleTapGestureEnabled(workspace.getContext());
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent ev) {
         mGestureDetector.onTouchEvent(ev);
-
         int action = ev.getActionMasked();
         if (action == ACTION_DOWN) {
             // Check if we can handle long press.
@@ -180,5 +182,12 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
                 cancelLongPress();
             }
         }
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent event) {
+      if (mDoubleTapEnabled)
+        mPm.goToSleep(event.getEventTime());
+        return true;
     }
 }
