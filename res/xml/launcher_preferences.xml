@@ -50,12 +50,6 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
-    <SwitchPreference
-        android:key="pref_allowSwipeDownClearAll"
-        android:title="@string/allow_swipe_down_clearall_title"
-        android:summary="@string/allow_swipe_down_clearall_desc"
-        android:defaultValue="@bool/allow_swipe_down_clearall"
-        android:persistent="true" />
 
     <SwitchPreference
         android:key="pref_allowRotation"
@@ -63,6 +57,32 @@
         android:summary="@string/allow_rotation_desc"
         android:defaultValue="@bool/allow_rotation"
         android:persistent="true" />
+
+<PreferenceCategory
+        android:key="gestures_category"
+        android:title="@string/gestures_category">
+
+    <SwitchPreference
+        android:key="pref_notification_gesture"
+        android:title="@string/pref_notifications_gesture_title"
+        android:summary="@string/pref_notifications_gesture_summary"
+        android:defaultValue="true"
+        android:persistent="true"/>
+
+    <SwitchPreference
+        android:key="pref_dt_gesture"
+        android:title="@string/pref_dt_gesture_title"
+        android:summary="@string/pref_dt_gesture_summary"
+        android:defaultValue="true"
+        android:persistent="true"/>
+
+    <SwitchPreference
+        android:key="pref_allowSwipeDownClearAll"
+        android:title="@string/allow_swipe_down_clearall_title"
+        android:summary="@string/allow_swipe_down_clearall_desc"
+        android:defaultValue="@bool/allow_swipe_down_clearall"
+        android:persistent="true" />
+</PreferenceCategory>
 
     <SwitchPreference
         android:key="pref_grid_options"

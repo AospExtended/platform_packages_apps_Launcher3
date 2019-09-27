@@ -114,7 +114,9 @@ public class SettingsActivity extends Activity
                         PackageManager.DONT_KILL_APP);
             }
         }
-        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)
+               || Utilities.KEY_DT_GESTURE.equals(key)
+               || Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
                 Utilities.restart(this);
         }
     }

@@ -140,6 +140,8 @@ public final class Utilities {
     public static final int FLAG_NO_GESTURES = 1 << 9;
 
     public static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
+    public static final String KEY_DT_GESTURE = "pref_dt_gesture";
+    public static final String KEY_NOTIFICATION_GESTURE = "pref_notification_gesture";
 
     private static final long WAIT_BEFORE_RESTART = 250;
 
@@ -800,6 +802,16 @@ public final class Utilities {
             return false;
         }
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
+    }
+
+    public static boolean isNotificationGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_NOTIFICATION_GESTURE, true);
+    }
+
+    public static boolean isDoubleTapGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_DT_GESTURE, true);
     }
 
     public static void restart(final Context context) {

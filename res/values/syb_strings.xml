@@ -21,12 +21,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="show_searchbar_title">Show search bar</string>
     <string name="show_searchbar_summary">Show the search bar on the home screen</string>
 
-    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-
-    <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
     <string name="state_loading">Applying\u2026</string>
 
     <!-- Google Feed -->
     <string name="settings_feed">Enable Google feed integration</string>
+
+    <!-- Gestures -->
+    <string name="gestures_category">Gestures</string>
+    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
+    <string name="allow_swipe_down_clearall_desc">Doesn\'t works if navbar gestures are enable</string>
+    <string name="pref_notifications_gesture_title">Notifications gesture</string>
+    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
+    <string name="pref_dt_gesture_title">Double tap gesture</string>
+    <string name="pref_dt_gesture_summary">Double tap on empty space for power-off</string>
 
 </resources>
