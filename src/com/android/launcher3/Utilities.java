@@ -148,7 +148,9 @@ public final class Utilities {
     public static final String SHOW_SHADE_GLANCE = "pref_show_shade_glance";
     public static final String SHOW_WORKSPACE_GRADIENT = "pref_show_workspace_grad";
     public static final String SHOW_HOTSEAT_GRADIENT = "pref_show_hotseat_grad";
-
+    public static final String KEY_DT_GESTURE = "pref_dt_gesture";
+    public static final String KEY_NOTIFICATION_GESTURE = "pref_notification_gesture";
+    
     public static boolean shouldDisableGestures(MotionEvent ev) {
         return (ev.getEdgeFlags() & FLAG_NO_GESTURES) == FLAG_NO_GESTURES;
     }
@@ -815,6 +817,16 @@ public final class Utilities {
 
     public static boolean showHotseatGradient(Context context) {
         return getPrefs(context).getBoolean(SHOW_HOTSEAT_GRADIENT, true);
+    }
+
+	public static boolean isNotificationGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_NOTIFICATION_GESTURE, true);
+    }
+
+    public static boolean isDoubleTapGestureEnabled(Context context) {
+        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_DT_GESTURE, true);
     }
 
     public static void restart(final Context context) {

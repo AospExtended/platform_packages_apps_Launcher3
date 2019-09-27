@@ -74,7 +74,8 @@ public class SettingsHomescreen extends Activity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (Utilities.SHOW_SHADE_GLANCE.equals(key) || KEY_FEED_INTEGRATION.equals(key) || Utilities.SHOW_WORKSPACE_GRADIENT.equals(key) || Utilities.SHOW_HOTSEAT_GRADIENT.equals(key)) {
+        if (Utilities.SHOW_SHADE_GLANCE.equals(key) || KEY_FEED_INTEGRATION.equals(key) || Utilities.SHOW_WORKSPACE_GRADIENT.equals(key) || Utilities.SHOW_HOTSEAT_GRADIENT.equals(key) || Utilities.KEY_DT_GESTURE.equals(key)
+               || Utilities.KEY_NOTIFICATION_GESTURE.equals(key)) {
             LauncherAppState.getInstanceNoCreate().setNeedsRestart();
         }
     }

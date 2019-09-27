@@ -16,6 +16,20 @@
         android:persistent="true"/>
 
     <SwitchPreference
+        android:key="pref_notification_gesture"
+        android:title="@string/pref_notifications_gesture_title"
+        android:summary="@string/pref_notifications_gesture_summary"
+        android:defaultValue="true"
+        android:persistent="true"/>
+
+    <SwitchPreference
+        android:key="pref_dt_gesture"
+        android:title="@string/pref_dt_gesture_title"
+        android:summary="@string/pref_dt_gesture_summary"
+        android:defaultValue="true"
+        android:persistent="true"/>
+
+    <SwitchPreference
         android:key="pref_show_workspace_grad"
         android:title="@string/workspace_gradient_title"
         android:summary="@string/workspace_gradient_summary"

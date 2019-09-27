@@ -2662,6 +2662,11 @@ public class Launcher extends BaseDraggingActivity implements LauncherExterns,
         return Utilities.hasFeedIntegration(this);
     }
 
+    public boolean isNotificationGestureEnabled() {
+        return Utilities.isNotificationGestureEnabled(this);
+    }
+
+
     @Override
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_MENU) {
