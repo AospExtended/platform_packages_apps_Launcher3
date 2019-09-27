@@ -27,15 +27,13 @@ import android.app.Fragment;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.text.TextUtils;
 
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
-import com.android.launcher3.LauncherTab;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
@@ -189,8 +187,12 @@ public class SettingsActivity extends Activity
             SwitchPreference feedIntegration = (SwitchPreference)
                     findPreference(KEY_FEED_INTEGRATION);
 
-            if (!hasPackageInstalled(LauncherTab.SEARCH_PACKAGE)) {
+            SwitchPreference qsbPref = (SwitchPreference)
+                    findPreference(Utilities.KEY_SHOW_SEARCHBAR);
+
+            if (!LauncherAppState.getInstanceNoCreate().isSearchAppAvailable()) {
                 getPreferenceScreen().removePreference(feedIntegration);
+                getPreferenceScreen().removePreference(qsbPref);
             }
         }
 
@@ -266,16 +268,6 @@ public class SettingsActivity extends Activity
                     getView().postDelayed(highlighter, DELAY_HIGHLIGHT_DURATION_MILLIS);
                     mPreferenceHighlighted = true;
                 }
-            }
-        }
-
-        private boolean hasPackageInstalled(String pkgName) {
-            try {
-                ApplicationInfo ai = getContext().getPackageManager()
-                        .getApplicationInfo(pkgName, 0);
-                return ai.enabled;
-            } catch (PackageManager.NameNotFoundException e) {
-                return false;
             }
         }
 
