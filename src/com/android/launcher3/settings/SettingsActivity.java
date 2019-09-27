@@ -109,6 +109,9 @@ public class SettingsActivity extends Activity
                         PackageManager.DONT_KILL_APP);
             }
         }
+        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+                Utilities.restart(this);
+        }
     }
 
     private boolean startFragment(String fragment, Bundle args, String key) {

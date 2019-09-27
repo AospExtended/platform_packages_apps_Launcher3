@@ -16,6 +16,9 @@
 
 package com.android.launcher3;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
@@ -49,6 +52,7 @@ import android.os.DeadObjectException;
 import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
+import android.os.SystemClock;
 import android.os.TransactionTooLargeException;
 import android.provider.Settings;
 import android.text.Spannable;
@@ -77,6 +81,7 @@ import com.android.launcher3.util.IntArray;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.views.Transposable;
 import com.android.launcher3.widget.PendingAddShortcutInfo;
+import com.android.launcher3.util.LooperExecutor;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -133,7 +138,9 @@ public final class Utilities {
      */
     public static final int FLAG_NO_GESTURES = 1 << 9;
 
-    static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
+    public static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
+
+    private static final long WAIT_BEFORE_RESTART = 250;
 
     public static boolean shouldDisableGestures(MotionEvent ev) {
         return (ev.getEdgeFlags() & FLAG_NO_GESTURES) == FLAG_NO_GESTURES;
@@ -794,4 +801,27 @@ public final class Utilities {
         return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
     }
 
+    public static void restart(final Context context) {
+        ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
+        new LooperExecutor(LauncherModel.getWorkerLooper()).execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(WAIT_BEFORE_RESTART);
+                } catch (Exception e) {
+                }
+
+                Intent intent = new Intent(Intent.ACTION_MAIN)
+                        .addCategory(Intent.CATEGORY_HOME)
+                        .setPackage(context.getPackageName())
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+                PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_ONE_SHOT);
+                AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarmManager.setExact(AlarmManager.ELAPSED_REALTIME, SystemClock.elapsedRealtime() + 50, pendingIntent);
+
+                android.os.Process.killProcess(android.os.Process.myPid());
+            }
+        });
+    }
 }
