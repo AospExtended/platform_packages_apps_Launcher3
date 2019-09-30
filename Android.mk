@@ -70,7 +70,7 @@ LOCAL_SRC_FILES := \
     $(call all-java-files-under, src_shortcuts_overrides) \
     $(call all-java-files-under, src_ui_overrides) \
     $(call all-java-files-under, ext_tests/src)
-    
+
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/ext_tests/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
