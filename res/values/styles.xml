@@ -83,12 +83,12 @@
         <item name="android:textColorTertiary">#CCFFFFFF</item>
         <item name="android:textColorHint">#A0FFFFFF</item>
         <item name="android:colorControlHighlight">#A0FFFFFF</item>
-        <item name="android:colorPrimary">#FF212121</item>
-        <item name="allAppsScrimColor">#EA212121</item>
+        <item name="android:colorPrimary">@*android:color/black</item>
+        <item name="allAppsScrimColor">@*android:color/black</item>
         <item name="allAppsInterimScrimAlpha">102</item>
         <item name="allAppsNavBarScrimColor">#80000000</item>
-        <item name="popupColorPrimary">#3C4043</item> <!-- Gray 800 -->
-        <item name="popupColorSecondary">#5F6368</item> <!-- Gray 700 -->
+        <item name="popupColorPrimary">@*android:color/black</item>
+        <item name="popupColorSecondary">@*android:color/black</item>
         <item name="popupColorTertiary">#757575</item> <!-- Gray 600 -->
         <item name="widgetsTheme">@style/WidgetContainerTheme.Dark</item>
         <item name="folderDotColor">#FF464646</item>
@@ -101,14 +101,14 @@
     </style>
 
     <style name="LauncherTheme.Dark.DarkMainColor" parent="@style/LauncherTheme.Dark">
-        <item name="folderFillColor">#FF3C4043</item> <!-- 100% GM2 800 -->
+        <item name="folderFillColor">@*android:color/black</item>
         <item name="folderTextColor">@android:color/white</item>
     </style>
 
     <style name="LauncherTheme.Dark.DarkText" parent="@style/LauncherTheme.Dark">
         <item name="android:colorControlHighlight">#75212121</item>
         <item name="allAppsInterimScrimAlpha">25</item>
-        <item name="folderFillColor">#CDFFFFFF</item>
+        <item name="folderFillColor">@*android:color/black</item>
         <item name="folderTextColor">?attr/workspaceTextColor</item>
         <item name="workspaceTextColor">#FF212121</item>
         <item name="workspaceShadowColor">@android:color/transparent</item>
@@ -225,7 +225,7 @@
         <item name="android:colorForeground">@color/all_apps_bg_hand_fill</item>
     </style>
     <style name="AllAppsEmptySearchBackground.Dark">
-        <item name="android:colorPrimary">#9AA0A6</item>
+        <item name="android:colorPrimary">@*android:color/black</item>
         <item name="android:colorControlHighlight">#DFE1E5</item>
         <item name="android:colorForeground">@color/all_apps_bg_hand_fill_dark</item>
     </style>
