@@ -185,6 +185,10 @@ LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/quickstep/recents_ui_overrides/res
 LOCAL_PROGUARD_ENABLED := disabled
 
+LOCAL_FULL_LIBS_MANIFEST_FILES := \
+    $(LOCAL_PATH)/quickstep/AndroidManifest.xml \
+    $(LOCAL_PATH)/AndroidManifest.xml \
+    $(LOCAL_PATH)/AndroidManifest-common.xml
 
 LOCAL_MANIFEST_FILE := quickstep/AndroidManifest.xml
 include $(BUILD_STATIC_JAVA_LIBRARY)
@@ -216,6 +220,7 @@ LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/quickstep/recents_ui_overrides/res
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := \
+    $(LOCAL_PATH)/quickstep/AndroidManifest.xml \
     $(LOCAL_PATH)/AndroidManifest.xml \
     $(LOCAL_PATH)/AndroidManifest-common.xml
 
