@@ -34,7 +34,8 @@
         android:theme="@style/AppTheme"
         android:largeHeap="@bool/config_largeHeap"
         android:restoreAnyVersion="true"
-        android:supportsRtl="true" >
+        android:supportsRtl="true" 
+        tools:ignore="GoogleAppIndexingWarning" >
 
         <!-- Activity for handling PinItemRequest is disabled on Android Go. -->
         <activity android:name="com.android.launcher3.dragndrop.AddItemActivity"
