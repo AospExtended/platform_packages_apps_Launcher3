@@ -149,7 +149,7 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
     private AllAppsGridAdapter mAdapter;
     private AlphabeticIndexCompat mIndexer;
     private AppInfoComparator mAppNameComparator;
-    private final int mNumAppsPerRow;
+    private int mNumAppsPerRow;
     private int mNumAppRowsInAdapter;
     private ItemInfoMatcher mItemFilter;
 
@@ -442,4 +442,7 @@ public class AlphabeticalAppsList implements AllAppsStore.OnUpdateListener {
         return sectionName;
     }
 
+    public void onDeviceProfileChanged(int appsPerRow) {
+        mNumAppsPerRow = appsPerRow;
+    }
 }
