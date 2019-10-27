@@ -82,7 +82,7 @@ public class SettingsHomescreen extends Activity
             Context c = getApplicationContext();
             int oldValue = c.getPackageManager().getComponentEnabledSetting(cn);
             int newValue;
-            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)) {
+            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, true)) {
                 newValue = PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
             } else {
                 newValue = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
@@ -174,9 +174,7 @@ public class SettingsHomescreen extends Activity
         protected boolean initPreference(Preference preference) {
             switch (preference.getKey()) {
                 case GRID_OPTIONS_PREFERENCE_KEY:
-                    return Utilities.isDevelopersOptionsEnabled(getContext()) &&
-                            Utilities.IS_DEBUG_DEVICE &&
-                            Utilities.existsStyleWallpapers(getContext());
+                    return true;
                 case KEY_FEED_INTEGRATION:
                     return LauncherAppState.getInstanceNoCreate().isSearchAppAvailable();
             }
