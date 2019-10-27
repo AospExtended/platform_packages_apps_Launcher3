@@ -105,7 +105,7 @@ public class SettingsActivity extends Activity
             Context c = getApplicationContext();
             int oldValue = c.getPackageManager().getComponentEnabledSetting(cn);
             int newValue;
-            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, false)) {
+            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, true)) {
                 newValue = PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
             } else {
                 newValue = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
@@ -233,20 +233,16 @@ public class SettingsActivity extends Activity
                     return true;
 
                 case FLAGS_PREFERENCE_KEY:
-                    // Only show flag toggler UI if this build variant implements that.
-                    return FeatureFlags.showFlagTogglerUi(getContext());
+                    return false;
 
                 case DEVELOPER_OPTIONS_KEY:
-                    // Show if plugins are enabled or flag UI is enabled.
-                    return FeatureFlags.showFlagTogglerUi(getContext()) ||
-                            PluginManagerWrapper.hasPlugins(getContext());
+                    return false;
+
                 case MINUS_ONE_KEY:
                     return AospUtils.hasPackageInstalled(getActivity(),
                             AospLauncherCallbacks.SEARCH_PACKAGE);
                 case GRID_OPTIONS_PREFERENCE_KEY:
-                    return Utilities.isDevelopersOptionsEnabled(getContext()) &&
-                            Utilities.IS_DEBUG_DEVICE &&
-                            Utilities.existsStyleWallpapers(getContext());
+                    return true;
             }
 
             return true;
