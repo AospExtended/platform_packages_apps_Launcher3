@@ -70,8 +70,6 @@ public class SettingsActivity extends Activity
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
-    public static final String GRID_OPTIONS_PREFERENCE_KEY = "pref_grid_options";
-
     public static final String KEY_FEED_INTEGRATION = "pref_feed_integration";
 
     @Override
@@ -96,24 +94,7 @@ public class SettingsActivity extends Activity
     }
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-        if (GRID_OPTIONS_PREFERENCE_KEY.equals(key)) {
-
-            final ComponentName cn = new ComponentName(getApplicationContext(),
-                    GridOptionsProvider.class);
-            Context c = getApplicationContext();
-            int oldValue = c.getPackageManager().getComponentEnabledSetting(cn);
-            int newValue;
-            if (Utilities.getPrefs(c).getBoolean(GRID_OPTIONS_PREFERENCE_KEY, true)) {
-                newValue = PackageManager.COMPONENT_ENABLED_STATE_ENABLED;
-            } else {
-                newValue = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
-            }
-
-            if (oldValue != newValue) {
-                c.getPackageManager().setComponentEnabledSetting(cn, newValue,
-                        PackageManager.DONT_KILL_APP);
-            }
-        } else if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+        if (Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
                 Utilities.restart(this);
         } else if (Utilities.KEY_DT_GESTURE.equals(key)) {
                 Utilities.restart(this);
@@ -250,8 +231,6 @@ public class SettingsActivity extends Activity
                     return false;
                 case DEVELOPER_OPTIONS_KEY:
                     return false;
-                case GRID_OPTIONS_PREFERENCE_KEY:
-                    return true;
             }
 
             return true;

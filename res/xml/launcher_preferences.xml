@@ -85,12 +85,6 @@
         android:persistent="true" />
 </PreferenceCategory>
 
-    <SwitchPreference
-        android:key="pref_grid_options"
-        android:title="Enable grid options"
-        android:defaultValue="true"
-        android:persistent="true" />
-
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
