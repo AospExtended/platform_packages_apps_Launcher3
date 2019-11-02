@@ -58,7 +58,6 @@ import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityOptions;
-import android.app.KeyguardManager;
 import android.appwidget.AppWidgetHostView;
 import android.appwidget.AppWidgetManager;
 import android.content.ActivityNotFoundException;
@@ -347,11 +346,6 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     private boolean mTouchInProgress;
 
     private SafeCloseable mUserChangedCallbackCloseable;
-
-    private static final int REQUEST_AUTH_CODE = 93;
-    private View mAuthView;
-    private ItemInfo mAuthInfo;
-    private String mAuthContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -711,13 +705,6 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
                 mStateManager.goToState(NORMAL, SPRING_LOADED_EXIT_DELAY);
             }
         };
-
-        if (requestCode == REQUEST_AUTH_CODE) {
-            if (resultCode == RESULT_OK) {
-                startActivitySafely(mAuthView, requestArgs.getPendingIntent(), mAuthInfo, mAuthContainer);
-            }
-            return;
-        }
 
         if (requestCode == REQUEST_BIND_APPWIDGET) {
             // This is called only if the user did not previously have permissions to bind widgets
@@ -1099,27 +1086,9 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
 
     public void startActivitySafelyAuth(View v, Intent intent, ItemInfo item,
             String sourceContainer) {
-        KeyguardManager manager = Build.VERSION.SDK_INT >= Build.VERSION_CODES.M ?
-                getSystemService(KeyguardManager.class) :
-                (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
-        if (manager == null) {
-            throw new NullPointerException("No KeyguardManager found!");
-        }
-
-        String title = getString(R.string.trust_apps_manager_name_dialog);
-        String message = getString(R.string.trust_apps_auth_open_app, item.title);
-        Intent kmIntent = manager.createConfirmDeviceCredentialIntent(title, message);
-
-        if (kmIntent != null) {
-            mAuthView = v;
-            mAuthInfo = item;
-            mAuthContainer = sourceContainer;
-            setWaitingForResult(PendingRequestArgs.forIntent(REQUEST_AUTH_CODE, intent, item));
-            startActivityForResult(kmIntent, REQUEST_AUTH_CODE);
-            return;
-        }
-
-        startActivitySafely(v, intent, item, sourceContainer);
+        Utilities.showLockScreen(this, getString(R.string.trust_apps_manager_name_dialog), () -> {
+            startActivitySafely(v, intent, item, sourceContainer);
+        });
     }
 
     class LauncherOverlayCallbacksImpl implements LauncherOverlayCallbacks {
