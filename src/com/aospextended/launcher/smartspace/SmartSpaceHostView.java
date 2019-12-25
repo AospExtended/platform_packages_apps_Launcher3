@@ -2,6 +2,8 @@ package com.aospextended.launcher.smartspace;
 
 import static com.android.launcher3.logging.StatsLogManager.LauncherEvent.IGNORE;
 
+//import static com.android.launcher3.logging.StatsLogManager.LauncherEvent.SETTINGS_SMARTSPACE;
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
@@ -57,7 +59,7 @@ public class SmartSpaceHostView extends QsbWidgetHostView implements View.OnLong
         rectF.bottom = (float) rect.bottom;
         rectF.bottom = Math.min((float) findBottomRecur(this, rect.top, rect), rectF.bottom);
 
-        OptionsPopupView.OptionItem item = new OptionsPopupView.OptionItem(
+/*        OptionsPopupView.OptionItem item = new OptionsPopupView.OptionItem(
                 R.string.smartspace_preferences,
                 R.drawable.ic_smartspace_preferences,
                 IGNORE,
@@ -65,6 +67,7 @@ public class SmartSpaceHostView extends QsbWidgetHostView implements View.OnLong
         );
 
         OptionsPopupView.show(mLauncher, rectF, Collections.singletonList(item));
+*/
         return true;
     }
 

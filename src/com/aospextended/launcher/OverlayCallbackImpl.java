@@ -23,6 +23,8 @@ import android.os.Bundle;
 
 import com.android.launcher3.Launcher;
 import com.android.launcher3.Utilities;
+import com.aospextended.launcher.qsb.QsbAnimationController;
+
 import com.android.systemui.plugins.shared.LauncherOverlayManager;
 import com.android.systemui.plugins.shared.LauncherOverlayManager.LauncherOverlay;
 
@@ -50,12 +52,23 @@ public class OverlayCallbackImpl
     private LauncherOverlayCallbacks mLauncherOverlayCallbacks;
     private boolean mWasOverlayAttached = false;
 
+    private QsbAnimationController mQsbController;
+
     public OverlayCallbackImpl(Launcher launcher) {
         SharedPreferences prefs = Utilities.getPrefs(launcher);
 
         mLauncher = launcher;
         mClient = new LauncherClient(mLauncher, this, getClientOptions(prefs));
+        mQsbController = new QsbAnimationController(mLauncher);
         prefs.registerOnSharedPreferenceChangeListener(this);
+    }
+
+    public LauncherClient getClient() {
+        return mClient;
+    }
+
+    public QsbAnimationController getQsbController() {
+        return mQsbController;
     }
 
     @Override

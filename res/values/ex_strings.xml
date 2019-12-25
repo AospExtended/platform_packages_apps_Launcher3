@@ -71,4 +71,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- Preference default value -->
     <string name="pref_value_default">Default</string>
 
+    <!-- QSB -->
+    <string name="label_search">Search</string>
+    <string name="label_voice_search">Voice search</string>
 </resources>

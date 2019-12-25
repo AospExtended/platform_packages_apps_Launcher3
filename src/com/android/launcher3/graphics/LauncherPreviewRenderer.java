@@ -96,6 +96,7 @@ import com.android.launcher3.util.MainThreadInitializedObject;
 import com.android.launcher3.views.ActivityContext;
 import com.android.launcher3.views.BaseDragLayer;
 import com.android.launcher3.widget.custom.CustomWidgetManager;
+import com.android.launcher3.Utilities;
 
 import java.util.ArrayList;
 import java.util.Arrays;

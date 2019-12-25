@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/* //device/apps/common/assets/res/any/colors.xml
-**
-** Copyright 2021, Project 404
+/* Copyright 2019, Paranoid Android
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -17,13 +15,11 @@
 ** limitations under the License.
 */
 -->
-<resources>
-
-    <!-- Bottomsheet bg color -->
-    <color name="app_info_bottom_sheet_bg">#ffffff</color>
-
-    <!-- QSB -->
-    <color name="qsb_drawer_text_color_normal">#ff212121</color>
-    <color name="qsb_background_default">#ccffffff</color>
-    <color name="qsb_background_default_dark">#99fafafa</color>
-</resources>
+<ripple android:color="?android:colorControlHighlight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+</ripple>

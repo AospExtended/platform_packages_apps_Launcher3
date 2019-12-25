@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2015 The Android Open Source Project
  *
@@ -17,44 +16,41 @@
 
 package com.android.launcher3.settings;
 
+import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.ACTION_ACCESSIBILITY_FOCUS;
+
 import static com.android.launcher3.SessionCommitReceiver.ADD_ICON_PREFERENCE_KEY;
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
 import static com.android.launcher3.states.RotationHelper.getAllowRotationDefaultValue;
 import static com.android.launcher3.util.SecureSettingsObserver.newNotificationSettingsObserver;
 
-import static com.aospextended.launcher.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
-
-import com.android.launcher3.customization.IconDatabase;
-import android.app.Activity;
-import android.app.DialogFragment;
-import android.app.Fragment;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.Intent;
-import android.content.pm.PackageManager;
+import android.app.ActivityManager;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.app.ProgressDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
+import android.os.SystemClock;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.MenuItem;
 
-import com.android.launcher3.settings.preference.IconPackPrefSetter;
-import com.android.launcher3.settings.preference.ReloadingListPreference;
-import com.android.launcher3.util.AppReloader;
-
 import androidx.annotation.NonNull;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 import androidx.preference.ListPreference;
-import androidx.preference.PreferenceFragment;
-import androidx.preference.PreferenceFragment.OnPreferenceStartFragmentCallback;
-import androidx.preference.PreferenceFragment.OnPreferenceStartScreenCallback;
+import androidx.preference.PreferenceFragmentCompat;
+import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCallback;
+import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartScreenCallback;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceGroup.PreferencePositionCallback;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherFiles;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
@@ -62,15 +58,21 @@ import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
 
+import com.aosp.launcher.CustomLauncherCallbacks;
+import com.aosp.launcher.AospUtils;
+
 /**
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
  */
-public class SettingsActivity extends Activity
+public class SettingsActivity extends FragmentActivity
         implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
         SharedPreferences.OnSharedPreferenceChangeListener{
 
-    //private static final String DEVELOPER_OPTIONS_KEY = "pref_developer_options";
-    //private static final String FLAGS_PREFERENCE_KEY = "flag_toggler";
+    private static final String DEVELOPER_OPTIONS_KEY = "pref_developer_options";
+    private static final String FLAGS_PREFERENCE_KEY = "flag_toggler";
+    private static final String GRID_ROWS_KEY = "pref_grid_rows";
+    private static final String GRID_COLUMNS_KEY = "pref_grid_columns";
+    private static final String HOTSEAT_ICONS_KEY = "pref_hotseat_icons";
 
     private static final String NOTIFICATION_DOTS_PREFERENCE_KEY = "pref_icon_badging";
     /** Hidden field Settings.Secure.ENABLED_NOTIFICATION_LISTENERS */
@@ -81,16 +83,11 @@ public class SettingsActivity extends Activity
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
-    private static final String KEY_ICON_PACK = "pref_icon_pack";
-
-    private static Context mContext;
+    public static final String MINUS_ONE_KEY = "pref_enable_minus_one";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mContext = getApplicationContext();
-
-        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState == null) {
             Bundle args = new Bundle();
@@ -99,76 +96,62 @@ public class SettingsActivity extends Activity
                 args.putString(EXTRA_FRAGMENT_ARG_KEY, prefKey);
             }
 
-            Fragment f = Fragment.instantiate(
-                    this, getString(R.string.settings_fragment_name), args);
+            final FragmentManager fm = getSupportFragmentManager();
+            final Fragment f = fm.getFragmentFactory().instantiate(getClassLoader(),
+                    getString(R.string.settings_fragment_name));
+            f.setArguments(args);
             // Display the fragment as the main content.
-            getFragmentManager().beginTransaction()
-                    .replace(android.R.id.content, f)
-                    .commit();
+            fm.beginTransaction().replace(android.R.id.content, f).commit();
         }
         Utilities.getPrefs(getApplicationContext()).registerOnSharedPreferenceChangeListener(this);
     }
-    @Override
-    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) { }
-
-    public interface OnResumePreferenceCallback {
-        void onResume();
-    }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-            return true;
+    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+        if (Utilities.SHOW_WORKSPACE_GRADIENT.equals(key) || Utilities.SHOW_HOTSEAT_GRADIENT.equals(key) || Utilities.KEY_SHOW_SEARCHBAR.equals(key)) {
+            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
         }
-        return super.onOptionsItemSelected(item);
     }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
-        if (Utilities.ATLEAST_P && getFragmentManager().isStateSaved()) {
+        if (Utilities.ATLEAST_P && getSupportFragmentManager().isStateSaved()) {
             // Sometimes onClick can come after onPause because of being posted on the handler.
             // Skip starting new fragments in that case.
             return false;
         }
-        Fragment f = Fragment.instantiate(this, fragment, args);
+        final FragmentManager fm = getSupportFragmentManager();
+        final Fragment f = fm.getFragmentFactory().instantiate(getClassLoader(), fragment);
+        f.setArguments(args);
         if (f instanceof DialogFragment) {
-            ((DialogFragment) f).show(getFragmentManager(), key);
+            ((DialogFragment) f).show(getSupportFragmentManager(), key);
         } else {
-            getFragmentManager()
-                    .beginTransaction()
-                    .replace(android.R.id.content, f)
-                    .addToBackStack(key)
-                    .commit();
+            fm.beginTransaction().replace(android.R.id.content, f).addToBackStack(key).commit();
         }
         return true;
     }
 
     @Override
     public boolean onPreferenceStartFragment(
-            PreferenceFragment preferenceFragment, Preference pref) {
+            PreferenceFragmentCompat preferenceFragment, Preference pref) {
         return startFragment(pref.getFragment(), pref.getExtras(), pref.getKey());
     }
 
     @Override
-    public boolean onPreferenceStartScreen(PreferenceFragment caller, PreferenceScreen pref) {
+    public boolean onPreferenceStartScreen(PreferenceFragmentCompat caller, PreferenceScreen pref) {
         Bundle args = new Bundle();
-        args.putString(PreferenceFragment.ARG_PREFERENCE_ROOT, pref.getKey());
+        args.putString(PreferenceFragmentCompat.ARG_PREFERENCE_ROOT, pref.getKey());
         return startFragment(getString(R.string.settings_fragment_name), args, pref.getKey());
     }
 
     /**
      * This fragment shows the launcher preferences.
      */
-    public static class LauncherSettingsFragment extends PreferenceFragment {
+    public static class LauncherSettingsFragment extends PreferenceFragmentCompat {
 
         private SecureSettingsObserver mNotificationDotsObserver;
 
         private String mHighLightKey;
         private boolean mPreferenceHighlighted = false;
-
-        protected static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
-
-        private Preference mShowGoogleAppPref;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -193,10 +176,35 @@ public class SettingsActivity extends Activity
                 }
             }
 
-            Preference showGlanceWidget = findPreference(Utilities.AT_A_GLANCE_SHOW);
-            showGlanceWidget.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            final ListPreference gridColumns = (ListPreference) findPreference(Utilities.GRID_COLUMNS);
+            gridColumns.setSummary(gridColumns.getEntry());
+            gridColumns.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    new Handler().postDelayed(() -> Utilities.restart(getActivity()), Utilities.WAIT_BEFORE_RESTART);
+                    int index = gridColumns.findIndexOfValue((String) newValue);
+                    gridColumns.setSummary(gridColumns.getEntries()[index]);
+                    Utilities.restart(getActivity());
+                    return true;
+                }
+            });
+
+            final ListPreference gridRows = (ListPreference) findPreference(Utilities.GRID_ROWS);
+            gridRows.setSummary(gridRows.getEntry());
+            gridRows.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = gridRows.findIndexOfValue((String) newValue);
+                    gridRows.setSummary(gridRows.getEntries()[index]);
+                    Utilities.restart(getActivity());
+                    return true;
+                }
+            });
+
+            final ListPreference hotseatColumns = (ListPreference) findPreference(Utilities.HOTSEAT_ICONS);
+            hotseatColumns.setSummary(hotseatColumns.getEntry());
+            hotseatColumns.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    int index = hotseatColumns.findIndexOfValue((String) newValue);
+                    hotseatColumns.setSummary(hotseatColumns.getEntries()[index]);
+                    Utilities.restart(getActivity());
                     return true;
                 }
             });
@@ -220,6 +228,7 @@ public class SettingsActivity extends Activity
             switch (preference.getKey()) {
                 case NOTIFICATION_DOTS_PREFERENCE_KEY:
                     if (!Utilities.ATLEAST_OREO ||
+                            getContext().getSystemService(ActivityManager.class).isLowRamDevice() ||
                             !getResources().getBoolean(R.bool.notification_dots_enabled)) {
                         return false;
                     }
@@ -247,45 +256,18 @@ public class SettingsActivity extends Activity
                     preference.setDefaultValue(getAllowRotationDefaultValue());
                     return true;
 
-                /*case FLAGS_PREFERENCE_KEY:
-                    // Only show flag toggler UI if this build variant implements that.
-                    return FeatureFlags.showFlagTogglerUi(getContext());*/
+                case FLAGS_PREFERENCE_KEY:
+                    return false;
 
-                /*case DEVELOPER_OPTIONS_KEY:
-                    // Show if plugins are enabled or flag UI is enabled.
-                    return FeatureFlags.showFlagTogglerUi(getContext()) ||
-                            PluginManagerWrapper.hasPlugins(getContext());*/
-                case KEY_ENABLE_MINUS_ONE:
-                    mShowGoogleAppPref = preference;
-                    updateIsGoogleAppEnabled();
-                    return true;
+                case DEVELOPER_OPTIONS_KEY:
+                    return false;
 
-                case KEY_ICON_PACK:
-                    ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
-                    icons.setValue(IconDatabase.getGlobal(mContext));
-                    icons.setOnReloadListener(IconPackPrefSetter::new);
-                    icons.setOnPreferenceChangeListener((pref, val) -> {
-                        IconDatabase.clearAll(mContext);
-                        IconDatabase.setGlobal(mContext, (String) val);
-                        AppReloader.get(mContext).reload();
-                        return true;
-                    });
+                case MINUS_ONE_KEY:
+                    return AospUtils.hasPackageInstalled(getActivity(),
+                            CustomLauncherCallbacks.SEARCH_PACKAGE);
             }
+
             return true;
-        }
-
-        public static boolean isGSAEnabled(Context context) {
-            try {
-                return context.getPackageManager().getApplicationInfo(GSA_PACKAGE, 0).enabled;
-            } catch (PackageManager.NameNotFoundException e) {
-                return false;
-            }
-        }
-
-        private void updateIsGoogleAppEnabled() {
-            if (mShowGoogleAppPref != null) {
-                mShowGoogleAppPref.setEnabled(isGSAEnabled(getContext()));
-            }
         }
 
         @Override
@@ -297,9 +279,10 @@ public class SettingsActivity extends Activity
                 if (highlighter != null) {
                     getView().postDelayed(highlighter, DELAY_HIGHLIGHT_DURATION_MILLIS);
                     mPreferenceHighlighted = true;
+                } else {
+                    requestAccessibilityFocus(getListView());
                 }
             }
-            updateIsGoogleAppEnabled();
         }
 
         private PreferenceHighlighter createHighlighter() {
@@ -318,8 +301,18 @@ public class SettingsActivity extends Activity
             return position >= 0 ? new PreferenceHighlighter(list, position) : null;
         }
 
+        private void requestAccessibilityFocus(@NonNull final RecyclerView rv) {
+            rv.post(() -> {
+                if (!rv.hasFocus() && rv.getChildCount() > 0) {
+                    rv.getChildAt(0)
+                            .performAccessibilityAction(ACTION_ACCESSIBILITY_FOCUS, null);
+                }
+            });
+        }
+
         @Override
         public void onDestroy() {
+            LauncherAppState.getInstanceNoCreate().checkIfRestartNeeded();
             if (mNotificationDotsObserver != null) {
                 mNotificationDotsObserver.unregister();
                 mNotificationDotsObserver = null;
