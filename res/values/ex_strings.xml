@@ -87,4 +87,8 @@
 
     <!-- Font size -->
     <string name="font_size_title">Font size</string>
+
+    <!-- QSB -->
+    <string name="label_search">Search</string>
+    <string name="label_voice_search">Voice search</string>
 </resources>

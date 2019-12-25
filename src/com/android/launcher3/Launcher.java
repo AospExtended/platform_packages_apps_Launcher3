@@ -286,7 +286,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
 
     // Main container view for the all apps screen.
     @Thunk
-    AllAppsContainerView mAppsView;
+    public AllAppsContainerView mAppsView;
     AllAppsTransitionController mAllAppsController;
 
     // Scrim view for the all apps and overview state.
@@ -586,7 +586,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         return mStateManager;
     }
 
-    private LauncherCallbacks mLauncherCallbacks;
+    public LauncherCallbacks mLauncherCallbacks;
 
     /**
      * Call this after onCreate to set or clear overlay.

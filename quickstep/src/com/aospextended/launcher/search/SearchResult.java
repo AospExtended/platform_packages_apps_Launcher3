@@ -13,19 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.aospextended.launcher.search;
 
-package com.aospextended.launcher;
+import com.android.launcher3.allapps.search.AllAppsSearchBarController.Callbacks;
+import com.android.launcher3.util.ComponentKey;
 
-import com.android.launcher3.uioverrides.QuickstepLauncher;
-import com.android.systemui.plugins.shared.LauncherOverlayManager;
+import java.util.ArrayList;
 
-public class CustomLauncher extends QuickstepLauncher {
+public class SearchResult {
 
-    public static final String SEARCH_PACKAGE = "com.google.android.googlequicksearchbox";
+    public final ArrayList<ComponentKey> mApps = new ArrayList();
+    public final Callbacks mCallbacks;
+    public final String mQuery;
 
-    @Override
-    protected LauncherOverlayManager getDefaultOverlay() {
-        return new OverlayCallbackImpl(this);
+    public SearchResult(String query, Callbacks callbacks) {
+        mQuery = query;
+        mCallbacks = callbacks;
     }
-
 }
