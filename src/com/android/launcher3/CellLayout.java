@@ -87,11 +87,11 @@ public class CellLayout extends ViewGroup implements Transposable {
 
     protected final ActivityContext mActivity;
     @ViewDebug.ExportedProperty(category = "launcher")
-    @Thunk int mCellWidth;
+    public int mCellWidth;
     @ViewDebug.ExportedProperty(category = "launcher")
-    @Thunk int mCellHeight;
-    private int mFixedCellWidth;
-    private int mFixedCellHeight;
+    public int mCellHeight;
+    public int mFixedCellWidth;
+    public int mFixedCellHeight;
 
     @ViewDebug.ExportedProperty(category = "launcher")
     private int mCountX;
@@ -118,8 +118,8 @@ public class CellLayout extends ViewGroup implements Transposable {
     private final Drawable mBackground;
 
     // These values allow a fixed measurement to be set on the CellLayout.
-    private int mFixedWidth = -1;
-    private int mFixedHeight = -1;
+    public int mFixedWidth = -1;
+    public int mFixedHeight = -1;
 
     // If we're actively dragging something over this screen, mIsDragOverlapping is true
     private boolean mIsDragOverlapping = false;
