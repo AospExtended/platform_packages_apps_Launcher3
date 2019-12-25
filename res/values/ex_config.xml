@@ -16,4 +16,8 @@
 <resources>
 
     <string name="pref_show_google_now_summary" translatable="false">@string/msg_minus_one_on_left</string>
+
+    <!-- QSB -->
+    <item type="id" name="g_icon" />
+    <item type="id" name="mic_icon" />
 </resources>

@@ -64,8 +64,15 @@
         android:label="@string/permlab_write_settings"
         android:description="@string/permdesc_write_settings"/>
 
+    <!-- Permission for Google remote QSB -->
+    <permission
+        android:name="com.google.android.apps.nexuslauncher.permission.QSB"
+        android:permissionGroup="android.permission-group.SYSTEM_TOOLS"
+        android:protectionLevel="signatureOrSystem"/>
+
     <uses-permission android:name="${packageName}.permission.READ_SETTINGS" />
     <uses-permission android:name="${packageName}.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.google.android.apps.nexuslauncher.permission.QSB" />
 
     <application
         android:backupAgent="com.android.launcher3.LauncherBackupAgent"
@@ -183,5 +190,10 @@
             android:writePermission="android.permission.WRITE_SECURE_SETTINGS"
             android:exported="true"
             android:enabled="false" />
+
+        <provider
+            android:name="com.aosp.launcher.search.AppSearchProvider"
+            android:authorities="com.aosp.launcher.appssearch"
+            android:exported="true" />
     </application>
 </manifest>
