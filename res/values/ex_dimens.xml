@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2019 The Android Open Source Project
+<!-- Copyright (C) 2019 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,12 +13,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.aosp.launcher.qsb.HotseatQsbContainer
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/hotseat"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:theme="@style/HomeScreenElementTheme"
-    android:importantForAccessibility="no"
-    launcher:containerType="hotseat" />
+
+<resources>
+
+    <!-- QSB -->
+    <dimen name="hotseat_qsb_bottom_margin">2dp</dimen>
+    <dimen name="hotseat_qsb_scroll_key_shadow_offset">2dp</dimen>
+    <dimen name="hotseat_qsb_scroll_shadow_blur_radius">1.5dp</dimen>
+    <dimen name="qsb_margin_top_adjusting">20dp</dimen>
+    <dimen name="qsb_mic_width">48dp</dimen>
+    <dimen name="qsb_shadow_margin">6dp</dimen>
+    <dimen name="qsb_widget_height">56dp</dimen>
+
+</resources>

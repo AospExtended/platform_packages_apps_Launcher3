@@ -31,6 +31,8 @@ import com.android.launcher3.uioverrides.WallpaperColorInfo.OnChangeListener;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.Utilities;
 
+import com.aosp.launcher.qsb.QsbAnimationController;
+
 import com.google.android.libraries.gsa.launcherclient.ClientOptions;
 import com.google.android.libraries.gsa.launcherclient.ClientService;
 import com.google.android.libraries.gsa.launcherclient.LauncherClient;
@@ -47,6 +49,7 @@ public class AospLauncherCallbacks implements LauncherCallbacks,
 
     private OverlayCallbackImpl mOverlayCallbacks;
     private LauncherClient mLauncherClient;
+    private QsbAnimationController mQsbController;
     private SharedPreferences mPrefs;
 
     private boolean mStarted;
@@ -64,6 +67,7 @@ public class AospLauncherCallbacks implements LauncherCallbacks,
         mPrefs = Utilities.getPrefs(mLauncher);
         mOverlayCallbacks = new OverlayCallbackImpl(mLauncher);
         mLauncherClient = new LauncherClient(mLauncher, mOverlayCallbacks, getClientOptions(mPrefs));
+        mQsbController = new QsbAnimationController(mLauncher);
         mOverlayCallbacks.setClient(mLauncherClient);
         mUiInformation.putInt("system_ui_visibility", mLauncher.getWindow().getDecorView().getSystemUiVisibility());
         WallpaperColorInfo instance = WallpaperColorInfo.getInstance(mLauncher);
@@ -214,6 +218,16 @@ public class AospLauncherCallbacks implements LauncherCallbacks,
         mUiInformation.putInt("background_secondary_color_hint", secondaryColor(wallpaperColorInfo, mLauncher, alpha));
         mUiInformation.putBoolean("is_background_dark", Themes.getAttrBoolean(mLauncher, R.attr.isMainColorDark));
         mLauncherClient.redraw(mUiInformation);
+    }
+
+    @Override
+    public LauncherClient getClient() {
+        return mLauncherClient;
+    }
+
+    @Override
+    public QsbAnimationController getQsbController() {
+        return mQsbController;
     }
 
     private ClientOptions getClientOptions(SharedPreferences prefs) {
