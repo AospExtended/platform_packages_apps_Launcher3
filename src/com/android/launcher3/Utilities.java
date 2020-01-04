@@ -135,7 +135,7 @@ public final class Utilities {
      */
     public static final int EDGE_NAV_BAR = 1 << 8;
 
-    public static final String KEY_SHOW_SEARCHBAR = "pref_show_searchbar";
+    public static final String AT_A_GLANCE_SHOW = "pref_at_a_glance_show";
     public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
     private static final long WAIT_BEFORE_RESTART = 250;
@@ -169,8 +169,6 @@ public final class Utilities {
     // An intent extra to indicate the launch source by launcher.
     public static final String EXTRA_WALLPAPER_LAUNCH_SOURCE =
             "com.android.wallpaper.LAUNCH_SOURCE";
-
-    public static final String SEARCH_PACKAGE = "com.google.android.googlequicksearchbox";
 
     public static boolean IS_RUNNING_IN_TEST_HARNESS =
                     ActivityManager.isRunningInTestHarness();
@@ -870,12 +868,8 @@ public final class Utilities {
         }
     }
 
-    public static boolean showQSB(Context context) {
-        SharedPreferences prefs = getPrefs(context.getApplicationContext());
-        if (!LauncherAppState.getInstanceNoCreate().isSearchAppAvailable()) {
-            return false;
-        }
-        return prefs.getBoolean(KEY_SHOW_SEARCHBAR, true);
+    public static boolean showGlance(Context context) {
+         return getPrefs(context).getBoolean(AT_A_GLANCE_SHOW, true);
     }
 
     public static boolean isDoubleTapGestureEnabled(Context context) {

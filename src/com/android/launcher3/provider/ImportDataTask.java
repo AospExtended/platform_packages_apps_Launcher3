@@ -105,7 +105,7 @@ public class ImportDataTask {
                 .getSerialNumberForUser(Process.myUserHandle()));
 
         boolean createEmptyRowOnFirstScreen;
-        if (Utilities.showQSB(mContext)) {
+        if (Utilities.showGlance(mContext)) {
             try (Cursor c = mContext.getContentResolver().query(mOtherFavoritesUri, null,
                     // get items on the first row of the first screen (min screen id)
                     "profileId = ? AND container = -100 AND cellY = 0 AND screen = " +

@@ -42,9 +42,9 @@
       LAUNCHER_HOME_SCREEN_ROTATION_DISABLED(616)
     -->
     <SwitchPreference
-        android:key="pref_show_searchbar"
-        android:title="@string/show_searchbar_title"
-        android:summary="@string/show_searchbar_summary"
+        android:key="pref_at_a_glance_show"
+        android:title="@string/at_a_glance_show_title"
+        android:summary="@string/at_a_glance_show_summary"
         android:defaultValue="true"
         android:persistent="true"/>
 
