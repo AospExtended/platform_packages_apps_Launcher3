@@ -27,4 +27,7 @@
     <!-- QSB -->
     <string name="label_search">Search</string>
     <string name="label_voice_search">Voice search</string>
+	
+    <!-- SmartSpace -->
+    <string name="smartspace_preferences" translatable="false">Preferences</string>
 </resources>
