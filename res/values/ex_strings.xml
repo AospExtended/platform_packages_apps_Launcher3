@@ -74,6 +74,9 @@
     <string name="state_loading">Applying\u2026</string>
 
     <!-- Show searchbar -->
-    <string name="show_searchbar_title">Show search bar</string>
-    <string name="show_searchbar_summary">Show the search bar on the home screen</string>
+    <string name="at_a_glance_show_title">Show At-A-Glance</string>
+    <string name="at_a_glance_show_summary">Show At-A-Glance on the home screen</string>
+
+    <!-- SmartSpace -->
+    <string name="smartspace_preferences" translatable="false">Preferences</string>
 </resources>
