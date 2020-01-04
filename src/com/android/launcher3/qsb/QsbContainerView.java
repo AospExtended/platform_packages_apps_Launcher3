@@ -287,7 +287,7 @@ public class QsbContainerView extends FrameLayout {
 
         public boolean isQsbEnabled() {
             if (!isInPreviewMode()) {
-                return Utilities.showQSB(getContext());
+                return Utilities.showGlance(getContext());
             }
             return true;
         }

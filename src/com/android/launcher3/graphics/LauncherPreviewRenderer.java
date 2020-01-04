@@ -493,7 +493,7 @@ public class LauncherPreviewRenderer extends ContextWrapper
         }
 
         // Add first page QSB
-        if (Utilities.showQSB(this)) {
+        if (Utilities.showGlance(this)) {
             View qsb = mHomeElementInflater.inflate(
                     R.layout.search_container_workspace, mWorkspace, false);
             CellLayout.LayoutParams lp =

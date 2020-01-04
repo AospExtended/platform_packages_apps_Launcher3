@@ -52,8 +52,6 @@ import com.android.launcher3.util.Themes;
 import com.android.launcher3.widget.DatabaseWidgetPreviewLoader;
 import com.android.launcher3.widget.custom.CustomWidgetManager;
 
-import com.android.internal.util.aospextended.AEXUtils;
-
 public class LauncherAppState {
 
     public static final String ACTION_FORCE_ROLOAD = "force-reload-launcher";
@@ -73,8 +71,6 @@ public class LauncherAppState {
     private HomeKeyWatcher mHomeKeyListener = null;
     private boolean mNeedsRestart;
 
-    private boolean mIsSearchAppAvailable;
-
     public static LauncherAppState getInstance(final Context context) {
         return INSTANCE.get(context);
     }
@@ -93,7 +89,6 @@ public class LauncherAppState {
         Preconditions.assertUIThread();
 
         mInvariantDeviceProfile.addOnChangeListener(idp -> refreshAndReloadLauncher());
-        setSearchAppAvailable(AEXUtils.isPackageInstalled(context, Utilities.SEARCH_PACKAGE));
 
         mContext.getSystemService(LauncherApps.class).registerCallback(mModel);
 
@@ -258,13 +253,5 @@ public class LauncherAppState {
                 verifyIconChanged();
             }
         }
-    }
-
-    public void setSearchAppAvailable(boolean available) {
-        mIsSearchAppAvailable = available;
-    }
-
-    public boolean isSearchAppAvailable() {
-        return mIsSearchAppAvailable;
     }
 }
