@@ -25,6 +25,7 @@ import static com.android.launcher3.util.SecureSettingsObserver.newNotificationS
 
 import static com.aospextended.launcher.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 
+import com.android.launcher3.customization.IconDatabase;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -33,6 +34,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.text.TextUtils;
+
+import com.android.launcher3.settings.preference.IconPackPrefSetter;
+import com.android.launcher3.settings.preference.ReloadingListPreference;
+import com.android.launcher3.util.AppReloader;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
@@ -73,9 +78,14 @@ public class SettingsActivity extends FragmentActivity
     private static final int DELAY_HIGHLIGHT_DURATION_MILLIS = 600;
     public static final String SAVE_HIGHLIGHTED_KEY = "android:preference_highlighted";
 
+    private static final String KEY_ICON_PACK = "pref_icon_pack";
+
+    private static Context mContext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mContext = getApplicationContext();
 
         if (savedInstanceState == null) {
             Bundle args = new Bundle();
@@ -96,6 +106,10 @@ public class SettingsActivity extends FragmentActivity
 
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) { }
+
+    public interface OnResumePreferenceCallback {
+        void onResume();
+    }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
         if (Utilities.ATLEAST_P && getSupportFragmentManager().isStateSaved()) {
@@ -231,8 +245,16 @@ public class SettingsActivity extends FragmentActivity
                     updateIsGoogleAppEnabled();
                     return true;
 
+                case KEY_ICON_PACK:
+                    ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
+                    icons.setOnReloadListener(new IconPackPrefSetter(mContext));
+                    icons.setOnPreferenceChangeListener((pref, val) -> {
+                        IconDatabase.clearAll(mContext);
+                        IconDatabase.setGlobal(mContext, (String) val);
+                        AppReloader.get(mContext).reload();
+                        return true;
+                    });
             }
-
             return true;
         }
 
