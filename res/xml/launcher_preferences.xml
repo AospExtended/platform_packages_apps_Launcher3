@@ -17,6 +17,9 @@
 <androidx.preference.PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory android:key="category_general"
+        android:title="@string/category_general">
+
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"
         android:title="@string/notification_dots_title"
@@ -55,6 +58,20 @@
         android:title="Enable grid options"
         android:defaultValue="false"
         android:persistent="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:key="category_customization"
+        android:title="@string/category_customization">
+
+        <com.aosp.launcher.settings.ReloadingListPreference
+            android:key="pref_icon_pack"
+            android:title="@string/app_info_icon_pack"
+            android:summary="%s"
+            android:defaultValue=""
+            android:persistent="true" />
+
+    </PreferenceCategory>
 
     <androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
