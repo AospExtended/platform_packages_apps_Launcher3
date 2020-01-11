@@ -33,6 +33,7 @@ import android.widget.TextView;
 import com.android.launcher3.BaseActivity;
 import com.android.launcher3.CheckLongPressHelper;
 import com.android.launcher3.DeviceProfile;
+import com.android.launcher3.graphics.DrawableFactory;
 import com.android.launcher3.R;
 import com.android.launcher3.WidgetPreviewLoader;
 import com.android.launcher3.icons.BaseIconFactory;
@@ -181,8 +182,10 @@ public class WidgetCell extends LinearLayout implements OnLayoutChangeListener {
             return;
         }
         if (bitmap != null) {
-            mWidgetImage.setBitmap(bitmap, mWidgetPreviewLoader.getBadgeForUser(mItem.user,
-                    BaseIconFactory.getBadgeSizeForIconSize(mDeviceProfile.allAppsIconSizePx)));
+            mWidgetImage.setBitmap(bitmap,
+                    DrawableFactory.INSTANCE.get(getContext()).getBadgeForUser(mItem.user,
+                            getContext(), BaseIconFactory.getBadgeSizeForIconSize(
+                                    mDeviceProfile.allAppsIconSizePx)));
             if (mAnimatePreview) {
                 mWidgetImage.setAlpha(0f);
                 ViewPropertyAnimator anim = mWidgetImage.animate();

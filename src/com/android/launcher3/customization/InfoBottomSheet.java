@@ -25,6 +25,10 @@ import com.android.launcher3.util.ComponentKey;
 import com.android.launcher3.widget.WidgetsBottomSheet;
 import com.android.launcher3.util.PackageManagerHelper;
 
+import com.android.launcher3.settings.preference.IconPackPrefSetter;
+import com.android.launcher3.settings.preference.ReloadingListPreference;
+import com.android.launcher3.util.AppReloader;
+
 public class InfoBottomSheet extends WidgetsBottomSheet {
     private final FragmentManager mFragmentManager;
     protected static Rect mSourceBounds;
@@ -112,12 +116,13 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
             mComponent = itemInfo.getTargetComponent();
             mItemInfo = itemInfo;
             mKey = new ComponentKey(mComponent, itemInfo.user);
-//            mOnMoreClick = onMoreClick;
             MetadataExtractor extractor = new MetadataExtractor(mContext, mComponent);
 
-            Preference iconPack = findPreference(KEY_ICON_PACK);
-            iconPack.setOnPreferenceChangeListener(this);
-            iconPack.setSummary(R.string.app_info_icon_pack_none);
+            ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
+            icons.setOnReloadListener(new IconPackPrefSetter(mContext, mComponent));
+            icons.setOnPreferenceChangeListener(this);
+            icons.setValue(IconDatabase.getByComponent(mContext, mKey));
+
             findPreference(KEY_SOURCE).setSummary(extractor.getSource());
             findPreference(KEY_LAST_UPDATE).setSummary(extractor.getLastUpdate());
             findPreference(KEY_VERSION).setSummary(mContext.getString(
@@ -129,10 +134,13 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
 
         @Override
         public boolean onPreferenceChange(Preference preference, Object newValue) {
-            if (KEY_ICON_PACK.equals(preference.getKey())) {
-                // Reload in launcher.
+            if (newValue.equals(IconDatabase.getGlobal(mContext))) {
+                IconDatabase.resetForComponent(mContext, mKey);
+            } else {
+                IconDatabase.setForComponent(mContext, mKey, (String) newValue);
             }
-            return false;
+            AppReloader.get(mContext).reload(mKey);
+            return true;
         }
 
         private void onMoreClick() {
@@ -142,10 +150,8 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
 
         @Override
         public boolean onPreferenceClick(Preference preference) {
-            if (KEY_MORE.equals(preference.getKey())) {
-                  onMoreClick();
-            }
-            return false;
+            onMoreClick();
+            return true;
         }
     }
 }

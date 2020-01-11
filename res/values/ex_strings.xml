@@ -68,4 +68,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <string name="app_info_version" translatable="false">Version</string>
     <string name="app_info_more" translatable="false">More</string>
 
+    <!-- Preference default value -->
+    <string name="pref_value_default" translatable="false">Default</string>
+
 </resources>
