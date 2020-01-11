@@ -36,6 +36,7 @@ import android.view.accessibility.AccessibilityManager;
 import androidx.annotation.WorkerThread;
 
 import com.android.launcher3.FastBitmapDrawable;
+import com.android.launcher3.graphics.DrawableFactory;
 import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.BitmapInfo;
@@ -73,7 +74,7 @@ public class TaskIconCache {
         Resources res = context.getResources();
         int cacheSize = res.getInteger(R.integer.recentsIconCacheSize);
         mIconCache = new TaskKeyLruCache<>(cacheSize);
-        mIconProvider = new IconProvider(context);
+        mIconProvider = IconProvider.INSTANCE.get(context);
     }
 
     /**
@@ -157,7 +158,8 @@ public class TaskIconCache {
                         key.userId,
                         desc.getPrimaryColor(),
                         activityInfo.applicationInfo.isInstantApp());
-                entry.icon = newIcon(mContext, bitmapInfo);
+                entry.icon = DrawableFactory.INSTANCE.get(mContext).newIcon(
+                        mContext, bitmapInfo, activityInfo);
             } else {
                 entry.icon = getDefaultIcon(key.userId);
             }
