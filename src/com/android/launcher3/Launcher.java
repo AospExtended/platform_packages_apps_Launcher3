@@ -1106,7 +1106,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
             throw new NullPointerException("No KeyguardManager found!");
         }
 
-        String title = getString(R.string.trust_apps_manager_name);
+        String title = getString(R.string.trust_apps_manager_name_dialog);
         String message = getString(R.string.trust_apps_auth_open_app, item.title);
         Intent kmIntent = manager.createConfirmDeviceCredentialIntent(title, message);
 
