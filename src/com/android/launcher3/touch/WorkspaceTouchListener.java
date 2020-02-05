@@ -43,6 +43,7 @@ import com.android.launcher3.dragndrop.DragLayer;
 import com.android.launcher3.views.OptionsPopupView;
 import com.android.launcher3.userevent.nano.LauncherLogProto.Action;
 import com.android.launcher3.userevent.nano.LauncherLogProto.ContainerType;
+import com.android.launcher3.Utilities;
 
 /**
  * Helper class to handle touch on empty space in workspace and show options popup on long press
@@ -189,7 +190,9 @@ public class WorkspaceTouchListener extends GestureDetector.SimpleOnGestureListe
 
     @Override
     public boolean onDoubleTap(MotionEvent event) {
-        mPm.goToSleep(event.getEventTime());
+        if (Utilities.useSleepGesture(mWorkspace.getContext())) {
+            mPm.goToSleep(event.getEventTime());
+        }
         return true;
     }
 }
