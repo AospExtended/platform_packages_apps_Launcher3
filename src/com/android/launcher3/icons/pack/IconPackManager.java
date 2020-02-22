@@ -126,7 +126,7 @@ public class IconPackManager extends BroadcastReceiver {
             String packageName = ri.activityInfo.packageName;
             if (!mProviders.containsKey(packageName)) {
                 ApplicationInfo ai = ri.activityInfo.applicationInfo;
-                CharSequence label = ri.loadLabel(pm);
+                CharSequence label = ai.loadLabel(pm);
                 mProviders.put(packageName, new IconPack(ai, label));
             }
         }
