@@ -15,6 +15,8 @@
  */
 package com.aosp.launcher.search;
 
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
+
 import android.content.ComponentName;
 import android.content.ContentProvider;
 import android.content.ContentProvider.PipeDataWriter;
@@ -33,7 +35,7 @@ import android.os.ParcelFileDescriptor.AutoCloseOutputStream;
 import android.os.Parcelable;
 import android.util.Log;
 
-import com.android.launcher3.AllAppsList;
+import com.android.launcher3.model.AllAppsList;
 import com.android.launcher3.AppFilter;
 import com.android.launcher3.AppInfo;
 import com.android.launcher3.LauncherAppState;
@@ -158,7 +160,7 @@ public class AppSearchProvider extends ContentProvider {
     }
 
     public boolean onCreate() {
-        mLooper = new LooperExecutor(LauncherModel.getWorkerLooper());
+        mLooper = new LooperExecutor(MODEL_EXECUTOR.getLooper());
         mApp = LauncherAppState.getInstance(getContext());
         return true;
     }
