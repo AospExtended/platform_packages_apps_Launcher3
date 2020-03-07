@@ -256,7 +256,7 @@ public class AllAppsQsbContainer extends FrameLayout implements Insettable, OnCl
             initDefaultQsb();
         }
         mDefaultQsb.setText(query);
-        mDefaultQsb.showKeyboard();
+        mDefaultQsb.initKeyboard(mContext);
     }
 
     public void resetSearch() {
