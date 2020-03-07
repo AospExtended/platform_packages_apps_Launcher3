@@ -18,20 +18,25 @@ package com.aosp.launcher.qsb;
 import static com.android.launcher3.LauncherState.ALL_APPS;
 
 import android.content.Context;
+import android.graphics.Rect;
 import android.util.AttributeSet;
+import android.view.KeyEvent;
+import android.view.animation.Interpolator;
 
 import com.android.launcher3.ExtendedEditText;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.allapps.AllAppsContainerView;
 import com.android.launcher3.allapps.AllAppsStore.OnUpdateListener;
 import com.android.launcher3.allapps.AlphabeticalAppsList;
+import com.android.launcher3.allapps.SearchUiManager;
 import com.android.launcher3.allapps.search.AllAppsSearchBarController;
 import com.android.launcher3.allapps.search.AllAppsSearchBarController.Callbacks;
+import com.android.launcher3.anim.PropertySetter;
 import com.android.launcher3.util.ComponentKey;
 
 import java.util.ArrayList;
 
-public class DefaultQsbContainer extends ExtendedEditText implements OnUpdateListener, Callbacks {
+public class DefaultQsbContainer extends ExtendedEditText implements OnUpdateListener, Callbacks, SearchUiManager {
 
     public AllAppsSearchBarController mController;
     public AllAppsQsbContainer mAllAppsQsb;
@@ -57,12 +62,6 @@ public class DefaultQsbContainer extends ExtendedEditText implements OnUpdateLis
     public void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         Launcher.getLauncher(getContext()).getAppsView().getAppsStore().removeUpdateListener(this);
-    }
-
-    @Override
-    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
-        Launcher.getLauncher(getContext()).getStateManager().goToState(ALL_APPS);
-        super.onLayout(changed, left, top, right, bottom);
     }
 
     @Override
@@ -95,4 +94,27 @@ public class DefaultQsbContainer extends ExtendedEditText implements OnUpdateLis
         mAllAppsQsb.updateAlpha(0);
         mAppsView.onSearchResultsChanged();
     }
+
+    public void initKeyboard(Context context) {
+        Launcher.getLauncher(context).getStateManager().goToState(ALL_APPS);
+        showKeyboard();
+    }
+
+    @Override
+    public void initialize(AllAppsContainerView appsView) {};
+
+    @Override
+    public void resetSearch() {};
+
+    @Override
+    public void preDispatchKeyEvent(KeyEvent event) {};
+
+    @Override
+    public float getScrollRangeDelta(Rect insets) {
+        return 0;
+    };
+
+    @Override
+    public void setContentVisibility(int visibleElements, PropertySetter setter,
+            Interpolator interpolator) {};
 }
