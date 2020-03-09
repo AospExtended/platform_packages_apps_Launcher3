@@ -1,5 +1,8 @@
 package com.aosp.launcher.icons.clock;
 
+import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
+
 import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -19,8 +22,6 @@ import android.os.Process;
 
 import com.android.launcher3.ItemInfoWithIcon;
 import com.android.launcher3.LauncherAppState;
-import com.android.launcher3.LauncherModel;
-import com.android.launcher3.MainThreadExecutor;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.icons.LauncherIcons;
 import com.android.launcher3.util.Preconditions;
@@ -44,7 +45,7 @@ public class DynamicClock extends BroadcastReceiver {
         mUpdaters = Collections.newSetFromMap(new WeakHashMap<>());
         mLayers = new ClockLayers();
         mContext = context;
-        final Handler handler = new Handler(LauncherModel.getWorkerLooper());
+        final Handler handler = new Handler(MODEL_EXECUTOR.getLooper());
 
         IntentFilter filter = new IntentFilter();
         filter.addDataScheme("package");
@@ -136,7 +137,7 @@ public class DynamicClock extends BroadcastReceiver {
     }
 
     private void updateMainThread() {
-        new MainThreadExecutor().execute(() -> updateWrapper(getClockLayers(mContext,
+        MAIN_EXECUTOR.execute(() -> updateWrapper(getClockLayers(mContext,
                 LauncherAppState.getIDP(mContext).fillResIconDpi,
                 true)));
     }
