@@ -18,12 +18,14 @@ package com.android.launcher3;
 
 import static com.android.launcher3.FastBitmapDrawable.newIcon;
 import static com.android.launcher3.graphics.PreloadIconDrawable.newPendingIcon;
+import static com.android.launcher3.InvariantDeviceProfile.KEY_TWO_LINE_LABELS;
 import static com.android.launcher3.icons.GraphicsUtils.setColorAlphaBound;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -145,6 +147,8 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
     @ViewDebug.ExportedProperty(category = "launcher")
     private boolean mDisableRelayout = false;
 
+    private boolean mTwoLineLabel;
+
     private IconLoadRequest mIconLoadRequest;
 
     public BubbleTextView(Context context) {
@@ -164,23 +168,31 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
         mLayoutHorizontal = a.getBoolean(R.styleable.BubbleTextView_layoutHorizontal, false);
         DeviceProfile grid = mActivity.getDeviceProfile();
 
+        SharedPreferences prefs = Utilities.getPrefs(context.getApplicationContext());
+
         mDisplay = a.getInteger(R.styleable.BubbleTextView_iconDisplay, DISPLAY_WORKSPACE);
+
         final int defaultIconSize;
         if (mDisplay == DISPLAY_WORKSPACE) {
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.iconTextSizePx);
             setCompoundDrawablePadding(grid.iconDrawablePaddingPx);
             defaultIconSize = grid.iconSizePx;
+            mTwoLineLabel = prefs.getBoolean(KEY_TWO_LINE_LABELS, true);
         } else if (mDisplay == DISPLAY_ALL_APPS) {
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.allAppsIconTextSizePx);
             setCompoundDrawablePadding(grid.allAppsIconDrawablePaddingPx);
             defaultIconSize = grid.allAppsIconSizePx;
+            mTwoLineLabel = false;
         } else if (mDisplay == DISPLAY_FOLDER) {
             setTextSize(TypedValue.COMPLEX_UNIT_PX, grid.folderChildTextSizePx);
+            setMaxLines(2);
             setCompoundDrawablePadding(grid.folderChildDrawablePaddingPx);
             defaultIconSize = grid.folderChildIconSizePx;
+            mTwoLineLabel = false;
         } else {
             // widget_selection or shortcut_popup
             defaultIconSize = grid.iconSizePx;
+            mTwoLineLabel = false;
         }
 
         mCenterVertically = a.getBoolean(R.styleable.BubbleTextView_centerVertically, false);
@@ -292,6 +304,13 @@ public class BubbleTextView extends TextView implements ItemInfoUpdateReceiver, 
 
         setIcon(iconDrawable);
         setText(info.title);
+
+        if (mTwoLineLabel) {
+            setMaxLines(2);
+        } else {
+            setMaxLines(1);
+        }
+
         if (info.contentDescription != null) {
             setContentDescription(info.isDisabled()
                     ? getContext().getString(R.string.disabled_app_label, info.contentDescription)
