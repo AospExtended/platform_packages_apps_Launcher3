@@ -45,6 +45,12 @@
         android:persistent="true" />
 
     <SwitchPreference
+        android:key="pref_two_line_labels"
+        android:title="@string/two_line_labels"
+        android:defaultValue="true"
+        android:persistent="true" />
+
+    <SwitchPreference
         android:defaultValue="true"
         android:key="pref_enable_minus_one"
         android:summary="@string/pref_show_google_now_summary"

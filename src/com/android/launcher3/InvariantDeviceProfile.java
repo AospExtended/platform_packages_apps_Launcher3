@@ -28,6 +28,8 @@ import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -61,7 +63,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class InvariantDeviceProfile {
+public class InvariantDeviceProfile implements OnSharedPreferenceChangeListener {
 
     public static final String TAG = "IDP";
     // We do not need any synchronization for this variable as its only written on UI thread.
@@ -78,6 +80,7 @@ public class InvariantDeviceProfile {
     public static final int CHANGE_FLAG_GRID = 1 << 0;
     public static final int CHANGE_FLAG_ICON_PARAMS = 1 << 1;
 
+    public static final String KEY_TWO_LINE_LABELS = "pref_two_line_labels";
     public static final String KEY_ICON_PATH_REF = "pref_icon_shape_path";
 
     // Constants that affects the interpolation curve between statically defined device profile
@@ -96,6 +99,9 @@ public class InvariantDeviceProfile {
      */
     public int numRows;
     public int numColumns;
+
+    /* in all apps */
+    public int numColumnsAllApps;
 
     /**
      * Number of icons per row and column in the folder.
@@ -137,6 +143,8 @@ public class InvariantDeviceProfile {
     private ConfigMonitor mConfigMonitor;
     private OverlayMonitor mOverlayMonitor;
 
+    private Context mContext;
+
     @VisibleForTesting
     public InvariantDeviceProfile() {}
 
@@ -165,6 +173,11 @@ public class InvariantDeviceProfile {
     private InvariantDeviceProfile(Context context) {
         String gridName = getCurrentGridName(context);
         String newGridName = initGrid(context, gridName);
+        mContext = context;
+
+        SharedPreferences prefs = Utilities.getPrefs(context);
+        prefs.registerOnSharedPreferenceChangeListener(this);
+
         if (!newGridName.equals(gridName)) {
             Utilities.getPrefs(context).edit().putString(KEY_IDP_GRID_NAME, newGridName).apply();
         }
@@ -217,6 +230,13 @@ public class InvariantDeviceProfile {
     public static String getCurrentGridName(Context context) {
         return Utilities.isGridOptionsEnabled(context)
                 ? Utilities.getPrefs(context).getString(KEY_IDP_GRID_NAME, null) : null;
+    }
+
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
+        if (KEY_TWO_LINE_LABELS.equals(key)) {
+            apply(mContext, CHANGE_FLAG_ICON_PARAMS);
+        }
     }
 
     /**
