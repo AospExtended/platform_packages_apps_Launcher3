@@ -95,6 +95,18 @@
         android:defaultValue="100" />
 
     <SwitchPreference
+        android:key="pref_drawer_two_line_labels"
+        android:title="@string/drawer_two_line_labels"
+        android:defaultValue="true"
+        android:persistent="true" />
+
+    <SwitchPreference
+        android:key="pref_desktop_two_line_labels"
+        android:title="@string/desktop_two_line_labels"
+        android:defaultValue="true"
+        android:persistent="true" />
+
+    <SwitchPreference
         android:key="pref_dt_gesture"
         android:title="@string/pref_dt_gesture_title"
         android:summary="@string/pref_dt_gesture_summary"

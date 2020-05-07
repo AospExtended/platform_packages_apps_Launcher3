@@ -91,4 +91,8 @@
     <!-- QSB -->
     <string name="label_search">Search</string>
     <string name="label_voice_search">Voice search</string>
+
+    <!-- Two line labels -->
+    <string name="desktop_two_line_labels">Allow two line labels on desktop</string>
+    <string name="drawer_two_line_labels">Allow two line labels in drawer</string>
 </resources>
