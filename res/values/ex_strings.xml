@@ -52,4 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
     <!-- SmartSpace -->
     <string name="smartspace_preferences" translatable="false">Preferences</string>
+
+    <!-- Two line labels -->
+    <string name="two_line_labels">Allow two line labels on desktop</string>
 </resources>
