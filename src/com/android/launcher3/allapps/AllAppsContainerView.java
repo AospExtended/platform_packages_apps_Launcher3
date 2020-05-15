@@ -469,6 +469,10 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
             mViewPager = (AllAppsPagedView) newView;
             mViewPager.initParentViews(this);
             mViewPager.getPageIndicator().setContainerView(this);
+
+            // Move alpha from recycler view to view pager.
+            mViewPager.setAlpha(getActiveRecyclerView().getAlpha());
+            getActiveRecyclerView().setAlpha(1f);
         } else {
             mViewPager = null;
         }
