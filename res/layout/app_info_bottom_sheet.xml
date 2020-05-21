@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="28dp"
-    android:background="@drawable/top_round_rect_primary"
+    android:background="@drawable/app_info_bottom_sheet_bg"
     android:elevation="@dimen/deep_shortcuts_elevation"
     android:layout_gravity="bottom"
     android:theme="?attr/widgetsTheme">
