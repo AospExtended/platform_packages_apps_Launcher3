@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:fontFamily="@*android:string/config_headlineFontFamily"
-        android:textColor="?android:attr/textColorPrimary"
+        android:textColor="?android:attr/colorAccent"
         android:textSize="24sp"/>
 
     <TextView
@@ -27,7 +27,7 @@
         android:paddingTop="4dp"
         android:paddingBottom="16dp"
         android:fontFamily="@*android:string/config_bodyFontFamily"
-        android:textColor="?android:attr/textColorTertiary"
+        android:textColor="?android:attr/colorAccent"
         android:textSize="14sp"
         android:text="@string/app_info_subtext"/>
 
