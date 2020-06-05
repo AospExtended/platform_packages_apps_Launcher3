@@ -48,17 +48,17 @@
         android:persistent="true" />
 
     <SwitchPreference
-        android:defaultValue="true"
-        android:key="pref_enable_minus_one"
-        android:summary="@string/pref_show_google_now_summary"
-        android:title="@string/title_show_google_app" />
-
-    <SwitchPreference
         android:key="pref_show_searchbar"
         android:title="@string/glance_title"
         android:summary="@string/glance_summary"
         android:defaultValue="true"
         android:persistent="true"/>
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_enable_minus_one"
+        android:summary="@string/pref_show_google_now_summary"
+        android:title="@string/title_show_google_app" />
 
     <SwitchPreference
         android:key="pref_sleep_gesture"
@@ -108,13 +108,6 @@
         android:persistent="true" />
 
     <SwitchPreference
-        android:key="pref_legacy_icon_mask"
-        android:title="@string/legacy_icon_mask_title"
-        android:summary="@string/legacy_icon_mask_summary"
-        android:defaultValue="false"
-        android:persistent="true"/>
-
-    <SwitchPreference
         android:key="pref_show_workspace_grad"
         android:title="@string/workspace_gradient_title"
         android:summary="@string/workspace_gradient_summary"
@@ -126,6 +119,13 @@
         android:title="@string/hotseat_gradient_title"
         android:summary="@string/hotseat_gradient_summary"
         android:defaultValue="true"
+        android:persistent="true"/>
+
+    <SwitchPreference
+        android:key="pref_legacy_icon_mask"
+        android:title="@string/legacy_icon_mask_title"
+        android:summary="@string/legacy_icon_mask_summary"
+        android:defaultValue="false"
         android:persistent="true"/>
 
     <SwitchPreference
