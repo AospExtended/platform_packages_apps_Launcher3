@@ -22,12 +22,16 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 import com.android.launcher3.util.ComponentKey;
+import com.android.launcher3.util.Executors;
 import com.android.launcher3.widget.WidgetsBottomSheet;
 import com.android.launcher3.util.PackageManagerHelper;
 
 import com.android.launcher3.settings.preference.IconPackPrefSetter;
 import com.android.launcher3.settings.preference.ReloadingListPreference;
 import com.android.launcher3.util.AppReloader;
+
+import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
+import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 
 public class InfoBottomSheet extends WidgetsBottomSheet {
     private final FragmentManager mFragmentManager;
@@ -116,20 +120,29 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
             mComponent = itemInfo.getTargetComponent();
             mItemInfo = itemInfo;
             mKey = new ComponentKey(mComponent, itemInfo.user);
-            MetadataExtractor extractor = new MetadataExtractor(mContext, mComponent);
 
             ReloadingListPreference icons = (ReloadingListPreference) findPreference(KEY_ICON_PACK);
             icons.setOnReloadListener(new IconPackPrefSetter(mContext, mComponent));
             icons.setOnPreferenceChangeListener(this);
             icons.setValue(IconDatabase.getByComponent(mContext, mKey));
 
-            findPreference(KEY_SOURCE).setSummary(extractor.getSource());
-            findPreference(KEY_LAST_UPDATE).setSummary(extractor.getLastUpdate());
-            findPreference(KEY_VERSION).setSummary(mContext.getString(
-                    R.string.app_info_version_value,
-                    extractor.getVersionName(),
-                    extractor.getVersionCode()));
-            findPreference(KEY_MORE).setOnPreferenceClickListener(this);
+            MODEL_EXECUTOR.execute(() -> {
+                MetadataExtractor extractor = new MetadataExtractor(mContext, mComponent);
+
+                CharSequence source = extractor.getSource();
+                CharSequence lastUpdate = extractor.getLastUpdate();
+                CharSequence version = mContext.getString(
+                        R.string.app_info_version_value,
+                        extractor.getVersionName(),
+                        extractor.getVersionCode());
+
+                MAIN_EXECUTOR.execute(() -> {
+                    findPreference(KEY_SOURCE).setSummary(source);
+                    findPreference(KEY_LAST_UPDATE).setSummary(lastUpdate);
+                    findPreference(KEY_VERSION).setSummary(version);
+                    findPreference(KEY_MORE).setOnPreferenceClickListener(this);
+                });
+            });
         }
 
         @Override
