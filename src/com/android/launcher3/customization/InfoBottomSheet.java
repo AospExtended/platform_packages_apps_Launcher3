@@ -22,7 +22,6 @@ import com.android.launcher3.model.data.ItemInfo;
 import com.android.launcher3.Launcher;
 import com.android.launcher3.R;
 import com.android.launcher3.util.ComponentKey;
-import com.android.launcher3.util.Executors;
 import com.android.launcher3.widget.WidgetsBottomSheet;
 import com.android.launcher3.util.PackageManagerHelper;
 
@@ -31,7 +30,7 @@ import com.android.launcher3.settings.preference.ReloadingListPreference;
 import com.android.launcher3.util.AppReloader;
 
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
-import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
+import static com.android.launcher3.util.Executors.THREAD_POOL_EXECUTOR;
 
 public class InfoBottomSheet extends WidgetsBottomSheet {
     private final FragmentManager mFragmentManager;
@@ -126,7 +125,7 @@ public class InfoBottomSheet extends WidgetsBottomSheet {
             icons.setOnPreferenceChangeListener(this);
             icons.setValue(IconDatabase.getByComponent(mContext, mKey));
 
-            MODEL_EXECUTOR.execute(() -> {
+            THREAD_POOL_EXECUTOR.execute(() -> {
                 MetadataExtractor extractor = new MetadataExtractor(mContext, mComponent);
 
                 CharSequence source = extractor.getSource();
