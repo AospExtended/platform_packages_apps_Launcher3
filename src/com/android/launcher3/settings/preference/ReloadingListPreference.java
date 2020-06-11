@@ -18,15 +18,7 @@ import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 public class ReloadingListPreference extends ListPreference
         implements SettingsActivity.OnResumePreferenceCallback {
     public interface OnReloadListener {
-        ThreadSwitchingRunnable listUpdater(ListPreference pref);
-    }
-
-    /**
-     * Interface that runs a Supplier on a background thread, then continues with the result
-     * as a Runnable on the main thread.
-     */
-    @SuppressWarnings("WeakerAccess")
-    public interface ThreadSwitchingRunnable extends Supplier<Runnable> {
+        Runnable listUpdater(ListPreference pref);
     }
 
     private OnReloadListener mOnReloadListener;
@@ -73,14 +65,14 @@ public class ReloadingListPreference extends ListPreference
                     setSummary(R.string.loading);
                 }
                 MODEL_EXECUTOR.execute(() -> {
-                        Runnable uiRunnable = mOnReloadListener.listUpdater(this).get();
+                        Runnable uiRunnable = mOnReloadListener.listUpdater(this);
                         MAIN_EXECUTOR.execute(() -> {
                             uiRunnable.run();
                             setSummary("%s");
                         });
                 });
             } else {
-                mOnReloadListener.listUpdater(this).get().run();
+                mOnReloadListener.listUpdater(this).run();
             }
         }
     }
