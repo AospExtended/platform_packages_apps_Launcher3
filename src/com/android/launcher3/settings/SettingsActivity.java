@@ -36,6 +36,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.view.MenuItem;
 
 import com.android.launcher3.settings.preference.IconPackPrefSetter;
 import com.android.launcher3.settings.preference.ReloadingListPreference;
@@ -84,6 +85,8 @@ public class SettingsActivity extends Activity
         super.onCreate(savedInstanceState);
         mContext = getApplicationContext();
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
         if (savedInstanceState == null) {
             Bundle args = new Bundle();
             String prefKey = getIntent().getStringExtra(EXTRA_FRAGMENT_ARG_KEY);
@@ -105,6 +108,15 @@ public class SettingsActivity extends Activity
 
     public interface OnResumePreferenceCallback {
         void onResume();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private boolean startFragment(String fragment, Bundle args, String key) {
