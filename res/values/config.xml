@@ -187,4 +187,9 @@
 
     <string-array name="live_wallpapers_remove_sysui_scrims">
     </string-array>
+
+    <!-- Icon pack -->
+    <string name="icon_pack_settings_class" translatable="false">com.android.launcher3.lineage.icon.IconPackSettingsFragment</string>
+    <!-- Default icon pack package. Set to "android" to use default / original icons -->
+    <string name="icon_pack_default_pkg" translatable="false">android</string>
 </resources>

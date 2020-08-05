@@ -51,4 +51,9 @@
     <string name="settings_edit_allow_summary_off">Icons and widgets can\'t be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 
+    <!-- Icon pack -->
+    <string name="icon_pack_title">Icon pack</string>
+    <string name="icon_pack_default_label">Default</string>
+    <string name="icon_pack_add">Install more</string>
+    <string name="icon_pack_no_market">There\'s no available app store</string>
 </resources>
