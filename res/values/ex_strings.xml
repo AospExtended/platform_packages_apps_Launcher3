@@ -117,4 +117,7 @@
 
     <!-- Scrim alpha in apps drawer -->
     <string name="all_apps_background_opacity_title">Background opacity</string>
+
+    <!-- Default home page -->
+    <string name="set_default_home_page">Set default page</string>
 </resources>

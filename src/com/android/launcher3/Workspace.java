@@ -142,7 +142,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
 
     private static final int ADJACENT_SCREEN_DROP_DURATION = 300;
 
-    public static final int DEFAULT_PAGE = 0;
+    //public static final int DEFAULT_PAGE = 0;
 
     private LayoutTransition mLayoutTransition;
     @Thunk final WallpaperManager mWallpaperManager;
@@ -259,6 +259,8 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
     private final StatsLogManager mStatsLogManager;
 
     private GestureDetector mGestureListener;
+
+    private boolean mCurrentPageInitialised = false;
 
     /**
      * Used to inflate the Workspace from XML.
@@ -471,13 +473,27 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
      * Initializes various states for this workspace.
      */
     protected void initWorkspace() {
-        mCurrentPage = DEFAULT_PAGE;
+        // getChildCount crashes here, and is not the final child count here anyway,
+        // so let's initialize mCurrentPage to the user's choice later
+        mCurrentPage = 0; //mLauncher.getDefaultPage(getChildCount());
+        mCurrentPageInitialised = false;
         setClipToPadding(false);
 
         setupLayoutTransition();
 
         // Set the wallpaper dimensions when Launcher starts up
         setWallpaperDimension();
+    }
+
+    boolean initializeDefaultPage() {
+        if (!mCurrentPageInitialised) {
+            setCurrentPage(mLauncher.getDefaultPage());
+            mCurrentPageInitialised = true;
+            return true;
+        } else {
+            // Signal it already was initialized
+            return false;
+        }
     }
 
     private void setupLayoutTransition() {
@@ -3236,7 +3252,7 @@ public class Workspace extends PagedView<WorkspacePageIndicator>
 
     /** Calls {@link #snapToPage(int)} on the {@link #DEFAULT_PAGE}, then requests focus on it. */
     public void moveToDefaultScreen() {
-        int page = DEFAULT_PAGE;
+        int page = mLauncher.getDefaultPage(getChildCount());
         if (!workspaceInModalState()) {
             if (getNextPage() != page) {
                 snapToPage(page);

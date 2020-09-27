@@ -133,6 +133,8 @@ public final class Utilities {
     public static final String AT_A_GLANCE_SHOW = "pref_at_a_glance_show";
     public static final String KEY_DT_GESTURE = "pref_dt_gesture";
 
+    public static final String KEY_DEFAULT_HOME_PAGE = "pref_default_homepage";
+
     private static final long WAIT_BEFORE_RESTART = 250;
 
     public static final String ICON_SIZE = "pref_custom_icon_size";

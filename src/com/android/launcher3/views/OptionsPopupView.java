@@ -155,6 +155,11 @@ public class OptionsPopupView extends ArrowPopup
         RectF target = new RectF(x - halfSize, y - halfSize, x + halfSize, y + halfSize);
 
         ArrayList<OptionItem> options = new ArrayList<>();
+        if (!launcher.isOnDefaultPage()) {
+            options.add(new OptionItem(R.string.set_default_home_page,
+                    R.drawable.ic_default_home_page, IGNORE,
+                    OptionsPopupView::setDefaultPage));
+        }
         int resString = Utilities.existsStyleWallpapers(launcher) ?
                 R.string.styles_wallpaper_button_text : R.string.wallpaper_button_text;
         int resDrawable = Utilities.existsStyleWallpapers(launcher) ?
@@ -238,6 +243,12 @@ public class OptionsPopupView extends ArrowPopup
         dummyInfo.itemType = LauncherSettings.Favorites.ITEM_TYPE_SHORTCUT;
         dummyInfo.container = LauncherSettings.Favorites.CONTAINER_SETTINGS;
         return dummyInfo;
+    }
+
+    public static boolean setDefaultPage(View view) {
+        Launcher launcher = Launcher.getLauncher(view.getContext());
+        launcher.setCurrentDefaultPage();
+        return true;
     }
 
     public static class OptionItem {
