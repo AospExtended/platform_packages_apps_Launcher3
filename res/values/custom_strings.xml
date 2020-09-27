@@ -48,4 +48,6 @@
     <string name="settings_lock_layout_summary_off">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 
+    <!-- Default home page -->
+    <string name="set_default_home_page">Set default page</string>
 </resources>

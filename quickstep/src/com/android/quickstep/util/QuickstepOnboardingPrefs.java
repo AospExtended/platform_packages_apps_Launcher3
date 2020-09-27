@@ -102,7 +102,7 @@ public class QuickstepOnboardingPrefs extends OnboardingPrefs<QuickstepLauncher>
                         return;
                     }
                     mShouldIncreaseCount = toState == HINT_STATE
-                            && launcher.getWorkspace().getNextPage() == Workspace.DEFAULT_PAGE;
+                            && launcher.getWorkspace().getNextPage() == launcher.getDefaultPage();
                 }
 
                 @Override
