@@ -191,6 +191,11 @@ public class OptionsPopupView extends ArrowPopup
      */
     public static ArrayList<OptionItem> getOptions(Launcher launcher) {
         ArrayList<OptionItem> options = new ArrayList<>();
+        if (!launcher.isOnDefaultPage()) {
+            options.add(new OptionItem(launcher, R.string.set_default_home_page,
+                    R.drawable.ic_default_home_page, IGNORE,
+                    OptionsPopupView::setDefaultPage));
+        }
         options.add(new OptionItem(launcher,
                 R.string.settings_button_text,
                 R.drawable.ic_setting,
@@ -272,6 +277,12 @@ public class OptionsPopupView extends ArrowPopup
         placeholderInfo.itemType = LauncherSettings.Favorites.ITEM_TYPE_SHORTCUT;
         placeholderInfo.container = LauncherSettings.Favorites.CONTAINER_SETTINGS;
         return placeholderInfo;
+    }
+
+    public static boolean setDefaultPage(View view) {
+        Launcher launcher = Launcher.getLauncher(view.getContext());
+        launcher.setCurrentDefaultPage();
+        return true;
     }
 
     public static class OptionItem {
