@@ -68,11 +68,5 @@
                 android:name="com.android.launcher3.grid.control"
                 android:value="${packageName}.grid_control" />
         </activity>
-
-        <activity
-            android:name=".trust.TrustAppsActivity"
-            android:label="@string/trust_apps_manager_name"
-            android:theme="@android:style/Theme.DeviceDefault.Settings"
-            android:autoRemoveFromRecents="true" />
     </application>
 </manifest>
