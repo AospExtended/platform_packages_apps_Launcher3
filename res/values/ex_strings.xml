@@ -109,4 +109,8 @@
     <!-- Recents Memory -->
     <string name="pref_recents_show_memory_title">Show Free RAM in recents</string>
     <string name="pref_recents_show_memory_summary">Show available free RAM in recents view</string>
+
+    <!-- Suggestions -->
+    <string name="suggestion_pref_screen_title">Suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
 </resources>
