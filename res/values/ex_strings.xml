@@ -24,6 +24,7 @@
     <string name="category_icon">ICON</string>
     <string name="category_gestures">GESTURES</string>
     <string name="category_misc">MISC</string>
+    <string name="category_allapps">APP DRAWER</string>
 
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Swipe to access Google app</string>
@@ -113,4 +114,7 @@
     <!-- Suggestions -->
     <string name="suggestion_pref_screen_title">Suggestions</string>
     <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+
+    <!-- Scrim alpha in apps drawer -->
+    <string name="all_apps_background_opacity_title">Background opacity</string>
 </resources>

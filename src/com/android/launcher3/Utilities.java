@@ -141,6 +141,8 @@ public final class Utilities {
     public static final String BOTTOM_SEARCH_BAR_KEY = "pref_bottom_search_bar";
     public static final String TOP_SEARCH_BAR_KEY = "pref_top_search_bar";
 
+    public static final String KEY_ALL_APPS_BACKGROUND_ALPHA = "pref_all_apps_scrim_alpha";
+
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
      * add extra logging and not for changing the app behavior.
@@ -729,6 +731,10 @@ public final class Utilities {
 
     public static boolean recentsShowMemory(Context context) {
          return getPrefs(context).getBoolean("pref_recents_show_memory", true);
+    }
+
+    public static int getAllAppsScrimAlpha(Context context) {
+        return getPrefs(context).getInt(KEY_ALL_APPS_BACKGROUND_ALPHA, 100);
     }
 
     public static void restart(final Context context) {
