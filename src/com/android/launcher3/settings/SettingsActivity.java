@@ -72,6 +72,7 @@ public class SettingsActivity extends FragmentActivity
         implements OnPreferenceStartFragmentCallback, OnPreferenceStartScreenCallback,
         SharedPreferences.OnSharedPreferenceChangeListener{
 
+    private static final String SUGGESTIONS_KEY = "pref_suggestions";
     private static final String DEVELOPER_OPTIONS_KEY = "pref_developer_options";
     private static final String FLAGS_PREFERENCE_KEY = "flag_toggler";
 
@@ -172,6 +173,7 @@ public class SettingsActivity extends FragmentActivity
         private boolean mPreferenceHighlighted = false;
 
         protected static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+        protected static final String DPS_PACKAGE = "com.google.android.as";
 
         private Preference mShowGoogleAppPref;
 
@@ -277,6 +279,10 @@ public class SettingsActivity extends FragmentActivity
                     // Only show flag toggler UI if this build variant implements that.
                     return FeatureFlags.showFlagTogglerUi(getContext());
 
+                case SUGGESTIONS_KEY:
+                    // Show if Device Personalization Services is present.
+                    return isDPSEnabled(getContext());
+
                 case DEVELOPER_OPTIONS_KEY:
                     // Show if plugins are enabled or flag UI is enabled.
                     return FeatureFlags.showFlagTogglerUi(getContext()) ||
@@ -337,6 +343,14 @@ public class SettingsActivity extends FragmentActivity
             }
 
             return true;
+        }
+
+        public static boolean isDPSEnabled(Context context) {
+            try {
+                return context.getPackageManager().getApplicationInfo(DPS_PACKAGE, 0).enabled;
+            } catch (PackageManager.NameNotFoundException e) {
+                return false;
+            }
         }
 
         public static boolean isGSAEnabled(Context context) {
