@@ -19,6 +19,12 @@
 
 <resources>
 
+    <!-- Settings Categories -->
+    <string name="category_home">HOME</string>
+    <string name="category_icon">ICON</string>
+    <string name="category_gestures">GESTURES</string>
+    <string name="category_misc">MISC</string>
+
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Swipe to access Google app</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
