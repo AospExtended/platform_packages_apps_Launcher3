@@ -2025,11 +2025,11 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
     @Override
     public void bindScreens(IntArray orderedScreenIds) {
         // Make sure the first screen is always at the start.
-        if (Utilities.showQsbWidget(this) &&
+        if (Utilities.showGlanceWidget(this) &&
                 orderedScreenIds.indexOf(Workspace.FIRST_SCREEN_ID) != 0) {
             orderedScreenIds.removeValue(Workspace.FIRST_SCREEN_ID);
             orderedScreenIds.add(0, Workspace.FIRST_SCREEN_ID);
-        } else if (!Utilities.showQsbWidget(this) && orderedScreenIds.isEmpty()) {
+        } else if (!Utilities.showGlanceWidget(this) && orderedScreenIds.isEmpty()) {
             // If there are no screens, we need to have an empty screen
             mWorkspace.addExtraEmptyScreen();
         }
@@ -2045,7 +2045,7 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         int count = orderedScreenIds.size();
         for (int i = 0; i < count; i++) {
             int screenId = orderedScreenIds.get(i);
-            if (!Utilities.showQsbWidget(this) || screenId != Workspace.FIRST_SCREEN_ID) {
+            if (!Utilities.showGlanceWidget(this) || screenId != Workspace.FIRST_SCREEN_ID) {
                 // No need to bind the first screen, as its always bound.
                 mWorkspace.insertNewWorkspaceScreenBeforeEmptyScreen(screenId);
             }
