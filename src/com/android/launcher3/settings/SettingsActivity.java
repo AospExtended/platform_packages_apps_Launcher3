@@ -164,8 +164,8 @@ public class SettingsActivity extends FragmentActivity
                 }
             }
 
-            Preference showQsbWidget = findPreference(Utilities.QSB_SHOW);
-            showQsbWidget.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            Preference showGlanceWidget = findPreference(Utilities.AT_A_GLANCE_SHOW);
+            showGlanceWidget.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
                     new Handler().postDelayed(() -> Utilities.restart(getActivity()), Utilities.WAIT_BEFORE_RESTART);
                     return true;
