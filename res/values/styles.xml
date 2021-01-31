@@ -30,7 +30,7 @@
     </style>
 
     <style name="LauncherTheme" parent="@style/BaseLauncherTheme">
-        <item name="allAppsScrimColor">#E6FFFFFF</item> <!-- 90% White -->
+        <item name="allAppsScrimColor">#CCFFFFFF</item> <!-- 80% White -->
         <item name="allAppsScrimBlurDisabledColor">#e5ffffff</item>
         <item name="allAppsInterimScrimAlpha">46</item>
         <item name="allAppsNavBarScrimColor">#66FFFFFF</item>
