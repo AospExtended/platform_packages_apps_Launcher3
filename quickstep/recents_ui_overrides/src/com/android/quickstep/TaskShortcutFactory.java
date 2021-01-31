@@ -358,16 +358,19 @@ public interface TaskShortcutFactory {
         public void onClick(View view) {
             if (mPackageName != null) {
                 IActivityManager iam = ActivityManagerNative.getDefault();
-                try {
-                    iam.forceStopPackage(mPackageName, UserHandle.USER_CURRENT);
-                    Toast appKilled = Toast.makeText(mActivity, R.string.recents_app_killed,
-                        Toast.LENGTH_SHORT);
-                    appKilled.show();
-                } catch (RemoteException e) { }
+                Task task = mTaskView.getTask();
+                if (task != null) {
+                    try {
+                        iam.forceStopPackage(mPackageName, UserHandle.USER_CURRENT);
+                        Toast appKilled = Toast.makeText(mActivity, R.string.recents_app_killed,
+                            Toast.LENGTH_SHORT);
+                        appKilled.show();
+                        ((RecentsView)mActivity.getOverviewPanel())
+                              .dismissTask(mTaskView, true /* animate */, true /* removeTask */);
+                    } catch (RemoteException e) { }
+                }
             }
             dismissTaskMenuView(mActivity);
         }
     }
-
-
 }
