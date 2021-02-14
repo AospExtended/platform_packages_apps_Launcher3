@@ -73,6 +73,15 @@
         android:key="pref_icon_pack"
         android:title="@string/icon_pack_title" />
 
+    <DropDownPreference
+        android:key="pref_icon_size"
+        android:title="@string/icon_size_title"
+        android:summary="%s"
+        android:entries="@array/icon_size_names"
+        android:entryValues="@array/icon_size_values"
+        android:defaultValue="average"
+        android:persistent="true" />
+
     <SwitchPreference
         android:key="pref_dt_gesture"
         android:title="@string/pref_dt_gesture_title"
