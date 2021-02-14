@@ -175,4 +175,12 @@
     <string name="work_apps_enable_btn_text" msgid="1156432622148413741">"Включить рабочие приложения"</string>
     <string name="developer_options_filter_hint" msgid="5896817443635989056">"Фильтр"</string>
     <string name="remote_action_failed" msgid="1383965239183576790">"Не удалось выполнить действие (<xliff:g id="WHAT">%1$s</xliff:g>)."</string>
+
+    <!-- Icon size -->
+    <string name="icon_size_title">Размер иконок</string>
+    <string name="icon_size_extra_small">Очень маленький</string>
+    <string name="icon_size_small">Маленький</string>
+    <string name="icon_size_average">Нормальный</string>
+    <string name="icon_size_large">Большой</string>
+    <string name="icon_size_extra_large">Очень большой</string>
 </resources>
