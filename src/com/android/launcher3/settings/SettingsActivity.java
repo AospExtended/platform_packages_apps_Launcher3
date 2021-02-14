@@ -38,7 +38,9 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
+import androidx.preference.DropDownPreference;
 import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartFragmentCallback;
 import androidx.preference.PreferenceFragmentCompat.OnPreferenceStartScreenCallback;
@@ -285,6 +287,19 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                 case KEY_ENABLE_MINUS_ONE:
                     mShowGoogleAppPref = preference;
                     updateIsGoogleAppEnabled();
+                    return true;
+
+                case Utilities.ICON_SIZE:
+                    final DropDownPreference iconSizes = (DropDownPreference) findPreference(Utilities.ICON_SIZE);
+                    iconSizes.setSummary(iconSizes.getEntry());
+                    iconSizes.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            int index = iconSizes.findIndexOfValue((String) newValue);
+                            iconSizes.setSummary(iconSizes.getEntries()[index]);
+                            Utilities.restart(getActivity());
+                            return true;
+                        }
+                    });
                     return true;
             }
 
