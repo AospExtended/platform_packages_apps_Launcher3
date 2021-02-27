@@ -67,6 +67,16 @@
         settings:interval="5"
         android:defaultValue="100" />
 
+    <com.android.launcher3.settings.preference.CustomSeekBarPreference
+        android:key="pref_custom_font_size"
+        android:title="@string/font_size_title"
+        android:persistent="true"
+        android:max="120"
+        settings:min="80"
+        settings:units="%"
+        settings:interval="5"
+        android:defaultValue="100" />
+
     <SwitchPreference
         android:key="pref_dt_gesture"
         android:title="@string/pref_dt_gesture_title"
