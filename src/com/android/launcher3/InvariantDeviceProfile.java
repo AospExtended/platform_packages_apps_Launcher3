@@ -290,7 +290,7 @@ public class InvariantDeviceProfile {
 
         mExtraAttrs = closestProfile.extraAttrs;
 
-        float iconSizeModifier = Utilities.getIconSizeModifier(context);
+        float iconSizeModifier = (float) Utilities.getIconSizeModifier(context) / 100F;
         iconSize = displayOption.iconSize * iconSizeModifier;
         landscapeIconSize = displayOption.landscapeIconSize * iconSizeModifier;
         iconBitmapSize = ResourceUtils.pxFromDp(iconSize, metrics);

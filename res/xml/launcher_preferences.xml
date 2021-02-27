@@ -16,7 +16,8 @@
 
 <androidx.preference.PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    xmlns:launcher="http://schemas.android.com/apk/res-auto"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.launcher3">
 
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"
@@ -56,14 +57,15 @@
         android:summary="@string/pref_show_google_now_summary"
         android:title="@string/title_show_google_app"/>
 
-    <DropDownPreference
-        android:key="pref_icon_size"
+    <com.android.launcher3.settings.preference.CustomSeekBarPreference
+        android:key="pref_custom_icon_size"
         android:title="@string/icon_size_title"
-        android:summary="%s"
-        android:entries="@array/icon_size_names"
-        android:entryValues="@array/icon_size_values"
-        android:defaultValue="average"
-        android:persistent="true" />
+        android:persistent="true"
+        android:max="120"
+        settings:min="80"
+        settings:units="%"
+        settings:interval="5"
+        android:defaultValue="100" />
 
     <SwitchPreference
         android:key="pref_dt_gesture"
