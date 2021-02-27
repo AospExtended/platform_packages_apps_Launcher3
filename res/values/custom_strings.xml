@@ -39,4 +39,7 @@
 
     <!-- SmartSpace -->
     <string name="smartspace_preferences" translatable="false">Preferences</string>
+
+    <!-- Icon size -->
+    <string name="icon_size_title">Icon size</string>
 </resources>
