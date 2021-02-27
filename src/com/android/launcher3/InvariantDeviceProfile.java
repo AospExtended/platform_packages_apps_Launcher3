@@ -291,11 +291,12 @@ public class InvariantDeviceProfile {
         mExtraAttrs = closestProfile.extraAttrs;
 
         float iconSizeModifier = (float) Utilities.getIconSizeModifier(context) / 100F;
+        float fontSizeModifier = (float) Utilities.getFontSizeModifier(context) / 100F;
         iconSize = displayOption.iconSize * iconSizeModifier;
         landscapeIconSize = displayOption.landscapeIconSize * iconSizeModifier;
         iconBitmapSize = ResourceUtils.pxFromDp(iconSize, metrics);
-        iconTextSize = displayOption.iconTextSize * iconSizeModifier;
-        landscapeIconTextSize = displayOption.landscapeIconTextSize;
+        iconTextSize = displayOption.iconTextSize * fontSizeModifier;
+        landscapeIconTextSize = displayOption.landscapeIconTextSize * fontSizeModifier;
         fillResIconDpi = getLauncherIconDensity(iconBitmapSize);
 
         minCellHeight = displayOption.minCellHeight;
@@ -311,7 +312,7 @@ public class InvariantDeviceProfile {
                 ? closestProfile.numDatabaseAllAppsColumns : closestProfile.numAllAppsColumns;
 
         allAppsIconSize = iconSize * iconSizeModifier;
-        allAppsIconTextSize = iconTextSize * iconSizeModifier;
+        allAppsIconTextSize = iconTextSize * fontSizeModifier;
 
         if (devicePaddingId != 0) {
             devicePaddings = new DevicePaddings(context, devicePaddingId);
