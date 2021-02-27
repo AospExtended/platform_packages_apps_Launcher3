@@ -41,7 +41,6 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.preference.DropDownPreference;
 import androidx.preference.Preference;
 import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.PreferenceFragmentCompat;
@@ -62,6 +61,7 @@ import com.android.launcher3.lineage.icon.IconPackSettingsActivity;
 import com.android.launcher3.lineage.trust.TrustAppsActivity;
 import com.android.launcher3.uioverrides.plugins.PluginManagerWrapper;
 import com.android.launcher3.util.SecureSettingsObserver;
+import com.android.launcher3.settings.preference.CustomSeekBarPreference;
 
 /**
  * Settings activity for Launcher. Currently implements the following setting: Allow rotation
@@ -294,13 +294,11 @@ public class SettingsActivity extends FragmentActivity
                     return true;
 
                 case Utilities.ICON_SIZE:
-                    final DropDownPreference iconSizes = (DropDownPreference) findPreference(Utilities.ICON_SIZE);
-                    iconSizes.setSummary(iconSizes.getEntry());
+                    final CustomSeekBarPreference iconSizes = (CustomSeekBarPreference)
+                            findPreference(Utilities.ICON_SIZE);
                     iconSizes.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
                         public boolean onPreferenceChange(Preference preference, Object newValue) {
-                            int index = iconSizes.findIndexOfValue((String) newValue);
-                            iconSizes.setSummary(iconSizes.getEntries()[index]);
-                            Utilities.restart(getActivity());
+                            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                             return true;
                         }
                     });
