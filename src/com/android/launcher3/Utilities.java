@@ -20,6 +20,7 @@ import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_ICON_BADGED
 import static com.android.launcher3.util.Executors.MODEL_EXECUTOR;
 
 import android.app.AlarmManager;
+import android.app.KeyguardManager;
 import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.animation.ValueAnimator;
@@ -48,9 +49,12 @@ import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
+import android.hardware.biometrics.BiometricPrompt;
 import android.os.Build;
+import android.os.CancellationSignal;
 import android.os.DeadObjectException;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.TransactionTooLargeException;
