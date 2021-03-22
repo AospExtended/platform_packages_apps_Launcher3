@@ -43,7 +43,6 @@ import com.android.launcher3.trust.db.TrustDatabaseHelper;
 import java.util.List;
 
 import static com.android.launcher3.trust.db.TrustComponent.Kind.HIDDEN;
-import static com.android.launcher3.trust.db.TrustComponent.Kind.PROTECTED;
 
 public class TrustAppsActivity extends Activity implements
         TrustAppsAdapter.Listener,
@@ -110,11 +109,6 @@ public class TrustAppsActivity extends Activity implements
     @Override
     public void onHiddenItemChanged(@NonNull TrustComponent component) {
         new UpdateItemTask(mDbHelper, this, HIDDEN).execute(component);
-    }
-
-    @Override
-    public void onProtectedItemChanged(@NonNull TrustComponent component) {
-        new UpdateItemTask(mDbHelper, this, PROTECTED).execute(component);
     }
 
     @Override

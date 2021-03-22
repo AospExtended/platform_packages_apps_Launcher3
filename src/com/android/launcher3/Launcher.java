@@ -1084,13 +1084,6 @@ public class Launcher extends StatefulActivity<LauncherState> implements Launche
         }
     }
 
-    public void startActivitySafelyAuth(View v, Intent intent, ItemInfo item,
-            String sourceContainer) {
-        Utilities.showLockScreen(this, getString(R.string.trust_apps_manager_name_dialog), () -> {
-            startActivitySafely(v, intent, item, sourceContainer);
-        });
-    }
-
     class LauncherOverlayCallbacksImpl implements LauncherOverlayCallbacks {
 
         public void onScrollChanged(float progress) {

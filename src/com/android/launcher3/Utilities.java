@@ -18,7 +18,6 @@ package com.android.launcher3;
 
 import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_ICON_BADGED;
 
-import android.app.KeyguardManager;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
@@ -46,12 +45,9 @@ import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
-import android.hardware.biometrics.BiometricPrompt;
 import android.os.Build;
-import android.os.CancellationSignal;
 import android.os.DeadObjectException;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.Message;
 import android.os.PowerManager;
 import android.os.SystemClock;
@@ -717,49 +713,4 @@ public final class Utilities {
             android.os.Process.killProcess(android.os.Process.myPid());
         });
      }
-
-    /**
-     * Shows authentication screen to confirm credentials (pin, pattern or password) for the current
-     * user of the device.
-     *
-     * @param context The {@code Context} used to get {@code KeyguardManager} service
-     * @param title the {@code String} which will be shown as the pompt title
-     * @param successRunnable The {@code Runnable} which will be executed if the user does not setup
-     *                        device security or if lock screen is unlocked
-     */
-    public static void showLockScreen(Context context, String title, Runnable successRunnable) {
-        final KeyguardManager keyguardManager = (KeyguardManager) context.getSystemService(
-                Context.KEYGUARD_SERVICE);
-
-        if (keyguardManager.isKeyguardSecure()) {
-            final BiometricPrompt.AuthenticationCallback authenticationCallback =
-                    new BiometricPrompt.AuthenticationCallback() {
-                        @Override
-                        public void onAuthenticationSucceeded(
-                                    BiometricPrompt.AuthenticationResult result) {
-                            successRunnable.run();
-                        }
-
-                        @Override
-                        public void onAuthenticationError(int errorCode, CharSequence errString) {
-                            //Do nothing
-                        }
-            };
-
-            final BiometricPrompt.Builder builder = new BiometricPrompt.Builder(context)
-                    .setTitle(title);
-
-            if (keyguardManager.isDeviceSecure()) {
-                builder.setDeviceCredentialAllowed(true);
-            }
-
-            final BiometricPrompt bp = builder.build();
-            final Handler handler = new Handler(Looper.getMainLooper());
-            bp.authenticate(new CancellationSignal(),
-                    runnable -> handler.post(runnable),
-                    authenticationCallback);
-        } else {
-            successRunnable.run();
-        }
-    }
 }
