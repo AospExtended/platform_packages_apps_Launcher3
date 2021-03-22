@@ -27,7 +27,6 @@ import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_DISABLED_SA
 import static com.android.launcher3.model.data.ItemInfoWithIcon.FLAG_DISABLED_SUSPENDED;
 
 import android.app.AlertDialog;
-import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.LauncherApps;
 import android.content.pm.PackageInstaller.SessionInfo;
@@ -59,7 +58,6 @@ import com.android.launcher3.model.data.WorkspaceItemInfo;
 import com.android.launcher3.pm.InstallSessionHelper;
 import com.android.launcher3.testing.TestLogging;
 import com.android.launcher3.testing.TestProtocol;
-import com.android.launcher3.trust.db.TrustDatabaseHelper;
 import com.android.launcher3.util.PackageManagerHelper;
 import com.android.launcher3.views.FloatingIconView;
 import com.android.launcher3.widget.PendingAppWidgetHostView;
@@ -284,15 +282,6 @@ public class ItemClickHandler {
             // Preload the icon to reduce latency b/w swapping the floating view with the original.
             FloatingIconView.fetchIcon(launcher, v, item, true /* isOpening */);
         }
-
-        TrustDatabaseHelper db = TrustDatabaseHelper.getInstance(launcher);
-        ComponentName cn = item.getTargetComponent();
-        boolean isProtected = cn != null && db.isPackageProtected(cn.getPackageName());
-
-        if (isProtected) {
-            launcher.startActivitySafelyAuth(v, intent, item, sourceContainer);
-        } else {
-            launcher.startActivitySafely(v, intent, item, sourceContainer);
-        }
+        launcher.startActivitySafely(v, intent, item, sourceContainer);
     }
 }
