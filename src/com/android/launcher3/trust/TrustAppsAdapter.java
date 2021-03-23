@@ -73,29 +73,29 @@ class TrustAppsAdapter extends RecyclerView.Adapter<TrustAppsAdapter.ViewHolder>
     class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView mIconView;
         private TextView mLabelView;
-        private ImageView mHiddenView;
+        private ImageView mHiddenItemView;
+        private View mHiddenView;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            mHiddenView = itemView.findViewById(R.id.item_hidden_app);
             mIconView = itemView.findViewById(R.id.item_hidden_app_icon);
             mLabelView = itemView.findViewById(R.id.item_hidden_app_title);
-            mHiddenView = itemView.findViewById(R.id.item_hidden_app_switch);
+            mHiddenItemView = itemView.findViewById(R.id.item_hidden_app_switch);
         }
 
         void bind(TrustComponent component) {
             mIconView.setImageDrawable(component.getIcon());
             mLabelView.setText(component.getLabel());
 
-            mHiddenView.setImageResource(component.isHidden() ?
+            mHiddenItemView.setImageResource(component.isHidden() ?
                     R.drawable.ic_hidden_locked : R.drawable.ic_hidden_unlocked);
 
             mHiddenView.setOnClickListener(v -> {
                 component.invertVisibility();
-
-                mHiddenView.setImageResource(component.isHidden() ?
+                mHiddenItemView.setImageResource(component.isHidden() ?
                         R.drawable.avd_hidden_lock : R.drawable.avd_hidden_unlock);
-                AnimatedVectorDrawable avd = (AnimatedVectorDrawable) mHiddenView.getDrawable();
+                AnimatedVectorDrawable avd = (AnimatedVectorDrawable) mHiddenItemView.getDrawable();
 
                 int position = getAdapterPosition();
                 if (Build.VERSION.SDK_INT > Build.VERSION_CODES.M) {
