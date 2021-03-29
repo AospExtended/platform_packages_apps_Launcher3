@@ -54,7 +54,7 @@ public class TrustDatabaseHelper extends SQLiteOpenHelper {
                 "(" +
                 KEY_UID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                 KEY_PKGNAME + " TEXT," +
-                KEY_HIDDEN + " INTEGER DEFAULT 0," +
+                KEY_HIDDEN + " INTEGER DEFAULT 0" +
                 ")";
         db.execSQL(CMD_CREATE_TABLE);
     }
