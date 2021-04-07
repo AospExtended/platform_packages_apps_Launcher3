@@ -49,9 +49,9 @@ import java.util.concurrent.Future;
  *     /default_grid: Call update to set the current grid, with values
  *          name: name of the grid to apply
  */
-public class GridOptionsProvider extends ContentProvider {
+public class GridCustomizationsProvider extends ContentProvider {
 
-    private static final String TAG = "GridOptionsProvider";
+    private static final String TAG = "GridCustomizationsProvider";
 
     private static final String KEY_NAME = "name";
     private static final String KEY_ROWS = "rows";
