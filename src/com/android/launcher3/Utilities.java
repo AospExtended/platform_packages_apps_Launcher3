@@ -148,6 +148,7 @@ public final class Utilities {
     public static final String TOP_SEARCH_BAR_KEY = "pref_top_search_bar";
 
     public static final String KEY_ALL_APPS_BACKGROUND_ALPHA = "pref_all_apps_scrim_alpha";
+    public static final String KEY_ALLAPPS_SHOW_PREDICTIONS = "last_prediction_enabled_state";
 
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
@@ -741,6 +742,10 @@ public final class Utilities {
 
     public static int getAllAppsScrimAlpha(Context context) {
         return getPrefs(context).getInt(KEY_ALL_APPS_BACKGROUND_ALPHA, 100);
+    }
+
+    public static boolean showAllAppsPredictions(Context context) {
+         return getPrefs(context).getBoolean(KEY_ALLAPPS_SHOW_PREDICTIONS, true);
     }
 
     public static void restart(final Context context) {

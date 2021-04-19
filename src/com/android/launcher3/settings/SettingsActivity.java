@@ -362,6 +362,17 @@ public class SettingsActivity extends FragmentActivity
                     });
                     return true;
 
+                case Utilities.KEY_ALLAPPS_SHOW_PREDICTIONS:
+                    final TwoStatePreference allAppsShowPredictions = (TwoStatePreference)
+                            findPreference(Utilities.KEY_ALLAPPS_SHOW_PREDICTIONS);
+                    allAppsShowPredictions.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                        public boolean onPreferenceChange(Preference preference, Object newValue) {
+                            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                            return true;
+                        }
+                    });
+                    return true;
+
             }
 
             return true;

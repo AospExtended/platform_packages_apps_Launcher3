@@ -215,9 +215,8 @@ public class DeviceProfile {
 
         workspaceCellPaddingXPx = res.getDimensionPixelSize(R.dimen.dynamic_grid_cell_padding_x);
 
-        hotseatBarTopPaddingPx = Utilities.isBottomSearchBarVisible(context)
-                ? res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding_widget)
-                : res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding);
+        hotseatBarTopPaddingPx =
+                res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding);
         hotseatBarBottomPaddingPx = (isTallDevice ? 0
                 : res.getDimensionPixelSize(Utilities.isBottomSearchBarVisible(context)
                         ? R.dimen.dynamic_grid_hotseat_bottom_non_tall_padding_widget

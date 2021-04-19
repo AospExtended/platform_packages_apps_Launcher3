@@ -118,4 +118,8 @@
 
     <!-- Default home page -->
     <string name="set_default_home_page">Set default page</string>
+
+    <!-- AppPrediction Row -->
+    <string name="app_show_predictions_title">App predictions row</string>
+    <string name="app_show_predictions_summary">Toggle to show app predictions row in app drawer</string>
 </resources>
