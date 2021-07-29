@@ -378,6 +378,11 @@ public class DeviceProfile {
             allAppsIconTextSizePx = iconTextSizePx;
             allAppsIconDrawablePaddingPx = iconDrawablePaddingPx;
             allAppsCellHeightPx = getCellSize().y;
+            // all apps should have constant row height and not follow workspace
+            int topBottomPadding = allAppsIconDrawablePaddingPx * (isVerticalBarLayout() ? 2 : 1);
+            allAppsCellHeightPx = allAppsIconSizePx + allAppsIconDrawablePaddingPx
+                    + Utilities.calculateTextHeight(allAppsIconTextSizePx)
+                    + topBottomPadding * 2;
         }
         allAppsCellWidthPx = allAppsIconSizePx + allAppsIconDrawablePaddingPx;
 
