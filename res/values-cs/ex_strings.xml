@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">Zobrazit vyhledávací lištu</string>
+    <string name="show_searchbar_summary">Zobrazit vyhledávací lištu na domovské obrazovce</string>
+    <string name="state_loading">Aplikuje se\u2026</string>
+    <string name="gestures_category">Gesta</string>
+    <string name="pref_notifications_gesture_title">Gesto zobrazení oznámení</string>
+    <string name="pref_notifications_gesture_summary">Přejetím prstem přes plochu svisle dolů zobrazit panel Rychlého nastavení a\u00a0oznámení</string>
+    <string name="pref_dt_gesture_title">Gesto dvojím poklepáním</string>
+    <string name="pref_dt_gesture_summary">Dvojím poklepáním na prázdné místo vypnout zařízení</string>
+    <string name="trust_apps_manager_name">Skryté &amp; Chráněné aplikace</string>
+    <string name="trust_apps_manager_summary">Skrýt aplikace nebo je chránit a omezit pomocí zámku obrazovky atd.</string>
+    <string name="trust_apps_manager_name_dialog">Chráněné aplikace</string>
+    <string name="trust_apps_auth_manager">Pro správu skrytých a zabezpečených aplikací nejdříve odemkněte obrazovku</string>
+    <string name="trust_apps_auth_open_app">Zadejte bezpečnostní ověření pro spuštění aplikace %1$s</string>
+    <string name="trust_apps_loading">Načítání\u2026</string>
+    <string name="trust_apps_no_lock_error">Pro omezení přístupu k\u00a0aplikaci prosím nastavte zabezpečenou obrazovku uzamčení</string>
+    <string name="trust_apps_help">Nápověda</string>
+    <string name="trust_apps_info_hidden">Takto označené aplikace jsou skryty, včetně jejich widgetů, z\u00a0rolety aplikací</string>
+    <string name="trust_apps_info_protected">Takto jsou označeny zabezpečené aplikace. Před jejich spuštěním je vyžadováno zadání bezpečnostního ověření</string>
+    <string name="title_show_google_app">Zobrazit aplikaci Google</string>
+    <string name="msg_minus_one_on_left">Při gestu tažení vlevo z hlavní domovské obrazovky</string>
+    <string name="msg_minus_one_on_right">Při gestu tažení vpravo z hlavní domovské obrazovky</string>
+    <string name="two_line_labels">Povolit dvouřádkové popisky na ploše</string>
+    <string name="app_info_subtext">Přejetím dolů zavřít informace o aplikaci.</string>
+    <string name="placeholder_string">Načítání...</string>
+    <string name="app_info_icon_pack">Balíček ikon</string>
+    <string name="app_info_icon_pack_none">Žádný</string>
+    <string name="app_info_source">Zdroj</string>
+    <string name="app_info_source_unknown">Nezjištěno</string>
+    <string name="app_info_last_update">Poslední aktualizace</string>
+    <string name="app_info_version">Verze</string>
+    <string name="app_info_more">Více</string>
+    <string name="pref_value_default">Výchozí</string>
+</resources>

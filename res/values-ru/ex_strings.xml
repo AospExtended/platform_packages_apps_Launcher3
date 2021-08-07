@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">Показать панель поиска</string>
+    <string name="show_searchbar_summary">Показать панель поиска на домашнем экране</string>
+    <string name="state_loading">Применение\u2026</string>
+    <string name="gestures_category">Жесты</string>
+    <string name="pref_notifications_gesture_title">Жест уведомлений</string>
+    <string name="pref_notifications_gesture_summary">Свайп вниз на домашнем экране для отображения панели быстрых настроек</string>
+    <string name="pref_dt_gesture_title">Жест двойного нажатия</string>
+    <string name="pref_dt_gesture_summary">Двойное нажатие по пустому месту для выключения</string>
+    <string name="trust_apps_manager_name">Скрытые и Защищенные приложения</string>
+    <string name="trust_apps_manager_summary">Скрыть приложения или защитить и ограничить их с помощью Блокировки экрана и др.</string>
+    <string name="trust_apps_manager_name_dialog">Защищенное приложение</string>
+    <string name="trust_apps_auth_manager">Разблокируйте для управления скрытыми и защищенными приложениями</string>
+    <string name="trust_apps_auth_open_app">Авторизуйтесь для открытия %1$s</string>
+    <string name="trust_apps_loading">Загрузка\u2026</string>
+    <string name="trust_apps_no_lock_error">Пожалуйста, установите блокировку экрана для ограничения доступа к приложениям</string>
+    <string name="trust_apps_help">Помощь</string>
+    <string name="trust_apps_info_hidden">Скрытые приложения и их виджеты скрыты из меню</string>
+    <string name="trust_apps_info_protected">Защищенные приложения требуют аутентификации для открытия из лаунчера</string>
+    <string name="title_show_google_app">Показать приложение Google</string>
+    <string name="msg_minus_one_on_left">При свайпе влево на домашнем экране</string>
+    <string name="msg_minus_one_on_right">При свайпе вправо на домашнем экране</string>
+</resources>

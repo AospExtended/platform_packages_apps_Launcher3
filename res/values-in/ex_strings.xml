@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">Tampilkan bar pencarian</string>
+    <string name="show_searchbar_summary">Tampilkan bar pencarian di layar utama</string>
+    <string name="state_loading">Menerapkan\u2026</string>
+    <string name="gestures_category">Gestur</string>
+    <string name="pref_notifications_gesture_title">Gestur notifikasi</string>
+    <string name="pref_notifications_gesture_summary">Geser ke bawah secara vertikal pada layar utama untuk menampilkan panel QS</string>
+    <string name="pref_dt_gesture_title">Gestur ketuk dua kali</string>
+    <string name="pref_dt_gesture_summary">Ketuk dua kali pada ruang kosong untuk mematikan layar</string>
+    <string name="trust_apps_manager_name">Tersembunyi &amp; Aplikasi dilindungi</string>
+    <string name="trust_apps_manager_summary">Sembunyikan aplikasi atau lindungi &amp; batasi melalui kunci layar dll</string>
+    <string name="trust_apps_manager_name_dialog">Aplikasi dilindungi</string>
+    <string name="trust_apps_auth_manager">Buka kunci untuk mengelola aplikasi yang disembunyikan dan dilindungi</string>
+    <string name="trust_apps_auth_open_app">Autentikasi untuk membuka %1$s</string>
+    <string name="trust_apps_loading">Memuat\u2026</string>
+    <string name="trust_apps_no_lock_error">Silakan mengatur kunci layar aman untuk membatasi akses aplikasi</string>
+    <string name="trust_apps_help">Bantuan</string>
+    <string name="trust_apps_info_hidden">Aplikasi tersembunyi dan widget mereka akan disembunyikan</string>
+    <string name="trust_apps_info_protected">Aplikasi yang dilindungi memerlukan autentikasi untuk dibuka dari peluncur</string>
+    <string name="title_show_google_app">Tampilkan Aplikasi Google</string>
+    <string name="msg_minus_one_on_left">Ketika Anda mengusap ke kiri dari Layar Utama</string>
+    <string name="msg_minus_one_on_right">Ketika Anda mengusap ke kanan dari Layar Utama</string>
+    <string name="two_line_labels">Label dua baris</string>
+    <string name="app_info_subtext">Info apl</string>
+    <string name="placeholder_string">Memuat...</string>
+    <string name="app_info_icon_pack">Paket ikon</string>
+    <string name="app_info_icon_pack_none">Tidak ada</string>
+    <string name="app_info_source">Sumber</string>
+    <string name="app_info_source_unknown">Tidak dikenal</string>
+    <string name="app_info_last_update">Pembaharuan terakhir</string>
+    <string name="app_info_version">Versi</string>
+    <string name="app_info_more">Selengkapnya</string>
+    <string name="pref_value_default">Standar</string>
+</resources>

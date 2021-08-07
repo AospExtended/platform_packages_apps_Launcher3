@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">显示搜索栏</string>
+    <string name="show_searchbar_summary">在主屏幕上显示搜索栏</string>
+    <string name="state_loading">应用中\u2026</string>
+    <string name="gestures_category">手势</string>
+    <string name="pref_notifications_gesture_title">通知手势</string>
+    <string name="pref_notifications_gesture_summary">在主屏幕上垂直向下滑动以显示快速设置面板</string>
+    <string name="pref_dt_gesture_title">双击手势</string>
+    <string name="pref_dt_gesture_summary">双击空白处以关闭屏幕</string>
+    <string name="trust_apps_manager_name">隐藏 &amp; 保护的应用</string>
+    <string name="trust_apps_manager_summary">通过屏幕锁定等方式以隐藏或者保护和限制应用</string>
+    <string name="trust_apps_manager_name_dialog">受保护的应用</string>
+    <string name="trust_apps_auth_manager">解锁以管理隐藏和受保护的应用</string>
+    <string name="trust_apps_auth_open_app">验证以打开%1$s</string>
+    <string name="trust_apps_loading">加载中\u2026</string>
+    <string name="trust_apps_no_lock_error">请设置一个锁屏密码来给应用上锁</string>
+    <string name="trust_apps_help">帮助</string>
+    <string name="trust_apps_info_hidden">从抽屉中隐藏应用和其他小部件</string>
+    <string name="trust_apps_info_protected">从启动器打开受保护的应用需要验证</string>
+    <string name="title_show_google_app">显示 Google 应用</string>
+    <string name="msg_minus_one_on_left">从主屏幕向左滑动时</string>
+    <string name="msg_minus_one_on_right">从主屏幕向右滑动时</string>
+    <string name="two_line_labels">允许桌面显示两行标签</string>
+    <string name="app_info_subtext">下滑以关闭应用信息</string>
+    <string name="placeholder_string">加载中...</string>
+    <string name="app_info_icon_pack">图标包</string>
+    <string name="app_info_icon_pack_none">无</string>
+    <string name="app_info_source">来源</string>
+    <string name="app_info_source_unknown">未知</string>
+    <string name="app_info_last_update">最后更新</string>
+    <string name="app_info_version">版本</string>
+    <string name="app_info_more">更多</string>
+    <string name="pref_value_default">默认</string>
+</resources>

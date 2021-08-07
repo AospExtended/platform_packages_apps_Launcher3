@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">Keresősáv-megjelenítés</string>
+    <string name="show_searchbar_summary">A Kezdőképernyőn megjelenítésre kerül a keresősáv</string>
+    <string name="state_loading">Alkalmazás\u2026</string>
+    <string name="gestures_category">Mozdulatvezérlés</string>
+    <string name="pref_notifications_gesture_title">Az értesítések vezérlői</string>
+    <string name="pref_notifications_gesture_summary">Csúsztasson függőlegesen lefelé a kezdőképernyőn a Gyorsbeállítások-panel megjelenítéséhez</string>
+    <string name="pref_dt_gesture_title">A dupla érintéses vezérlés</string>
+    <string name="pref_dt_gesture_summary">A kikapcsoláshoz elég a duplakopp egy üres területre</string>
+    <string name="trust_apps_manager_name">Rejtett és védett alkalmazások</string>
+    <string name="trust_apps_manager_summary">Rejtett és védett alkalmazások korlátozása képernyőzárral stb</string>
+    <string name="trust_apps_manager_name_dialog">Védett alkalmazás</string>
+    <string name="trust_apps_auth_manager">Feloldás a rejtett és védett alkalmazások kezeléséhez</string>
+    <string name="trust_apps_auth_open_app">Hitelesítés a következő megnyitásához: %1$s</string>
+    <string name="trust_apps_loading">Betöltés\u2026</string>
+    <string name="trust_apps_no_lock_error">Kérjük, állítson be biztonságos (védett) képernyőzárat az alkalmazás-hozzáférések korlátozására</string>
+    <string name="trust_apps_help">Súgó</string>
+    <string name="trust_apps_info_hidden">A rejtett alkalmazások és moduljaik az alkalmazásfiókban sem láthatóak</string>
+    <string name="trust_apps_info_protected">Egy védett alkalmazás csak hitelesítés után nyitható meg a launcherből</string>
+    <string name="title_show_google_app">A Google-alkalmazás megjelenítése</string>
+    <string name="msg_minus_one_on_left">Amikor a fő Kezdőképernyőn balra csúsztat</string>
+    <string name="msg_minus_one_on_right">Amikor a fő Kezdőképernyőn jobbra csúsztat</string>
+    <string name="two_line_labels">Kétsoros ikonfeliratok engedélyezése</string>
+    <string name="app_info_subtext">Csúsztasson lefelé az alkalmazásinfó bezárásához.</string>
+    <string name="placeholder_string">Betöltés...</string>
+    <string name="app_info_icon_pack">Ikoncsomag</string>
+    <string name="app_info_icon_pack_none">Egyik sem</string>
+    <string name="app_info_source">Forrás</string>
+    <string name="app_info_source_unknown">Ismeretlen</string>
+    <string name="app_info_last_update">Legutóbbi frissítés</string>
+    <string name="app_info_version">Verzió</string>
+    <string name="app_info_more">Továbbiak</string>
+    <string name="pref_value_default">Alapértelmezett</string>
+</resources>

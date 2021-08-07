@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2020 ArrowOS
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="show_searchbar_title">検索バーを表示</string>
+    <string name="show_searchbar_summary">ホーム画面で検索バーを表示する</string>
+    <string name="state_loading">適用中\u2026</string>
+    <string name="gestures_category">ジェスチャー</string>
+    <string name="pref_notifications_gesture_title">通知ジェスチャー</string>
+    <string name="pref_notifications_gesture_summary">ホーム画面で垂直に下スワイプしてクイック設定パネルを表示する</string>
+    <string name="pref_dt_gesture_title">ダブルタップジェスチャー</string>
+    <string name="pref_dt_gesture_summary">空白領域をダブルタップしてスリープする</string>
+    <string name="trust_apps_manager_name">非表示 &amp; 保護アプリ</string>
+    <string name="trust_apps_manager_summary">ロック画面経由などからアプリを非表示にするか保護と制限をする</string>
+    <string name="trust_apps_manager_name_dialog">保護アプリ</string>
+    <string name="trust_apps_auth_manager">ロック解除して非表示と保護アプリを管理する</string>
+    <string name="trust_apps_auth_open_app">認証して %1$s を開く</string>
+    <string name="trust_apps_loading">読込中\u2026</string>
+    <string name="trust_apps_no_lock_error">アプリのアクセスを制限するためにロック画面の保護をセットアップして下さい</string>
+    <string name="trust_apps_help">ヘルプ</string>
+    <string name="trust_apps_info_hidden">非表示アプリとそのウィジェットはドロワーから非表示になります</string>
+    <string name="trust_apps_info_protected">保護アプリはランチャーから開くのに認証が必要です</string>
+    <string name="title_show_google_app">Google アプリを表示</string>
+    <string name="msg_minus_one_on_left">メインホーム画面から左にスワイプして表示</string>
+    <string name="msg_minus_one_on_right">メインホーム画面から右にスワイプして表示</string>
+    <string name="two_line_labels">デスクトップ上で2行のラベルを許可</string>
+    <string name="app_info_subtext">下にスワイプしてアプリ情報を閉じます</string>
+    <string name="placeholder_string">読込中...</string>
+    <string name="app_info_icon_pack">アイコンパック</string>
+    <string name="app_info_icon_pack_none">なし</string>
+    <string name="app_info_source">ソース</string>
+    <string name="app_info_source_unknown">不明</string>
+    <string name="app_info_last_update">最終更新</string>
+    <string name="app_info_version">バージョン</string>
+    <string name="app_info_more">詳細</string>
+    <string name="pref_value_default">既定</string>
+</resources>
