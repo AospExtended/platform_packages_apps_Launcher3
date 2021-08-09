@@ -42,9 +42,11 @@
             android:id="@+id/action_screenshot"
             style="@style/OverviewActionButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:drawableStart="@drawable/ic_screenshot"
             android:text="@string/action_screenshot"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
             android:theme="@style/ThemeControlHighlightWorkspaceColor" />
 
         <Space
@@ -56,10 +58,12 @@
             style="@style/OverviewActionButton"
             android:id="@+id/clear_all"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:text="@string/recents_clear_all"
             android:theme="@style/ThemeControlHighlightWorkspaceColor"
             android:drawableStart="@drawable/ic_clear_all_recents"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
             />
 
         <Space
@@ -87,10 +91,12 @@
             android:id="@+id/action_share"
             style="@style/OverviewActionButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:drawableStart="@drawable/ic_share"
             android:text="@string/action_share"
             android:theme="@style/ThemeControlHighlightWorkspaceColor"
+            android:paddingVertical="4dp"
+            android:paddingHorizontal="8dp"
             android:visibility="gone" />
 
         <Space
