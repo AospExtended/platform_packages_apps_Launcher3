@@ -19,9 +19,6 @@
 -->
 <resources>
 
-    <!-- Bottomsheet bg color -->
-    <color name="app_info_bottom_sheet_bg">#ffffff</color>
-
     <!-- QSB -->
     <color name="qsb_drawer_text_color_normal">#ff212121</color>
     <color name="qsb_background_default">#ccffffff</color>
