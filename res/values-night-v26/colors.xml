@@ -18,5 +18,5 @@
 */
 -->
 <resources>
-    <color name="app_info_bottom_sheet_bg">#000000</color>
+    <color name="app_info_bottom_sheet_bg">@*android:color/primary_device_default_dark</color>
 </resources>
