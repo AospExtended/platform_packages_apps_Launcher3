@@ -165,6 +165,13 @@
             android:key="pref_trust_apps"
             android:title="@string/trust_apps_manager_name" />
 
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="pref_recents_show_memory"
+            android:persistent="true"
+            android:summary="@string/pref_recents_show_memory_summary"
+            android:title="@string/pref_recents_show_memory_title"/>
+
     </androidx.preference.PreferenceCategory>
 
 </androidx.preference.PreferenceScreen>

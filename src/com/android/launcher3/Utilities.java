@@ -727,6 +727,10 @@ public final class Utilities {
         return getPrefs(context).getBoolean(BOTTOM_SEARCH_BAR_KEY, true);
     }
 
+    public static boolean recentsShowMemory(Context context) {
+         return getPrefs(context).getBoolean("pref_recents_show_memory", true);
+    }
+
     public static void restart(final Context context) {
         //ProgressDialog.show(context, null, context.getString(R.string.state_loading), true, false);
         MODEL_EXECUTOR.execute(() -> {

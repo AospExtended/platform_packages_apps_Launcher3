@@ -105,4 +105,8 @@
     <!-- Two line labels -->
     <string name="desktop_two_line_labels">Allow two line labels on desktop</string>
     <string name="drawer_two_line_labels">Allow two line labels in drawer</string>
+
+    <!-- Recents Memory -->
+    <string name="pref_recents_show_memory_title">Show Free RAM in recents</string>
+    <string name="pref_recents_show_memory_summary">Show available free RAM in recents view</string>
 </resources>
