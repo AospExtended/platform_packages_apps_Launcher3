@@ -74,4 +74,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     <!-- QSB -->
     <string name="label_search">Search</string>
     <string name="label_voice_search">Voice search</string>
+
+    <!-- Recents Memory -->
+    <string name="pref_recents_show_memory_title">Show Free RAM in recents</string>
+    <string name="pref_recents_show_memory_summary">Show available free RAM in recents view</string>
 </resources>

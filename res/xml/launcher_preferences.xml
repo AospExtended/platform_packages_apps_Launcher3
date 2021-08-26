@@ -70,6 +70,13 @@
         android:summary="@string/pref_at_a_glance_show_summary"
         android:title="@string/pref_at_a_glance_show_title"/>
 
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="pref_recents_show_memory"
+        android:persistent="true"
+        android:summary="@string/pref_recents_show_memory_summary"
+        android:title="@string/pref_recents_show_memory_title"/>
+
     <!--<androidx.preference.PreferenceScreen
         android:key="pref_developer_options"
         android:persistent="false"
