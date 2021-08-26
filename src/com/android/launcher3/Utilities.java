@@ -169,6 +169,10 @@ public final class Utilities {
          return getPrefs(context).getBoolean(AT_A_GLANCE_SHOW, true);
     }
 
+    public static boolean recentsShowMemory(Context context) {
+         return getPrefs(context).getBoolean("pref_recents_show_memory", true);
+    }
+
     /**
      * Given a coordinate relative to the descendant, find the coordinate in a parent view's
      * coordinates.
