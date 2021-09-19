@@ -78,6 +78,8 @@
             android:layout_height="35dp"
             android:drawableStart="@drawable/recents_locked"
             android:text="Locked"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:theme="@style/ThemeControlHighlightWorkspaceColor"
             android:paddingVertical="4dp"
             android:paddingHorizontal="8dp"/>
