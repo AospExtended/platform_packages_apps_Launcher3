@@ -16,6 +16,24 @@
       "message": "app info in light theme is bugged",
       "revId": "152097843e4dae69d4649a9bd73c09408fca6157",
       "serverId": "692a3d4a-6cfc-41d4-b12b-cb9542eed61e"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "18343b0c_de481377",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000014
+      },
+      "writtenOn": "2021-09-20T04:25:31Z",
+      "side": 1,
+      "message": "patchset 5 fixes it",
+      "parentUuid": "b8cbe757_d4a9cb08",
+      "revId": "152097843e4dae69d4649a9bd73c09408fca6157",
+      "serverId": "692a3d4a-6cfc-41d4-b12b-cb9542eed61e"
     }
   ]
 }
