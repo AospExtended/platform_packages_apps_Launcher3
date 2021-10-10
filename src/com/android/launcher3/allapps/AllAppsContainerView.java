@@ -88,8 +88,6 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
     public static final float PULL_MULTIPLIER = .02f;
     public static final float FLING_VELOCITY_MULTIPLIER = 1200f;
 
-    private final Paint mHeaderPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-
     protected final BaseDraggingActivity mLauncher;
     protected final AdapterHolder[] mAH;
     private final ItemInfoMatcher mPersonalMatcher = ItemInfoMatcher.ofUser(Process.myUserHandle());
@@ -133,7 +131,6 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
     private final int mHeaderProtectionColor;
     private final float mHeaderThreshold;
     private ScrimView mScrimView;
-    private int mHeaderColor;
     private int mTabsProtectionAlpha;
 
     public AllAppsContainerView(Context context) {
@@ -711,17 +708,6 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
 
     @Override
     public void drawOnScrim(Canvas canvas) {
-        mHeaderPaint.setColor(mHeaderColor);
-        mHeaderPaint.setAlpha((int) (getAlpha() * Color.alpha(mHeaderColor)));
-        if (mHeaderPaint.getColor() != mScrimColor && mHeaderPaint.getColor() != 0) {
-            int bottom = (int) (mSearchContainer.getBottom() + getTranslationY());
-            canvas.drawRect(0, 0, canvas.getWidth(), bottom, mHeaderPaint);
-            int tabsHeight = getFloatingHeaderView().getPeripheralProtectionHeight();
-            if (mTabsProtectionAlpha > 0 && tabsHeight != 0) {
-                mHeaderPaint.setAlpha((int) (getAlpha() * mTabsProtectionAlpha));
-                canvas.drawRect(0, bottom, canvas.getWidth(), bottom + tabsHeight, mHeaderPaint);
-            }
-        }
     }
 
     public class AdapterHolder {
@@ -800,28 +786,12 @@ public class AllAppsContainerView extends SpringRelativeLayout implements DragSo
 
     protected void updateHeaderScroll(int scrolledOffset) {
 
-        float prog = Utilities.boundToRange((float) scrolledOffset / mHeaderThreshold, 0f, 1f);
-        int viewBG = ColorUtils.blendARGB(mScrimColor, mHeaderProtectionColor, prog);
-        int headerColor = ColorUtils.setAlphaComponent(viewBG,
-                (int) (getSearchView().getAlpha() * 255));
-        int tabsAlpha = mHeader.getPeripheralProtectionHeight() == 0 ? 0
-                : (int) (Utilities.boundToRange(
-                        (scrolledOffset + mHeader.mSnappedScrolledY) / mHeaderThreshold, 0f, 1f)
-                        * 255);
-        if (headerColor != mHeaderColor || mTabsProtectionAlpha != tabsAlpha) {
-            mHeaderColor = headerColor;
-            mTabsProtectionAlpha = tabsAlpha;
-            invalidateHeader();
-        }
         if (mSearchUiManager.getEditText() != null) {
             ExtendedEditText editText = mSearchUiManager.getEditText();
             boolean bgVisible = editText.getBackgroundVisibility();
             if (scrolledOffset == 0 && !mIsSearching) {
                 bgVisible = true;
-            } else if (scrolledOffset > mHeaderThreshold) {
-                bgVisible = false;
             }
-            editText.setBackgroundVisibility(bgVisible, 1 - prog);
         }
     }
 
