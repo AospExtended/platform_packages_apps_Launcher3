@@ -123,6 +123,7 @@ android_library {
         "colorkt",
         "themelib",
         "libGoogleFeed",
+        "SettingsLib",
     ],
     manifest: "AndroidManifest-common.xml",
     sdk_version: "current",
