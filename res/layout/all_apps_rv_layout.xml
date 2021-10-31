@@ -20,6 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_below="@id/search_container_all_apps"
+    android:layout_marginTop="24dp"
     android:clipToPadding="false"
     android:descendantFocusability="afterDescendants"
     android:focusable="true" />
