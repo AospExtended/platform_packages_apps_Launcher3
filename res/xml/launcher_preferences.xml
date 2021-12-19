@@ -84,6 +84,16 @@
         android:defaultValue="true"
         android:persistent="true"/>
 
+    <androidx.preference.PreferenceScreen
+        android:key="pref_suggestions"
+        android:persistent="false"
+        android:title="@string/pref_suggestions_title"
+        android:summary="@string/pref_suggestions_summary">
+
+        <intent android:action="android.settings.ACTION_CONTENT_SUGGESTIONS_SETTINGS" />
+
+    </androidx.preference.PreferenceScreen>
+
     <Preference
         android:key="pref_developer_options"
         android:persistent="false"

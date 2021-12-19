@@ -38,4 +38,7 @@
 
     <!-- Font size -->
     <string name="font_size_title">Font size</string>
+
+    <string name="pref_suggestions_title">Suggestions</string>
+    <string name="pref_suggestions_summary">For all apps and Home screen</string>
 </resources>
