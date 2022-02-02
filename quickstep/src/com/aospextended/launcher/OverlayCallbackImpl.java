@@ -22,6 +22,7 @@ import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
 import android.os.Bundle;
 
 import com.android.launcher3.Launcher;
+import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.Utilities;
 import com.android.systemui.plugins.shared.LauncherOverlayManager;
 import com.android.systemui.plugins.shared.LauncherOverlayManager.LauncherOverlay;
@@ -42,6 +43,7 @@ public class OverlayCallbackImpl
         implements LauncherOverlay, LauncherClientCallbacks, LauncherOverlayManager,
         OnSharedPreferenceChangeListener {
 
+    public static final String KEY_DOCK_SEARCH = "pref_dock_search";
     public static final String KEY_ENABLE_MINUS_ONE = "pref_enable_minus_one";
 
     private final Launcher mLauncher;
@@ -136,6 +138,8 @@ public class OverlayCallbackImpl
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (KEY_ENABLE_MINUS_ONE.equals(key)) {
             mClient.setClientOptions(getClientOptions(prefs));
+        } else if (KEY_DOCK_SEARCH.equals(key)) {
+            LauncherAppState.getInstanceNoCreate().setNeedsRestart();
         }
     }
 
