@@ -42,4 +42,8 @@
     <string name="settings_lock_layout_summary_off">Icons and widgets can be added, removed and moved on the homescreen</string>
     <string name="settings_edit_widgets_error">It\'s not possible to add widgets to the home screen</string>
 
+    <!-- Hotseat searchbar -->
+    <string name="label_search">Search</string>
+    <string name="label_lens">Google Lens</string>
+    <string name="label_voice_search">Voice search</string>
 </resources>
