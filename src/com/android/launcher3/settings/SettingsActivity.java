@@ -20,6 +20,7 @@ import static androidx.core.view.accessibility.AccessibilityNodeInfoCompat.ACTIO
 
 import static com.android.launcher3.states.RotationHelper.ALLOW_ROTATION_PREFERENCE_KEY;
 
+import static com.aospextended.launcher.OverlayCallbackImpl.KEY_DOCK_SEARCH;
 import static com.aospextended.launcher.OverlayCallbackImpl.KEY_ENABLE_MINUS_ONE;
 
 import android.content.Context;
@@ -201,6 +202,7 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
         protected static final String DPS_PACKAGE = "com.google.android.as";
 
         private Preference mShowGoogleAppPref;
+        private Preference mShowGoogleBarPref;
 
         @Override
         public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -313,6 +315,11 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
                         }
                     });
                     return true;
+
+                case KEY_DOCK_SEARCH:
+                    mShowGoogleBarPref = preference;
+                    updateIsGoogleAppEnabled();
+                    return true;
             }
 
             return true;
@@ -355,6 +362,9 @@ public class SettingsActivity extends CollapsingToolbarBaseActivity
         private void updateIsGoogleAppEnabled() {
             if (mShowGoogleAppPref != null) {
                 mShowGoogleAppPref.setEnabled(isGSAEnabled(getContext()));
+            }
+            if (mShowGoogleBarPref != null) {
+                mShowGoogleBarPref.setEnabled(isGSAEnabled(getContext()));
             }
         }
 
