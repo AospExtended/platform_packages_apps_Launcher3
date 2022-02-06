@@ -153,7 +153,9 @@ public final class Utilities {
             Build.TYPE.toLowerCase(Locale.ROOT).contains("debug") ||
             Build.TYPE.toLowerCase(Locale.ROOT).equals("eng");
 
-    private static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+    public static final String GSA_PACKAGE = "com.google.android.googlequicksearchbox";
+    public static final String LENS_PACKAGE = "com.google.ar.lens";
+    public static final String LENS_ACTIVITY = "com.google.vr.apps.ornament.app.lens.LensLauncherActivity";
 
     public static final String KEY_DOCK_SEARCH = "pref_dock_search";
 
