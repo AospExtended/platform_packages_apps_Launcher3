@@ -47,6 +47,7 @@ import com.android.launcher3.R;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.graphics.FragmentWithPreview;
+import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.widget.util.WidgetSizes;
 
 /**
@@ -74,6 +75,9 @@ public class QsbContainerView extends FrameLayout {
             ComponentName componentName = searchManager.getGlobalSearchActivity();
             if (componentName != null) {
                 providerPkg = searchManager.getGlobalSearchActivity().getPackageName();
+            }
+            if (providerPkg == null && SettingsActivity.LauncherSettingsFragment.isGSAEnabled(context)) {
+                providerPkg = Utilities.GSA_PACKAGE;
             }
         }
         return providerPkg;
