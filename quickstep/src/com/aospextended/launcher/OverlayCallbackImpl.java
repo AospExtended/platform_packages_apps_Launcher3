@@ -44,6 +44,7 @@ public class OverlayCallbackImpl
         OnSharedPreferenceChangeListener {
 
     public static final String KEY_DOCK_SEARCH = "pref_dock_search";
+    public static final String KEY_DOCK_THEME = "pref_dock_theme";
     public static final String KEY_ENABLE_MINUS_ONE = "pref_enable_minus_one";
 
     private final Launcher mLauncher;
@@ -138,7 +139,7 @@ public class OverlayCallbackImpl
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         if (KEY_ENABLE_MINUS_ONE.equals(key)) {
             mClient.setClientOptions(getClientOptions(prefs));
-        } else if (KEY_DOCK_SEARCH.equals(key)) {
+        } else if (KEY_DOCK_SEARCH.equals(key) || KEY_DOCK_THEME.equals(key)) {
             LauncherAppState.getInstanceNoCreate().setNeedsRestart();
         }
     }
