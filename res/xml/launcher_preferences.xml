@@ -71,6 +71,12 @@
         android:summary="@string/dock_search_summary"
         android:defaultValue="true" />
 
+    <SwitchPreference
+        android:key="pref_dock_theme"
+        android:title="@string/dock_theme_title"
+        android:summary="@string/dock_theme_summary"
+        android:dependency="pref_dock_search" />
+
     <com.android.launcher3.settings.preference.CustomSeekBarPreference
         android:key="pref_custom_icon_size"
         android:title="@string/icon_size_title"
