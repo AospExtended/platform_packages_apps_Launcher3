@@ -33,6 +33,7 @@ import androidx.annotation.Nullable;
 import com.android.launcher3.DeviceProfile;
 import com.android.launcher3.Insettable;
 import com.android.launcher3.R;
+import com.android.launcher3.settings.SettingsActivity;
 import com.android.launcher3.Utilities;
 import com.android.launcher3.util.MultiValueAlpha;
 import com.android.launcher3.util.MultiValueAlpha.AlphaProperty;
@@ -113,7 +114,7 @@ public class OverviewActionsView<T extends OverlayUICallbacks> extends FrameLayo
     protected void onFinishInflate() {
         super.onFinishInflate();
         findViewById(R.id.action_screenshot).setOnClickListener(this);
-        if (getContext().getPackageManager().getLaunchIntentForPackage("com.google.ar.lens") != null) {
+        if (SettingsActivity.LauncherSettingsFragment.isGSAEnabled(getContext())) {
             View lens = findViewById(R.id.action_lens);
             findViewById(R.id.action_lens).setOnClickListener(this);
             lens.setVisibility(VISIBLE);
