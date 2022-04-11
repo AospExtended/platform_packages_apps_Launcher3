@@ -82,6 +82,11 @@
         android:title="@string/pref_allow_phone_taskbar"
         android:summary="@string/pref_allow_phone_taskbar_desc" />
 
+    <SwitchPreference
+        android:key="pref_allow_phone_overview_grid"
+        android:title="@string/pref_allow_phone_overview_grid"
+        android:summary="@string/pref_allow_phone_overview_grid_desc" />
+
     <Preference
         android:key="pref_icon_pack"
         android:title="@string/icon_pack_title" />
