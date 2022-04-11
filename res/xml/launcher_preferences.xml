@@ -77,6 +77,11 @@
         android:summary="@string/dock_theme_summary"
         android:dependency="pref_dock_search" />
 
+    <SwitchPreference
+        android:key="pref_allow_phone_taskbar"
+        android:title="@string/pref_allow_phone_taskbar"
+        android:summary="@string/pref_allow_phone_taskbar_desc" />
+
     <Preference
         android:key="pref_icon_pack"
         android:title="@string/icon_pack_title" />
